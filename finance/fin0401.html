@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>JT 저축은행</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" type="text/css" href="../public/css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/common.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/common01.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/common02.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/footer.css" />
+	
+	<script src="../public/js/jquery.min.js"></script>
+	
+	<script> 
+		/* 모달 */
+		function modalOn(modalID) { // 모달 On 모달 창 호출 후 해당 모달 컨텐츠 로드
+			$("." + modalID).addClass('on');
+			$("html").css("overflow","hidden");
+		};
+
+		function modalOff() { // 모달 Off
+			$('.Acuon-Modal').removeClass('on');
+			$("html").css("overflow","auto").css("height","100%");
+		};
+	</script>
+</head>
+
+<body>
+<!-- // header -->
+<header>
+	<div id="gnb">
+		<h1><a href="./index.jsp"></a></h1>
+		<nav>
+			<script>
+				$(document).ready(function(){ 
+					$('nav').load('../public/inc/nav.html'); 
+				});
+			</script>
+		</nav>
+	</div>
+</header>
+<!-- header // -->
+
+<!-- // section -->
+<section class="SubPage-bg03">
+
+	<article class="Path PathBg">
+		<div>
+			<a href="/">Home</a><span class="bullet_right">→</span><a href="/">금융</a><span class="bullet_right">→</span><a href="/">금융서비스</a><span class="bullet_right">→</span><a href="/">CMS서비스</a>
+		</div>
+	</article>
+
+	<article class="ContentWrap">
+
+		<div class="Sub-Title subTitBg">
+			<h2>CMS서비스<br />
+			<span>JT저축은행이 제공하는 금융서비스입니다.</span>
+			</h2>
+		</div>
+
+		<ul class="tabWrap li2"><!--li2, li3, li4 로 갯수 조절-->
+			<li class="on"><a>CMS동의</a></li> 
+			<li><a>CMS조회(신청 및 변경)</a></li>
+		</ul>
+
+		<div class="call-admin">
+			<div>
+
+                <div class="tableWrap pdT0 pdB0">
+                    <div class="secTitBox02">
+                        <h3>기본 정보 입력</h3>
+                        <span class="txtR">모든 항목은 필수입력 사항입니다.</span>
+                    </div>
+                    <div class="table-St th-bg th-br th-bb td-bb th-pdl40 td-pdl40">
+                        <table>
+                            <caption>성명, 주민등록번호에 대한 기본 정보 입력표</caption>
+                            <colgroup>
+                                <col width="15%">
+                                <col width="*">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row"><label for="ipt01-01">성명</label></th>
+                                    <td class="inpBox03">
+                                        <input type="text" id="ipt01-01" name="ipt01-01" title="성명 입력">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><label for="RBRNO1">주민등록번호</label></th>
+                                    <td>
+                                        <form id="encForm" name="encForm" class="inpNum03">
+                                            <input type="tel" id="RBRNO1" name="RBRNO1" title="주민번호 앞자리" maxlength="6" tk_security="true">
+                                            <b>-</b>
+                                            <input type="password" id="RBRNO2" name="RBRNO2" title="주민번호 뒷자리" maxlength="7" data-enc="on" tk_security="true">
+                                        <input type="hidden" name="hid_key_data" value=""><input type="hidden" name="hid_enc_data" value=""><input type="hidden" name="E2E_RBRNO2" value=""></form>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+    
+                <div class="txtBox">
+                    <p class="rfrnc"><b>이용시간 안내</b></p>
+                    <p>조회서비스 : 매일 09:00 ~ 22:00</p>
+                    <p>신청 및 변경 : 매영업일 09:00 ~ 17:00</p>
+                </div>
+                
+                
+                    
+    
+    
+    
+    
+    <!----------------------------------->
+    <!----------CMS 이용약관---------->
+    <!----------------------------------->
+    <!-- CMS 약관 -->
+    <div class="tableWrap">
+        <div class="secTitBox02">
+            <h3>개인정보 수집 및 이용동의</h3>
+        </div>
+    
+        <ul class="agreeList reqChk">
+            <li class="agreeHead">
+                <div>개인정보 수집 및 이용동의<span class="txtR" id="reqChk01_n">미확인</span><span class="txtBl" id="reqChk01_y" style="display: none;">확인</span></div>
+                <button type="button" title="개인정보 수집 및 이용동의 자세히보기" onclick="javascript:goPdfViewer('20220414000010','reqChk01');" class="btnWh01">자세히보기</button>
+            </li>
+            <li class="agreeBody">
+                <div>- [필수] 개인정보 수집 및 이용동의</div>
+                <ul class="inpRadio">
+                    <li><input type="radio" id="chk01-1" name="check01" checked="checked"> <label for="chk01-1">동의하지않음</label></li>
+                    <li class="chk"><input type="radio" id="chk01-2" name="check01">
+                        <label for="chk01-2">동의함</label></li>
+                </ul>
+            </li>
+            <li class="agreeBody">
+                <div>- [필수] 고유식별정보 수집·이용동의</div>
+                <ul class="inpRadio">
+                    <li><input type="radio" id="chk02-1" name="check02" checked="checked"> <label for="chk02-1">동의하지않음</label></li>
+                    <li class="chk"><input type="radio" id="chk02-2" name="check02">
+                        <label for="chk02-2">동의함</label></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <ul class="agreeList reqChk">
+            <li class="agreeHead">
+                <div>개인정보 제 3자 제공동의<span class="txtR" id="reqChk02_n">미확인</span><span class="txtBl" id="reqChk02_y" style="display: none;">확인</span></div>
+                <button type="button" title="개인정보 제 3자 제공동의 자세히보기" onclick="javascript:goPdfViewer('20220414000012','reqChk02');" class="btnWh01">자세히보기</button>
+            </li>
+            <li class="agreeBody">
+                <div>- [필수] 개인정보 제 3자 제공동의</div>
+                <ul class="inpRadio">
+                    <li><input type="radio" id="chk03-1" name="check03" checked="checked"> <label for="chk03-1">동의하지않음</label></li>
+                    <li class="chk"><input type="radio" id="chk03-2" name="check03">
+                        <label for="chk03-2">동의함</label></li>
+                </ul>
+            </li>
+            <li class="agreeBody">
+                <div>- [필수] 고유식별정보 제3자 제공동의</div>
+                <ul class="inpRadio">
+                    <li><input type="radio" id="chk04-1" name="check04" checked="checked"> <label for="chk04-1">동의하지않음</label></li>
+                    <li class="chk"><input type="radio" id="chk04-2" name="check04">
+                        <label for="chk04-2">동의함</label></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <div class="txtBox">
+            <p class="rfrnc">
+                <b>출금이체 동의 여부 및 해지 사실 통지안내</b>
+            </p>
+            <p>CMS 이용약관에 따라 은행 등 금융회사 및 금융결제원은 CMS 제도의 안정적 운영을 위하여 고객의 (은행 등
+                금융회사 및 이용기관 보유) 연락처 정보를 활용하여 문자메시지,유선 등으로 고객의 출금이체 동의여부 및 해지사실을 통지할 수
+                있습니다.</p>
+        </div>
+    </div>
+    
+    
+                <div class="subBtnWrap">
+                    <button type="button" title="본인확인" class="lone_ok" id="btn1">본인확인</button>
+                </div>	
+    
+                </div>
+		</div>
+	</article>
+
+</section>
+<!-- // section -->
+
+<!-- // footer -->
+<footer>
+	<script>
+	$(document).ready(function(){ 
+		$('footer').load('../public/inc/footer.html'); 
+	});
+	</script>
+</footer>
+
+<script src="../public/js/common.js"></script>
+
+<!-- footer // -->
+
+<!-- s : 개인(신용)정보 제3자 제공동의서(비여신·여신 공통) : 아래의 div 태그 include시 위치는 동일하게 footer 아래에 -->
+<div class="Acuon-Modal agreement1_3" rel="개인(신용)정보 제3자 제공동의서(비여신·여신 공통)약관이미지">
+	<div class="modal-type02">
+		<!-- <a href="javascript:void(0);" onclick="modalOff();">닫기</a> -->
+		<dl>
+			<dt>개인(신용)정보 제3자 제공동의서(비여신·여신 공통)</dt>
+			<dd>
+				<div>
+					<img src="../public/img/agree/agreement1_3.jpg" alt="개인(신용)정보 제3자 제공동의서(비여신·여신 공통)">
+					
+				</div>
+				<p class="subBtnWrap">
+					<button type="button" onclick="modalOff();" title="닫기" class="lone_ok">닫기</button>
+				</p>
+			</dd>
+		</dl>
+	</div>
+</div>
+<!-- e : 개인(신용)정보 제3자 제공동의서(비여신·여신 공통) : 아래의 div 태그 include시 위치는 동일하게 footer 아래에 -->
+
+
+</body>
+</html> 

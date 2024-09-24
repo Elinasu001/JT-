@@ -1,0 +1,92 @@
+<!--%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%-->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<!-- %@ include file="./public/inc/common.jsp" %-->
+	<title>JT 저축은행</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<link rel="stylesheet" type="text/css" href="../public/css/reset.css?v=002" />
+	<link rel="stylesheet" type="text/css" href="../public/css/common.css?v=002" />
+	<link rel="stylesheet" type="text/css" href="../public/css/slick.css" />
+	<script src="../public/js/jquery.min.js"></script>
+	<script src="../public/js/slick.js"></script>
+	<script src="../public/js/common.js"></script>
+
+</head>
+<body>
+
+<!-- // header -->
+<header>
+	<div>
+		<h1><a href="/"><img src="../public/img/logo.png" alt="JT저축은행" /></a></h1>
+
+		<a href="javascript:callgnb();" alt="전제메뉴 보기" >
+			<span></span>
+			<span></span>
+			<span></span>
+		</a>
+
+	</div>
+</header>
+<!-- header // -->
+
+<!-- // Aside -->
+<div class="Aside">
+	<script>
+		$(document).ready(function(){ 
+			$('.Aside').load('../public/inc/nav.html'); 
+		});
+	</script>
+</div>
+<!-- Aside // -->
+
+<div id="main">
+	<section>
+		
+		<article class="ContentWrap">
+
+			<div class="subPage-Tit">
+				<h2>경영이념</h2>
+				<p>고객의 마음 속에 First, JT저축은행</p>
+				<ul>
+					<li><a href="#">JT의 가치</a></li>
+					<li><a href="#">ESG경영</a></li>
+					<li><a href="#">윤리경영</a></li>
+					<li class="on"><a href="#">브랜드(CI)</a></li>
+				</ul>
+			</div>
+			
+			<div class="call-admin">
+				<div>
+					<div class="brand_CI">
+						<div class="company_top">
+							<p><span>Brand Logo</span></p>
+							<hr>
+							<span>고객님을 향한 진심 어린 자세와 믿고 거래할 수 있는 저축은행을 표현하였습니다.</span>
+						</div>	
+						<span><img src="../public/img/JT_Brand_logo.png" alt="JT 저축은행 브랜드 로고 이미지"></span>
+					</div>
+					
+
+					<div class="brand_CI">
+						<div class="company_top">
+							<p><span>Symbol Mark</span></p>
+							<hr>
+							<span>심벌마크는 다양한 변화에 유연하고 신속하게 대처하여 어떠한 경우라도 진심과 성실함을 잃지 않고 <br>도전을 거듭하여 건강한 미래를 만들겠다는 저희 J 트러스트 그룹의 강한 기업이념을 표현하고 있습니다.</span>
+						</div>	
+						<span><img src="../public/img/JT_Symbol_mark.png" alt="JT 저축은행 심볼 마크 이미지"></span>
+					</div>
+				</div>
+			</div>
+	
+		</article>
+	
+	</section>
+</div>
+<!-- main // -->
+
+</body>
+</html>

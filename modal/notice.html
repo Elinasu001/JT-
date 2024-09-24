@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>JT 저축은행</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" type="text/css" href="../public/css/reset.css" />
+<link rel="stylesheet" type="text/css" href="../public/css/common.css" />
+<link rel="stylesheet" type="text/css" href="../public/css/common01.css" />
+<link rel="stylesheet" type="text/css" href="../public/css/footer.css" />
+
+<script src="../public/js/jquery.min.js"></script>
+<script src="../public/js/common.js"></script>
+<script>
+	$(document).ready(function(){ 
+	  var fileTarget = $('#file'); 
+	  fileTarget.on('change', function(){ // 값이 변경되면
+		  var cur=$(".filebox input[type='file']").val();
+		$(".upload-name").val(cur);
+	  }); 
+	}); 
+</script>
+<style>
+	.table-St > table th, .table-St > table td { padding:10px; }
+	.inpBox03 select, .inpBox03 input[type="text"] { width:100%; }
+	.table-St .inpBox03>div.filebox { width:100%; }
+
+	.filebox input[type="file"] { position:absolute; width:0; height:0; padding:0; overflow:hidden; border:0; }
+
+	.filebox label { display:inline-block; padding:10px 20px; color:#999; vertical-align:middle; background:#fdfdfd; cursor:pointer; border:solid 1px #ebebeb; border-radius:5px; }
+
+
+	/* named upload */
+	.filebox .upload-name {
+	  display: inline-block;
+	  height: 35px;
+	  font-size:18px; 
+	  padding: 0 10px;
+	  vertical-align: middle;
+	  background-color: #f5f5f5;
+	  border: 1px solid #ebebeb;
+	  border-radius: 5px;
+
+	}
+</style>
+</head>
+
+<body>
+<!-- // header -->
+<header>
+	<div>
+		<h1><a href="./index.jsp"></a></h1>
+		<nav>
+			<script>
+				$(document).ready(function(){ 
+					$('nav').load('../public/inc/nav.html'); 
+				});
+			</script>
+		</nav>
+	</div>
+</header>
+<!-- header // -->
+
+<!-- // section -->
+<section class="SubPage-bg04">
+
+	<article class="Path PathBg">
+		<div>
+			<a href="/">Home</a><span class="bullet_right">→</span><a href="/">고객센터</a><span class="bullet_right">→</span><a href="/">이용약관/자료실</a>
+		</div>
+	</article>
+
+	<article class="ContentWrap">
+
+		<div class="Sub-Title subTitBg">
+			<h2>이용약관/자료실<br /><span>JT저축은행의 상품별 이용약관을 확인하실 수 있습니다.</span></h2>
+		</div>
+
+		<div class="call-admin">
+			<div>
+				<div class="tableWrap">
+				
+					<div class="table-St th-bg th-bb td-bb th-br td-pdl40 th-pdl40">
+						<table summary="문서구분, 작성자, 생년월일, 핸드폰번호, 이메일, 회신방식, 제목, 내용, 인증코드로 이루어진 일반상담신청 기본정보 입력표">
+							<caption>문서구분, 작성자, 생년월일, 핸드폰번호, 이메일, 회신방식, 제목, 내용, 인증코드로 이루어진 일반상담신청 기본정보 입력표</caption>
+							<colgroup>
+								<col width="15%">
+								<col width="*">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="col"><label for="sel01-1">게시판</label></th>
+									<td class="inpBox03">
+										<ul>
+											<li>
+												<select id="sel01-1" title="게시판 종류">
+													<option value="1">업무일지</option>
+													<option value="2">공지사항</option>
+												</select>
+											</li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<th scope="col"><label for="ipt02-1">제목</label></th>
+									<td class="inpBox03">
+										<input type="text" id="ipt02-1" name="ipt02-1" placeholder="">
+									</td>
+								</tr>
+								<tr>
+									<th scope="col"><label for="ipt03-1">말머리</label></th>
+									<td class="inpBox03">
+										<input type="text" id="ipt03-1" name="ipt03-1" placeholder="">
+									</td>
+								</tr>
+								<tr>
+									<th scope="col"><label for="ipt03-1">파일</label></th>
+									<td class="inpBox03 inpTel li3">
+										<div class="filebox">
+											<input class="upload-name" value="첨부파일" placeholder="첨부파일" disabled>
+											<label for="file">파일찾기</label> 
+											<input type="file" id="file">
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="col"><label for="ipt04">회신방식</label></th>
+									<td class="inpBox03">
+										<ul class="inpRadio">
+											<li>
+												<input type="radio" id="ipt04-1" name="ipt04-1" title="회신방식 이메일" placeholder="입력해주세요.">
+												<label for="ipt04-1">이메일</label>
+											</li>
+											<li>
+												<input type="radio" id="ipt04-2" name="ipt04-2" title="회신방식 전화" placeholder="입력해주세요.">
+												<label for="ipt04-2">전화</label>
+											</li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<th scope="col"><label for="ipt06-1">내용</label></th>
+									<td class="inpBox03 pdr40" style="padding-right:40px;">
+										<textarea>									!!에디터 적용 영역 
+
+
+
+
+
+
+
+
+										</textarea>
+									</td>
+								</tr>
+								<tr>
+									<th scope="col"><label for="ipt07">공지 등록하기</label></th>
+									<td class="inpBox03">
+										<ul class="inpRadio">
+											<li>
+												<input type="radio" id="ipt04-1" name="ipt04-1" title="회신방식 이메일" placeholder="입력해주세요.">
+												<label for="ipt04-1">이메일</label>
+											</li>
+											<li>
+												<input type="radio" id="ipt04-2" name="ipt04-2" title="회신방식 전화" placeholder="입력해주세요.">
+												<label for="ipt04-2">전화</label>
+											</li>
+										</ul>
+									</td>
+								</tr>
+				
+
+
+							
+							</tbody>
+						</table>
+					</div>
+
+					<div class="txtBox">
+						<p class="hypn">작성 완료 후 14일 이내 답변을 드리겠습니다.</p>
+						<p class="hypn">본 페이지는 정보통신망 이용촉진 및 정보보호 등에 관련 법률에 의거하여 개인정보를 송수신할 때 암호화 함으로써 개인정보를 취급함에 있어서 안전하게 보호합니다.</p>
+					</div>
+				</div>
+
+				<div class="subBtnWrap">
+					<button type="button" title="취소" class="lone_cancel" onclick="modalOn('test01');">취소</button>
+					<button type="button" title="등록" class="lone_ok" onclick="modalOn('test02');">등록</button>
+				</div>
+			</div>
+		</div>
+
+	</article>
+
+</section>
+<!-- // section -->
+
+<!-- // footer -->
+<footer>
+	<script>
+	$(document).ready(function(){ 
+		$('footer').load('../public/inc/footer.html'); 
+	});
+	</script>
+</footer>
+<!-- footer // -->
+</body>
+</html> 

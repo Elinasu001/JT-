@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>JT 저축은행</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" type="text/css" href="../public/css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/common.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/common01.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/common02.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/footer.css" />
+	
+	<script src="../public/js/jquery.min.js"></script>
+	<script src="../public/js/common.js"></script>
+</head>
+
+<body>
+<!-- // header -->
+<header>
+	<div id="gnb">
+		<h1><a href="./index.jsp"></a></h1>
+		<nav>
+			<script>
+				$(document).ready(function(){ 
+					$('nav').load('../public/inc/nav.html'); 
+				});
+			</script>
+		</nav>
+	</div>
+</header>
+<!-- header // -->
+
+<!-- // section -->
+<section class="SubPage-bg02">
+
+	<article class="Path PathBg">
+		<div>
+			<a href="/">Home</a><span class="bullet_right">→</span><a href="/">예금상품</a><span class="bullet_right">→</span><a href="/">예금금리</a>
+		</div>
+	</article>
+
+	<article class="ContentWrap">
+
+		<div class="Sub-Title subTitBg">
+			<h2>예금금리<br /><span>상품별, 영업점별, 예금 및 적금 금리정보입니다.</span></h2>
+		</div>
+
+		<ul class="tabWrap li4"><!--li2, li3, li4, li5 로 갯수 조절-->
+			<li><a>목돈굴리기 상품</a></li> 
+			<li class="on"><a>목돈모으기 상품</a></li>
+			<li><a>입출금자유상품</a></li>
+			<li><a>ISA/퇴직연금예금상품</a></li>
+		</ul>
+
+		<div class="call-admin">
+			<div>
+				<div class="secTitBox">
+					<div>정기적금</div>
+					<span>2021년 8월 11일 기준 (단위:%, 연, 세전)</span>
+				</div>
+				<div class="table-St last-Bnon th-bg td-bt th-br td-br tc">
+					<table summary="기간(개월), 지점별 적용이율, 만기후 이율, 중도해지이율로 구성되어 있는 정기적금 금리 안내표">
+						<caption>기간(개월), 지점별 적용이율, 만기후 이율, 중도해지이율로 구성되어 있는 정기적금 금리 안내표</caption>
+						<colgroup>
+							<col width="16%">
+							<col width="12%">
+							<col width="12%">
+							<col width="12%">
+							<col width="24%">
+							<col width="24%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col" rowspan="2">기간(개월)</th>
+								<th scope="col" colspan="3">적용이율</th>
+								<th scope="col" rowspan="2">만기후 이율</th>
+								<th scope="col" rowspan="2">중도해지이율</th>
+							</tr>
+							<tr class="th-bt">
+								<th scope="col">본점영업점(분당)</th>
+								<th scope="col">광주</th>
+								<th class="bor-r" scope="col">목포</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>6개월 이상 ~ 12개월 미만</td>
+								<td>2.0</td>
+								<td>2.0</td>
+								<td>2.0</td>
+								<td rowspan="3">
+									<ul>
+										<li class="hypn">1개월이내:예치시점 약정금리</li>
+										<li class="hypn">1개월초과:연0.1%</li>
+									</ul>
+									<p class="rfrnc">2019년 6월 30일 이전 가입고객 : 가입당시 보통예금 이율</p>
+								</td>
+								<td rowspan="3">
+									<ul>
+										<li class="hypn">1개월 미만: 0.5% (2021.08.10 이전 가입한 경우 0.10%)</li>
+										<li class="hypn">1개월 이상~6개월미만: 약정금리x50%</li>
+										<li class="hypn">6개월이상~12개월미만:약정금리x60%</li>
+										<li class="hypn">12개월이상:약정금리x70%</li>
+									</ul>
+									<p class="rfrnc">2019년 6월 30일 이전 가입고객 : 3개월미만-0.5%, 3개월이상-실 예치기간 적용금리 x 50%</p>
+								</td>
+							</tr>
+							<tr>
+								<td>6개월 이상 - 24개월 미만</td>
+								<td>2.2</td>
+								<td>2.2</td>
+								<td class="bor-r">2.2</td>
+							</tr>
+							<tr>
+								<td>24개월 이상 - 36개월 미만</td>
+								<td>2.3</td>
+								<td>2.3</td>
+								<td class="bor-r">2.3</td>
+							</tr>
+							
+						</tbody>
+					</table>
+				</div>	
+
+				<div class="secTitBox pdT60">
+					<div>자유적립예금</div>
+					<span>2021년 11월 30일 기준 (단위:%, 연, 세전)</span>
+				</div>
+				<div class="table-St last-Bnon th-bg td-bt th-br td-br tc">
+					<table summary="기간(개월), 지점별 적용이율, 만기후 이율, 중도해지이율로 구성되어 있는 자유적립예금 금리 안내표">
+						<caption>기간(개월), 지점별 적용이율, 만기후 이율, 중도해지이율로 구성되어 있는 자유적립예금 금리 안내표</caption>
+						<colgroup>
+							<col width="16%">
+							<col width="12%">
+							<col width="12%">
+							<col width="12%">
+							<col width="24%">
+							<col width="24%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col" rowspan="2">기간(개월)</th>
+								<th scope="col" colspan="3">적용이율</th>
+								<th scope="col" rowspan="2">만기후 이율</th>
+								<th scope="col" rowspan="2">중도해지이율</th>
+							</tr>
+							<tr class="th-bt">
+								<th scope="col">본점영업점(분당)</th>
+								<th scope="col">광주</th>
+								<th class="bor-r" scope="col">목포</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>3개월 이상 ~ 6개월 미만</td>
+								<td>1.20</td>
+								<td>1.20</td>
+								<td>1.20</td>
+								<td rowspan="5">0.5</td>
+								<td rowspan="5">
+									<ul>
+										<li class="hypn">3개월 미만: 0.5%</li>
+										<li class="hypn">3개월 이상: 실 예치기간 약정이율 1/2</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td>6개월 이상 - 12개월 미만</td>
+								<td>1.40</td>
+								<td>1.40</td>
+								<td class="bor-r">1.40</td>
+							</tr>
+							<tr>
+								<td>12개월 이상 - 24개월 미만</td>
+								<td>2.15</td>
+								<td>2.15</td>
+								<td class="bor-r">2.15</td>
+							</tr>
+							<tr>
+								<td>24개월</td>
+								<td>2.15</td>
+								<td>2.15</td>
+								<td class="bor-r">2.15</td>
+							</tr>
+							<tr>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+								<td class="bor-r">-</td>
+							</tr>
+							
+						</tbody>
+					</table>
+				</div>
+
+			</div>
+		</div><!-- call-admin -->
+
+	</article>
+
+</section>
+<!-- // section -->
+
+<!-- // footer -->
+<footer>
+	<script>
+	$(document).ready(function(){ 
+		$('footer').load('../public/inc/footer.html'); 
+	});
+	</script>
+</footer>
+<!-- footer // -->
+</body>
+</html>

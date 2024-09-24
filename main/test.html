@@ -1,0 +1,69 @@
+<!-- %@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"% -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>JT 历绵篮青</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" type="text/css" href="../public/css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/common.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/common01.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/common02.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/slick.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/fullpage.css" />
+	
+	<script src="../public/js/jquery.min.js"></script>
+	<script src="../public/js/slick.js"></script>
+	<script src="../public/js/common.js"></script>
+	<script src="../public/js/fullpage.js"></script>
+</head>
+
+<body>
+
+<!-- // header -->
+<header class="NavStyel0">
+	<div>
+		<h1><a href="./index.jsp" title="JT 历绵篮青"></a></h1>
+		<nav>
+			<script>
+				$(document).ready(function(){ 
+					$('nav').load('../public/inc/nav.html'); 
+				});
+			</script>
+		</nav>
+	</div>
+</header>
+<!-- header // -->
+
+<div id="main" class="scroll-container">
+<style>
+
+section { min-width:1280px; min-height:800px; padding-top:0px; overflow:hidden; box-sizing:border-box; border:5px #000 dashed; }
+section>div { height:100vh; width:100vw; position:relative; box-sizing:border-box; border:5px #f00 dotted; font-size:200px; }
+
+.section1 { background:#f00; overflow:hidden; }
+.section2 { background:#ff0; overflow:hidden; }
+.section3 { background:#0ff; overflow:hidden; }
+.section4 { background:#0f0; overflow:hidden; }
+.section5 { background:#00f; overflow:hidden; }
+
+</style>
+	<section class="section1"><div>A</div></section>
+	<section class="section2"><div>B</div></section>
+	<section class="section3"><div>C</div></section>
+	<section class="section4"><div>D</div></section>
+	<section class="section5"><div>E</div></section>
+	<section class="section6" style="height:100px;"><div>F</div></section>	
+</div>
+<script>
+/* fullscroll */
+new fullScroll({
+	displayDots: false,
+	dotsPosition: 'left',
+	animateTime: 0.7,
+	animateFunction: 'ease'
+});
+</script>
+
+</body>
+</html>

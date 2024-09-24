@@ -1,0 +1,146 @@
+<!--%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%-->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<!-- %@ include file="./public/inc/common.jsp" %-->
+	<title>JT 저축은행</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<link rel="stylesheet" type="text/css" href="../public/css/reset.css?v=002" />
+	<link rel="stylesheet" type="text/css" href="../public/css/common.css?v=002" />
+	<link rel="stylesheet" type="text/css" href="../public/css/slick.css" />
+	<script src="../public/js/jquery.min.js"></script>
+	<script src="../public/js/slick.js"></script>
+	<script src="../public/js/common.js"></script>
+	<script>
+
+	</script>
+</head>
+<body class="ft-fixLayout">
+
+<!-- // header -->
+<header>
+	<div>
+		<h1><a href="/"><img src="../public/img/logo.png" alt="JT저축은행" /></a></h1>
+
+		<a href="javascript:callgnb();" alt="전제메뉴 보기" >
+			<span></span>
+			<span></span>
+			<span></span>
+		</a>
+
+	</div>
+</header>
+<!-- header // -->
+
+<!-- // Aside -->
+<div class="Aside">
+	<script>
+		$(document).ready(function(){ 
+			$('.Aside').load('../public/inc/nav.html'); 
+		});
+	</script>
+</div>
+<!-- Aside // -->
+
+<div id="main">
+	<section>
+		
+		<article class="ContentWrap">
+
+			<div class="subPage-Tit">
+				<h2>CMS서비스</h2>
+				<p>JT저축은행이 제공하는 금융서비스입니다.</p>
+				<ul>
+					<li class="on"><a href="">CMS동의</a></li>
+					<li><a href="">CMS조회(신청 및 변경)</a></li>
+				</ul>
+			</div>
+			
+			<div class="call-admin">
+				<div>
+					<h2 class="sub-Tit">기본정보입력</h2>
+					<div class="inpWrap">
+						<label for="ipt01_01">성명</label>
+						<p>
+							<input type="text" name="ipt01_01" placeholder="한글만 입력해주세요." title="성명">
+						</p>
+					</div>	
+
+					<div class="inpWrap">
+						<label for="ipt02_01">주민등록번호</label>
+						<p class="inpX2">
+							<input type="tel" name="ipt02_01" placeholder="입력해주세요." title="주민등록번호 앞자리">
+							<span>-</span>
+							<input type="tel" name="ipt02_02" placeholder="입력해주세요." title="주민등록번호 뒷자리">
+						</p>
+					</div>	
+
+					<div class="txtBox mgT0">
+						<p class="rfrnc"><b>이용시간 안내</b></p>
+						<p>조회서비스 : 매일 09:00 ~ 22:00</p>
+						<p>신청 및 변경 : 매영업일 09:00 ~ 17:00</p>
+					</div>
+
+					<div class="agr_wrap mgT20">
+						<h2 class="sub-Tit">개인정보 수집 및 이용동의</h2>
+						<p class="allChk">
+							<input type="checkbox" id="allChk01" name="allChk01" title="약관전체동의">
+							<label for="allChk01">약관에 모두 동의합니다.</label>	
+						</p>
+						
+						<dl>
+							<dt><i>[필수]</i> 개인정보 수집 및 이용동의</dt>
+							<dd>
+								<ol class="subChk">
+									<li>
+										<input type="checkbox" id="subChk01_01" name="subChk01_01">
+										<label for="subChk01_01">[필수] 개인정보 수집 및 이용동의</label>
+									</li>
+									<li>
+										<input type="checkbox" id="subChk01_02" name="subChk01_02">
+										<label for="subChk01_02">[필수] 고유식별정보 수집·이용동의</label>
+									</li>
+								</ol>
+							</dd>
+						</dl>
+
+						<dl>
+							<dt><i>[필수]</i> 개인정보 제 3자 제공동의</dt>
+							<dd>
+								<ol class="subChk">
+									<li>
+										<input type="checkbox" id="subChk02_01" name="subChk02_01">
+										<label for="subChk02_01">개인(신용)정보 수집·이용 동의여부</label>
+									</li>
+									<li>
+										<input type="checkbox" id="subChk02_02" name="subChk02_02">
+										<label for="subChk02_02">[필수] 개인정보 제 3자 제공동의</label>
+									</li>
+								</ol>
+							</dd>
+						</dl>
+					</div>
+
+					<div class="txtBox">
+						<p class="rfrnc"><b>출금이체 동의 여부 및 해지 사실 통지안내</b></p>
+						<p>CMS 이용약관에 따라 은행 등 금융회사 및 금융결제원은 CMS 제도의 안정적 운영을 위하여 고객의 (은행 등 금융회사 및 이용기관 보유) 연락처 정보를 활용하여 문자메시지,유선 등으로 고객의 출금이체 동의여부 및 해지사실을 통지할 수 있습니다.</p>
+					</div>
+
+				</div>
+			</div>
+	
+		</article>
+	
+	</section>
+</div>
+<!-- main // -->
+
+<div class="ft-fixBtnWrap">
+	<a href="#" class="btn-normal">본인확인</a>
+</div>
+
+</body>
+</html>

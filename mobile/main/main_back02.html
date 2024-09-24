@@ -1,0 +1,392 @@
+
+<!--%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%-->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<!-- %@ include file="./public/inc/common.jsp" %-->
+	<title>JT 저축은행</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<link rel="stylesheet" type="text/css" href="../public/css/reset.css?v=002" />
+	<link rel="stylesheet" type="text/css" href="../public/css/common.css?v=002" />
+	<link rel="stylesheet" type="text/css" href="../public/css/slick.css" />
+	<script src="../public/js/jquery.min.js"></script>
+	<script src="../public/js/slick.js"></script>
+	<script src="../public/js/common.js"></script>
+	<script>
+		$(document).ready(function(){
+
+			//메인스크롤시 상단 메뉴바 action
+			$(window).scroll(function(){
+				if($(this).scrollTop() > 5){
+					$("header").removeClass("mainHeader");
+					$(".sublogo").show();
+					$(".mainlogo").hide();
+				}else{
+					$("header").addClass("mainHeader");
+					$(".sublogo").hide();
+					$(".mainlogo").show();
+				}
+			});
+		
+		
+		});
+	
+	</script>
+
+</head>
+<body>
+
+<!-- // header -->
+<header class="mainHeader">
+	<div>
+		<h1 class="mainlogo"><a href="/"><img src="../public/img/logo_white.png" alt="JT저축은행" /></a></h1>
+		
+		<h1 style="display:none;" class="sublogo"><a href="/"><img src="../public/img/logo.png" alt="JT저축은행" /></a></h1>
+
+		<a href="javascript:callgnb();" alt="전제메뉴 보기" >
+			<span></span>
+			<span></span>
+			<span></span>
+		</a>
+
+	</div>
+</header>
+<!-- header // -->
+
+
+<!-- // Aside -->
+<div class="Aside">
+	<script>
+		$(document).ready(function(){ 
+			$('.Aside').load('../public/inc/nav.html'); 
+		});
+	</script>
+</div>
+<!-- Aside // -->
+
+<div id="main">
+	<section class="section1">
+		<div>
+			<article class="section01banner">
+				
+				<div class="Banner01">
+					
+					<div class="Banner-Area ac-slider01">
+						<div><img src="../public/img/main_banner0102_m.png" alt="" /></div>
+						<div><img src="../public/img/main_banner0103_m.png" alt="" /></div>
+					<!-- 	<div><img src="../public/img/main_banner0101_m.png" alt="" /></div>
+						<div><img src="../public/img/main_banner0101_m.png" alt="" /></div> -->
+					</div>
+
+					<ul class="Banner01-bt">
+						<li>
+							<p>
+								<a href="#"><span>대출</span>간편하고 빠른대출</a>
+								<a href="#"><span>예금</span>비대면 계좌개설하기</a>
+							</p>
+						</li>
+						<li>
+							<a href="#"><b>JT저축은행 앱 다운받기</b></a>
+						</li>
+
+					</ul>
+
+				</div>
+
+			</article>
+			<!-- <article class="Linbanner">
+				<div>
+					<a href="#">
+						<span>JT저축은행 앱 다운받기</span><br />
+						한도조회부터 대출신청까지 편리하게
+						<i class="bullet_right">→</i>
+					</a>
+				</div>
+			</article> -->
+		</div>
+	</section>
+	
+	<section class="section2">
+		<div>
+			<dl class="main-inbox-layout">
+			<dt>
+				함께만들어가는 내일<p><b>JT 추천상품</b>을 만나보세요</p>
+				<div>
+					<a href="javascript:void();" title="Tab0201" class="Active">대출상품</a>
+					<a href="javascript:void();" title="Tab0202" >예금상품</a>
+				</div>
+			</dt>
+			<dd>
+			
+				<div class="Tab0201 banner2-area ac-slider02">
+					<div class="main_banner02 main_banner0201">
+						<a href="#">
+							<p>점프론 신용대출</p>
+							<p>최대 <span>6억원</span></p>
+							<p>연 12.81% ~ 18.30%</p>
+						
+						</a>
+					</div>
+
+					<div class="main_banner02 main_banner0202">
+						<a href="#">
+							<p>점프론 신용대출</p>
+							<p>최대 <span>6억원</span></p>
+							<p>연 12.81% ~ 18.30%</p>
+						
+						</a>
+					</div>
+
+					<div class="main_banner02 main_banner0203">
+						<a href="#">
+							<p>점프론 신용대출</p>
+							<p>최대 <span>6억원</span></p>
+							<p>연 12.81% ~ 18.30%</p>
+							
+						</a>
+					</div>
+					
+				</div>
+
+				<div class="Tab0202 banner2-area ac-slider02">
+					<div class="main_banner02 main_banner0201">
+						<a href="#">
+							<p>점프론 신용대출</p>
+							<p>최대 <span>6억원</span></p>
+							<p>연 12.81% ~ 18.30%</p>
+						
+						</a>
+					</div>
+
+					<div class="main_banner02 main_banner0202">
+						<a href="#">
+							<p>점프론 신용대출</p>
+							<p>최대 <span>6억원</span></p>
+							<p>연 12.81% ~ 18.30%</p>
+						
+						</a>
+					</div>
+
+					<div class="main_banner02 main_banner0203">
+						<a href="#">
+							<p>점프론 신용대출</p>
+							<p>최대 <span>6억원</span></p>
+							<p>연 12.81% ~ 18.30%</p>
+							
+						</a>
+					</div>
+					
+				</div>
+				
+			</dd>
+			</dl>
+		</div>
+	</section>
+
+	<section class="section3">
+		<div>
+			<dl class="main-inbox-layout">
+			<dt>
+				더 나은 미래, JT저축은행과 함께해요<p>미래를 위한 <b>특별한 약속</b></p>
+				<div>
+					<a href="javascript:void();" title="Tab0301" class="Active">캠페인</a>
+					<a href="javascript:void();" title="Tab0302" >ESG</a>
+				</div>
+			</dt>
+			<dd class="">
+				<div class="banner3-area Tab0301">
+					<div class="ac-slider03"">
+						<a href="#">
+							<ol>
+								<li><img src="../public/img/banner0302.png" alt="STOP CHILD ABUSE" /></li>
+								<li>
+									<p>학대로부터 안전한 세상에서 살 수 있도록</p>
+									<span>JT저축은행이 아동학대 방지 캠페인을 시작합니다.</span>
+								</li>
+							</ol>
+						</a>
+					</div>
+				</div>
+
+
+				<div class="banner3-area Tab0302">
+					<div class="ac-slider03">					
+						<a href="#">
+							<ol>
+								<li><img src="../public/img/banner0303.png" alt="ESG경영" /></li>
+								<li>
+									<p>ESG경영을 통해 아이들과 함께 나아가는 미래</p>
+									<span>JT저축은행이 앞장서겠습니다.</span>
+								</li>
+							</ol>
+						</a>
+					</div>
+				</div>
+
+				
+			</dd>
+			</dl>
+		</div>
+	</section>
+
+	<section class="section4">
+		<div>
+			
+			<div class="banner4-area">
+				<a href="#">
+					<img src="../public/img/icon_banner401.png" style="width:42px; height:42px" alt="금융계산기" />
+					<span>금융계산기</span>
+					복잡한 계산을 한번에
+				</a>
+				
+				<a href="#">
+					<img src="../public/img/icon_banner403.png" style="width:42px; height:42px" alt="영업점안내" />
+					<span>영업점안내</span>
+					영업지점 정보안내
+				</a>
+
+				<a href="#"> 
+					<img src="../public/img/icon_banner404.png" style="width:42px; height:42px" alt="다이렉트콜" />
+					<span>다이렉트콜</span>
+					상담을 편리하게
+				</a>
+
+				<a href="#">
+					<img src="../public/img/icon_banner402.png" style="width:42px; height:42px" alt="온라인상담" />
+					<span>온라인상담</span>
+					24시간 온라인상담
+				</a>
+			</div>
+			
+<!-- 
+			<div class="Notice">
+				<div>
+					<strong>공지사항</strong>
+					<p>코로나 1asdasdasdasd9 확진판정에 </p>
+				</div>
+			</div>
+
+			<div class="banner401-area">
+				<p>내 손 안의 금융, <span>JT저축은행 APP</span></p>
+			</div> -->
+
+			<!-- // footer -->
+			<footer>
+				<script>
+				$(document).ready(function(){ 
+					$('footer').load('../public/inc/footer.html'); 
+				});
+				</script>
+			</footer>
+			<!-- footer // -->
+
+		</div>
+	</section>
+</div>
+
+<script type="text/javascript">
+
+
+$(document).ready(function(){
+/* 배너 01 */
+	$('.ac-slider01').slick({
+		slide : 'div',
+		dots: false,
+		arrows : false,
+		prevArrow : "<a class='bullet_left' href='#'>Prev</a>",
+        nextArrow : "<a class='bullet_right' href='#'>Next</a>",
+		infinite: true,
+		speed: 500,
+		slidesToShow: 1,
+		autoplay: true,
+		autoplaySpeed : 5000,
+		pauseOnHover : true,
+		draggable : true,
+		adaptiveHeight: true
+	});
+
+/* 배너 02 */
+	$('.ac-slider02').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		dots: true,
+		arrows : false,
+		infinite: true,
+		prevArrow : "<a class='bullet_left' href='#'>Prev</a>",
+        nextArrow : "<a class='bullet_right' href='#'>Next</a>",
+		autoplay: false,
+		speed: 500,
+		autoplaySpeed : 5000,
+		pauseOnHover : true,
+		draggable : true,
+		centerMode : true,
+		focusOnSelect: true
+	});
+
+	$('.ac-slider22').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		dots: true,
+		arrows : true,
+		infinite: true,
+		prevArrow : "<a class='bullet_left' href='#'>Prev</a>",
+        nextArrow : "<a class='bullet_right' href='#'>Next</a>",
+		autoplay: true,
+		speed: 500,
+		autoplaySpeed : 5000,
+		pauseOnHover : true,
+		centerPadding : "100",
+		draggable : true,
+		centerMode : true,
+		focusOnSelect: true
+		
+	});
+
+/* 배너 03 */
+	$('.ac-slider03').slick({
+		slide : 'div',
+		dots: false,
+		arrows : false,
+		infinite: true,
+		speed: 500,
+		slidesToShow: 1,
+		slidesToScroll : 1,
+		autoplay: false,
+		autoplaySpeed : 5000,
+		pauseOnHover : true,
+		draggable : true,
+		prevArrow : "<a class='bullet_left' href='#'>Prev</a>",
+        nextArrow : "<a class='bullet_right' href='#'>Next</a>",
+		adaptiveHeight: true
+	});
+	$('.ac-slider32').slick({
+		slide : 'div',
+		dots: true,
+		arrows : true,
+		infinite: true,
+		speed: 500,
+		slidesToShow: 1,
+		slidesToScroll : 1,
+		autoplay: true,
+		autoplaySpeed : 5000,
+		pauseOnHover : true,
+		draggable : true,
+		prevArrow : "<a class='bullet_left' href='#'>Prev</a>",
+        nextArrow : "<a class='bullet_right' href='#'>Next</a>",
+		adaptiveHeight: true
+	});
+});
+</script>
+
+<script>
+/* fullscroll */
+new fullScroll({
+	displayDots: false,
+	dotsPosition: 'left',
+	animateTime: 0.7,
+	animateFunction: 'ease'
+});
+</script>

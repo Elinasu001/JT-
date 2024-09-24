@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>JT 저축은행</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" type="text/css" href="../public/css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/common.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/common01.css" />
+	<!-- <link rel="stylesheet" type="text/css" href="../public/css/common02.css" /> -->
+	<link rel="stylesheet" type="text/css" href="../public/css/footer.css" />
+	
+	<script src="../public/js/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="../public/datepicker/jquery-ui.min.css">
+	<script src="../public/datepicker/jquery-1.12.4.js"></script>
+	<script src="../public/datepicker/jquery-ui.min.js"></script>
+	<script src="../public/datepicker/datepicker-ko.js"></script>
+    <script src="../public/w/js/FIN0100.js"></script>
+
+</head>
+
+<body>
+<!-- // header -->
+<div id="skip">
+	<a href="#loanRink">본문영역 바로가기</a>
+	<!-- <a href="#topRink">상단영역 바로가기</a> -->
+</div>
+<header>
+	<div id="gnb">
+		<h1><a href="./index.jsp"></a></h1>
+		<nav>
+			<script>
+				$(document).ready(function(){ 
+					$('nav').load('../public/inc/nav.html'); 
+
+				
+				
+
+					//이자계산기 평년, 윤년 선택시
+					$(".selYear").change(function(){
+						if($(".selYear option:selected").val() == "01"){
+							$("#ComYear").show();
+							$("#LeapYear").hide();
+						}else{
+							$("#LeapYear").show();
+							$("#ComYear").hide();
+						}
+					});
+
+					//이자계산하기 버튼 클릭시 
+					$(".btnBu03").click(function(){
+						$("#InterVal").show();
+					});
+					
+				});
+			</script>
+		</nav>
+	</div>
+</header>
+<!-- header // -->
+
+<!-- // section -->
+<section class="SubPage-bg03">
+
+	<article class="Path PathBg">
+		<div>
+			<a href="javascript:void(0);" onclick="javascript:goMainPage();">Home</a>
+			<span class="bullet_right">→</span>
+			<a href="javascript:void(0);">금융서비스</a>
+			<span class="bullet_right">→</span>
+			<a href="javascript:void(0);" onclick="javascript:doActionURL('/finance/FIN0100');">금융계산기</a>
+			<span class="bullet_right">→</span>
+			<a href="javascript:void(0);" onclick="javascript:doActionURL('/finance/FIN0100');">대출계산기</a>
+		</div>
+	</article>
+
+	<article class="ContentWrap">
+
+		<div class="Sub-Title subTitBg">
+			<h2>금융계산기<br />
+			<span>JT저축은행이 제공하는 금융서비스입니다.</span>
+			</h2>
+		</div>
+
+		<ul class="tabWrap li3" id="loanRink"><!--li2, li3, li4 로 갯수 조절-->
+			<li class="on"><a href="javascript:void(0);">대출계산기</a></li> 
+			<li><a href="javascript:void(0)" onclick="javascript:doActionURL('/finance/FIN0200');">예금계산기</a></li>
+			<li><a href="javascript:void(0)" onclick="javascript:doActionURL('/finance/FIN0300');">적금계산기</a></li> 
+		</ul>
+
+		<div class="call-admin">
+			<div>
+			<div class="tableWra">
+				<div class="table-St th-bg th-br th-bb td-bb th-pdl40 td-pdl40">
+					<table>
+						<caption>상환방법, 대출금, 이자율, 대출기간, 대출일, 약정일(납입일)에 대한 개인정보 입력</caption>
+						<colgroup>
+							<col width="15%">
+							<col width="*">
+						</colgroup>
+						<tbody>
+							<tr class="inp-HelpBox">
+								<th scope="row"><label for="rdio01">상환방법</label></th>
+								<td class="inpBox03">
+									<ul class="inpRadio" id="rdio01">
+										<li>
+											<input type="radio" id="ipt01-01" name="rdio01" checked="checked" title="만기일시상환" value="01">
+											<label for="ipt01-01">만기일시상환</label>
+											<button type="button" aria-controls="method01" title="만기일시상환 방법 대화상자보기"><img src="../public/img/icon_search.png"  alt="만기일시상환방법보기아이콘"></button>
+											
+										</li>
+										<li>
+											<input type="radio" id="ipt01-02" name="rdio01" title="원리금 균등분할상환" value="03">
+											<label for="ipt01-02">원리금 균등분할상환</label>
+											<button type="button" aria-controls="method02"  title="원리금 균등분할상환 방법 대화상자보기"><img src="../public/img/icon_search.png" alt="원리금 균등분할상환 방법보기아이콘"></button>
+										</li>
+										<li>
+											<input type="radio" id="ipt01-03" name="rdio01" title="원금 균등분할상환" value="02">
+											<label for="ipt01-03">원금 균등분할상환</label>
+											<button type="button" aria-controls="method03"  title="원금 균등분할상환 방법 대화상자보기"><img src="../public/img/icon_search.png" alt="원금 균등분할상환 방법보기아이콘"></button>
+											
+										</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="ipt02-01">대출금</label></th>
+								<td class="inpBox03">
+									<input type="text" id="ipt02-01" name="ipt02-01" title="대출금">
+									<span>원</span>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="ipt03-01">이자율</label></th>
+								<td class="inpBox03">
+									<input type="text" id="ipt03-01" name="ipt03-01" title="이자율" onkeyup="javascript:jaresu(this);">
+									<span>%</span>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="ipt04-01">대출기간</label></th>
+								<td class="inpBox03">
+									<input type="text" id="ipt04-01" name="ipt04-01" title="대출기간">
+									<span>개월</span>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="ipt05-01">대출일</label></th>
+								<td class="inpBox03 inpDate">
+									<input type="text" id="ipt05-01" name="ipt05-01" title="대출일" maxlength="10" placeholder="대출일 8자리 입력" oninput="autoHyphen(this)" maxlength="10"/>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="ipt06-01">약정일(납입일)</label></th>
+								<td class="inpBox03">
+									<select id="ipt06-01" title="납입일">
+										<option value="">약정일(납입일) 선택</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10</option>
+										<option value="11">11</option>
+										<option value="12">12</option>
+										<option value="13">13</option>
+										<option value="14">14</option>
+										<option value="15">15</option>
+										<option value="16">16</option>
+										<option value="17">17</option>
+										<option value="18">18</option>
+										<option value="19">19</option>
+										<option value="20">20</option>
+										<option value="21">21</option>
+										<option value="22">22</option>
+										<option value="23">23</option>
+										<option value="24">24</option>
+										<option value="25">25</option>
+										<option value="26">26</option>
+										<option value="27">27</option>
+										<option value="28">28</option>
+										<option value="29">29</option>
+										<option value="30">30</option>
+										<option value="31">31</option>
+									</select>
+									<span>일</span>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>			
+			</div>
+
+			<div class="subBtnWrap">
+				<button type="button" title="계산하기" class="lone_ok" id="btn1">계산하기</button>
+			</div>
+
+			<div class="tableWrap">
+				<div class="secTitBox02">
+					<h3>계산결과</h3>
+				</div>
+				<div class="table-St last-Bnon th-bg td-bt th-br td-br tc">
+					<table>
+						<caption>회차, 상환일자, 일수, 상환원금, 이자, 납입합계, 납입원금, 대출잔금 에 대한 계산결과표</caption>
+						<colgroup>
+							<col width="12.5%"><col width="12.5%"><col width="12.5%"><col width="12.5%"><col width="12.5%"><col width="12.5%"><col width="12.5%"><col width="12.5%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">회차</th>
+								<th scope="col">상환일자</th>
+								<th scope="col">일수</th>
+								<th scope="col">상환원금</th>
+								<th scope="col">이자</th>
+								<th scope="col">납입합계</th>
+								<th scope="col">납입원금</th>
+								<th scope="col">대출잔금</th>
+							</tr>
+						</thead>
+						<tbody id="calcList">
+							<tr>
+								<td colspan="8">계산결과가 없습니다.</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+
+			<div class="tableWrap">
+				<div class="secTitBox02">
+					<h3>이자계산기</h3>
+					<div class="inpBox03">
+						<select class="selYear" id="selYear" title="이자계산 평년, 윤년 선택">
+							<option value="01" checked="checked" title="평년">평년</option>
+							<option value="02" title="윤년">윤년</option>
+						</select>
+					</div>
+					<span>사용하신 일수만큼 이자가 산출됩니다.</span>
+					
+				</div>
+
+				<!-- // D: 평년 선택시 노출 -->
+				<div id="ComYear" class="table-St last-Bnon th-bg td-bt th-br td-br tc">
+					<table>
+						<caption>이자=이용금액x연이율÷365일x이용일수 에 관한 이자계산결과표</caption>
+						<colgroup>
+							<col width="*">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">이자 = 이용금액 x 연이율 ÷ 365일 x 이용일수</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td colspan="8" class="inpNum03">
+									<span>대출신청금액</span>
+									<input type="tel" name="pu-money" title="대출신청금액" id="pu-money">
+									<span>원   x</span>
+									<input type="tel" name="pu-percent" title="연이율" id="pu-percent"  onkeyup="javascript:jaresu(this);">
+									<span>% ÷ 365 x</span>
+									<input type="tel" name="pu-date" title="이용일수" id="pu-date">
+									<button class="btnBu03" id="btn2" title="평년이자 계산하기 버튼">계산</button>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!--  D: 평년 선택시 노출 // -->
+
+				<!-- // D: 윤년 선택시 노출 -->
+				<div id="LeapYear" style="display:none;" class="table-St last-Bnon th-bg td-bt th-br td-br tc">
+					<table>
+						<caption>이자=이용금액x연이율÷366일x이용일수 에 관한 이자계산결과표</caption>
+						<colgroup>
+							<col width="*">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">이자 = 이용금액 x 연이율 ÷ 366일 x 이용일수</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td colspan="8" class="inpNum03">
+									<span>대출신청금액</span>
+									<input type="tel" name="pu-money2" title="대출신청금액" id="pu-money2">
+									<span>원   x</span>
+									<input type="tel" name="pu-percent2" title="연이율" id="pu-percent2" onkeyup="javascript:jaresu(this);">
+									<span>% ÷ 366 x</span>
+									<input type="tel" name="pu-date2" title="이용일수" id="pu-date2">
+									<button class="btnBu03" id="btn3" title="윤년이자 계산하기 버튼">계산</button>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!--  D: 윤년 선택시 노출 // -->
+			</div>
+
+			<div id="p-result" class="txtBox02" style="display:none;" tabindex="0">
+				<p><b>이자 <span>00,000</span> 원</b><br/><br/>총 상환금액 <span>00,000,000</span> 원 (단위:숫자)</p>
+			</div>
+
+			<div class="txtBox">
+				<p>예) 100만원으로 이율 5% 이용하는 경우 1일이자 : 136원 / 10일이자 : 1,369원 / 30일이자 : 4,109 원</p>
+				<br>
+				<p class="rfrnc">계획적인 대출은 생활에 보탬이 될 수 있지만 무분별한 대출은 큰불행 을 안겨줄 수 있습니다.</p>
+				<p class="rfrnc">위 산출된 금액은 소비자 이해를 돕기위해 제작되었습니다. 정확한 금액을 원하시면 담당자에게 문의 바랍니다.</p>
+			</div>
+
+			</div>
+		</div>
+	</article>
+
+</section>
+<!-- // section -->
+
+<!-- // footer -->
+<footer>
+	<script>
+	$(document).ready(function(){ 
+		$('footer').load('../public/inc/footer.html'); 
+	});
+	</script>
+</footer>
+
+<div id="method01" aria-modal="true" rel="만기일시상환방법 설명" class="layerWrap">
+	<dl class="inp-HelpCont">
+		<dt>
+			<p><span></span>원금</p>
+			<p><span></span>이자</p>
+			<button type="button" class="closeBtn" title="만기일시상환방법 설명 닫기"><img src="../public/img/icon_close.png" alt="만기일시상환방법 설명 닫기 이미지"></button>
+		</dt> 
+		<dd>
+			<dl>
+				<dt>1.  만기일시상환</dt>
+				<dd>매월 이자만 불입하고 만기일에 원금전액 상환</dd>
+				<dd><img src="../public/img/20220613155642_0.jpg" alt="1.만기일시상환 : 매월 이자만 불입하고 만기일에 원금전액 상환"></dd>
+			</dl>
+		</dd>
+	</dl>
+</div>
+<div id="method02" aria-modal="true" rel="원리금 균등분할상환방법 설명" class="layerWrap">
+	<dl class="inp-HelpCont">
+		<dt>
+			<p><span></span>원금</p>
+			<p><span></span>이자</p>
+			<button type="button" class="closeBtn" title="원리금 균등분할상환방법 설명 닫기"><img src="../public/img/icon_close.png" alt="원리금 균등분할상환방법 설명 닫기 이미지"></button>
+		</dt> 
+		<dd>
+			<dl>
+				<dt>2.  원리금 균등분할상환</dt>
+				<dd>매월 원금과 이자를 불입하며 동일한 금액을 상환</dd>
+				<dd><img src="../public/img/20220613155642_1.jpg" alt="2. 원리금 균등분할상환 : 매월 원금과 이자를 불입하며 동일한 금액을 상환"></dd>
+			</dl>
+		</dd>
+	</dl>
+</div>
+<div id="method03" class="layerWrap" aria-modal="true" rel="원금 균등분할상환방법 설명">
+	<dl class="inp-HelpCont">
+		<dt>
+			<p><span></span>원금</p>
+			<p><span></span>이자</p>
+			<button type="button" class="closeBtn" title="원금 균등분할상환방법 설명 닫기"><img src="../public/img/icon_close.png" alt="원금 균등분할상환방법 설명 닫기 이미지"></button>
+		</dt> 
+		<dd>
+			<dl>
+				<dt>3. 원금 균등분할상환</dt>
+				<dd>매월 원금과 이자를 불입하며 원금만 동일한 금액을 상환(이자가 줄어드는 만큼 불입금이 감소)</dd>
+				<dd><img src="../public/img/20220613155642_2.jpg" alt="3. 원금 균등분할상환 : 매월 원금과 이자를 불입하며 원금만 동일한 금액을 상환(이자가 줄어드는 만큼 불입금이 감소)"></dd>
+			</dl>
+		</dd>
+	</dl>
+</div>
+
+<script src="../public/js/common.js"></script>
+
+<!-- footer // -->
+</body>
+</html>

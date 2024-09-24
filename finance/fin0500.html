@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>JT 저축은행</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" type="text/css" href="../public/css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/common.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/common01.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/common02.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/footer.css" />
+	
+	<script src="../public/js/jquery.min.js"></script>
+	
+</head>
+
+<body>
+<!-- // header -->
+<header>
+	<div id="gnb">
+		<h1><a href="./index.jsp"></a></h1>
+		<nav>
+			<script>
+				$(document).ready(function(){ 
+					$('nav').load('../public/inc/nav.html'); 
+				});
+			</script>
+		</nav>
+	</div>
+</header>
+<!-- header // -->
+
+<!-- // section -->
+<section class="SubPage-bg03">
+
+	<article class="Path PathBg">
+		<div>
+			<a href="/">Home</a><span class="bullet_right">→</span><a href="/">금융</a><span class="bullet_right">→</span><a href="/">금융서비스</a><span class="bullet_right">→</span><a href="/">발급서비스</a>
+		</div>
+	</article>
+
+	<article class="ContentWrap">
+
+		<div class="Sub-Title subTitBg">
+			<h2>발급서비스<br />
+			<span>JT저축은행이 제공하는 금융서비스입니다.</span>
+			</h2>
+		</div>
+
+		<div class="call-admin">
+			<div>
+
+                <div class="tableWrap">
+                    <div class="secTitBox02">
+                        <h3>정보 동의</h3> 
+                    </div>
+                    <div class="table-St th-bg th-br th-bb td-bb th-pdl40 td-pdl40">
+                        <table>
+                            <caption>성명, 본인인증, 주민등록번호, 핸드폰번호에 대한 정보 동의 입력표</caption>
+                            <colgroup>
+                                <col width="15%">
+                                <col width="*">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row"><label for="table_name">성명</label></th>
+                                    <td class="inpBox03">
+                                        <input type="text" id="table_name" name="table_name" title="성명 입력">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><label for="table-radio01">본인인증</label></th>
+                                    <td class="inpBox03">
+                                        <ul class="inpRadio">
+                                            <li>
+                                                <input type="radio" id="table-radio01-1" name="table-radio01" title="핸드폰인증" checked="checked" value="1">
+                                                <label for="table-radio01-1">핸드폰인증</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="table-radio01-3" name="table-radio01" title="공동인증" value="2">
+                                                <label for="table-radio01-3">공동인증</label>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr class="sel-radio01-3">
+                                    <th scope="row"><label for="RBRNO1">주민등록번호</label></th>
+                                    <td>
+                                        <form id="encForm" name="encForm" class="inpNum03">
+                                            <input type="tel" id="RBRNO1" name="RBRNO1" title="주민등록번호 앞자리 입력" maxlength="6" tk_security="true">
+                                            <b>-</b>
+                                            <input type="password" id="RBRNO2" name="RBRNO2" title="주민등록번호 뒷자리 입력" maxlength="7" data-enc="on" tk_security="true">
+                                        <input type="hidden" name="hid_key_data" value=""><input type="hidden" name="hid_enc_data" value=""><input type="hidden" name="E2E_RBRNO2" value=""></form>
+                                    </td>
+                                </tr>
+                                <tr class="sel-radio01-1">
+                                    <th scope="row"><label for="table-tel-1">핸드폰번호</label></th>
+                                    <td class="inpBox03 inpTel li4">
+                                        <ul>
+                                            <li>
+                                                <select id="table-tel-1" title="핸드폰 통신사">
+                                                    <option value="">통신사</option>
+                                                    <option value="1">SKT</option>
+                                                    <option value="2">KT</option>
+                                                    <option value="3">LGU+</option>
+                                                    <option value="5">알뜰폰 SKT</option>
+                                                    <option value="6">알뜰폰 KT</option>
+                                                    <option value="7">알뜰폰 LGU+</option>
+                                                    <option value="99">기타</option>
+                                                </select>
+                                            </li>
+                                            <li>
+                                                <select id="table-tel-2" title="핸드폰번호 앞 3자리">
+                                                    <option value="010">010</option>
+                                                </select>
+                                            </li>
+                                            <li>
+                                                <b>-</b>
+                                                <input type="tel" id="table-tel-3" name="table-tel-3" title="핸드폰 중간 4자리" maxlength="4">
+                                            </li>
+                                            <li>
+                                                <b>-</b>
+                                                <input type="tel" id="table-tel-4" name="table-tel-4" title="핸드폰 뒤 4자리" maxlength="4">
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                    
+    
+    
+    
+    
+    <!----------------------------------->
+    <!----------이동통신 이용약관---------->
+    <!----------------------------------->
+    <div class="tableWrap">
+        <div class="secTitBox02">
+            <h3>개인정보 수집 및 이용동의</h3>
+        </div>
+        <ul class="agreeList reqChk">
+            <li class="agreeHead">
+                <div>개인정보 수집 및 이용동의<span class="txtR" id="reqChk01_n">미확인</span><span class="txtBl" id="reqChk01_y" style="display: none;">확인</span></div>
+                <button type="button" title="개인정보 수집 및 이용동의 자세히보기" onclick="javascript:goPdfViewer('20220414000010','reqChk01');" class="btnWh01">자세히보기</button>
+            </li>
+            <li class="agreeBody">
+                <div>- [필수] 개인정보 수집 및 이용동의</div>
+                <ul class="inpRadio">
+                    <li><input type="radio" id="chk01-1" name="check01" checked="checked"> <label for="chk01-1">동의하지않음</label></li>
+                    <li class="chk"><input type="radio" id="chk01-2" name="check01">
+                        <label for="chk01-2">동의함</label></li>
+                </ul>
+            </li>
+            <li class="agreeBody">
+                <div>- [필수] 고유식별정보 수집·이용동의</div>
+                <ul class="inpRadio">
+                    <li><input type="radio" id="chk02-1" name="check02" checked="checked"> <label for="chk02-1">동의하지않음</label></li>
+                    <li class="chk"><input type="radio" id="chk02-2" name="check02">
+                        <label for="chk02-2">동의함</label></li>
+                </ul>
+            </li>
+        </ul>
+        
+        <ul class="agreeList reqChk">
+            <li class="agreeHead">
+                <div>※ [필수]이동통신사별 서비스 이용 약관에 대한 동의<span class="txtR" id="reqChk02_n">미확인</span><span class="txtBl" id="reqChk02_y" style="display: none;">확인</span></div>
+                <button type="button" title="이동통신사별 서비스 이용 약관에 대한 동의" class="btnWh01" onclick="javascript:goPdfViewer('20220414000018','reqChk02');">자세히보기</button>
+                <ul class="inpRadio">
+                    <li class="un_chk"><input type="radio" id="chk19-1" name="check19_1" checked="checked">
+                        <label for="chk19-1">동의하지않음</label></li>
+                    <li class="chk"><input type="radio" id="chk19-2" name="check19_1"> <label for="chk19-2">동의함</label></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+                
+    
+                <div class="subBtnWrap pdT0">
+                    <button type="button" id="btnFin01" title="본인인증내역 확인 레이어팝업" class="lone_ok">본인인증</button>
+                </div>	
+    
+                <div class="completeWrap">
+                    <dl class="type02">
+                        <dt><b>본 서비스는 대출완료 고객전용 서비스 입니다.</b></dt>
+                        <dd>대출신청하시겠습니까?</dd>	
+                        <dd><button type="button" title="대출신청" onclick="javascript:doActionURL('/loan/LOAN1700')">대출신청</button></dd>
+                    </dl>
+                </div>
+    
+                </div>
+		</div>
+	</article>
+
+</section>
+<!-- // section -->
+
+<!-- // footer -->
+<footer>
+	<script>
+	$(document).ready(function(){ 
+		$('footer').load('../public/inc/footer.html'); 
+	});
+	</script>
+</footer>
+
+<script src="../public/js/common.js"></script>
+
+<!-- footer // -->
+</body>
+</html> 

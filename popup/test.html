@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .timeline {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #ccc;
+            width: 600px;
+        }
+        .timeline-row {
+            display: flex;
+        }
+        .timeline-cell {
+            flex: 1;
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        .timeline-header {
+            background-color: #f0f0f0;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="timeline">
+        <div class="timeline-row timeline-header">
+            <div class="timeline-cell">1회</div>
+            <div class="timeline-cell">2회</div>
+            <div class="timeline-cell">중략</div>
+            <div class="timeline-cell">11회</div>
+            <div class="timeline-cell">12회</div>
+            <div class="timeline-cell">13회</div>
+        </div>
+        <div class="timeline-row">
+            <div class="timeline-cell">10월 25일</div>
+            <div class="timeline-cell">11월 25일</div>
+            <div class="timeline-cell">중략</div>
+            <div class="timeline-cell">8월 25일</div>
+            <div class="timeline-cell">9월 25일</div>
+            <div class="timeline-cell">9월 27일</div>
+        </div>
+    </div>
+</body>
+</html>

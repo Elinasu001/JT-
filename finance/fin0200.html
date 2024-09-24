@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>JT 저축은행</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" type="text/css" href="../public/css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/common.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/common01.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/common02.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/footer.css" />
+	
+	<script src="../public/js/jquery.min.js"></script>
+	
+</head>
+
+<body>
+<!-- // header -->
+<header>
+	<div id="gnb">
+		<h1><a href="./index.jsp"></a></h1>
+		<nav>
+			<script>
+				$(document).ready(function(){ 
+					$('nav').load('../public/inc/nav.html'); 
+				});
+			</script>
+		</nav>
+	</div>
+</header>
+<!-- header // -->
+
+<!-- // section -->
+<section class="SubPage-bg03">
+
+	<article class="Path PathBg">
+		<div>
+			<a href="/">Home</a><span class="bullet_right">→</span><a href="/">금융</a><span class="bullet_right">→</span><a href="/">금융서비스</a><span class="bullet_right">→</span><a href="/">금융계산기</a>
+		</div>
+	</article>
+
+	<article class="ContentWrap">
+
+		<div class="Sub-Title subTitBg">
+			<h2>금융계산기<br />
+			<span>JT저축은행이 제공하는 금융서비스입니다.</span>
+			</h2>
+		</div>
+
+		<ul class="tabWrap li3"><!--li2, li3, li4 로 갯수 조절-->
+			<li><a>대출계산기</a></li> 
+			<li class="on"><a>예금계산기</a></li>
+			<li><a>적금계산기</a></li> 
+		</ul>
+
+		<div class="call-admin">
+			<div>
+                <div class="tableWra">
+                    <div class="table-St th-bg th-bb td-bb th-br td-pdl40 th-pdl40">
+                        <table>
+                            <caption>예치금액, 예치기간, 이자율, 이자계산에 대한 예금계산표</caption>
+                            <colgroup>
+                                <col width="15%">
+                                <col width="*">
+                            </colgroup>
+                            <tbody>
+                                <tr class="inp-HelpBox">
+                                    <th scope="row"><label for="depositMoney">예치금액</label></th>
+                                    <td class="inpBox03">
+                                        <input type="text" id="depositMoney" name="depositMoney" title="예치금액">
+                                        <span>원</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><label for="depositMonth">예치기간</label></th>
+                                    <td class="inpBox03">
+                                        <input type="text" id="depositMonth" name="depositMonth" title="예치금액">
+                                        <span>개월</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><label for="depositProfitRate">이자율</label></th>
+                                    <td class="inpBox03">
+                                        <input type="tel" id="depositProfitRate" name="depositProfitRate" title="이자율" onkeyup="javascript:jaresu(this);">
+                                        <span>%</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><label for="interestType">이자계산</label></th>
+                                    <td class="inpBox03">
+                                        <ul class="inpRadio" id="interestType">
+                                            <li>
+                                                <input type="radio" id="ipt04-01" value="01" name="interestType" checked="checked" title="단리">
+                                                <label for="ipt04-01">단리</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="ipt04-02" value="02" name="interestType" title="복리">
+                                                <label for="ipt04-02">복리</label>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>	
+                </div>
+    
+            
+                <div class="subBtnWrap">
+                    <button type="button" title="계산하기" class="lone_ok" id="btn1">계산하기</button>
+                </div>
+    
+                <div class="tableWrap">
+                    <div class="secTitBox02">
+                        <h3>계산결과</h3>
+                    </div>
+                    <div class="table-St th-bg th-bb td-bb th-br td-pdl40 ">
+                        <table tabindex="0">
+                            <caption>원금, 기간, 금리, 이자, 비과세종합저축 가입 시 수령 받을 금액(세후), 일반세율 가입 시 수령 받을 금액(세후) 에 대한 계산결과표</caption>
+                            <colgroup>
+                                <col width="25%"><col width="*">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th class="tc" scope="row"><label for="spOriginalMoney">원금</label></th>
+                                    <td id="spOriginalMoney">원</td>
+                                </tr>
+                                <tr>
+                                    <th class="tc" scope="row"><label for="spDepositMonth">기간</label></th>
+                                    <td id="spDepositMonth">개월</td>
+                                </tr>
+                                <tr>
+                                    <th class="tc" scope="row"><label for="spDepositProfitRate">금리</label></th>
+                                    <td id="spDepositProfitRate">%</td>
+                                </tr>
+                                <tr>
+                                    <th class="tc" scope="row"><label for="spInterestMoney">이자</label></th>
+                                    <td id="spInterestMoney">원</td>
+                                </tr>
+                                <tr>
+                                    <th class="tc" scope="row"><label for="spResultMoney1">비과세종합저축 가입 시 수령 받을 금액(세후)</label></th>
+                                    <td id="spResultMoney1">원</td>
+                                </tr>
+                                <tr>
+                                    <th class="tc" scope="row"><label for="spResultMoney2">일반세율 가입 시 수령 받을 금액(세후)</label></th>
+                                    <td id="spResultMoney2">원</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+    
+                <div class="txtBox">
+                    <p class="rfrnc">위 이자금액은 저축은행 이자계산법으로 적용되어 포털사이트에서 확인 하신 이자금액이 다소 상이 할 수 있습니다.</p>
+                </div>
+    
+                </div>
+		</div>
+	</article>
+
+</section>
+<!-- // section -->
+
+<!-- // footer -->
+<footer>
+	<script>
+	$(document).ready(function(){ 
+		$('footer').load('../public/inc/footer.html'); 
+	});
+	</script>
+</footer>
+
+<script src="../public/js/common.js"></script>
+
+<!-- footer // -->
+</body>
+</html>

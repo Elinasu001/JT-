@@ -1,0 +1,879 @@
+@charset "UTF-8"; 
+
+.ContentWrap { width:100%; }
+
+/* Path 배경색 추가 부분 수정 */
+.Path.PathBg { height:140px; padding-top:80px; }
+
+/* sub title 배경색 추가 부분 수정 */
+.Sub-Title.subTitBg { height:225px; }
+.Sub-Title.subTitBg>h2 { color:#fff; font-weight:bold; font-size:4rem; width:1280px; margin:0 auto; text-align:center; }
+.Sub-Title.subTitBg>h2>span { color:#fff; font-size:1.8rem; padding-top:35px; display:block;}
+.ContentWrap>.Sub-Title.subTitBg{ padding-top:55px; }
+/* .ContentWrap>.Sub-Title.subTitBg>h2 { vertical-align:unset; } */
+
+/* sub page - 로케이션바 */
+.location { width:1280px; height:45px; margin:0 auto; background-color:#fff; }
+.location:after { content:""; clear:both; display:block; }
+.location>li { float:left; padding-right:35px; position:relative; }
+.location>li:before, .location>li:after { content:""; width:6px; height:1px; background-color:#CACACA; position:absolute; right:13px; }
+.location>li:before { transform:rotate(45deg); top:20px; }
+.location>li:after { transform:rotate(135deg); top:24px; }
+.location>li:last-child { padding-right:0; }
+.location>li:last-child:before, .location>li:last-child:after { display:none; }
+.location>li>a { font-size:1.5rem; line-height:45px; }
+.location>li:last-child>select { border:none; height:45px; }
+.location>li:last-child>select:focus-visible{ outline:none; }
+
+/* sub page - 텍스트만 있는 서브메인 */
+.sub01 { width:100%; height:460px; margin-bottom:100px; position:relative; }
+.sub01>.subTxt { height:300px; background:url("../img/sub_main_01.png")center center no-repeat; background-size:100%; position:relative; }
+.sub01>.subTxt>p { text-align:center; padding-top:80px; color:#fff; font-size:20px; }
+.sub01>.subTxt>h2 { text-align:center; padding-top:10px; color:#fff; font-size:45px; font-weight:700; }
+.sub01>.subList { width:1020px; height:230px; margin:0 auto; border-radius:15px; background-color:#fff; position:absolute; top:220px; left:50%; transform:translate(-50%,0); }
+.sub01>.subList:after { content:""; width:1020px; height:230px; display:block; border-radius:15px; box-shadow: 0px 25px 20px #F6F6F6; position:absolute; top:0; left:50%; transform:translate(-50%,0); }
+.sub01>.subList>ul { margin:45px 240px; }
+.sub01>.subList>ul:after { content:""; clear:both; display:block; }
+.sub01>.subList>ul>li { float:left; padding:80px 150px 0 0; text-align:center; position:relative; }
+.sub01>.subList>ul>li:nth-of-type(1) { background:url("../img/sub_list_icon_01.png")top 0 left 5px no-repeat; background-size:60px; }
+.sub01>.subList>ul>li:nth-of-type(2) { background:url("../img/sub_list_icon_02.png")top 0 left 10px no-repeat; background-size:60px; }
+.sub01>.subList>ul>li:nth-of-type(3) { background:url("../img/sub_list_icon_03.png")top 0 left 5px no-repeat; background-size:60px; }
+.sub01>.subList>ul>li:last-child { padding-right:0; }
+.sub01>.subList>ul>li:after { content:""; width:1px; height:80px; background-color:#CACACA; position:absolute; top:30px; right:75px; }
+.sub01>.subList>ul>li:last-child:after { display:none; }
+.sub01>.subList>ul>li>p { font-size:1.8rem; line-height:3rem; font-weight:normal }
+
+/* sub page - 버튼이 있는 서브메인 */
+.sub02 { width:100%; height:430px; background-color:#F6F6F6; margin-bottom:100px; }
+.sub02>div { padding-top:110px; }
+.sub02>div>p { text-align:center; margin-bottom:15px; }
+.sub02>div>p:nth-of-type(1) { font-size:3rem; line-height:4rem; }
+.sub02>div>p:nth-of-type(2) { font-size:1.8rem; line-height:3rem; font-weight:normal }
+.sub02>div>.btnWrap { text-align:center; }
+.sub02>div>.btnWrap>button{ width:200px; font-size:1.8rem; padding: 12px 0; border-radius:10px; font-weight:normal; cursor:pointer; }
+.sub02>div>.btnWrap>button:nth-of-type(1) { color:#fff; border:none; margin-right:20px; background-color:#425FAE; } 
+.sub02>div>.btnWrap>button:nth-of-type(2) { color:#222; border:1px solid #CACACA; background-color:#fff; }
+
+/* sub page - 상품안내 아코디언 */
+.accordianWrap { width:1280px; margin:0 auto; }
+.accordian>li { margin-bottom:30px; }
+.accordian>li:after { content:""; clear:both; display:block; }
+.accordian>li>h3 { width:100%; height:88px; padding-left:50px; line-height:88px; color:#222; background-color:#F2F4F6; border-radius:10px; font-size:2.5rem; }
+.accordian>li>h3:after { content:""; width:20px; height:20px; background:url("../img/icon_accordian_gray.png")center center no-repeat; background-size:16px; float:right; transform:rotate(180deg); display:block; position:absolute; top:34px; right:40px; }
+.accordian>li.on>h3 { color:#fff; background-color:#425FAE; }
+.accordian>li.on>h3:after { background:url("../img/icon_accordian_white.png")center center no-repeat; background-size: 16px; transform:rotate(0deg); }
+.accordian>li.on>.table01 { display:block; }
+.accordian>li>.table01 { display:none; }
+
+/* 저축은행소개 인사말 */
+.Content>div>ul>li:nth-of-type(1)>p,
+.Content>div>ul>li:nth-of-type(1)>p>span { line-height:1.4; font-size:4rem; }
+.Content>div>ul>li:nth-of-type(1)>span { line-height:1.65; font-size:1.8rem; font-weight:700; }
+
+.Content>div>ul>li:nth-of-type(2)>p { line-height:1.65 !important; word-break:normal; }
+.Content>div>ul>li:nth-of-type(2)>div { line-height:1.65; }
+.Content>div>ul>li:nth-of-type(2)>div>span { line-height:1.4; font-size:3rem; }
+
+/* 저축은행소개 인사말 배경 */
+.comWrap>ul>li.bgImg01>p:before { content:""; width:286px; height:286px; background: url("../img/background_circle_01.png") center center no-repeat; position:absolute; top:0; right:100px; }
+.comWrap>ul>li.bgImg02:before { content:""; width:223px; height:223px; background: url("../img/background_circle_02.png") center center no-repeat; opacity:0.4; position:absolute; bottom:60px; right:0; }
+.comWrap>ul>li.bgImg02:after { content:""; width:77px; height:77px; background-color:#04ADEE; opacity:0.02; border-radius:40px; position:absolute; bottom:50px; right:220px; }
+
+/* 인사말 */
+.comWrap { padding:40px 0px; display:inline-block; }
+.comWrap>ul { width:1280px; margin:0 auto; }
+.comWrap>ul > li:nth-of-type(1) { float:left; width:49%; text-align:left; }
+.comWrap>ul > li:nth-of-type(1) > p { font-size:5rem; font-weight:normal; }
+.comWrap>ul > li:nth-of-type(1) > p > span { font-size:5rem; font-weight:bold; }
+.comWrap>ul > li:nth-of-type(1) > span { font-size:24px; font-weight:normal; line-height:160%; }
+.comWrap>ul > li:nth-of-type(1)> hr { width:10%; border:0px; height:5px; background:#333;  margin:25px 0px; }
+.comWrap>ul > li:nth-of-type(2) { float:right; width:49%; }
+.comWrap>ul > li:nth-of-type(2) > p { text-align:justify; line-height:180%!important; font-size:1.6rem; }
+.comWrap>ul > li:nth-of-type(2) > div { text-align:right; font-size:1.6rem; padding-top:50px; }
+.comWrap>ul > li:nth-of-type(2) > div > span { font-size:2.8rem; font-weight:700; display:inline-block; padding-top:20px; height: 118px; }
+.comWrap>ul > li:nth-of-type(2) > div > span:after { content:''; display:block; width:150px; height:90px; margin-top:0px; background:url("../img/cont_company_sign_03.png") center center no-repeat; background-size:100% auto; }
+
+/* 저축은행소개 사업영역 */
+.ContentWrap>.Biz-area>ol { padding-bottom:110px; }
+.ContentWrap>.Biz-area>ol:last-child { padding-bottom:0px; }
+.ContentWrap>.Biz-area>ol>li>div>span { background:none; }
+.ContentWrap>.Biz-area>ol>li>div>p { line-height:1.65; font-size:1.8rem; top:10px; }
+.ContentWrap>.Biz-area>ol>li>div>p>span { line-height:1.65; font-size:1.6rem; }
+
+/* 저축은행소개 은행연혁 */
+.History { text-align:center; margin-top:100px;}
+.History>h4 { padding-bottom:80px; }
+.History>ol>li>ol>li>span { font-weight:700; }
+.History>ol>li>ol>.txtIndn { text-indent:62px; }
+
+/* 저축은행소개 조직도 */
+.organizWrap { width:1280px; margin:0 auto; }
+.organizWrap>h4 { text-align:center; }
+.organizWrap>.organiz { padding:80px 0; }
+
+/* 입찰정보 검색창 */
+.txtBox02 { width:100%; margin:0 auto; padding:40px 0; background-color:#F8F8F9; border-radius:10px; }
+.txtBox02 > p > b, .txtBox02 > p > b span { font-weight:700; color:#222222; font-size:1.8rem; }
+.txtInp { width:45%; height:60px; margin:0 auto; padding:10px 20px; background-color:#fff; border:1px solid #DADCE1; border-radius:8px; }
+.txtInp:after { content:""; clear:both; display:block; }
+.txtInp>label { width:100%; text-align:left; display:block; }
+.txtInp>label>select { float:left; width:25%; letter-spacing:-1px; height:40px; margin-right:20px; border:none; color:#666; }
+.txtInp>label>select:focus-visible { outline:none; }
+.txtInp>label>input { float:left; width:90%; height:40px; border:none; color:#666; font-weight:400; }
+.txtInp>label>input:focus-visible { outline:none; }
+.txtInp>label>button { float:right; width:36px; height:36px; background-color:transparent; cursor:pointer; border:none; }
+.txtInp>label>button>img { width:36px; height:36px; }
+.txtInp>label>select.full { width:100%; font-weight:400;}
+
+
+/* 입찰정보 게시판 페이지번호 */
+.boardPage { width:100%; margin:0 auto; padding:60px 0 40px 0; }
+.boardPage:after { content:""; clear:both; display:block; }
+.boardPage>li { /* float:left; */ display:inline-block; width:36px; height:36px; line-height:36px; margin-right:5px; text-align:center; cursor:pointer; }
+.boardPage>li:first-child { margin-right:10px; }
+.boardPage>li:nth-last-child(2) { margin-right:10px; }
+.boardPage>li:last-child { margin-right:0px; }
+.boardPage>li>button { border:none; background-color:transparent; cursor:pointer; }
+.boardPage>li>button>img { vertical-align:middle; }
+.boardPage>li:first-child>button>img { transform:rotate(180deg); }
+/* 웹접근성 tab키접근 수정으로 주석 
+.boardPage>li>span { width:36px; height:36px; line-height:36px; font-size:1.6rem; display:block; position:relative;}
+.boardPage>li.on>span { font-weight:700; }
+.boardPage>li.on>span:after { content:""; width:20px; border-bottom:1px solid #252525; position:absolute; bottom:0; left:50%; transform: translate(-50%,0); }
+ */.boardPage>li>a { width:36px; height:36px; line-height:36px; font-size:1.6rem; display:block; position:relative;}
+.boardPage>li.on>a { font-weight:700; }
+.boardPage>li.on>a:after { content:""; width:20px; border-bottom:1px solid #252525; position:absolute; bottom:0; left:50%; transform: translate(-50%,0); }
+
+
+/* 광고홍보 게시판 둥근테두리 텍스트 */
+.table-St tr td a span { width:76px; margin-right:20px; padding:5px; text-align:center; font-size:1.4rem; border-radius:20px; display:inline-block; }
+.titYw > a > span { color:#D0166D; border:1px solid #D0166D; }
+.titGr > a > span { color:#458607; border:1px solid #458607; }
+.titB > a > span { color:#0F5FFF; border:1px solid #0F5FFF; }
+.titB, .titYw, .titGr, .titB td, .titYw td, .titGr td { text-align:left !important; padding-left:40px !important; }
+
+/* 경영이념 JT의 가치 상단 텍스트*/
+.Content>.Manag-top>ul>li:nth-of-type(1) { width:100%; }
+.Content>.Manag-top>ul>li:nth-of-type(1)>p { line-height:1.4; }
+.Content>.Manag-top>ul>li:nth-of-type(1)>hr { width:5%; }
+
+/* 경영이념 JT의 가치 */
+.Manag-area>div.Manag_div2>dl>dt,
+.Manag-area>div.Manag_div2>dl>dt>span { line-height:1.4; font-size:3rem; }
+.Manag-area>div.Manag_div2>dl>dd { line-height:1.65; }
+.Manag-area>div.Manag_div2>dl>dd>p { line-height:1.65; margin:30px 0; font-size:1.8rem; font-weight:700; }
+.Manag-area>div.Manag_div2>dl>dd>p:after { width:6%; }
+.Manag-area>div:nth-of-type(3)>ul { padding:80px 295px 0; }
+.Manag-area>div:nth-of-type(3)>ul:after { content:""; clear:both; display:block; }
+.Manag-area>div:nth-of-type(3)>ul>li { float:left; width:260px; height:260px; margin-left:-30px; border:1px solid #F2F4F6; background-color:rgba(246,251,252,0.7); border-radius:260px; position:relative; }
+.Manag-area>div:nth-of-type(3)>ul>li>p { width:170px; height:170px; line-height:170px; text-align:center; font-size:2rem; font-weight:700; color:#fff; background-color:#3FA6FF; border-radius:170px; position:absolute; top:45px; left:45px; }
+.Manag-area>div.Manag_div4 { width:100%; line-height:1.65; text-align:center; display:inline-block; box-sizing:border-box; }
+.Manag-area>div.Manag_div4>p { font-size:1.8rem !important; line-height:1.65; margin:80px 0 40px; font-weight:700; position:relative; }
+.Manag-area>div.Manag_div4>p:after { position:absolute; left:48.6%; bottom:-20px; width:2.5%; border-bottom:4px #252525 solid; content:''; }
+
+.visionCnt { margin:150px 0;}
+.visionCnt > p { font-size:2.4rem; font-weight:700; color:#252525; margin-bottom:70px;}
+.visionCnt > ul { width:100%; display:table; margin-bottom:100px;  }
+.visionCnt > ul > li { width:24%; display:inline-block; text-align:center;}
+.visionCnt > ul > li > p { position:relative; width:240px; height:240px; background:linear-gradient(to left, #17C79D, #009DA0); border-radius:50%; margin:0 auto 30px; }
+.visionCnt > ul > li:nth-child(2) > p { background:linear-gradient(to left, #8ED2F1, #417EFF); }
+.visionCnt > ul > li:nth-child(3) > p { background:linear-gradient(to left, #00bcd4, #007BE2); }
+.visionCnt > ul > li:nth-child(4) > p { background:linear-gradient(to left, #9c27b0, #0063BC); }
+/* .visionCnt > ul > li:nth-child(4) > p { background:linear-gradient(to left, #945DF4, #4856E1); } */
+.visionCnt > ul > li > p:before { z-index:2; display:inline-block; content:''; position:absolute; background:#fff; top:50%; left:50%; transform:translate(-50%, -50%); width:65%; height:65%; background:#fff; border-radius:50%; box-shadow:2px 4px 6px 5px rgba(0,0,0,0.25); }
+.visionCnt > ul > li > p:after { z-index:1; display:inline-block; content:''; position:absolute; background:#fff; top:50%; left:50%; transform:translate(-50%, -50%); width:90%; height:90%; background:#fff; border-radius:50%; }
+.visionCnt > ul > li > p > img { z-index:3; width:25%; position:absolute; left:50%; top:50%; transform:translate(-50%, -50%);  }
+.visionCnt > ul > li > span { color:#fff; background:#4E6085; border-radius:25px; margin-bottom:20px; display:inline-block; padding:5px 15px; }
+.visionCnt > ul > li > b { display:block; font-size:2rem; font-weight:500; }
+
+
+/* 경영이념 윤리경영 상단 텍스트*/
+.ContentWrap .Manag-top { padding:30px 0; }
+.ContentWrap .Manag-top>ul { width:1280px; margin:0 auto; }
+.ContentWrap .Manag-top>ul>li { width:100%; text-align:left; }
+.ContentWrap .Manag-top>ul>li>p { line-height:1.4; font-size:4rem; }
+.ContentWrap .Manag-top>ul>li>p>span { line-height:1.4; font-size:4rem; font-weight:700; }
+.ContentWrap .Manag-top>ul>li>hr { width:3%; height:5px; margin:25px 0; border:0; background-color:#252525; text-align:left; }
+.ContentWrap .Manag-top>ul>li>span { line-height:1.65; font-size:1.7rem; font-weight:500; display: block; }
+
+/* 경영이념 윤리경영 아코디언 */
+.accordian02 { padding-top:60px; }
+.accordian02>li { padding-top:15px; position:relative; }
+.accordian02>li:first-child { padding-top:0px; }
+.accordian02>li:after { content:""; clear:both; display:block; }
+.accordian02>li>a:nth-of-type(1) { display:inline-block; width:100%; height:66px; line-height:66px; padding-left:40px; font-size:1.8rem; font-weight:700; text-align:left; color:#252525; background-color:#F8F8F8; border-radius:10px; }
+.accordian02>li>a:nth-of-type(1):after { content:""; width:36px; height:36px; background:url("../img/icon_accordian_gray.png")center center no-repeat; background-size:16px; float:right; transform:rotate(180deg); display:block; position:absolute; top:18px; right:30px; }
+.accordian02>li>a.Active:nth-of-type(1) { color:#fff; background-color:#0051A2; }
+.accordian02>li>a.Active:nth-of-type(1):after { background:url("../img/icon_accordian_white.png")center center no-repeat; background-size:16px; transform:rotate(0deg); top:15px;  }
+.accordian02>li>div:nth-of-type(1) { line-height:1.65; margin-top:15px; padding:20px 50px; font-weight:400;  text-align:left; background-color:#fff; border:1px solid #DADCE1; border-radius:10px; }
+.accordian02>li>div:nth-of-type(1)>b { line-height:1.65; font-weight:700; }
+.accordian02>li>div:nth-of-type(1)>span { line-height:1.65; font-size:1.8rem; font-weight:700; }
+.accordian02>li>div:nth-of-type(1) { display:none; }
+.accordian02>li>div.Active:nth-of-type(1) { display:block; }
+
+/* 경영이념 브랜드(CI) */
+.brand_CI { width:1280px; margin:0 auto; padding-bottom:60px; }
+.brand_CI>span{ text-align:left; display:inline-block; }
+
+/* 경영공시 요약공시 검색창,텍스트 */
+.txtBox03 { width:100%; margin:0 auto; padding:25px 0 25px; line-height:1.65; text-align:left; background-color:#F8F8F9; border-radius:10px;  }
+.txtBox03>.txtInp { margin-top:15px; }
+.txtBox03>p { line-height:1.65; padding-left:40px; text-indent:-10px; text-align:left; }
+.txtBox03>p:before { content:"·"; padding-right:6px; color:#252525; }
+.txtBox03>.txtInp~p:nth-of-type(1) { padding-top:25px; }
+.txtB, .txtB>b { color:#425FAE; }
+.txtBox03 b { font-weight:700; }
+.txtBox03>i { line-height:1.65; padding-left:40px; text-align:left; display:block; font-weight:400; }
+.txtBox03>div { line-height:1.65; text-align:center; }
+.txtBox03>span { line-height:1.65; padding-right:40px; text-align:right; display:block; }
+
+/* 경영공시 요약공시 표 상단 텍스트*/
+.secTitBox { margin:0 auto 10px; position:relative; }
+.secTitBox>div,
+.secTitBox>h3 { line-height:1.4; padding-bottom:10px; font-size:3rem; font-weight:700; text-align:left; }/*웹접근성 수정 h3추가*/
+.secTitBox>p { display:inline-block; width:100%; text-align:left; line-height:1.65; }
+.secTitBox>span { line-height:1.65; text-align:right; display:inline-block; width:100%;   }
+.secTitBox>b { font-size:3rem; line-height:1.65; font-weight:700; display:block; text-align:left;}
+
+/* 경영공시 정기공시 표 다운로드 아이콘 */
+.down>ul { width:64px; margin:0 auto; }
+.down>ul:after { content:""; clear:both; display:block; }
+.down>ul>li { display:inline-block; width:18px; height:19px; position:relative; }
+.down>ul>li:last-child { margin-right:0; }
+.down>ul>li>a { width:18px; height:19px; display:inline-block; }
+.down>ul>li>a>img { width:100%; height:100%; position:absolute; top:0; left:0; }
+
+/* 채용정보 직원채용 상단 텍스트 button */
+.txtBox03>p>.txtBtnArr { margin-left:20px; }
+.txtBtnArr { padding:7px 30px 7px 15px; font-size:1.4rem; vertical-align:bottom; color:#fff; background-color:#0051A2; border:none; border-radius:5px; cursor:pointer; position:relative; }
+.txtBtnArr:before { content:""; width:8px; height:1px; background-color:#fff; transform:rotate(45deg); position:absolute; top:11px; right:11px; }
+.txtBtnArr:after { content:""; width:8px; height:1px; background-color:#fff; transform:rotate(135deg); position:absolute; top:16px; right:11px; }
+.txtBtnArr.mgL0 { margin-left:0; }
+.txtBtn { margin-left:20px; padding:7px 15px; font-size:1.4rem; vertical-align:bottom; color:#fff; background-color:#2C6CF3; border:none; border-radius:5px; cursor:pointer; position:relative; }
+
+/* 채용정보 대출상담사채용 */
+.Manag-top~.txtBox03 { margin-top:10px; }
+
+/* 신용대출 파라솔(직장인) 상품설명 icon list */
+.listBoxWrap { width:1080px; height:250px; margin:0 auto; border-radius:15px; background-color:#fff; top:-50px; }
+.listBoxWrap:before { content:""; width:1080px; height:250px; border-radius:15px; box-shadow:0px 25px 20px #F6F6F6; position:absolute; top:0; left:0; }
+.listBoxWrap>ul { width:1080px; height:250px; }
+.listBoxWrap>ul>li { float:left; display:inline-block; line-height:1.65; font-size:1.6rem; text-align:center; position:relative; }
+.listBoxWrap>ul>li:after { content:""; width:1px; height:80px; background-color:#ccc; position:absolute; top:20px; right:0; }
+.listBoxWrap>ul>li:last-child:after { display:none; }
+.listBoxWrap>ul>li>b { font-weight:700; }
+.listBoxWrap>ul>li.lh14 { line-height:1.5; }
+.listBoxWrap.li4>ul { padding:50px 100px; }
+.listBoxWrap.li4>ul>li { width:calc(100% / 4); }
+.listBoxWrap.li4>ul>li>img { margin:0 50px 10px; }
+
+
+/* 신용대출 파라솔(직장인) info */
+.listTxtWrap { width:100%; margin:0 auto; padding-top:30px;}
+.listTxtWrap>p { line-height:1.4; font-size:4rem; text-align:center; }
+.listTxtWrap.customerimg >p { padding-top:278px; width:100%; line-height:1.4; font-size:4rem; text-align:center; background-image:url("../img/loan_service_icon_02.png"); background-repeat:no-repeat; background-position:top; }/*웹접근성 추가*/
+.listTxtWrap>p>span { line-height:1.4; font-size:4rem; font-weight:700; }
+.listTxtWrap>b { line-height:1.65; font-size:1.8rem; font-weight:700; padding-top:15px; text-align:center; display:block; }
+.listTxtWrap>span { line-height:1.65; padding-top:30px; text-align:center; display:block; }
+.listTxtWrap>span>b { font-weight:700; }
+.listTxtWrap>img { padding-bottom:40px; }
+.listTxtWrap.type01:before { content:''; display:inline-block; background:url("../img/dep_service_icon.png")center center no-repeat; width:240px; height:240px; margin-bottom:50px; }
+.listTxtWrap>ul { width:100%; padding-top:30px; text-align:center; display:inline-block; }
+.listTxtWrap>ul>li { display:inline-block; width:25%; margin-right:20px; }
+.listTxtWrap>ul.li4>li { width:calc(25% - 20px); }
+.listTxtWrap>ul>li:last-child { margin-right:0; }
+.listTxtWrap>ul>li button { width:100%; }
+
+.btnB01 { height:50px; font-size:1.8rem; color:#fff; background-color:#5A8FFF; border:none; border-radius:10px; cursor:pointer; }
+.btnG01 { height:50px; font-size:1.8rem; background-color:#F2F2F2; border:none; border-radius:10px; cursor:pointer; }
+
+/* 신용대출 아코디언 표 */
+.accordian02>li>div.sub-table { position:relative; clear:both; padding:10px 40px; background-color:#fff; font-weight:400;  }
+.sub-table>table { width:100%; border-spacing:0px; }
+.sub-table>table>thead>tr>th,
+.sub-table>table>tbody>tr>th {text-align:left; line-height:1.65; padding:18px 10px; border-bottom:1px #DADCE1 solid; vertical-align:middle; font-weight:500; }
+.sub-table>table>thead>tr>td,
+.sub-table>table>tbody>tr>td { line-height:1.65; padding:18px 10px; border-bottom:1px #DADCE1 solid; vertical-align:middle; color:#000; font-weight:400; }
+.sub-table>table>tbody>tr>td>span { color:#000; font-weight:400; }
+.sub-table>table>thead th { line-height:1.4; padding:18px 10px; border-bottom:1px solid #DADCE1; font-size:3rem; font-weight:700!important; }
+.sub-table>table>tbody>tr:last-child>th,
+.sub-table>table>tbody>tr:last-child>td { border-bottom:0;}
+
+.sub-table>table td, .sub-table>table td ul>li, .sub-table>table td ol>li { line-height:1.65; color:#000; font-weight:400; }
+.sub-table>table td>b, .sub-table>table td ul>li>a  { font-weight:500; }
+
+/**********0616***************************/
+.sub-table>ul { /* width:100%; */ /* display:block; */ }
+.sub-table>ul>li { width:100%; border-bottom:1px #DADCE1 solid; }
+.sub-table>ul>li:last-child { border-bottom:none; }/*웹접근성 수정*/
+.sub-table>ul.type2>li { display:flex; align-items:center; }/*웹접근성 수정*/
+.sub-table>ul.type2>li>div { width:85%; }/*웹접근성 수정*/
+.sub-table>ul>li>p { display:inline-block; width:15%; text-align:left; line-height:1.6; padding:18px 10px; vertical-align:middle; font-weight:500; }
+.sub-table>ul>li>div { display:inline-block; width:80%; padding:18px 10px; vertical-align:middle; color:#000; font-weight:400; }
+.sub-table>ul>li>div>span { color:#000; font-weight:400; }
+/* .sub-table>ul>li:first-child th { line-height:1.4; padding:18px 10px; border-bottom:1px solid #DADCE1; font-size:3rem; font-weight:700!important; }
+ */
+ .sub-table>ul>li>b { display:block; font-size:3rem; line-height:1.65; padding:18px 10px; } 
+ .sub-table>ul>li>b>img { width:100%; }
+
+.sub-table>ul>li>div, .sub-table>ul>li>div ul>li, .sub-table>ul>li>div ol>li { line-height:1.65; color:#000; font-weight:400; }
+.sub-table>ul>li>div>b, .sub-table>ul>li>div ul>li>a  { font-weight:500; }
+
+/**********0616***************************/
+
+/* 파라솔 직장인 신용대출 상환예시 그래프*/
+.graphColor { width:100%; }
+.graphColor:after { content:""; clear:both; display:block; }
+.graphColor>li { float:right; padding-left:25px; margin-left:20px; position:relative; }
+.graphColor>li:last-child { margin-left:0; }
+.bullet_color_01, .bullet_color_02, .bullet_color_03, .bullet_color_04, .bullet_color_05 { display:inline-block; width:18px; height:18px; margin-right:10px; font-size:0px!important; position:absolute; top:4px; left:0; }/*웹접근성 수정*/
+.bullet_color_01:before { content:""; width:18px; height:18px; background-color:#02599C; position:absolute; top:0; left:0; }/*웹접근성 수정*/
+.bullet_color_02:before { content:""; width:18px; height:18px; background:#004674 url("../img/graph_bg01.png"); position:absolute; top:0; left:0; }
+.bullet_color_03:before { content:""; width:18px; height:18px; background-color:#6DECFF; position:absolute; top:0; left:0; }/*웹접근성 수정*/
+.bullet_color_04:before { content:""; width:18px; height:18px; background-image:url("../img/bullet_color_02.png"); position:absolute; top:0; left:0; }/*웹접근성 수정*/
+
+
+/* .sub-table table>tbody>tr>td>img { float:left; width:50%; } 웹접근성 수정*/
+.sub-table>.type2>li>div>img { float:left; width:50%; }/*웹접근성 수정*/
+
+/* 장·단기 연체 정보 등록 안내 회색 배경 텍스트박스*/ 
+.txtBox04 { width:100%; margin:10px auto; padding:20px; background-color:#F8F8F9; border-radius:10px; line-height:1.65; }
+
+/* 햇살론(근로자) 상환예시 표 */
+.only { width:50% !important; }
+
+/* 햇살론(근로자) 대출신청절차 상담신청 버튼 */
+.txtBtnArr02 { text-indent:0px; margin-left:10px; padding:4px 20px 4px 10px; font-size:1.2rem; vertical-align:text-bottom; color:#252525; background-color:#F8F8F9; border:1px solid #DADCE1; border-radius:5px; cursor:pointer; position:relative; }
+.txtBtnArr02:before { content:""; width:8px; height:1px; background-color:#666; transform:rotate(45deg); position:absolute; top:8px; right:8px; }
+.txtBtnArr02:after { content:""; width:8px; height:1px; background-color:#666; transform:rotate(135deg); position:absolute; top:13px; right:8px; }
+.txtBtnArr02.mgL0 { margin-left:0; }
+.txtBtnArr02.mgL0.pdL0 { padding-left:10px!important;}
+
+/* JT스탁론 대출한도 표 */
+.graph_03 { margin:0 25% 10px; }
+
+/* 회전 정기예금 상품설명 icon list */
+.listBoxWrap.li3>ul { padding:50px 150px; }
+.listBoxWrap.li3>ul>li { width:calc(100% / 3); }
+.listBoxWrap.li3>ul>li>img { margin:0 80px 10px; }
+
+/* 회전 정기예금 금리안내 */ 
+.sub-table>.secTitBox>div { padding-top:20px; }
+.sub-table>.secTitBox>b { font-size:1.8rem; line-height:1.65; font-weight:700; padding-top:20px; display:block; }
+.sub-table>.secTitBox>p { float:unset; margin-bottom:20px; padding-left:0; }
+.sub-table>.secTitBox>span { margin-top:0; padding-bottom:0px; }
+
+/* 회전 정기예금 금리안내 표 */ 
+.sub-table>.table-St { margin-bottom:30px }
+.sub-table>.table-St~.txtBox { margin-top:-30px; }
+
+/* 대출신청절차안내 버튼 */
+.listTxtWrap>.txtBtnWrap { display:block; }
+.Sub-Title .txtBtnWrap { margin:20px 0 0!important; text-align:center; }/*웹접근성 수정*/
+.txtBtnWrap { margin-bottom:30px; }
+.txtBtnWrap > li { display:inline-block; width:100%; }
+.txtBtnWrap > li:last-child { margin-right:0!important; }
+.txtBtnWrap.li4>li { width:calc(25% -  20px); margin-right:20px; }
+.txtBtnWrap.li5>li { width:calc(20% -  20px); margin-right:20px; }
+
+.txtBtnWrap>li>button { width:100%; height:56px; padding:8px 30px; font-size:1.8rem; color:#fff; background-color:#0051A2; border:none; border-radius:5px; cursor:pointer; position:relative; }
+.txtBtnWrap>li>button>img { position:absolute; top:50%; left:50px; transform:translate(0,-50%); }
+.txtBtnWrap>li>button>p { color:#fff; padding:0 20px 0 70px; line-height:1.65; }
+
+.Sub-Title .txtBtnWrap>li>button { width:100%; height:56px; padding:8px 30px; font-size:1.8rem; color:#fff; background-color:transparent; border:solid 1px #fff; border-radius:5px; cursor:pointer; position:relative; }
+.Sub-Title .txtBtnWrap>li>button>img { position:absolute; top:50%; left:50px; transform:translate(0,-50%); }
+.Sub-Title .txtBtnWrap>li>button>p { color:#fff; padding:0 20px 0 70px; line-height:1.65; }
+.btnB02 { width:240px; height:70px; font-size:1.8rem; color:#fff; background-color:#0051A2; border:none; border-radius:5px; cursor:pointer; }
+
+/* 대출신청절차안내 진행순서 */
+.loanServiceWrap { width:100%; border:1px solid #DADCE1; border-radius: 10px; padding:36px 0; margin: 50px 0; }
+.loanService { width:90%; margin:0 auto; padding:50px 0 40px; }
+.loanServiceTitle{ width: 140px; background-color: #4b89fd; margin-left: 6%; }
+.loanServiceTitle>p{ text-align: center; font-size: 16px; color: white; line-height: 32px; }
+.loanService:after { content:""; clear:both; display:block; }
+.loanService>li { width:15%; display:inline-block; vertical-align: top; }
+.loanService>li>span { width:70px; height:70px; border:5px solid #0051A2; border-radius:70px; display:inline-block; }
+.loanService>li>span:before { content:""; width:100%; height:24px; /*background-color:#0051A2;*/ position:absolute; top:50%; right:-145%; transform:translate(0,-50%); background:url("../img/loanservice_arrow.png")center center no-repeat; background-size:24px 24px;}
+.loanService>li:last-child>span:before { width:0; height:0; }
+.loanService>li>span>img { width:36px; height:36px; transform:translate(0,30%); }
+.loanService>li>p { padding-top:15px; line-height: 1.3; }
+.loanService>li>p>b { font-size: 1.9rem; }
+.loanServiceinfo { padding-bottom:30px; }
+
+/* 대출신청절차안내 진행순서 */
+.loanService.full>li { width:100%; } 
+.loanService.full>li>ul { margin:0 auto; padding:0 20px; }
+.loanService.full>li>ul:after { content:""; clear:both; display:block; }
+.loanService.full>li>ul>li { display:inline-block; margin:20px 90px 0 0; }
+.loanService.full>li>ul>li:last-child { margin-right:0; }
+
+/* 대출신청 간편한도조회 */
+.secTitBox02 { width:100%; display:inline-block; }
+.secTitBox02>div,
+.secTitBox02>h3 { float:left; font-size:3rem; line-height:1.4; font-weight:700; margin-bottom:20px; }/*웹접근성 수정*/
+.secTitBox02>p { float:right; }
+.secTitBox02>span { float:right; margin-top:15px; }
+.secTitBox02>img { float:right; }
+.secTitBox02>button { float:left; margin-left:30px; line-height:1.4; }
+.secTitBox02 > .inpBox03 { width:auto; padding-left:25px; }
+
+/* 대출신청 간편한도조회 모두동의 */
+.borderChk>input[type="checkbox"] { width:22px; height:22px; outline:0; margin-right:10px; background-color:#fff; border:1px solid #DADCE1; position:relative; -webkit-appearance:none; -moz-appearance:none; appearance:none; }
+.borderChk>input[type="checkbox"]:checked:after { content:""; width:14px; height:14px; background-color:#0051A2; position:absolute; top:3px; left:3px; }
+.borderChk>label { vertical-align:super; }
+
+/* 신용대출신청 간편서류제출 본인확인방법 */
+.table-St .inpBox03>div { display:inline-block; width:10%; }
+.table-St .inpBox03>div~.inpRadio { display:inline-block; vertical-align:middle; }
+
+/* 신용대출신청 간편서류제출 초본 */
+.inpBox03>div~select { width:214px; }
+
+/* 신용대출신청 간편서류제출 주소 */
+.inpBox03>div~button { margin-right:10px }
+.inpBox03>div~p { display:inline-block; float:right; width:90%; line-height:1.65; }
+
+/* 신용대출신청 완료 */
+.completeWrap { width:100%; margin:40px 0; border:1px solid #DADCE1; border-radius:10px;}
+.completeWrap > dl { text-align:left; display:inline-block; padding:130px 0 130px 240px; position:relative; }
+.completeWrap > dl:before { position:absolute; left:0; top:50%; transform:translate(0,-50%); content:''; display:inline-block; width:180px; height:180px; }
+.completeWrap > dl.type01:before { background:url("../img/complete_img_01.png")center center no-repeat; background-size:100% 100%;}
+.completeWrap > dl.type02:before { background:url("../img/complete_img_02.png")center center no-repeat; background-size:100% 100%;}
+.completeWrap > dl > dt { font-size:3rem; line-height:1.4; font-weight:700; margin-bottom:20px; }
+.completeWrap > dl > dt span { color: #04ADEE; font-size: 3rem; line-height: 1.4; font-weight: 700; }
+.completeWrap > dl > dd { font-size: 1.8rem; line-height: 1.65; }
+.completeWrap > dl > dd button { margin-top:30px; padding:20px 80px; border-radius:5px; background-color:#0051A2; color:#fff; }
+
+
+/* 비대면뱅킹이용안내 비대면계좌개설 안내 SB톡톡플러스 배너 */
+.bannerWrap { width:100%; }
+.bannerWrap>div { padding:3% 0; background-color:#0CB39E; border-radius:5px; position:relative; }
+.bannerWrap>div>img { vertical-align:middle; width: 270px; position:absolute; bottom:0; right:15%; }
+.bannerWrap>div>p { display:inline-block; text-align:left; color:#FFF; font-size:3rem; line-height:1.4; font-weight:300; vertical-align:middle; width:100%; padding: 0px 3% 0px 20%; }
+.bannerWrap>div>p>b { color:#FFF; }
+.bannerWrap>div>p>span { color:#FFF; line-height:1.65; }
+.bannerWrap>span { display:block; text-align:right; margin-top:20px; }
+
+/* 비대면뱅킹이용안내 비대면계좌개설 앱스토어 */
+.borderWrap { width:100%; padding:30px 40px; margin-top:60px; line-height:1.65; border:1px solid #DADCE1; border-radius:10px; text-align:left; }
+.borderWrap>.tit { font-weight:700; font-size:1.8rem; line-height:1.65; margin-bottom:30px; }
+.borderWrap b { font-weight:700; line-height:1.65; } 
+.borderWrap>ul { padding-top:20px; }
+.borderWrap>ul:after { content:""; clear:both; display:block; }
+.borderWrap>ul>li { float:left; width:200px; margin-right:20px; }
+.borderWrap>ul>li:last-child { margin-right:0; }
+.borderWrap>ul>li>button { background-color:#fff; padding:10px 45px; border:1px solid #DADCE1; border-radius:5px; }
+
+/* 인터넷뱅킹이용안내 - otp이용안내*/
+.otpInfo { width:100%; padding:30px 300px 30px 30px; background:#f7f7f7 url("../img/bg_otpimg1.png") no-repeat right 80px center; background-size:200px; }
+.otpInfo > p { font-size:2.0em; font-weight:bold; color:#333; padding-bottom:20px;}
+.otpInfo > span { line-height:150%;}
+.otp_bg { width:100%; height:200px; background:url("../img/bg_otpimg2.gif")center center no-repeat; background-size:auto auto; }
+.otp_bg:after {content:''; display:inline-block; width:100%; height:200px; background:url("../img/icon_otpbgimg.png")center center no-repeat; background-size:auto auto; }
+.otpBtyImg1 { width:28px!important; height:17px!important; float:none!important; margin:0 5px!important;}
+.otpBtyImg2 { width:100%!important; height:auto!important; float:none!important; padding:20px!important;}
+
+/* 영업점안내 */
+.company_top > p { padding-bottom: 30px; }
+.company_top > p > span { line-height: 1.4; font-size: 4rem; font-weight: 700; }
+.mapWrap { width:100%; height:400px; background:#eee; overflow:hidden; border:solid 1px #DADCE1; border-radius:10px; margin-bottom:20px;}
+.wayCome { width:100%; margin-top:20px; text-align:left;  }
+.wayCome > dl { padding:40px 0; border-bottom:solid 1px #CCCCCC;}
+.wayCome > dl > dt { font-size:2.0rem; font-weight:700; position:relative; padding-left:35px; margin-bottom:20px; }
+.wayCome > dl > dt:before { left:0; position:absolute; top:50%; transform:translate(0,-50%); content:''; display:inline-block; width:24px; height:24px; }
+.wayCome > dl:first-child > dt:before { background:url("../img/icon_bus.png")center center no-repeat; background-size:auto auto;}
+.wayCome > dl:nth-child(2) > dt:before { background:url("../img/icon_parking.png")center center no-repeat; background-size:auto auto;}
+.wayCome > dl:last-child> dt:before { background:url("../img/icon_car.png")center center no-repeat; background-size:auto auto;}
+.wayCome > dl:last-child { border-bottom:none; }
+.wayCome > dl > dd li { color:#666666; }
+
+/* 상품공시안내 */
+.ifrs-Wrap { width:100%; text-align:left; margin:80px 0; }
+.ifrs-Wrap > dt { font-size:3.0rem; font-weight:500; padding-bottom:25px; }
+.ifrs-Wrap > dt > span {  font-size:3.0rem; font-weight: 200; color:#666; }
+.ifrs-Wrap > dd { border:solid 1px #DADCE1; border-radius:10px; padding:0 40px; }
+.ifrs-Wrap > dd ol { width:100%; display:table; padding:35px 0; border-bottom:solid 1px #DADCE1; }
+.ifrs-Wrap.wid100 > dd ol li { width:100%; display:inline-block; }
+.ifrs-Wrap > dd ol:last-child { border-bottom:none; }
+.ifrs-Wrap > dd li:first-child { width:20%; display:table-cell; vertical-align:middle; }
+.ifrs-Wrap > dd li:last-child { width:80%; display:table-cell; line-height:160%; }
+.ifrs-Wrap > dd li p { display:inline-block; width:100%;  }
+.ifrs-Wrap > dd li button { color:#425FAE; text-decoration:underline; margin-right:40px; padding-top:15px; position:relative; }
+.ifrs-Wrap > dd li button.btnNv01 { color:#fff; text-decoration:none; padding:5px 20px; height:auto; margin:0 0 0 20px; }
+.ifrs-Wrap > dd li button:after { content:""; display:block; width:1px; height:14px; background-color:#CCC; position: absolute; right:-22px; bottom:0; }
+.ifrs-Wrap > dd li button:last-child:after { display:none; }
+
+.ifrs-Wrap .secTitBox > div,
+.ifrs-Wrap .secTitBox > h3 { font-size:1.8rem;}/*웹접근성 수정 h3추가*/
+
+/* 공동인증서 가져오기 */
+.Public-Key { width:100%; margin-top:100px; padding:0 40px; border-radius:10px; border:solid 1px #CCC;}
+.Public-Key > li { width:100%; display:table; padding:40px 0; border-bottom:solid 1px #CCC; }
+.Public-Key > li:last-child { border-bottom:none;}
+.Public-Key > li > dl { vertical-align:top; width:30%; display:inline-block; text-align:left; }
+.Public-Key > li > dl > dt { font-weight:700; color:#252525; margin-bottom:40px; line-height:1.6;}
+.Public-Key > li > dl > dt > b { color:#0051A2; }
+.Public-Key > li > dl > dd { color:#666666; line-height:1.5; }
+.Public-Key > li > p { width:70%; display:inline-block; overflow:hidden; border:solid 1px #DADCE1; border-radius:10px; }
+.Public-Key > li > p img { width:100%; height:100%; }
+
+/* 0317곽차미 CSS ESG경영 */
+/* .esg { margin:0 auto; width: 1000px; overflow:hidden; padding-top: 30px; }
+.esg > div { width: 50%; float:left; text-align: left; position:relative; display: inline-block; padding: 0 50px 0 0; }
+.esg > div::before { content:""; display:block; width:10px; height:10px; background-color: #5C5C80; border-radius:50px; position: absolute; top:35%; right:-5px; z-index:20; }
+.esg > div::after { content:""; background: #D4D7E1; position: absolute; bottom:0; right:-1px; width:2px; height:65%; z-index: 10; }
+.esg > div > dl { margin-bottom: 130px; }
+.esg > div > dl > dt { background:url(../img/esg10.png) center top no-repeat; width:100%; height:460px; position: relative; }
+.esg > div > dl > dt > p {  padding:5px 0 0 65px;  line-height: 1.65; font-size:30px; font-weight: 700; position: absolute; bottom: 0; left: 0; }
+.esg > div > dl > dd { padding:5px 0 0 80px; line-height: 1.65; font-size:16px; letter-spacing:-1px; display:inline-block; }
+.esg > div:nth-child(2) { margin-top: 250px; }
+.esg > div:nth-child(2n) { float:right; text-align: left; padding: 0 0 0 50px; }
+.esg > div:nth-child(2n)::before { content:""; display:block; width:10px; height:10px; background-color: #5C5C80; border-radius:50px; position: absolute; top:35%; left:-5px; z-index:20; }
+.esg > div:nth-child(2n)::after { content:""; background: #D4D7E1; position: absolute; bottom:0; left:-1px; width:2px; height:65%; z-index: 10; }
+.esg > div:nth-last-child(2)::after { content:""; background: #D4D7E1; position: absolute; bottom:13%; right:-1px; width:2px; height:50%; z-index: 10; }
+.esg > div:last-child::after { display:none; }
+
+.esg > div:nth-child(2) > dl > dt { background:url(../img/esg9.png) center top no-repeat; }
+.esg > div:nth-child(3) > dl > dt { background:url(../img/esg7.png) center top no-repeat; }
+.esg > div:nth-child(4) > dl > dt { background:url(../img/esg6.png) center top no-repeat; }
+.esg > div:nth-child(5) > dl > dt { background:url(../img/esg4.png) center top no-repeat; }
+.esg > div:nth-child(6) > dl > dt { background:url(../img/esg3.png) center top no-repeat; }
+ */
+/* 큰따옴표 백그라운드 */
+.quoMark { padding: 50px 0 60px 0; }
+div.quoMark::before {  content:""; display:inline-block; width:60px; height:40px; background:url(../img/quo01.png)no-repeat center; background-size:60px 40px; }
+div.quoMark::after {  content:""; display:inline-block; width:60px; height:40px; background:url(../img/quo02.png)no-repeat bottom center; background-size:60px 40px; margin:40px 0 0 0; }
+.quoMark > .listTxtWrap > .subBtnWrap > button { min-width: 280px; }
+
+/* 그룹사체계도 */
+.call-admin > div > h4 { padding-bottom:50px; }
+.txtBox03 ~ .coInfo { margin-top:60px;}
+.coInfo { display:table; width:100%; text-align:left; }
+.coInfo > li { display:inline-block; width:24%; margin-right:1%; margin-bottom:3%; background:#fff; overflow:hidden; vertical-align:top; }
+.coInfo > li:nth-child(4n) { margin-right:0; }
+.coInfo > li > p { width:100%; overflow:hidden; border:1px solid #DADCE1; }
+.coInfo > li > p img { width:100%; }
+.coInfo > li > dl { width:100%; text-align:center; padding:15px 0px;}
+.coInfo > li > dl dt { color:#252525; font-size:1.8rem; font-weight:500; padding-bottom:10px;}
+.coInfo > li > dl dd { color:#666; font-size:1.6rem; line-height:1.4;}
+
+/* 솔루션페이지 */ 
+.toplogo { width:1280px; text-align:left; margin:0 auto; padding-top:60px; }
+.toplogo > img { width:150px; }
+.downSol>ul>li>a>img { width:36px; height:36px; }
+
+
+/* 신용대출 파라솔(직장인) 상품설명 icon list */
+.listBoxWrap2 { width:1080px; margin:30px auto; border-radius:15px; background-color:#fff;  }
+.listBoxWrap2>ul { box-shadow: 0px 25px 20px #f6f6f6; width:100%; padding:50px 0;}
+.listBoxWrap2>ul>li { padding:0 20px; display:inline-block; line-height:1.65; font-size:1.6rem; text-align:center; position:relative; }
+.listBoxWrap2>ul>li:after { content:""; width:1px; height:80%; background-color:#ccc; position:absolute; top:50%; right:0; transform:translate(0,-50%);}
+.listBoxWrap2>ul>li:last-child:after { display:none; }
+.listBoxWrap2>ul>li>b { font-weight:700; }
+.listBoxWrap2>ul>li.lh14 { line-height:1.5; }
+.listBoxWrap2.li4>ul { display:table; }
+.listBoxWrap2.li4>ul>li { width:calc(100% / 4); }
+.listBoxWrap2.li4>ul>li>img { margin:0 auto; display:block; }
+
+
+/*상단 tab*/
+.tabWrap2.li2>li { width:calc(100% / 2); }/*tab li 2개*/
+.tabWrap2.li3>li { width:calc(100% / 3); }/*tab li 3개*/
+.tabWrap2.li4>li { width:calc(100% / 4); }/* tab li 4개 */
+.tabWrap2.li5>li { width:calc(100% / 5); }/* tab li 5개 */
+.tabWrap2 { width:1280px; margin:0 auto; position:absolute; bottom:0; left:50%; transform:translate(-50%, 0);}
+.tabWrap2:after { content:""; clear:both; display:block; }
+.tabWrap2>li { float:left; overflow:hidden; }
+.tabWrap2>li:first-child { border-radius:10px 0 0 0; }
+.tabWrap2>li:last-child { border-radius:0 10px 0 0; }
+.tabWrap2>li>a { display:inline-block; text-align:center; width:100%; color:#fff; background:rgba(68,137,241,60%); padding:25px 0; font-weight:normal; font-size:1.8rem; }
+.tabWrap2>li>a.tabls { letter-spacing:-1.5px; }/* 0316추가 */
+.tabWrap2>li.on>a { color:#252525; font-weight:700; background:#fff;}
+
+/* sub title 배경색 추가 부분 수정 */
+.Sub-Title2.subTitBg { height:225px; position:relative;}
+.Sub-Title2.subTitBg>h2 { color:#fff; }
+.Sub-Title2.subTitBg>h2>span { color:#fff; }
+
+/* 인사말 */
+.Sub-Title2 { display:table; padding-top:55px; width:100%; min-width:1280px; text-align:center; }
+.Sub-Title2>h2 { position:absolute; left:50%; transform:translate(-50%,0); top:20%; display:table-cell; width:1280px; margin:0 auto; font-size:38px; font-weight:bold; color:#252525; vertical-align:middle; text-align:center; line-height:120%; }
+.Sub-Title2>h2>span { font-size:20px; font-weight:normal; }
+
+.Content>p { font-size:5rem; text-align:left; width:1280px; margin:0 auto; line-height:160%; }
+.Content>p>span { font-size:5rem; font-weight:700; }
+.Content>dl { padding:100px 0px; display:block; min-width:1280px; }
+.Content>dl>dt { font-size:2rem; color:#04ADEE; line-height:200%; display:block; text-align:center; }
+.Content>dl>dd { font-size:3.8rem; color:#1B4B7B; font-weight:700; display:block; text-align:center; }
+
+/* 연혁 */
+.History { margin:100px auto; width:1280px; }
+.History>div { font-size:2rem; color:#04ADEE; line-height:200%; padding-bottom:200px; }
+.History>div>p { font-size:3.8rem; color:#1B4B7B; font-weight:700; }
+.History>ol { display:inline-block; }
+.History>ol>li { min-height:200px; position:relative; padding-left:180px; }
+.History>ol>li>span { font-size:200px; color:#F2F4F6; position:absolute; left:-5%; top:-25%; font-weight:700; z-index:-1;}
+.History>ol>li>div { font-size:26px; font-weight:700; position:absolute; left:0px; top:-10px;  }
+.History>ol>li>div>i { font-size:26px; color:#0051A2; font-weight:700; }
+.History>ol>li>div>span { display:inline-block; width:10px; height:10px; border:5px solid #5C5C80; border-radius:50px; position:absolute; right:-48px; top:10px; background:#fff; z-index:1; }
+.History>ol>li>ol { border-left:2px #D4D7E1 solid; padding-left:50px; min-height:200px; }
+.History>ol>li>ol>li { font-size:1.6rem; text-align:left; line-height:100%; font-weight:400; padding:11px 0px; }
+.History>ol>li>ol>li:first-child { padding-top:0px; }
+.History>ol>li>ol>li>span { color:#0051A2; padding-right:20px; }
+.History>ol>li>ol>li:last-child { padding-bottom:100px; }
+.History>ol>li:first-child>ol>li:first-child { padding-top:0px; }
+.History>ol>li:last-child>ol { border-left:0px; }
+
+/* 사업영역 */
+.Biz-area { width:1280px; margin:0 auto; }
+.Biz-area>ol:after { clear:both; display:block; content:''; }
+.Biz-area>ol>li:nth-of-type(1) { float:left; width:47%; }
+.Biz-area>ol>li:nth-of-type(2) { float:right; width:47%; }
+.Biz-area>ol>li>div { position:relative; width:100%; height:150px; text-align:left; }
+.Biz-area>ol>li>div:after { clear:both; display:block; content:''; }
+.Biz-area>ol>li>div>span { display:inline-block; border:25px #ECF6F9 solid; width:150px; height:150px; background:#204FBC; border-radius:200px; font-size:0px; }
+.Biz-area:nth-of-type(2)>ol>li>div>span { background:#3FA6FF; }
+.Biz-area>ol>li>div>p { position:absolute; display:inline-block; float:left; font-size:2rem; font-weight:700; text-align:left; padding:0 20px; left:180px; top:40px; }
+.Biz-area>ol>li>div>p>span { font-size:1.6rem; color:#666; display:inline-block; padding-top:20px; }
+.Biz-area>ol>li>div>div { position:absolute; border-bottom:1px #ccc dashed; top:50%; right:170px; transform:translate(0%, -50%); width:30px; z-index:1; height:1px; }
+.Biz-area>ol>li>div>div>i { background:#04ADEE; display:inline-block; width:24px; height:24px; border-radius:30px; position:absolute; right:-15px; top:-12px; }
+.Biz-area>ol>li>div>div>i:after { background:#fff; width:40%; left:35%; bottom:32%; }
+.Biz-area>ol>li>div>div>i:before { background:#fff; width:40%; left:35%; top:32%; }
+.Biz-area>ol>li>div>ul { position:absolute; right:0px; top:50%; transform:translate(0%, -50%); background:#F2F4F6; border-radius:10px; padding:20px; min-width:170px; }
+.Biz-area>ol>li>div>ul>li { list-style-type:disc; margin-left:20px; line-height:180%; }
+
+/* 경영이념 */
+.Manag-area { width:1280px; margin:0 auto; }
+.Manag-area>div {  }
+.Manag-area>div:nth-of-type(2):after { clear:both; display:block; content:''; }
+.Manag-area>div:nth-of-type(2)>dl { width:calc(33.33% - 40px); margin-right:60px; float:left; text-align:left; display:inline-block; box-sizing:border-box; }
+.Manag-area>div:nth-of-type(2)>dl:last-child { margin-right:0px; }
+.Manag-area>div:nth-of-type(2)>dl>dt { font-size:3.8rem; line-height:130%; }
+.Manag-area>div:nth-of-type(2)>dl>dt>span { font-size:3.8rem; color:#04ADEE; font-weight:700; }
+.Manag-area>div:nth-of-type(2)>dl>dd>p { font-size:2.4rem; position:relative; margin:80px 0 40px; }
+.Manag-area>div:nth-of-type(2)>dl>dd>p:after { position:absolute; left:0px; bottom:-15px; width:15%; border-bottom:3px #252525 solid; content:''; }
+
+.Manag-area>div:nth-of-type(4) { width:100%; text-align:center; display:inline-block; box-sizing:border-box; }
+.Manag-area>div:nth-of-type(4)>p { font-size:2.4rem!important; position:relative; margin:80px 0 40px; }
+.Manag-area>div:nth-of-type(4)>p:after { position:absolute; left:45%; bottom:-20px; width:5%; border-bottom:4px #252525 solid; content:''; }
+
+/* text box button */
+.txtBox03 p a { border-radius:5px; background:#425FAE; font-size:1.4rem; color:#fff; padding:5px 10px 5px 20px; display:inline-block; margin-top:-4px; }
+.txtBox03 p a>span { float:right; width:10px; height:10px; margin-left:10px; }
+.txtBox03 p a>span:before,
+.txtBox03 p a>span:after { background:#fff; height:1px; }
+
+.txtBox p a { border-radius:5px; background:#425FAE; font-size:1.4rem; color:#fff; padding:5px 10px 5px 20px; display:inline-block; margin-top:-4px; margin-left:10px; }
+.txtBox p a>span { float:right; width:10px; height:10px; margin-left:10px; }
+.txtBox p a>span:before,
+.txtBox p a>span:after { background:#fff; height:1px; }
+
+.call-admin { padding:0px; }
+.call-admin>div { margin:0 auto; width:1280px; text-align:center; }
+
+/* 금융소비자보호 */
+/* 0201 */
+.CUS0201 { text-align:left; }
+.CUS0201>dt { font-size:4.0rem; font-weight:bold; position:relative; margin-bottom:60px; }
+.CUS0201>dt:after { display:inline-block; height:5px; background:#000; width:50px; content:''; position:absolute; left:0px; bottom:-40px; }
+.CUS0201>dd { font-size:1.6rem; color:#666; line-height:160%; }
+.CUS0201>dd>p { font-size:1.6rem; color:#666; line-height:160%; text-align:right; padding:20px 0px; }
+.CUS0201>dd>div { border:1px #ccc solid; border-radius:10px; padding:40px; margin-top:50px; }
+.CUS0201>dd>div>p { font-size:2rem; font-weight:bold; padding-bottom:50px; }
+.CUS0201>dd>div>img { width:100%; margin-bottom:50px; }
+.CUS0201>dd>div>.table04 { margin-bottom:50px; }
+.CUS0201>dd>div>.table04:last-child { padding-bottom:0px!important; }
+
+.CUS0201>dd>div>ol>li { padding:0 0 40px; line-height:160%; }
+.CUS0201>dd>div>ol>li>p { /*0314삭제 font-size:20px;*/ font-weight:bold; padding-bottom:10px; }
+.CUS0201>dd>div>ol>li>span { font-weight:400; }
+.CUS0201>dd>div>ol>li>a { font-size:1.8rem; color:#fff; background:#0051A2; border-radius:5px; padding:10px 30px; display:inline-block; }
+/* .CUS0201>dd>div>ol>li>a + a { margin-left:20px; } */
+.CUS0201>dd>div>ol>li>ol>li>p { font-size:16px; font-weight:400; padding:0 0 10px 20px; line-height:160%; position:relative; }
+.CUS0201>dd>div>ol>li>ol>li>p>i { position:absolute; left:0px; top:0px; font-size:16px; font-weight:normal; line-height:160%; }
+.CUS0201>dd>div>ol>li>ol>li { font-weight:normal; padding:0px 0 10px; line-height:160%; }
+.CUS0201>dd>div>ol>li>ol>li>i { font-weight:400; }
+.CUS0201>dd>div>ol>li img { padding:20px; }
+
+.CUS0201>dd>div>ol>li>p>a { font-size:1.6rem; color:#fff; background:#0051A2; border-radius:5px; padding:7px 20px; /* display:inline-block; */ margin-left:20px; }
+.CUS0201>dd>div>ol>li>p>a>i { width:8px; height:8px; position:relative; float:right; display:inline-block; margin-left:10px!important; }
+.CUS0201>dd>div>ol>li>p>a>i:before,
+.CUS0201>dd>div>ol>li>p>a>i:after { height:1px; background:#fff; }
+
+.CUS0201>dd>div>ol>li>ol>li>ol { padding:0px 0 5px 20px; }
+.CUS0201>dd>div>ol>li>ol>li>ol>li { line-height:160%; font-size:1.4rem; padding-left:20px; position:relative; font-weight:400; }
+.CUS0201>dd>div>ol>li>ol>li>ol>li i { line-height:160%; font-size:1.4rem; position:absolute; top:0px; left:0px; font-weight:400; }
+.CUS0201>dd>div>ol>li>ol>li>ol>li>ol { padding:10px 0 10px 0px; }
+.CUS0201>dd>div>ol>li>ol>li>ol>li ol>li { line-height:160%; font-size:1.4rem; position:relative; padding-left:15px; font-weight:400; }
+.CUS0201>dd>div>ol>li>ol>li>ol>li ol>li>i { position:absolute; left:0px; top:0; font-size:1.4rem; font-weight:normal; line-height:160%; }
+/************/
+.CUS0201>dd>div>ol>li a { font-size:1.4rem; color:#252525; background:#fff; padding:0; margin:0; }
+.CUS0201>dd>div>ol>li>ol a.rinkBtn { font-size:1.2rem; color:#fff; background:#0051A2; border-radius:5px; padding:5px 10px 5px 10px; display:inline-block; margin-left:20px; }
+.CUS0201>dd>div>ol>li>ol a.rinkBtn>i { width:8px; height:8px; position:relative; float:right; display:inline-block; margin-left:10px!important; }
+.CUS0201>dd>div>ol>li>ol a.rinkBtn>i:before,
+.CUS0201>dd>div>ol>li>ol a.rinkBtn>i:after { height:1px; background:#fff; }
+/****************/
+.CUS0201>dd>div>ol>li div { background:#F8F8F8; padding:20px; margin:10px 0px; line-height:160%;  border-radius: 5px; font-weight:400; }
+.CUS0201>dd>div>ol>li div > p { padding-bottom:15px; color:#333;}
+
+
+/*2022-02-09, 조아름css*/
+/*하단 링크 파란색 a버튼 */
+.rinkBtnWrap { text-align:center; padding:20px 0 0;  }
+.rinkBtnWrap > a { display:inline-block; background:#0051A2; color:#fff; font-size:1.4rem; border-radius:5px; padding:15px 30px; margin-right:20px; }
+.rinkBtnWrap > a:last-child { margin-right:0; }
+
+/*이미지삽입 a링크버튼*/
+.imgButWrap > p { padding-bottom:20px; }
+.imgButWrap > a { display:inline-block; width:300px; height:100px; overflow:hidden; border-radius:10px; border:solid 1px #ccc; margin-right:20px; }
+.imgButWrap > a:last-child { margin-right:0; }
+.imgButWrap .plusKakao { width:560px; border:none; margin-top:20px;}
+
+/*이미지&text a링크 cus0901 ~ cus1001*/
+.txtBox03 ~ .imgInfo { margin-top:60px;}
+.imgInfo { display:table; width:100%; text-align:left; }
+.imgInfo > li { display:inline-block; width:calc( (100% /3) - 2% ); height:520px; margin-right:2%; margin-bottom:30px; background:#fff; /*border:solid 1px #ccc; border-radius:10px;*/ overflow:hidden;}
+.imgInfo > li.overflow { overflow:visible; }
+.imgInfo > li:nth-child(3n) { margin-right:0; }
+.imgInfo > li > a { display:inline-block; width:100%; }
+.imgInfo > li > a > p { width:100%; height:300px; overflow:hidden; border-radius:10px; }
+.imgInfo > li:hover { transform: scale(1.05, 1.05); transition-duration: 400ms; }
+
+.imgInfo > li > a > p img { width:100%; height:100%; float:right; }
+.imgInfo > li > a > dl { width:100%; /*border-top:solid 1px #ccc;*/ text-align:left; padding:20px 0px 0;}
+.imgInfo > li > a > dl dt { color:#252525; font-size:1.6rem; font-weight:500; padding-bottom:10px;}
+.imgInfo > li > a > dl dd { color:#666; font-size:1.4rem; line-height:1.4; font-weight:400;}
+.imgInfo > li > a > dl dd > p { padding-top:10px; background:transparent; font-weight:400;  font-size:1.4rem;}
+
+.opinion { width:100%; margin-top:40px;  }
+.opinion > p { font-size:1.6rem; font-weight:700; color:#000; text-align:left; padding-bottom:10px; }
+.opinion > div { background:#F8F8F9; border-radius:10px; padding:20px;}
+.opinion > div > p { width:8%; display:inline-block;  vertical-align:top; padding-top:10px; text-align:left; }
+.opinion > div > p > span { color:#000; font-weight:700; display:inline-block; }
+.opinion > div textarea { width:90%; min-height:100px; max-height:150px; overflow-y:scroll; background:transparent; border:solid 1px #9e9e9e; border-radius:10px; }
+.opinion > div.subBtnWrap { padding:0 20px 20px;}
+
+/* .txtBox03 ~ .imgInfo { margin-top:60px;}
+.imgInfo { display:table; width:100%; text-align:left; }
+.imgInfo > li { display:inline-block; width:48%; margin-right:4%; margin-bottom:4%; background:#fff; border:solid 1px #ccc; border-radius:10px; overflow:hidden;}
+.imgInfo > li:nth-child(2n) { margin-right:0; }
+.imgInfo > li > a { display:inline-block; width:100%; }
+.imgInfo > li > a > p { width:100%; height:250px; overflow:hidden; }
+.imgInfo > li > a > p img { width:100%; height:100%; border-radius:10px; }
+.imgInfo > li > a > dl { width:100%; border-top:solid 1px #ccc; text-align:left; padding:20px 0px;}
+.imgInfo > li > a > dl dt { color:#252525; font-size:1.8rem; font-weight:500; padding-bottom:10px;}
+.imgInfo > li > a > dl dd { color:#666; font-size:1.6rem; line-height:1.4;}
+ */
+
+/*textbox 다른유형 cus1001*/
+.txtSubBox { border-top:solid 1px #CCCCCC; margin:20px 40px 0; }
+.txtSubBox > h3 { color:#252525; font-weight:500; font-size:1.8rem; padding:20px 0 10px; text-align:left; }
+.txtSubBox > ul { width:100%; background:#fff; border-radius:10px; padding:10px 20px; display:table; text-align:left;  }
+.txtSubBox > ul > li { display:inline-block; width:50%; padding:10px 0; }
+
+.txtSubBox > ul > li > p:before { content: "·"; padding-right: 6px; color: #252525; }
+.txtSubBox > ul > li > p > span { display:inline-block; width:180px; padding-right:50px;}
+
+/*cus1301 약관&table구조일경우*/
+.CUS0201 .table-St { padding-top:0;}
+
+
+/* fin0701 적합성 적정성 확인서 화면 */
+.agr-Consumer p.subTitle { text-align:left; padding:20px 10px 10px; background:none; display:inline-block; width:100%; font-size:14px!important; font-weight:bold; border:0!important; margin:0!important; }
+.agr-Consumer > p { text-align:left; background:#F8F8F8; font-size:16px; color:#222222; margin-bottom:10px; padding:20px 10px; font-weight:700; }
+.agr-Consumer > ul { padding-bottom:20px; }
+.agr-Consumer > ul > li { display:inline-block; width:100%; height:100%; border-bottom:solid 1px #CCCCCC; padding:25px 0;}
+.agr-Consumer > ul > li:last-child { border-bottom:none; }
+.agr-Consumer > ul > li > ul { display:inline-block; width:100%; height:100%; padding-top:20px; }
+
+
+/* 공지사항view cust1201 */
+.note-ViewBox { text-align:left; padding:40px; margin-bottom:40px; border:solid 1px #CCCCCC; background:#fff; border-radius:10px; margin-top:50px; }
+.note-ViewBox > dt { font-size:2.0rem; font-weight:bold; padding-bottom:36px; }
+
+.note-table { position:relative; background-color:#fff!important; padding:0!important; }
+.note-table > ol { padding:0 10px 60px; }
+.note-table > ol > li {  padding:0 0 30px; line-height:120%; }
+.note-table > ol > li > p { font-size:16px; font-weight:600; padding-bottom:5px; color:#0051A2; } 
+.note-table > ol > li > p > b { font-size:18px; color:#333; padding-bottom:20px; display:inline-block; }
+.note-table > ol > li > ol > li { font-weight:normal; padding:0 0 5px; line-height:160%; }
+.note-table > ol > li > ol > li > p { padding:0 0 0 20px; position:relative; line-height:160%;  }
+.note-table > ol > li > ol > li > p > i { position:absolute; left:0; top:0; font-weight:normal; line-height:160%;  }
+
+.note-ViewBox > dd:last-child { width:100%; background:#F8F8F8; border-radius:10px; padding:25px 20px; }
+.note-ViewBox > dd:last-child > p { font-weight:bold; padding-bottom:18px; } 
+.note-ViewBox > dd:last-child > div > a { display:inline-block; width:100%; font-size:16px; line-height:24px; padding:0 0 16px 30px; }
+.note-ViewBox > dd:last-child > div > a:last-child { padding-bottom:0; }
+.note-ViewBox > dd:last-child > div > a:before { content:''; display:inline-block; background:url("../img/icon_down.png")center center no-repeat; width:24px; height:24px; background-size:100% 100%; position:absolute; left:0; top:0; }
+/* .note-ViewBox > dd:nth-of-type(1) { padding:0!important; } */
+
+.noti-ListBtn { width:100%; border-top:solid 1px #CCCCCC; }
+.noti-ListBtn > li { width:100%; display:inline-block; border-bottom:solid 1px #CCCCCC; }
+
+.noti-ListBtn > li > a { padding:18px 40px; text-align:left; display:inline-block; width:100%; height:100%; }
+.noti-ListBtn > li > a dl { display:table; width:100%; }
+.noti-ListBtn > li > a dt { width:20%; display:inline-block; padding-right:120px; position:relative;  }
+.noti-ListBtn > li > a dt:after { content:''; display:inline-block; position:absolute; right:120px; top:50%; transform:translate(0,-50%); background:url("../img/icon_dapsarrow.png")center center no-repeat; width:24px; height:24px; background-size:100% 100%; }
+.noti-ListBtn > li:first-child > a dt:after { transform:translate(0,-50%) rotate(180deg); }
+.noti-ListBtn > li > a dd { width:78%; display:inline-block; font-weight:400; }
+
+/* 공지사항 - 이벤트 */
+.list-None { text-align:center; padding:150px 0; }
+.list-None:before { content:''; display:inline-block; background:url("../img/icon_listnone.png")center center no-repeat; width:60px; height:60px; background-size:60px;  }
+.list-None > p { margin-top:20px; color:#666666; font-size:2.0rem;}
+ 
+/* 500error 페이지 */
+.errorWrap { width:100%; height:100%; overflow:hidden; position:relative; background:#fff; }
+.errorWrap > dl { display:inline-block; padding-left:400px; width:900px; position:relative; top:200px; left:50%; transform:translate(-50%,0);}
+.errorWrap > dl:before { content:''; display:inline-block; width:400px; height:420px; position:absolute; left:0px; top:50%; transform:translate(0,-50%); background:url("../img/error500.png")center center no-repeat; background-size:80% auto;}
+.errorWrap > dl > dt { font-size:4rem; font-weight:700; padding-bottom:30px; color:#5A8FFF;}
+.errorWrap > dl > dt > img { width:120px; height:30px; display:block; margin-bottom:30px; }
+.errorWrap > dl > dt > span { display:block; font-size:4rem; font-weight:700; color:#252525; padding-top:20px; }
+.errorWrap > dl > dd { color:#666666; font-size:1.6rem; text-align:left; line-height:150%;  }
+.errorWrap > dl > dd button { background:#F2F2F2; color:#252525; margin:50px 0 0; }
+
+
+/* 220519 14인치 css 추가*/
+.deposit .sub-table table th>img { width:unset; }
+.sub-table table th>img { width:100%;  }
+
+
+@media screen and (max-width:1300px){
+
+	.Sub-Title.subTitBg>h2 { width:100%; }
+	.Sub-Title .txtBtnWrap>li>button { padding:0; }
+	.txtBtnWrap>li>button { padding:0; }
+
+	.location { width:100%; }
+	.accordianWrap { width:100%; }
+	.comWrap>ul { width:100%; }
+	.organizWrap { width:100%; }
+	.ContentWrap .Manag-top>ul { width:100%; }
+	.brand_CI { width:100%; }
+	.toplogo  { width:100%; }
+	.tabWrap2  { width:100%; }
+	.listBoxWrap { width:100%; }
+	.listBoxWrap:before { width:100%; }
+	.listBoxWrap>ul { width:100%; }
+	.listBoxWrap>ul>li { line-height:1!important; }
+	.listBoxWrap>ul>li>b { display:block; }
+
+	.Sub-Title2 { min-width:1000px; } 
+	.Sub-Title2>h2 { width:100%; }
+
+	.Content>p { width:100%; }
+	.Content>dl { min-width:1000px; }
+	
+	.History  { width:100%; }
+	.Biz-area  { width:100%; }
+
+	.Manag-area { width:100%; }
+
+	.call-admin { padding:0 40px; }
+	.call-admin>div { width:100%; }
+
+}
+
+/* 웹접근성 */
+.th-rowspan { position:absolute !important; z-index:2 !important; width:16.66% !important; height:120px !important; line-height:120px !important; }
+.td-none { font-size:0 !important; }

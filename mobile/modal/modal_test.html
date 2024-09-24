@@ -1,0 +1,989 @@
+<!--%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%-->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<!-- %@ include file="./public/inc/common.jsp" %-->
+	<title>JT 저축은행</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<link rel="stylesheet" type="text/css" href="../public/css/reset.css?v=002" />
+	<link rel="stylesheet" type="text/css" href="../public/css/common.css?v=002" />
+	<link rel="stylesheet" type="text/css" href="../public/css/slick.css" />
+	<script src="../public/js/jquery.min.js"></script>
+	<script src="../public/js/slick.js"></script>
+	<script src="../public/js/common.js"></script>
+	<script>
+	
+		/* 모달 */
+		function modalOn(modalID) { // 모달 On 모달 창 호출 후 해당 모달 컨텐츠 로드
+			$("." + modalID).addClass('on');
+			$("html").css("overflow","hidden");
+		};
+
+		function modalOff() { // 모달 Off
+			$('.Acuon-Modal').removeClass('on');
+			$("html").css("overflow","auto").css("height","100%");
+		};
+
+		
+		/* 모달 */
+		function modalOn2(modalID) { // 모달 On 모달 창 호출 후 해당 모달 컨텐츠 로드
+			$("." + modalID).addClass('on');
+			$("html").css("overflow","hidden");
+		};
+
+		function modalOff2() { // 모달 Off
+			$('.full-Modal').removeClass('on');
+			$("html").css("overflow","auto").css("height","100%");
+		};
+	</script>
+
+		
+	<script type="text/javascript">
+
+
+	$(document).ready(function(){
+
+	/* 배너 02 */
+		$('.ac-slider-event').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			dots: true,
+			arrows : false,
+			infinite: true,
+			prevArrow : "<a class='bullet_left' href='#'>Prev</a>",
+			nextArrow : "<a class='bullet_right' href='#'>Next</a>",
+			autoplay: true,
+			speed: 500,
+			autoplaySpeed : 3000,
+			pauseOnHover : true,
+			draggable : true,
+			centerMode : true,
+			focusOnSelect: true
+		});
+	});
+	</script>
+</head>
+<body>
+
+<!-- // header -->
+<header>
+	<div>
+		<h1><a href="/"><img src="../public/img/logo.png" alt="JT저축은행" /></a></h1>
+
+		<a href="javascript:callgnb();" alt="전제메뉴 보기" >
+			<span></span>
+			<span></span>
+			<span></span>
+		</a>
+
+	</div>
+</header>
+<!-- header // -->
+
+
+<div id="main">
+	<section>
+		
+		<article class="ContentWrap">
+
+			<div class="subPage-Tit">
+				<h2>모달test</h2>
+			</div>
+			
+			<div class="call-admin">
+				<div>
+
+					<div class="listTxtWrap pdT0">
+						<ul class="x1">
+							<li><button type="button" href="#" title="" onclick="modalOn('select-popup');" class="btnB02">select 창</button></li>
+							<li><button type="button" href="#" title="" onclick="modalOn('alert-popup');" class="btnB02">alert 알림</button></li>
+							<li><button type="button" href="#" title="" onclick="modalOn('alert-popup2');" class="btnB02">전자서명</button></li>
+							<li><button type="button" href="#" title="" onclick="modalOn2('phone-popup');" class="btnB02">휴대폰인증팝업</button></li>
+							<li><button type="button" href="#" title="" onclick="modalOn2('agree-popup');" class="btnB02">약관상세보기(html)</button></li>
+							<li><button type="button" href="#" title="" onclick="modalOn2('agree-popup2');" class="btnB02">약관상세보기(img)</button></li>
+							<li><button type="button" href="#" title="" onclick="modalOn2('agree-popup3');" class="btnB02">적합성적정성 원칙확인서(가계용)</button></li>
+							<li><button type="button" href="#" title="" onclick="modalOn2('agree-popup4');" class="btnB02">적합성적정성 원칙결과서</button></li>
+							<li><button type="button" href="#" title="" onclick="modalOn2('searchAddress-popup');" class="btnB02">우편번호검색</button></li>
+							<li><button type="button" href="#" title="" onclick="modalOn('event-popup');" class="btnB02">이벤트팝업</button></li>
+							<li><button type="button" href="#" title="" onclick="modalOn('event-popup2');" class="btnB02">이벤트팝업</button></li>
+
+
+		
+						</ul>
+					</div>
+				</div>	
+			</div>
+	
+		</article>
+
+	</section>
+</div>
+<!-- main // -->
+
+
+
+<div class="Acuon-Modal select-popup" rel="선택창">
+	<dl><!-- class="Modal-Fix" 하단버튼필요시 노출-->
+		<dt><button type="button" onclick="modalOff();"><img src="../public/img/arrow24_b.png" alt="닫기"></button>
+			<!-- title - <p>알림</p> -->
+		</dt>
+		<dd>
+			<ul>
+				<li><a href="#">51개 대기업 및 계열사</a></li>
+				<li><a href="#">51개 대기업 및 계열사</a></li>
+				<li><a href="#">51개 대기업 및 계열사</a></li>
+				<li><a href="#">51개 대기업 및 계열사</a></li>
+				<li><a href="#">51개 대기업 및 계열사</a></li>
+				<li><a href="#">51개 대기업 및 계열사</a></li>
+				<li><a href="#">51개 대기업 및 계열사</a></li>
+				<li><a href="#">51개 대기업 및 계열사</a></li>
+				<li><a href="#">51개 대기업 및 계열사</a></li>
+				<li><a href="#">51개 대기업 및 계열사</a></li>
+			</ul>
+		</dd>
+		<!-- 하단버튼 필요시 노출 -->
+		<!-- <dd class="modal-FtBtn">
+			<p>
+				<a href="#" class="btn-ok">닫기</a>
+				<a href="#" class="btn-cancle">닫기</a>
+			</p>
+		</dd> -->
+
+	</dl>
+</div>
+
+
+<div class="Acuon-Modal alert-popup" rel="알림창">
+	<dl class="Modal-Fix"><!-- class="Modal-Fix" 하단버튼필요시 노출-->
+		<dt><p>알림</p></dt>
+		<dd class="min">
+			<div>
+				인증번호를 요청하시겠습니까?
+			</div>
+		</dd>
+		<!-- 하단버튼 필요시 노출 -->
+		<dd class="modal-FtBtn">
+			<p>
+				<a href="#" onclick="modalOff();" class="btn-cancle">닫기</a>
+				<a href="#" class="btn-normal">확인</a>
+			</p>
+		</dd>
+
+	</dl>
+</div>
+
+<div class="Acuon-Modal alert-popup2" rel="알림창">
+	<dl class="Modal-Fix"><!-- class="Modal-Fix" 하단버튼필요시 노출-->
+		<dt><p>알림</p></dt>
+		<dd>
+			<p class="tit">아래 정보를 확인해 주세요.</p>
+			
+			<p>[신청인 정보]</p>
+			<ol>
+				<li class="star">이름 : 홍길동</li>
+				<li class="star">주민번호 : 999999-2******</li>
+				<li class="star">인증일시 : 2022년 3월 3일 15:12:38</li>
+				<li class="star">인증방법 : PC - 휴대폰인증</li>
+			</ol>
+
+			<p>[약관동의내역]</p>
+			<ol>
+				<li class="star">(N) 1. 간편서류제출(스크래핑) 동의여부 (선택)</li>
+				<li class="star">(N) 1. 간편서류제출(스크래핑) 동의여부 (선택)</li>
+				<li class="star">(N) 1. 간편서류제출(스크래핑) 동의여부 (선택)</li>
+				<li class="star">(N) 1. 간편서류제출(스크래핑) 동의여부 (선택)</li>
+				<li class="star">(N) 1. 간편서류제출(스크래핑) 동의여부 (선택)</li>
+				<li class="star">(N) 1. 간편서류제출(스크래핑) 동의여부 (선택)</li>
+				<li class="star">(N) 1. 간편서류제출(스크래핑) 동의여부 (선택)</li>
+				<li class="star">(N) 1. 간편서류제출(스크래핑) 동의여부 (선택)</li>
+				<li class="star">(N) 1. 간편서류제출(스크래핑) 동의여부 (선택)</li>
+				<li class="star">(N) 1. 간편서류제출(스크래핑) 동의여부 (선택)</li>
+				<li class="star">(N) 1. 간편서류제출(스크래핑) 동의여부 (선택)</li>
+				<li class="star">(N) 1. 간편서류제출(스크래핑) 동의여부 (선택)</li>
+				<li class="star">(N) 1. 간편서류제출(스크래핑) 동의여부 (선택)</li>
+				<li class="star">(N) 1. 간편서류제출(스크래핑) 동의여부 (선택)</li>
+
+			</ol>
+
+		</dd>
+		<!-- 하단버튼 필요시 노출 -->
+		<dd class="modal-FtBtn">
+			<p>
+				<a href="#" onclick="modalOff();" class="btn-cancle">닫기</a>
+				<a href="#" class="btn-normal">확인</a>
+			</p>
+		</dd>
+
+	</dl>
+</div>
+
+<div class="full-Modal phone-popup" rel="팝업" >
+	<dl>
+		<dt>휴대폰 인증확인</dt>
+		<dd class="cont">
+			<div>
+				<p class="bgG">· 인증번호는 이미 발송되었으며, 3분동안은 발송된 인증번호로 처리가능합니다. <br/>· 3분이 지난 후에는 재인증해야합니다.</p>
+
+				<p class="bgG tc">재인증 하시길 바랍니다.</p>
+
+				<div class="inpWrap">
+					<label for="ipt01_01">인증번호입력</label>
+					<p>
+						<input type="text" name="ipt01_01" placeholder="인증번호를 입력해주세요." title="인증번호입력">
+						<span class="timer">00:00</span>
+					</p>
+				</div>	
+			</div>
+		</dd>
+	</dl>
+	<div class="modal-FtBtn">
+		<p>
+			<a href="#" onclick="modalOff2();" class="btn-cancle">닫기</a>
+			<a href="#" class="btn-normal">확인</a>
+		</p>
+	</div>
+</div>
+
+<div class="full-Modal agree-popup" rel="팝업">
+	<dl>
+		<dt>개인(신용)정보 수집·이용·제공 동의서(여신금융거래)</dt>
+		<dd class="cont">
+			<div class="agrBox">
+		
+				<p>[개인(신용)정보 필수적 수집·이용에 관한 사항]</p>
+				<span>최근 개정일 : 2021년 01월 11일</span>
+				
+				<p class="subTitle">개인(신용)정보의 수집·이용 목적</p>
+				<ol>
+					<li>비씨카드㈜ 귀중</li>
+					<li>귀사와의 (금융)거래와 관련하여 귀사가 본인의 개인(신용)정보를 수집·이용하고자 하는 경우에는 [개인정보 보호법] 제15조 및 제22조, 제24조 [신용정보의 이용 및 보호에 관한 법률] 제32조, 제33조 및 제34조에 따라 동의를 얻어야 합니다. 이에 본인은 귀사가 아래의 내용과 같이 본인의 개인(신용)정보를 수집·이용하는데 동의합니다.</li>
+				</ol>
+
+				<p class="subTitle">개인(신용)정보의 수집·이용 목적</p>
+				<ol>
+					<li>계약의 체결·유지·이행·관리·개선, 신청 상품 서비스 제공, 법령상 의무이행, 신용질서 문란행위 조사, 분쟁처리, 전화상담업무, 민원처리, 결제대금 출금이체, 본인 여부 확인</li>
+				</ol>
+
+				<p class="subTitle">수집·이용할 개인(신용)정보의 내용</p>
+				<ol>
+					<li><p><span>①</span> 개인식별정보 : 성명, 주민등록번호, 주민등록증 발급일, 연락처(휴대폰, 자택, 직장), 주소(자택, 직장), 이메일, 직장명, 부서, 직위, 성별, 국적, 운전면허번호, 여권번호, 외국인등록번호, 음성data, 연계정보CI, 금융기관명, 계좌정보</p></li>
+					<li><p><span>①</span> 개인식별정보 : 성명, 주민등록번호, 주민등록증 발급일, 연락처(휴대폰, 자택, 직장), 주소(자택, 직장), 이메일, 직장명, 부서, 직위, 성별, 국적, 운전면허번호, 여권번호, 외국인등록번호, 음성data, 연계정보CI, 금융기관명, 계좌정보</p></li>
+					<li><p><span>①</span> 개인식별정보 : 성명, 주민등록번호, 주민등록증 발급일, 연락처(휴대폰, 자택, 직장), 주소(자택, 직장), 이메일, 직장명, 부서, 직위, 성별, 국적, 운전면허번호, 여권번호, 외국인등록번호, 음성data, 연계정보CI, 금융기관명, 계좌정보</p></li>
+
+					<li>
+						<ol>
+							<li><p><span>①</span> 개인식별정보 : 성명, 주민등록번호, 주민등록증 발급일, 연락처(휴대폰, 자택, 직장), 주소(자택, 직장), 이메일, 직장명, 부서, 직위, 성별, 국적, 운전면허번호, 여권번호, 외국인등록번호, 음성data, 연계정보CI, 금융기관명, 계좌정보</p></li>
+							<li><p><span>①</span> 개인식별정보 : 성명, 주민등록번호, 주민등록증 발급일, 연락처(휴대폰, 자택, 직장), 주소(자택, 직장), 이메일, 직장명, 부서, 직위, 성별, 국적, 운전면허번호, 여권번호, 외국인등록번호, 음성data, 연계정보CI, 금융기관명, 계좌정보</p></li>
+							<li><p><span>①</span> 개인식별정보 : 성명, 주민등록번호, 주민등록증 발급일, 연락처(휴대폰, 자택, 직장), 주소(자택, 직장), 이메일, 직장명, 부서, 직위, 성별, 국적, 운전면허번호, 여권번호, 외국인등록번호, 음성data, 연계정보CI, 금융기관명, 계좌정보</p></li>
+
+							<li>
+							
+							</li>
+							
+						</ol>
+					</li>
+					
+				</ol>
+			</div>
+		</dd>
+	</dl>
+	<div class="modal-FtBtn">
+		<a href="#" class="btn-normal" onclick="modalOff2();">확인</a>
+	</div>
+</div>
+
+<div class="full-Modal agree-popup2" rel="팝업">
+	<dl>
+		<dt>개인(신용)정보 수집·이용·제공 동의서(여신금융거래)</dt>
+		<dd class="cont">
+			<div class="agrBox">
+				<img src="../public/img/agree/agreement1_3.jpg" alt="개인(신용)정보 제3자 제공동의서[비여신·여신 공통]">
+			</div>
+		</dd>
+	</dl>
+	<div class="modal-FtBtn">
+		<a href="#" class="btn-normal" onclick="modalOff2();">확인</a>
+	</div>
+</div>
+
+<div class="full-Modal agree-popup3" rel="팝업">
+	<dl>
+		<dt>적합성·적정성 원칙 확인서 (가계용)</dt>
+		<dd class="cont">
+			<div class="agrBox">
+				<p>[필수] 적합성·적정성 원칙 확인서 (가계용)</p>
+				<ul>
+					<li>
+						<p class="subTitle">1. 귀하는 다음 중 어디에 해당하십니까?</p>
+						<ul class="inpRadio">
+							<li>
+								<input type="radio" id="rad01-1" name="table_radio01" title="일반금융소비자" checked="checked">
+								<label for="rad01-1">일반금융소비자</label>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<p class="subTitle">2. 귀하의 연령은 어떻게 되십니까?</p>
+						<ul class="inpRadio">
+							<li>
+								<input type="radio" id="rad02-1" name="table_radio02" title="20대 이하">
+								<label for="rad02-1">20대 이하</label>
+							</li>
+							<li>
+								<input type="radio" id="rad02-2" name="table_radio02" title="30대">
+								<label for="rad02-2">30대</label>
+							</li>
+							<li>
+								<input type="radio" id="rad02-3" name="table_radio02" title="40대">
+								<label for="rad02-3">40대</label>
+							</li>
+							<li>
+								<input type="radio" id="rad02-4" name="table_radio02" title="50대">
+								<label for="rad02-4">50대</label>
+							</li>
+							<li>
+								<input type="radio" id="rad02-5" name="table_radio02" title="60대 이상">
+								<label for="rad02-5">60대 이상</label>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<p class="subTitle">3. 귀하의 대출계약 체결의 목적은 무엇입니까?</p>
+						<ul class="inpRadio">
+							<li>
+								<input type="radio" id="rad03-1" name="table_radio03" title="가계자금">
+								<label for="rad03-1">가계자금</label>
+							</li>
+							<li>
+								<input type="radio" id="rad03-2" name="table_radio03" title="사업자금">
+								<label for="rad03-2">사업자금</label>
+							</li>
+							<li>
+								<input type="radio" id="rad03-3" name="table_radio03" title="주택자금">
+								<label for="rad03-3">주택자금</label>
+							</li>
+							<li>
+								<input type="radio" id="rad03-4" name="table_radio03" title="타 기관 대출 상환">
+								<label for="rad03-4">타 기관 대출 상환</label>
+							</li>
+							<li>
+								<input type="radio" id="rad03-5" name="table_radio03" title="의료비">
+								<label for="rad03-5">의료비</label>
+							</li>
+							<li>
+								<input type="radio" id="rad03-6" name="table_radio03" title="교육비">
+								<label for="rad03-6">교육비</label>
+							</li>
+							<li>
+								<input type="radio" id="rad03-7" name="table_radio03" title="기타">
+								<label for="rad03-7">기타</label>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<p class="subTitle">4. 귀하의 연간 소득은 어느 정도입니까?</p>
+						<ul class="inpRadio">
+							<li>
+								<input type="radio" id="rad04-1" name="table_radio04" title="6백만원 이상 5천만원 미만">
+								<label for="rad04-1">6백만원 이상 5천만원 미만</label>
+							</li>
+							<li>
+								<input type="radio" id="rad04-2" name="table_radio04" title="5천만원 이상 1억원 미만">
+								<label for="rad04-2">5천만원 이상 1억원 미만</label>
+							</li>
+							<li>
+								<input type="radio" id="rad04-3" name="table_radio04" title="1억원 이상">
+								<label for="rad04-3">1억원 이상</label>
+							</li>
+							<li>
+								<input type="radio" id="rad04-4" name="table_radio04" title="해당없음">
+								<label for="rad04-4">해당없음</label>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<p class="subTitle">5. 귀하의 총 자산규모(순자산)는 어느 정도 입니까?</p>
+						<ul class="inpRadio">
+							<li>
+								<input type="radio" id="rad05-1" name="table_radio05" title="1억원 미만">
+								<label for="rad05-1">1억원 미만</label>
+							</li>
+							<li>
+								<input type="radio" id="rad05-2" name="table_radio05" title="1억원 이상 5억원 미만">
+								<label for="rad05-2">1억원 이상 5억원 미만</label>
+							</li>
+							<li>
+								<input type="radio" id="rad05-3" name="table_radio05" title="5억원 이상 10억원 미만">
+								<label for="rad05-3">5억원 이상 10억원 미만</label>
+							</li>
+							<li>
+								<input type="radio" id="rad05-4" name="table_radio05" title="10억원 이상">
+								<label for="rad05-4">10억원 이상</label>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<p class="subTitle">6. 귀하의 부채는 어느 정도 입니까?</p>
+						<ul class="inpRadio">
+							<li>
+								<input type="radio" id="rad06-1" name="table_radio06" title="1천만원 미만">
+								<label for="rad06-1">1천만원 미만</label>
+							</li>
+							<li>
+								<input type="radio" id="rad06-2" name="table_radio06" title="1천만원 이상 1억원 미만">
+								<label for="rad06-2">1천만원 이상 1억원 미만</label>
+							</li>
+							<li>
+								<input type="radio" id="rad06-3" name="table_radio06" title="1억원 이상">
+								<label for="rad06-3">1억원 이상</label>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<p class="subTitle">7. 귀하의 신용점수는 어떻게 되십니까?</p>
+						<ul class="inpRadio">
+							<li>
+								<input type="radio" id="rad07-1" name="table_radio07" title="600점 이하">
+								<label for="rad07-1">600점 이하</label>
+							</li>
+							<li>
+								<input type="radio" id="rad07-2" name="table_radio07" title="600점 초과">
+								<label for="rad07-2">600점 초과</label>
+							</li>
+							<li>
+								<input type="radio" id="rad07-3" name="table_radio07" title="모름">
+								<label for="rad07-3">모름</label>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<p class="subTitle">8. 귀하가 체결할 대출금의 변제방법은 무엇입니까?</p>
+						<ul class="inpRadio">
+							<li>
+								<input type="radio" id="rad08-1" name="table_radio08" title="근로소득">
+								<label for="rad08-1">근로소득</label>
+							</li>
+							<li>
+								<input type="radio" id="rad08-2" name="table_radio08" title="사업소득">
+								<label for="rad08-2">사업소득</label>
+							</li>
+							<li>
+								<input type="radio" id="rad08-3" name="table_radio08" title="임대소득">
+								<label for="rad08-3">임대소득</label>
+							</li>
+							<li>
+								<input type="radio" id="rad08-4" name="table_radio08" title="연금소득">
+								<label for="rad08-4">연금소득</label>
+							</li>
+							<li>
+								<input type="radio" id="rad08-5" name="table_radio08" title="기타">
+								<label for="rad08-5">기타</label>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<p class="subTitle">9. 귀하의 연간소득 대비 고정 지출비용은 어느 정도 입니까?</p>
+						<ul class="inpRadio">
+							<li>
+								<input type="radio" id="rad09-1" name="table_radio09" title="연간 소득을 초과하지 않음">
+								<label for="rad09-1">연간 소득을 초과하지 않음</label>
+							</li>
+							<li>
+								<input type="radio" id="rad09-2" name="table_radio09" title="연간 소득을 초과함">
+								<label for="rad09-2">연간 소득을 초과함</label>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				
+				<div class="inpWrap">
+					<label for="ipt01_01">성명</label>
+					<p>
+						<input type="text" name="ipt01_01" placeholder="한글만 입력해주세요." title="성명">
+					</p>
+				</div>
+
+				<div class="inpWrap">
+					<label for="ipt02_01">주민등록번호</label>
+					<p class="inpX2">
+						<input type="tel" name="ipt02_01" placeholder="입력해주세요." title="주민등록번호 앞자리">
+						<span>-</span>
+						<input type="tel" name="ipt02_02" placeholder="입력해주세요." title="주민등록번호 뒷자리">
+					</p>
+				</div>
+
+				<div class="inpWrap telcom-Sel" data-role="tab">
+					<span>핸드폰번호</span>
+					<ul class="tab-menu x3" role="tablist">
+						<li class="active">
+							<button role="tab" value="01">SKT</button>
+						</li>
+						<li>
+							<button role="tab" value="02">KT</button>
+						</li>
+						<li>
+							<button role="tab" value="03">LGU+</button>
+						</li>
+						<li>
+							<button role="tab" value="04">SKT알뜰폰</button>
+						</li>
+						<li>
+							<button role="tab" value="05">KT알뜰폰</button>
+						</li>
+						<li>
+							<button role="tab" value="06">LGU+알뜰폰</button>
+						</li>
+					</ul>
+					<p>
+						<input type="tel" name="ipt03_01" placeholder="'-'없이 입력해주세요." title="휴대전화 번호">
+					</p>
+				</div>
+
+			</div>
+		</dd>
+	</dl>
+	<div class="modal-FtBtn">
+		<p>
+			<a href="#" onclick="modalOff2();" class="btn-cancle">닫기</a>
+			<a href="#" class="btn-normal">확인</a>
+		</p>
+	</div>
+</div>
+
+<div class="full-Modal agree-popup4" rel="팝업">
+	<dl>
+		<dt>적합성·적정성 원칙 확인 결과서</dt>
+		<dd class="cont">
+			<div class="agrBox">
+				<p>적합성·적정성 원칙 확인 결과서</p>
+				<div class="inpRead">
+					<span>성명</span>
+					<p>홍길동</p>
+				</div>
+				
+				<div class="tableWrap pdT0">
+					<div class="secTitBox02">
+						<h3>기본 정보 입력</h3>
+					</div>
+					<div class="table-St th-bg th-bb td-bb th-br phLR10 pdLR10">
+						<table summary="이름, 주민등록번호 로 구성된 적합성 적정성 확인 고객정보 결과서">
+							<caption>이름, 주민등록번호 로 구성된 적합성 적정성 확인 고객정보 결과서</caption>
+							<colgroup>
+								<col width="15%">
+								<col width="*">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="col">이름</th>
+									<td>홍길동</td>
+								</tr>
+								<tr>
+									<th scope="col">주민등록번호</th>
+									<td>990101-*******</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div class="secTitBox02">
+						<h3>상품정보</h3>
+					</div>
+					<div class="table-St th-bg th-bb td-bb th-br  phLR10 pdLR10">
+						<table summary="작성구분, 상품구분, 희망상품명 으로 구성된 적합성 적정성 확인 상품정보 결과서">
+							<caption>작성구분, 상품구분, 희망상품명 으로 구성된 적합성 적정성 확인 상품정보 결과서</caption>
+							<colgroup>
+								<col width="22%">
+								<col width="*">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="col">작성 구분</th>
+									<td>
+										<ul class="inpRadio">
+											<li>
+												<input type="radio" id="rad01-1" name="table_radio01" title="적합성" disabled="disabled" checked="checked">
+												<label for="rad01-1">적합성</label>
+											</li>
+											<li>
+												<input type="radio" id="rad01-2" name="table_radio01" title="적정성" disabled="disabled">
+												<label for="rad01-2">적정성</label>
+											</li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<th scope="col">상품 구분</th>
+									<td>
+										<ul class="inpRadio">
+											<li>
+												<input type="radio" id="rad02-1" name="table_radio02" title="신용" disabled="disabled" checked="checked">
+												<label for="rad02-1">신용</label>
+											</li>
+											<li>
+												<input type="radio" id="rad02-2" name="table_radio02" title="담보" disabled="disabled">
+												<label for="rad02-2">담보</label>
+											</li>
+											<li>
+												<input type="radio" id="rad02-2" name="table_radio02" title="기타" disabled="disabled">
+												<label for="rad02-2">기타</label>
+											</li>
+
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<th scope="col">희망 상품명</th>
+									<td>개인신용대출 </td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					
+					<div class="secTitBox02">
+						<h3>고객의 확인서 주요 응답 내용</h3>
+					</div>
+					<div class="table-St th-bg th-bb td-bb th-br phLR10 pdLR10">
+						<table summary="연령대, 체결목적, 연간소득, 순자산규모, 부채규모, 신용점수, 변제계획, 연간 고정 지출 으로 구성된 적합성 적정성 확인 주용 응답 내용 결과서">
+							<caption>연령대, 체결목적, 연간소득, 순자산규모, 부채규모, 신용점수, 변제계획, 연간 고정 지출 으로 구성된 적합성 적정성 확인 주용 응답 내용 결과서 </caption>
+							<colgroup>
+								<col width="22%">
+								<col width="*">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="col">연령대</th>
+									<td>20대 이하</td>
+								</tr>
+								<tr>
+									<th scope="col">체결목적</th>
+									<td>가계자금</td>
+								</tr>
+								<tr>
+									<th scope="col">연간소득</th>
+									<td>6백만원 이상 ~ 5천만원 미만</td>
+								</tr>
+								<tr>
+									<th scope="col">순자산규모</th>
+									<td>1억원 미만 </td>
+								</tr>
+								<tr>
+									<th scope="col">부채규모</th>
+									<td>1천만원 미만</td>
+								</tr>
+								<tr>
+									<th scope="col">신용점수</th>
+									<td>600점  이상</td>
+								</tr>
+								<tr>
+									<th scope="col">변제계획</th>
+									<td>근로소득</td>
+								</tr>
+								<tr>
+									<th scope="col">연간 고정 지출</th>
+									<td>
+										<ul class="inpRadio">
+											<li>
+												<input type="radio" id="rad03-1" name="table_radio03" title="연간 소득 초과" disabled="disabled" checked="checked">
+												<label for="rad03-1">연간 소득 초과</label>
+											</li>
+											<li>
+												<input type="radio" id="rad03-2" name="table_radio03" title="연간 소득 초과하지 않음" disabled="disabled">
+												<label for="rad03-2">연간 소득 초과하지 않음 </label>
+											</li>
+										</ul>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					
+					<div class="secTitBox02">
+						<h3>저축은행 적합성·적정성 진단 결과</h3>
+					</div>
+					<div class="table-St type03 th-bg th-br th-bt td-bt phLR10 pdLR10">
+						<table class="style02" summary="판단기준 신용점수600점, 대출상품 가입조건 충족여부, 고객의 채무상환 능력, 기타 대출취급 기준 충족의 진단결과, 추가의견 에 대한 진단 결과표">
+							<caption>판단기준 신용점수600점, 대출상품 가입조건 충족여부, 고객의 채무상환 능력, 기타 대출취급 기준 충족의 진단결과, 추가의견 에 대한 진단 결과표</caption>
+							<colgroup>
+								<col width="30%">
+								<col width="30%">
+								<col width="*">
+							</colgroup>
+							<thead>
+								<tr class="tc">
+								<th class="bor-Tnon">진단기준</th>
+								<th class="bor-Rnon bor-Tnon">진단결과</th>
+								<th class="bor-Rnon bor-Tnon">추가의견</th>
+							</tr></thead>
+							<tbody>
+								<tr>
+									<th>신용점수600점</th>
+									<td>
+										<ul class="inpRadio">
+											<li>
+												<input type="radio" id="rad04-1" name="table_radio04" title="적합" disabled="disabled" checked="checked">
+												<label for="rad04-1">적합</label>
+											</li>
+											<li>
+												<input type="radio" id="rad04-2" name="table_radio04" title="부적합" disabled="disabled">
+												<label for="rad04-2">부적합</label>
+											</li>
+										</ul>
+									</td>
+									<td>기타의견없음</td>
+								</tr>
+								<tr>
+									<th>대출상품 가입 조건 충족여부</th>
+									<td>
+										<ul class="inpRadio">
+											<li>
+												<input type="radio" id="rad05-1" name="table_radio05" title="적합" disabled="disabled" checked="checked">
+												<label for="rad05-1">적합</label>
+											</li>
+											<li>
+												<input type="radio" id="rad05-2" name="table_radio05" title="부적합" disabled="disabled">
+												<label for="rad05-2">부적합</label>
+											</li>
+										</ul>
+									</td>
+									<td>기타의견없음</td>
+								</tr>
+								<tr>
+									<th>고객의 채무상환 능력</th>
+									<td>
+										<ul class="inpRadio">
+											<li>
+												<input type="radio" id="rad06-1" name="table_radio06" title="적합" disabled="disabled" checked="checked">
+												<label for="rad06-1">적합</label>
+											</li>
+											<li>
+												<input type="radio" id="rad06-2" name="table_radio06" title="부적합" disabled="disabled">
+												<label for="rad06-2">부적합</label>
+											</li>
+										</ul>
+									</td>
+									<td>기타의견없음</td>
+								</tr>
+								<tr>
+									<th>기타 대출취급 기준 충족</th>
+									<td>
+										<ul class="inpRadio">
+											<li>
+												<input type="radio" id="rad07-1" name="table_radio07" title="적합" disabled="disabled" checked="checked">
+												<label for="rad07-1">적합</label>
+											</li>
+											<li>
+												<input type="radio" id="rad07-2" name="table_radio07" title="부적합" disabled="disabled">
+												<label for="rad07-2">부적합</label>
+											</li>
+										</ul>
+									</td>
+									<td>기타의견없음</td>
+								</tr>
+								
+							</tbody>
+						</table>
+					</div>
+					<div class="txtBox">
+						<p class="rfrnc">'적합성'인 경우 적합/부적합, '적정성'인 경우 적정/부적정</p>
+					</div>
+
+					<div class="secTitBox02">
+						<h3>종합 판단 결과</h3>
+					</div>
+					<div class="table-St type03 th-bg th-br td-pdl10 th-pdl10 ">
+						<table class="style02" summary="종합 판단 결과 에 대한 진단 결과표">
+							<caption>종합 판단 결과 에 대한 진단 결과표</caption>
+							<colgroup>
+								<col width="30%">
+								<col width="*">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>종합 판단 결과</th>
+									<td>
+										<ul class="inpRadio">
+											<li>
+												<input type="radio" id="rad08-1" name="table_radio08" title="적합" disabled="disabled" checked="checked">
+												<label for="rad08-1">적합</label>
+											</li>
+											<li>
+												<input type="radio" id="rad08-2" name="table_radio08" title="부적합" disabled="disabled">
+												<label for="rad08-2">부적합</label>
+											</li>
+										</ul>
+									</td>
+								</tr>
+								
+								
+							</tbody>
+						</table>
+					</div>
+
+
+					<div class="txtBox">
+						<span>2022년 02월 08일</span>
+						<span>제이티저축은행(주)</span>
+					</div>
+
+				</div>
+
+			</div>
+		</dd>
+	</dl>
+	<div class="modal-FtBtn">
+		<p>
+			<a href="#" onclick="modalOff2();" class="btn-cancle">닫기</a>
+			<a href="#" class="btn-normal">확인</a>
+		</p>
+	</div>
+</div>
+
+<div class="full-Modal searchAddress-popup" rel="팝업">
+	<dl>
+		<dt>우편번호검색</dt>
+		<dd class="cont">
+			<div>
+				<p class="bgG">· 스크래핑 주소검색의 경우 도로명 주소만 입력이 가능합니다.<br>
+				· 도로명 검색: 도로명, 건물명을 입력하세요. [예: 황새울로324]<br>
+				· 상세주소가 검색결과에 안나올 시에는 일치하는 시도, 시군구를 선택해주시기 바랍니다.</p>
+				
+				<div class="inpWrap">
+					<p>
+						<select>
+							<option>서울특별시</option>
+							<option></option>
+						</select>
+					</p>
+					<p class="mgT10">
+						<select>
+							<option>강남구</option>
+							<option></option>
+						</select>
+					</p>
+					<p class="won mgT10">
+						<label class="hidden" f or="ipt01_01">우편번호검색</label>
+						<input type="text" name="ipt01_01" placeholder="도로명/건물명을 입력해주세요." title="우편번호검색">
+						<button type="button" title="검 색" class="btnNv01">검 색</button>
+					</p>
+				</div>
+
+				<div class="schVal">
+					<div class="table-St type03 th-bg th-bt td-bt tc">
+						<table class="style02" summary="우편번호, 주소 에 대한 우편번호검색 결과표">
+							<caption>우편번호, 주소 에 대한 우편번호검색 결과표</caption>
+			
+							<thead>
+								<tr>
+								<th class="bor-Tnon">우편번호</th>
+								<th class="bor-Rnon bor-Tnon">주소</th>
+							</tr></thead>
+							<tbody>
+								<tr>
+									<td>00000</td>
+									<td>경기도 성남시 분당구 황새울로 324</td>
+								</tr>
+								<tr>
+									<td>00000</td>
+									<td>경기도 성남시 분당구 황새울로 324</td>
+								</tr>
+								<tr>
+									<td>00000</td>
+									<td>경기도 성남시 분당구 황새울로 324</td>
+								</tr>
+								<tr>
+									<td>00000</td>
+									<td>경기도 성남시 분당구 황새울로 324</td>
+								</tr>
+								<tr>
+									<td>00000</td>
+									<td>경기도 성남시 분당구 황새울로 324</td>
+								</tr>
+								<tr>
+									<td>00000</td>
+									<td>경기도 성남시 분당구 황새울로 324</td>
+								</tr>
+								<tr>
+									<td>00000</td>
+									<td>경기도 성남시 분당구 황새울로 324</td>
+								</tr>
+						
+							</tbody>
+						</table>
+					</div>	
+				</div>
+			</div>
+			
+		</dd>
+	</dl>
+	<div class="modal-FtBtn">
+		<p>
+			<a href="#" onclick="modalOff2();" class="btn-cancle">닫기</a>
+			<a href="#" class="btn-normal">확인</a>
+		</p>
+	</div>
+</div>
+
+
+<!-- <div class="Acuon-Modal event-popup" rel="알림창">
+	<dl class="Modal-Fix eventWrap">
+		<dd class="swipeCont">
+			<div>
+				<a href="#"><img src="../public/img/event_test01.png" alt="이벤트이미지01"></a>
+				<a href="#"><img src="../public/img/event_test02.png" alt="이벤트이미지02"></a>
+				<a href="#"><img src="../public/img/event_test01.png" alt="이벤트이미지01"></a>
+			</div>
+			<ul class="modalDot type2">
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</dd>
+	
+		<dd class="modal-FtBtn">
+			<p>
+				<a href="#" onclick="modalOff();" class="btn-cancle">닫기</a>
+				<a href="#" class="btn-normal">확인</a>
+			</p>
+		</dd>
+
+	</dl>
+</div> -->
+
+<div class="Acuon-Modal event-popup2" rel="알림창">
+	<dl class="Modal-Fix eventWrap"><!-- class="Modal-Fix" 하단버튼필요시 노출-->
+		<dd class="swipeCont">
+			<div class="Tab0201 banner2-area ac-slider-event">
+				<div class="main_banner02 main_banner0201">
+					<a href="#"><img src="../public/img/event_test01.png" alt="이벤트이미지01"></a>
+				</div>
+
+				<div class="main_banner02 main_banner0202">
+					<a href="#"><img src="../public/img/event_test02.png" alt="이벤트이미지02"></a>
+				</div>
+
+				<div class="main_banner02 main_banner0203">
+					<a href="#"><img src="../public/img/event_test01.png" alt="이벤트이미지01"></a>
+				</div>
+				
+			</div>
+		</dd>
+		<!-- 하단버튼 필요시 노출 -->
+		<dd class="modal-FtBtn">
+			<p>
+				<a href="#" onclick="modalOff();" class="btn-cancle">오늘 하루보지않기</a>
+				<a href="#" class="btn-normal">닫기</a>
+			</p>
+		</dd>
+
+	</dl>
+</div>
+
+
+</body>
+</html>
+

@@ -1,0 +1,101 @@
+<!--%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%-->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<!-- %@ include file="./public/inc/common.jsp" %-->
+	<title>JT 저축은행</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<link rel="stylesheet" type="text/css" href="../public/css/reset.css?v=002" />
+	<link rel="stylesheet" type="text/css" href="../public/css/common.css?v=002" />
+	<link rel="stylesheet" type="text/css" href="../public/css/slick.css" />
+	<script src="../public/js/jquery.min.js"></script>
+	<script src="../public/js/slick.js"></script>
+	<script src="../public/js/common.js"></script>
+	<script>
+
+	</script>
+</head>
+<body class="ft-fixLayout">
+
+<!-- // header -->
+<header>
+	<div>
+		<h1><a href="/"><img src="../public/img/logo.png" alt="JT저축은행" /></a></h1>
+
+		<a href="javascript:callgnb();" alt="전제메뉴 보기" >
+			<span></span>
+			<span></span>
+			<span></span>
+		</a>
+
+	</div>
+</header>
+<!-- header // -->
+
+<!-- // Aside -->
+<div class="Aside">
+	<script>
+		$(document).ready(function(){ 
+			$('.Aside').load('../public/inc/nav.html'); 
+		});
+	</script>
+</div>
+<!-- Aside // -->
+
+<div id="main">
+	<section>
+		
+		<article class="ContentWrap">
+
+			<div class="subPage-Tit">
+				<h2>CMS서비스</h2>
+				<p>JT저축은행이 제공하는 금융서비스입니다.</p>
+				<ul>
+					<li class="on"><a href="">CMS동의</a></li>
+					<li><a href="">CMS조회(신청 및 변경)</a></li>
+				</ul>
+			</div>
+			
+			<div class="call-admin">
+				<div>
+					<div class="secTitBox02">
+						<div>자동납부 계좌변경신청 안내</div>
+					</div>
+					
+					<div class="txtBox03">
+						<p>자동이체 신청내역 및 해지/변경/조회 문의는 요금청구기관으로 문의하시기 바랍니다.</p>
+						<p>이용시간<br>
+						자동이체 조회서비스 : 매일 09:00 ~ 22:00<br>
+						자동이체 신청 및 변경 : 매영업일 09:00 ~ 17:00</p>
+					</div>
+					
+					<div class="tableWrap">
+					<div class="borderWrap mgT0">
+						<p class="tit">1. 자동납부 계좌변경 서비스란?</p>
+						<span class="finTxt">현재의 자동납부 신청계좌를 타 계좌로 변경하는 서비스입니다.</span><br><br>
+						<p class="tit">2. 자동납부 계좌변경 유의사항</p>
+						<span class="finTxt">자동납부 계좌변경 처리를 위해 해지 및 신규가 순차적으로 처리되기 때문에, 자동납부 출금일이 계좌변경 처리기간 중에 포함된 경우 미출금으로 인한 연체가 발생하거나 변경 전 계좌에서 출금이 이루어 질 수 있으므로, '자동납부 출금일' 4영업일 이전에 신청하셔야 합니다.</span>
+					</div>
+						<p class="sub_tit">상기 내용을 모두 확인하였으며, CMS 동의합니다.</p>
+					</div>
+				</div>
+			</div>
+	
+		</article>
+	
+	</section>
+</div>
+<!-- main // -->
+
+<div class="ft-fixBtnWrap">
+	<p>
+		<a href="#" class="btn-disabled">아니오</a>
+		<a href="#" class="btn-normal">예</a>
+	</p>
+</div>
+
+</body>
+</html>

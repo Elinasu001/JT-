@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <script type="text/javascript">var TNK_SR = '952c937d6b86d2877972a12ac40ec961';</script>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="JT저축은행">
+    <meta name="writer" content="JT저축은행">
+    <meta name="subject" content="JT저축은행">
+    <meta name="keywords" content="JT저축은행,햇살론,신용대출,파라솔,점프론,중금리대출,예금,적금,스탁론,할부금융,담보대출,멤버십,J트러스트,JTRUST,대출상담사">
+    <meta name="description" content="JT저축은행 신용대출,햇살론,할부금융 정기예금 멤버십 서비스제공">
+    <meta name="og:title" content="JT저축은행">
+    <meta content="JT저축은행" property="og:title">
+    <meta content="website" property="og:type">
+    <meta content="https://www.jt-bank.co.kr/" property="og:url">
+    <meta content="https://www.jt-bank.co.kr/img/jt-bank.jpg" property="og:image">
+    <meta content="나에게 가장 가까운 은행 JT저축은행" property="og:description">
+    <link rel="shortcut icon" href="https://jt-bank.co.kr/asset/public/favicon.png">
+    <script type="text/javascript" src="https://jt-bank.co.kr/asset/js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="https://jt-bank.co.kr/asset/js/jquery.cookie.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://jt-bank.co.kr/asset/public/w/css/reset.css?version=20240902095802" />
+    <link rel="stylesheet" type="text/css" href="../public/css/common.css?version=20240902095802" />
+    <link rel="stylesheet" type="text/css" href="https://jt-bank.co.kr/asset/public/w/css/common01.css?version=20240902095802" />
+    <link rel="stylesheet" type="text/css" href="https://jt-bank.co.kr/asset/public/w/css/test.css?version=20240902095802" />
+    <link rel="stylesheet" type="text/css" href="https://jt-bank.co.kr/asset/public/w/css/footer.css?version=20240902095802" />
+    <script type="text/javascript" src="https://jt-bank.co.kr/asset/public/w/js/common.js?version=20240902095802"></script>
+    <script type="text/javascript" src="https://jt-bank.co.kr/asset/solution/transkey_mobile/transkey.js?version=20240902095802"></script>
+    <link rel="stylesheet" type="text/css" href="https://jt-bank.co.kr/asset/solution/transkey_mobile/transkey.css?version=20240902095802" />
+    <script type="text/javascript" src="https://jt-bank.co.kr/asset/solution/AnySign/anySign4PCInterface.js"></script>
+    <script type="text/javascript" src="https://jt-bank.co.kr/asset/solution/pdf/html2canvas.js?version=20240902095802"></script>
+    <script type="text/javascript" src="https://jt-bank.co.kr/asset/solution/pdf/jspdf.min.js?version=20240902095802"></script>
+    <script type="text/javascript" src="https://jt-bank.co.kr/asset/public/w/datepicker/jquery-ui.min.js?version=20240902095802"></script>
+    <link rel="stylesheet" type="text/css" href="https://jt-bank.co.kr/asset/public/w/datepicker/jquery-ui.min.css?version=20240902095802" />
+    <script type="text/javascript" src="https://jt-bank.co.kr/asset/js/biz/w/finance/FIN0801.js?version=20240902095802"></script>
+    <title>기한의 이익 상실일 / 채권양도 예정일 조회  &lt; 금융소비자보호 &lt; JT저축은행</title>
+</head>
+<body>
+
+    <!-- //modal - 채권양도 예정 통지서 -->
+    <div class="Acuon-Modal customer_notice on" id="customer_notice" aria-modal="true" rel="채권양도 예정 통지서">
+        <style>
+            .Acuon-Modal .table-St > table th { padding:15px; }
+            .Acuon-Modal .table-St > table td { padding:10px; }
+            .Acuon-Modal .tc { text-align:center; }
+            .Acuon-Modal>.modal-type02>dl>dd>div>span.num { text-align: center; margin-top:20px; }
+            .Acuon-Modal ol.order > li.bor-none::before { content:none; }
+            .Acuon-Modal ol.order > li { position:relative; border:1px solid #DDDDDD; padding:10px; margin-bottom:30px; }
+            .Acuon-Modal ol.order > li::before { content:'▶'; position:absolute; bottom: -27px; left:50%; transform: translateY(-50%); transform: rotate(90deg); }
+        </style>
+        <div class="modal-type02" tabindex="0">
+            <!-- <a href="javascript:void(0);" onclick="modalOff();">닫기</a> -->
+            <dl>
+                <dt>채권양도 예정 통지서</dt>
+                <dd>
+                    <div>
+                        <p>채권양도 예정 통지서</p>
+                        <div class="table-St th-bg th-br th-bb td-bb">
+                            <table summary="수신인, 주소 입력표">
+                                <caption>수신인, 주소 입력표</caption>
+                                <colgroup>
+                                    <col width="15%">
+                                    <col width="*">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="col">수&nbsp;&nbsp;신&nbsp;&nbsp;인</th>
+                                        <td><p style="font-weight:300;">홍길동(00.00.00)&nbsp;<span>귀하</span></p></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col">주&nbsp;&nbsp;소</th>
+                                        <td><p style="font-weight:300;">(우편번호) 주소 등, 부속 주소</p></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <br/>
+                        <ol>
+                            <li>제이티저축은행㈜가 귀하에 대하여 가지는 아래 표시 채권을 20&nbsp;&nbsp;년 &nbsp;월 &nbsp;일자로 <b>(양수예정인)</b>에 양도할 예정임을 통지합니다.</li>
+                            <li>채권양도에 따라 대상채권의 모든 원금, 이자, 비용 및 이에 수반하는 일체의 권리도 <b>(양수예정인)</b>에게 이전될 예정임을 알려드립니다.</li>
+                            <li>( ※ 양수예정인은 20 년 월 일에 입찰매각 방식을 통해 결정될 예정입니다. )</li>
+                        </ol>
+
+                        <br/>
+                        <ol>
+                            <li> 아울러, 「신용정보의 이용 및 보호에 관한 법률」, 「개인정보 보호법」 및 금융위원회고시 「신용정보업 감독 규정」에 따라 <b>제이티저축은행㈜</b>
+                                은 채무자의 개인신용정보를 <b>(양수예정인)</b>에게 이전 · 제공할 예정이며, <b>(양수예정인)</b>은 같은 법 규정에 따라 본 양도예정채권과 관련한 귀하
+                                의 개인(신용)정보를 관리 · 등록 하게 될 예정임을 알려드립니다.
+                            </li>
+                        </ol>
+
+                        <br/>
+                        <ol>
+                            <li> 또한, 귀하께서 개인금융채권을 연체한 경우에는 「개인금융채권의 관리 및 개인금융채무자의 보호에 관한 법률」 제35조에서 정하는 바에 따
+                                라 제이티저축은행㈜에게 채무조정을 요청할 수 있습니다.(단, 동법 제35조제1항제1호~제6호의 사유에 해당하는 경우에는 채무조정을 요청
+                                할 수 없습니다.)
+                            </li>
+                            <li>
+                                채무조정의 절차 · 방법은 제이티저축은행㈜의 게시판과 인터넷 홈페이지 <a href="https://www.jt-bank.co.kr/" title="제이티저축은행 홈페이지 바로가기">(www.jt-bank.co.kr)</a> 에서 확인할 수 있으며, 
+                                본 통지서 도달 후 10영업일 내에 채무조정 요청이 없는 경우 아래 표시채권이 예정대로 양도될 수 있음을 알려드립니다.
+                            </li>
+                        </ol>
+
+                        <br/><br/>
+                        <p class="tc">양도예정채권 명세(0000.00.00 기준)</p>
+
+                        <div class="secTitBox">
+                            <span>소멸시효 완성여부: <span style="color:red;">여 / 부</span></span>
+                            <span>(단위 : 원)</span>
+                        </div>
+
+                        <div class="table-St th-bg td-bt th-br td-br ">
+                            <table summary="대출과목, 계좌번호, 최초대출원금, 대출원금잔액, 이자, 법적절차비용, 여부 안내표">
+                                <caption>대출과목, 계좌번호, 최초대출원금, 대출원금잔액, 이자, 법적절차비용, 여부 안내표</caption>
+                                <colgroup>
+                                    <col width="14%">
+                                    <col width="14%">
+                                    <col width="14%">
+                                    <col width="14%">
+                                    <col width="14%">
+                                    <col width="14%">
+                                    <col width="14%">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">대출과목</th>
+                                        <th scope="col">계좌번호</th>
+                                        <th scope="col">최초대출원금</th>
+                                        <th scope="col">대출원금잔액</th>
+                                        <th scope="col">이자</th>
+                                        <th scope="col">법적절차비용</th>
+                                        <th scope="col"><span style="color:red;">여 / 부</span></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <br/>
+                        <ol>
+                            <li>※ 이자, 법적절차비용 등 채권액은 변동될 수 있습니다.</li>
+                            <li>※※ 우편물 일괄발송에 따라 회생채무자, 파산채무자 및 면책자에게도 본 통지서가 송달될 수 있으나, 본 통지서는 이미 내려진 회생, 파산 및
+                                면책 관련 결정의 효력에 미치는 영향은 없습니다.</li>
+                            <li>※※※ 상기 소멸시효 완성여부는 채권자가 판단한 것으로, 소멸시효 완성 여부에 대한 채무자의 판단이 다른 경우에는 증빙을 갖추어 추심을
+                                중단할 것을 요구하는 등 항변할 수 있습니다.</li>
+                        </ol>
+
+                        <p class="subTitle"> 관련 상담 문의는 제이티저축은행㈜ (☏1688-8877)로 연락 주시기 바랍니다.</p>
+
+                        <span>0000년 00월 00일</span>
+                        <br/><br/>
+                        <span>양도예정인&nbsp;&nbsp;:&nbsp;&nbsp;</span>
+                        <br/><br/>
+                        <span>제이티저축은행㈜</span>
+                        <br/><br/>
+                        <span>경기 성남시 분당구 황새울로 324</span>
+                        <br/><br/>
+                        <span>황새울로 324 대표이사 박중용</span>
+
+                        <br/><br/>
+                        <span class="num">1 / 2</span>
+                        <hr class="hr-line"/>
+                        <br/><br/>
+
+                        <p>※ 채무조정 지원제도 안내</p>
+
+                        <p class="subTitle">■ 채무조정 요청권</p>
+                        <ol>
+                            <li> · (개요) 「개인금융채권의 관리 및 개인금융채무자의 보호에 관한 법률」 (이하 "「개인채무자보호법」" 이라 한다)에 따라
+                                채무 연체 발생시 채무자가 금융회사에 직접 채무조정을 요청할 수 있는 권리<br/><br/>
+                            </li>
+                            <li> · (신청방법)「개인채무자보호법」에 명시된 채무조정 요청권에 대해 상세히 알려드리니, 해당 사항이 있는 고객님께서는
+                                당사 지점 또는 당사 콜센터 (☏ 1688-8877)에 문의하여 주시기 바랍니다.<br/><br/>
+                            </li>
+                        </ol>
+
+                        <p class="subTitle">&lt참고&gt; 채무조정 절차</b></p>
+                        <ol>
+                            <li>
+                                <ol class="order">
+                                    <li>
+                                        <p><span>1)</span>요청 </p>
+                                        <p><span></span>(채무자) 금융회사에 채무조정을 요청합니다. (구비서류 제출) </p>
+                                    </li>
+                                    <li>
+                                        <p><span>2)</span>심사 및 결과통지 </p>
+                                        <p><span></span>(금융회사) 채무조정 심사 후 결과를 통지합니다. (10영업일 이내)</p>
+                                    </li>
+                                    <li>
+                                        <p><span>3)</span>동의 </p>
+                                        <p><span></span>(채무자) 금융회사가 통지한 채무조정 내용에 대해 동의 여부를 결정합니다. (10영업일 이내)</p>
+                                    </li>
+                                    <li>
+                                        <p><span>4)</span> 채무조정서 작성 </p>
+                                        <p><span></span>(금융회사) 채무자가 동의한 채무조정내용에 대해 조정서를 작성합니다. </p>
+                                    </li>
+                                    <li class="bor-none">
+                                        <p><span>5)</span>합의 </p>
+                                        <p><span></span>(채무자) 조정서에 날인하면 채무조정 합의가 성립됩니다.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                        <ol>
+                            <li>※당사 대출 이외 타사 대출금에 대해서도 함께 채무조정을 희망하시는 분은, 신용회복위원회 (☎ 1600-5500)를 통해 상담
+                                받으실 수 있습니다.</li>
+                        </ol>
+
+                        <br/><br/>
+                        <p class="subTitle">■ 신용회복위원회 채무조정</p>
+                        <ol>
+                            <li> · (개요) 채무를 정상적으로 상환할 수 없는 과중 채무자를 대상으로 상환기간 연장, 이자율 조정, 채무감면 등을 통해 본
+                                인의 상환능력에 맞게 채무를 조정하는 절차
+                            </li>
+                            <li> · (신청방법) 신용회복위원회 (☎ 1600-5500) 통해 상담 및 신청 가능</li>
+                        </ol>
+    
+                        <p class="subTitle">■ 법원의 개인회생</p>
+    
+                        <ol>
+                            <li> · (개요) 채무를 정상적으로 상환할 수 없는 과중 채무자를 대상으로 채권자 등 이해관계인의 법률 관계를 조정함으로써
+                                채무자의 효율적 희생과 채무자의 이익을 도모하기 위하여 마련된 절차
+                            </li>
+                            <li> · (신청방법) 대한법률구조공단(☎ 132) 또는 신용회북위원회(☏1600-5500)을 통해 상담 및 신청 가능</li>
+                        </ol>
+    
+                        <p class="subTitle">■ 법원의 개인파산 · 면책</p>
+                        
+                        <ol>
+                            <li> · (개요) 자신의 재산으로 모든 채무를 변제할 수 없는 개인 채무자를 대상으로 법원이 모든 채권자가 평등하게 채권을
+                                변제발도록 하고 채무자에게는 면책 절차를 통하여 남아있는 채무에 대한 변제 책임은 면제하는 절차
+                            </li>
+                            <li> · (신청방법) 대한법률구조공단(☎ 132) 또는 신용회북위원회(☏1600-5500)을 통해 상담 및 신청 가능</li>
+                        </ol>
+                        <span class="num">2 / 2</span>
+                    </div>
+                    <p class="subBtnWrap">
+                        <button type="button" onclick="modalOff();" title="닫기" class="lone_ok cancelBtn">닫기</button>
+                    </p>
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <!-- modal - 채권양도 예정 통지서// -->
+
+</body>
+</html>

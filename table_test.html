@@ -1,0 +1,1101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>jt저축은행 퍼블 sample</title>
+  <script type="text/javascript" src="./public/js/jquery.min.js"></script>
+  <script type="text/javascript" src="./public/js/common.js"></script>
+  <script type="text/javascript" src="./public/js/agree.js"></script>
+  <link rel="stylesheet" type="text/css" href="./public/css/reset.css"/>
+  <link rel="stylesheet" type="text/css" href="./public/css/common.css"/>
+  <link rel="stylesheet" type="text/css" href="./public/css/common01.css"/>
+  <link rel="stylesheet" type="text/css" href="./public/css/common02.css"/>
+  <link rel="stylesheet" type="text/css" href="./public/css/footer.css"/>
+
+  <style>
+	.sampleWrap { width:100%; margin:0 auto; }
+	.sampleWrap input { box-sizing:border-box; }
+
+	.sampleWrap section { padding:50px 20px 0; }
+	.sampleWrap section:after { content:""; clear:both; display:block; }
+	.sampleWrap section>h2 { text-align:left; font-size:20px; padding:20px 0; }
+	.sampleWrap section>h3 { text-align:left; font-size:16px; padding:20px 0; }
+	.sampleWrap input:focus-visible { outline:none; }
+	.sampleWrap input:disabled { background-color:#f8f8f8; }
+
+/*******************************************************************************/
+
+/***table-St class제어*/
+
+	/*기본 table 라운드o*/
+	.table-St { text-align:left; }
+	.table-St > table { width:100%; margin:0 auto; border:1px solid #ccc; border-radius:10px; border-spacing:0; overflow:hidden; }
+	.table-St > table th, .table-St > table td { height:60px; line-height:60px; font-size:1.6rem; } 
+	.table-St > table tr:last-child > th, .table-St > table tr:last-child > td { border-bottom:none; }
+	
+	/*위아래 선있는 table*/
+	.table-St.type01 > table { border:none; border-radius:0; border-top:solid 1px #ccc; border-bottom:solid 1px #ccc; }
+
+	/*부모 class 속성*/	
+	.th-bg th, .td-bg td { background:#f8f8f8; font-weight:500;} 
+	.th-bl th, .td-bl td { border-left:solid 1px #ccc; }
+	.th-br th, .td-br td { border-right:solid 1px #ccc; }
+	.th-bb th, .td-bb td { border-bottom:solid 1px #ccc; }
+	.th-bt th, .td-bt td { border-top:solid 1px #ccc; }
+	
+	/*th - td - th - td 이 한 tr에 묶인경우 */
+	.table-St.type03 td { border-right:solid 1px #ccc}
+	.table-St.type03 td:nth-of-type(2) { border-right:none;}
+	
+	/*th
+	td 마지막 border삭제  */
+	.table-St.last-Bnon th:last-child, .table-St.last-Bnon td:last-child { border-right:0; }
+	
+	
+	/*th td padding 값*/
+	.th-pdl40 th, .td-pdl40 td, .pdl40 { padding-left:40px;}	
+	.th-pdl60 th, .td-pdl60 td, .pdl60 { padding-left:60px;}
+
+
+	/*부모class로 th border-top 삭제*/
+	.bor-tnon th  { border-top:none;}
+
+
+/***개별 보더속성*/
+	.bor-l { border-left:solid 1px #ccc;  }
+	.bor-r { border-right:solid 1px #ccc;  }
+	.bor-t { border-top:solid 1px #ccc; }
+
+	.bor-Anon { border:none; }
+	.bor-Rnon { border-right:none!important;}
+	.bor-Tnon { border-top:none!important;}
+	
+
+	/*text정렬*/
+	.tl { text-align:left; }
+	.tr { text-align:right; }
+	.tc { text-align:center; }
+
+	/*게시판형일때 제목영역*/
+	.table-St table .tit { text-align:left; padding-left:60px;}	
+	.table-St table .tit02 { text-align:left; padding-left:40px;}	
+
+/*******************************************************************************/
+	
+
+	/*승희씨 css 수정필요부분*/
+	.table-St tr td a span { width:76px; margin-right:20px; padding:5px; text-align:center; font-size:1.4rem; border-radius:20px; display:inline-block; }
+	.titYw > a > span { color:#FFB867; border:1px solid #FFB867; }
+	.titGr > a > span { color:#69C500; border:1px solid #69C500; }
+	.titB > a > span { color:#00ACED; border:1px solid #00ACED; }
+	.titB, .titYw, .titGr, .titB td, .titYw td, .titGr td { text-align:left !important; padding-left:60px; }
+	
+	/* 경영공시 정기공시 표 다운로드 아이콘 */
+	.down>ul { width:64px; margin:0 auto; }
+	.down>ul:after { content:""; clear:both; display:block; }
+	.down>ul>li { display:inline-block; width:18px; height:19px; position:relative; }
+	.down>ul>li:last-child { margin-right:0; }
+	.down>ul>li>a { width:18px; height:19px; display:inline-block; }
+	.down>ul>li>a>img { width:100%; height:100%; position:absolute; top:0; left:0; }
+	
+
+	.tbBgC>td { background-color:#E1E4E9; font-weight:500;}
+
+
+	.table06 thead>tr>th { height:66px; line-height:1.65; padding:10px 20px; font-size:1.8rem; font-weight:500; }
+	.table06 tbody>tr>td { height:66px; line-height:1.65; padding:10px 40px; font-size:1.6rem; }
+	.sub-table>.table06~.txtBox { margin-top:-30px; }
+	  </style> 
+    
+<script>
+$(document).ready(function(){
+
+	//tab menu 제어
+    $(".tabMenu03>li, .tabMenu>li").on("click",function(){
+        $(this).parents("ul").find("li").removeClass("on")
+        $(this).addClass("on")
+    });
+
+	//상단 tab 제어
+	$(".tabWrap>li").on("click",function(){
+		$(this).parents("ul").find("li").removeClass("on");
+		$(this).addClass("on");
+	});
+	
+});
+</script>
+
+</head>
+<body>
+<div class="sampleWrap">
+
+<div class="call-admin">
+<div>
+
+
+<!--<section>
+	<h2>text</h2>
+	<p class="bulR">필수항목입니다.</p>
+</section>-->
+
+
+<section>
+
+	<div class="tableWrap">
+		<div class="table-St tl th-bg th-bb td-bb th-br td-pdl40 th-pdl40">
+			<table summary="번호, 제목, 게시일, 접수기간, 입사지원서에 대한 직원채용 게시판 표">
+				<caption>직원채용 게시판</caption>
+				<colgroup>
+					<col width="20%"/>
+					<col width="*"/>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>모집부문/지원자격</th>
+						<td>17,875</td>
+					</tr>
+					<tr>
+						<th>모집부문/지원자격</th>
+						<td>17,875</td>
+					</tr>
+					<tr>
+						<th>모집부문/지원자격</th>
+						<td>17,875</td>
+					</tr>
+					<tr>
+						<th>모집부문/지원자격</th>
+						<td>17,875</td>
+					</tr>
+					<tr>
+						<th>모집부문/지원자격</th>
+						<td>17,875</td>
+					</tr>
+					<tr>
+						<th>모집부문/지원자격</th>
+						<td>17,875</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	<div class="tableWrap">
+		<div class="table-St th-bg th-bb td-bb th-br td-pdl40 th-pdl40">
+			<table summary="성명, 주민등록번호, 계좌번호, 핸드폰번호, 상품선택, 대출구분에 대한 개인정보 입력표" >
+				<caption>개인정보 입력표</caption>
+				<colgroup>
+					<col width="15%">
+					<col width="*"/>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="col"><label for="name01">성명</label></th>
+						<td class="inpBox03">
+							<input type="text" id="name01" name="name01" placeholder="입력해주세요."/>
+							<span>&#42; 한글로만 입력해주세요</span>
+						</td>
+					</tr>
+					<tr>
+						<th scope="col"><label for="">주민등록번호</label></th>
+						<td class="inpNum03">
+							<input type="tel" id="birth01" name="birth01" placeholder="입력해주세요." maxlength="6"/>
+							<b>&#45;</b>
+							<input type="tel" id="birth02" name="birth02" placeholder="입력해주세요." maxlength="7"/>
+							<span>&#42; 숫자로만 입력해주세요</span>
+						</td>
+					</tr>
+					<tr>
+						<th scope="col"><label for="">계좌번호</label></th>
+						<td class="inpBox03">
+							<input type="tel" id="" name="" placeholder="입력해주세요."/>
+							<button type="button" class="btnG03" id="">본인확인송금</button>
+						</td>
+					</tr>
+					<tr>
+						<th scope="col"><label for="">핸드폰번호</label></th>
+						<td class="inpBox03 inpTel">
+							<ul>
+								<li>
+									<select>
+										<option val="">통신사</option>
+										<option val="1">SKT</option>
+										<option val="2">KT</option>
+										<option val="3">LGU+</option>
+										<option val="4">알뜰폰 SKT</option>
+										<option val="5">알뜰폰 KT</option>
+										<option val="6">알뜰폰 LGU+</option>
+									</select>
+								</li>
+								<li>
+									<select>
+										<option val="">선택</option>
+										<option val="1">010</option>
+									</select>
+								</li>
+								<li>
+									<b>&#45;</b>
+									<input type="tel" id="tel01" name="tel01" placeholder="입력해주세요." maxlength="4"/>
+								</li>
+								<li>
+									<b>&#45;</b>
+									<input type="tel" id="tel02" name="tel02" placeholder="입력해주세요." maxlength="4"/>
+								</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<th scope="col"><label for="">상품선택</label></th>
+						<td class="inpBox03">
+							<ul class="inpRadio">
+								<li>
+									<input type="radio" id="radio01_01" name="radio01" placeholder="입력해주세요."/>
+									<label for="radio01_01">직장인</label>
+								</li>
+								<li>
+									<input type="radio" id="radio01_02" name="radio01" placeholder="입력해주세요."/>
+									<label for="radio01_02">프리랜서</label>
+								</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<th><label for="">대출구분</label></th>
+						<td class="inpBox03">
+							<ul class="inpRadio">
+								<li>
+									<input type="radio" id="radio02_01" name="radio02" placeholder="입력해주세요."/>
+									<label for="radio02_01">신용대출</label>
+								</li>
+								<li>
+									<input type="radio" id="radio02_02" name="radio02" placeholder="입력해주세요."/>
+									<label for="radio02_02">햇살론</label>
+								</li>
+							</ul>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+</section>
+
+
+
+<section>
+	<h2>게시판 - 입찰정보</h2>
+	<div class="boardWrap">
+		<div class="table-St type01 th-bg td-bt tc">
+			<table summary="입찰공고명, 등록일, 입찰마감일로 구성되어 있는 입찰정보 게시판 표">
+				<caption>입찰공고명, 등록일, 입찰마감일로 구성되어 있는 입찰정보 게시판 표</caption>
+				<colgroup>
+					<col width="*">
+					<col width="12.5%">
+					<col width="12.5%">
+				</colgroup>
+				<thead>
+					<tr>
+						<th scope="col">입찰공고명</th>
+						<th scope="col">등록일</th>
+						<th scope="col">입찰마감일</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="tit"><a href="#" title="JT저축은행 입찰정보 (2022.01.12~2022.02.12)">JT저축은행 입찰정보 (2022.01.12~2022.02.12)</a></td>
+						<td>2022.01.12</td>
+						<td>2022.01.12</td>
+					</tr>
+					<tr>
+						<td class="tit"><a href="#" title="JT저축은행 입찰정보 (2022.01.12~2022.02.12)">JT저축은행 입찰정보 (2022.01.12~2022.02.12)</a></td>
+						<td>2022.01.12</td>
+						<td>2022.01.12</td>
+					</tr>
+					<tr>
+						<td class="tit"><a href="#" title="JT저축은행 입찰정보 (2022.01.12~2022.02.12)">JT저축은행 입찰정보 (2022.01.12~2022.02.12)</a></td>
+						<td>2022.01.12</td>
+						<td>2022.01.12</td>
+					</tr>
+					<tr>
+						<td class="tit"><a href="#" title="JT저축은행 입찰정보 (2022.01.12~2022.02.12)">JT저축은행 입찰정보 (2022.01.12~2022.02.12)</a></td>
+						<td>2022.01.12</td>
+						<td>2022.01.12</td>
+					</tr>
+					<tr>
+						<td class="tit"><a href="#" title="JT저축은행 입찰정보 (2022.01.12~2022.02.12)">JT저축은행 입찰정보 (2022.01.12~2022.02.12)</a></td>
+						<td>2022.01.12</td>
+						<td>2022.01.12</td>
+					</tr>
+					<tr>
+						<td class="tit"><a href="#" title="JT저축은행 입찰정보 (2022.01.12~2022.02.12)">JT저축은행 입찰정보 (2022.01.12~2022.02.12)</a></td>
+						<td>2022.01.12</td>
+						<td>2022.01.12</td>
+					</tr>
+					<tr>
+						<td class="tit"><a href="#" title="JT저축은행 입찰정보 (2022.01.12~2022.02.12)">JT저축은행 입찰정보 (2022.01.12~2022.02.12)</a></td>
+						<td>2022.01.12</td>
+						<td>2022.01.12</td>
+					</tr>
+					<tr>
+						<td class="tit"><a href="#" title="JT저축은행 입찰정보 (2022.01.12~2022.02.12)">JT저축은행 입찰정보 (2022.01.12~2022.02.12)</a></td>
+						<td>2022.01.12</td>
+						<td>2022.01.12</td>
+					</tr>
+					<tr>
+						<td class="tit"><a href="#" title="JT저축은행 입찰정보 (2022.01.12~2022.02.12)">JT저축은행 입찰정보 (2022.01.12~2022.02.12)</a></td>
+						<td>2022.01.12</td>
+						<td>2022.01.12</td>
+					</tr>
+					<tr>
+						<td class="tit"><a href="#" title="JT저축은행 입찰정보 (2022.01.12~2022.02.12)">JT저축은행 입찰정보 (2022.01.12~2022.02.12)</a></td>
+						<td>2022.01.12</td>
+						<td>2022.01.12</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<ul class="boardPage">
+			<li><button type="button" title="이전페이지 이동 버튼" id="prevBtn"><img src="./public/img/page_arrow_icon.png" alt="이전페이지 이동 아이콘"></button></li>
+			<li class="on"><span>1</span></li>
+			<li><span>2</span></li>
+			<li><span>3</span></li>
+			<li><button type="button" title="다음페이지 이동 버튼" id="nextBtn"><img src="./public/img/page_arrow_icon.png" alt="다음페이지 이동 아이콘"></button></li>
+		</ul>
+	</div>
+
+	<h2>게시판 - 광고홍보</h2>
+	<div class="boardWrap">
+		<div class="table-St type01 th-bg td-bt tc">
+			<table summary="제목, 등록일로 구성되어 있는 광고홍보 게시판 표">
+				<caption>번호, 제목, 등록일로 구성되어 있는 광고홍보 게시판 표</caption>
+				<colgroup>
+					<col width="*">
+					<col width="12.5%">
+				</colgroup>
+				<thead>
+					<tr>
+						<th scope="col">제목</th>
+						<th scope="col">등록일</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<!-- 클래스 titB, titGr, titYw 로 span 태그 색상 제어 -->
+						<td class="titYw"><a href="#" title="JT저축은행, 주니어 직원과 소통하며 동행한다"><span>광고홍보</span>JT저축은행, 주니어 직원과 소통하며 동행한다</a></td>
+						<td>2022.01.12</td>
+					</tr>
+					<tr>
+						<td class="titYw"><a href="#" title="JT저축은행, 주니어 직원과 소통하며 동행한다"><span>광고홍보</span>JT저축은행, 주니어 직원과 소통하며 동행한다</a></td>
+						<td>2022.01.12</td>
+					</tr>
+					<tr>
+						<td class="titYw"><a href="#" title="JT저축은행, 주니어 직원과 소통하며 동행한다"><span>광고홍보</span>JT저축은행, 주니어 직원과 소통하며 동행한다</a></td>
+						<td>2022.01.12</td>
+					</tr>
+					<tr>
+						<td class="titYw"><a href="#" title="JT저축은행, 주니어 직원과 소통하며 동행한다"><span>광고홍보</span>JT저축은행, 주니어 직원과 소통하며 동행한다</a></td>
+						<td>2022.01.12</td>
+					</tr>
+					<tr>
+						<td class="titYw"><a href="#" title="JT저축은행, 주니어 직원과 소통하며 동행한다"><span>광고홍보</span>JT저축은행, 주니어 직원과 소통하며 동행한다</a></td>
+						<td>2022.01.12</td>
+					</tr>
+					<tr>
+						<!-- 클래스 titB, titGr, titYw 로 span 태그 색상 제어 -->
+						<td class="titGr"><a href="#" title="JT저축은행, 주니어 직원과 소통하며 동행한다"><span>사회공헌</span>JT저축은행, 주니어 직원과 소통하며 동행한다</a></td>
+						<td>2022.01.12</td>
+					</tr>
+					<tr>
+						<td class="titGr"><a href="#" title="JT저축은행, 주니어 직원과 소통하며 동행한다"><span>사회공헌</span>JT저축은행, 주니어 직원과 소통하며 동행한다</a></td>
+						<td>2022.01.12</td>
+					</tr>
+					<tr>
+						<td class="titGr"><a href="#" title="JT저축은행, 주니어 직원과 소통하며 동행한다"><span>사회공헌</span>JT저축은행, 주니어 직원과 소통하며 동행한다</a></td>
+						<td>2022.01.12</td>
+					</tr>
+					<tr>
+						<td class="titGr"><a href="#" title="JT저축은행, 주니어 직원과 소통하며 동행한다"><span>사회공헌</span>JT저축은행, 주니어 직원과 소통하며 동행한다</a></td>
+						<td>2022.01.12</td>
+					</tr>
+					<tr>
+						<td class="titGr"><a href="#" title="JT저축은행, 주니어 직원과 소통하며 동행한다"><span>사회공헌</span>JT저축은행, 주니어 직원과 소통하며 동행한다</a></td>
+						<td>2022.01.12</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<ul class="boardPage">
+			<li><button type="button" title="이전페이지 이동 버튼" id="prevBtn"><img src="./public/img/page_arrow_icon.png" alt="이전페이지 이동 아이콘"></button></li>
+			<li class="on"><span>1</span></li>
+			<li><span>2</span></li>
+			<li><span>3</span></li>
+			<li><button type="button" title="다음페이지 이동 버튼" id="nextBtn"><img src="./public/img/page_arrow_icon.png" alt="다음페이지 이동 아이콘"></button></li>
+		</ul>
+	</div>
+
+
+
+	<div class="boardWrap">
+		<div class="table-St type01 th-bg td-bt tc">
+			<table summary="제목, 게시일, 기준일, 다운로드로 구성된 채용정보 게시판 표">
+				<caption>제목, 게시일, 기준일, 다운로드로 구성된 채용정보 게시판 표</caption>
+				<colgroup>
+					<col width="*">
+					<col width="12.5%">
+					<col width="12.5%">
+					<col width="12.5%">
+				</colgroup>
+				<thead>
+					<tr>
+						<th scope="col">제목</th>
+						<th scope="col">게시일</th>
+						<th scope="col">기준일</th>
+						<th scope="col">다운로드</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<!-- 클래스 titB, titGr, titYw 로 span 태그 색상 제어 -->
+						<td class="titB"><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시"><span>분기결산</span>2021년 3분기 민원발생 건수 공시</a></td>
+						<td>2021.10.26</td>
+						<td>2021.10.26</td>
+						<td class="down">
+							<ul>
+								<li><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시 pdf 다운로드 링크"><img src="./public/img/icon_download.png" alt="분기결산 2021년 3분기 민원발생 건수 공시 pdf 다운로드 링크 이미지"></a></li>
+								<li><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시 hwp 다운로드 링크"><img src="./public/img/icon_download.png" alt="분기결산 2021년 3분기 민원발생 건수 공시 hwp 다운로드 링크 이미지"></a></li>
+								<li><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시 word 다운로드 링크"><img src="./public/img/icon_download.png" alt="분기결산 2021년 3분기 민원발생 건수 공시 word 다운로드 링크 이미지"></a></li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="titB"><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시"><span>분기결산</span>2021년 3분기 민원발생 건수 공시</a></td>
+						<td>2021.10.26</td>
+						<td>2021.10.26</td>
+						<td class="down">
+							<ul>
+								<li><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시 pdf 다운로드 링크"><img src="./public/img/icon_download.png" alt="분기결산 2021년 3분기 민원발생 건수 공시 pdf 다운로드 링크 이미지"></a></li>
+								<li><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시 hwp 다운로드 링크"><img src="./public/img/icon_download.png" alt="분기결산 2021년 3분기 민원발생 건수 공시 hwp 다운로드 링크 이미지"></a></li>
+								<li><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시 word 다운로드 링크"><img src="./public/img/icon_download.png" alt="분기결산 2021년 3분기 민원발생 건수 공시 word 다운로드 링크 이미지"></a></li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="titB"><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시"><span>분기결산</span>2021년 3분기 민원발생 건수 공시</a></td>
+						<td>2021.10.26</td>
+						<td>2021.10.26</td>
+						<td class="down">
+							<ul>
+								<li><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시 pdf 다운로드 링크"><img src="./public/img/icon_download.png" alt="분기결산 2021년 3분기 민원발생 건수 공시 pdf 다운로드 링크 이미지"></a></li>
+								<li><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시 hwp 다운로드 링크"><img src="./public/img/icon_download.png" alt="분기결산 2021년 3분기 민원발생 건수 공시 hwp 다운로드 링크 이미지"></a></li>
+								<li><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시 word 다운로드 링크"><img src="./public/img/icon_download.png" alt="분기결산 2021년 3분기 민원발생 건수 공시 word 다운로드 링크 이미지"></a></li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="titB"><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시"><span>분기결산</span>2021년 3분기 민원발생 건수 공시</a></td>
+						<td>2021.10.26</td>
+						<td>2021.10.26</td>
+						<td class="down">
+							<ul>
+								<li><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시 pdf 다운로드 링크"><img src="./public/img/icon_download.png" alt="분기결산 2021년 3분기 민원발생 건수 공시 pdf 다운로드 링크 이미지"></a></li>
+								<li><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시 hwp 다운로드 링크"><img src="./public/img/icon_download.png" alt="분기결산 2021년 3분기 민원발생 건수 공시 hwp 다운로드 링크 이미지"></a></li>
+								<li><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시 word 다운로드 링크"><img src="./public/img/icon_download.png" alt="분기결산 2021년 3분기 민원발생 건수 공시 word 다운로드 링크 이미지"></a></li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="titB"><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시"><span>분기결산</span>2021년 3분기 민원발생 건수 공시</a></td>
+						<td>2021.10.26</td>
+						<td>2021.10.26</td>
+						<td class="down">
+							<ul>
+								<li><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시 pdf 다운로드 링크"><img src="./public/img/icon_download.png" alt="분기결산 2021년 3분기 민원발생 건수 공시 pdf 다운로드 링크 이미지"></a></li>
+								<li><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시 hwp 다운로드 링크"><img src="./public/img/icon_download.png" alt="분기결산 2021년 3분기 민원발생 건수 공시 hwp 다운로드 링크 이미지"></a></li>
+								<li><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시 word 다운로드 링크"><img src="./public/img/icon_download.png" alt="분기결산 2021년 3분기 민원발생 건수 공시 word 다운로드 링크 이미지"></a></li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="titB"><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시"><span>분기결산</span>2021년 3분기 민원발생 건수 공시</a></td>
+						<td>2021.10.26</td>
+						<td>2021.10.26</td>
+						<td class="down">
+							<ul>
+								<li><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시 pdf 다운로드 링크"><img src="./public/img/icon_download.png" alt="분기결산 2021년 3분기 민원발생 건수 공시 pdf 다운로드 링크 이미지"></a></li>
+								<li><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시 hwp 다운로드 링크"><img src="./public/img/icon_download.png" alt="분기결산 2021년 3분기 민원발생 건수 공시 hwp 다운로드 링크 이미지"></a></li>
+								<li><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시 word 다운로드 링크"><img src="./public/img/icon_download.png" alt="분기결산 2021년 3분기 민원발생 건수 공시 word 다운로드 링크 이미지"></a></li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="titGr"><a href="#" title="결산 2021년 3분기 민원발생 건수 공시"><span>결산</span>2021년 3분기 민원발생 건수 공시</a></td>
+						<td>2021.10.26</td>
+						<td>2021.10.26</td>
+						<td class="down">
+							<ul>
+								<li><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시 pdf 다운로드 링크"><img src="./public/img/icon_download.png" alt="분기결산 2021년 3분기 민원발생 건수 공시 pdf 다운로드 링크 이미지"></a></li>
+								<li><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시 hwp 다운로드 링크"><img src="./public/img/icon_download.png" alt="분기결산 2021년 3분기 민원발생 건수 공시 hwp 다운로드 링크 이미지"></a></li>
+								<li><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시 word 다운로드 링크"><img src="./public/img/icon_download.png" alt="분기결산 2021년 3분기 민원발생 건수 공시 word 다운로드 링크 이미지"></a></li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="titGr"><a href="#" title="결산 2021년 3분기 민원발생 건수 공시"><span>결산</span>2021년 3분기 민원발생 건수 공시</a></td>
+						<td>2021.10.26</td>
+						<td>2021.10.26</td>
+						<td class="down">
+							<ul>
+								<li><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시 pdf 다운로드 링크"><img src="./public/img/icon_download.png" alt="분기결산 2021년 3분기 민원발생 건수 공시 pdf 다운로드 링크 이미지"></a></li>
+								<li><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시 hwp 다운로드 링크"><img src="./public/img/icon_download.png" alt="분기결산 2021년 3분기 민원발생 건수 공시 hwp 다운로드 링크 이미지"></a></li>
+								<li><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시 word 다운로드 링크"><img src="./public/img/icon_download.png" alt="분기결산 2021년 3분기 민원발생 건수 공시 word 다운로드 링크 이미지"></a></li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="titGr"><a href="#" title="결산 2021년 3분기 민원발생 건수 공시"><span>결산</span>2021년 3분기 민원발생 건수 공시</a></td>
+						<td>2021.10.26</td>
+						<td>2021.10.26</td>
+						<td class="down">
+							<ul>
+								<li><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시 pdf 다운로드 링크"><img src="./public/img/icon_download.png" alt="분기결산 2021년 3분기 민원발생 건수 공시 pdf 다운로드 링크 이미지"></a></li>
+								<li><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시 hwp 다운로드 링크"><img src="./public/img/icon_download.png" alt="분기결산 2021년 3분기 민원발생 건수 공시 hwp 다운로드 링크 이미지"></a></li>
+								<li><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시 word 다운로드 링크"><img src="./public/img/icon_download.png" alt="분기결산 2021년 3분기 민원발생 건수 공시 word 다운로드 링크 이미지"></a></li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="titGr"><a href="#" title="결산 2021년 3분기 민원발생 건수 공시"><span>결산</span>2021년 3분기 민원발생 건수 공시</a></td>
+						<td>2021.10.26</td>
+						<td>2021.10.26</td>
+						<td class="down">
+							<ul>
+								<li><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시 pdf 다운로드 링크"><img src="./public/img/icon_download.png" alt="분기결산 2021년 3분기 민원발생 건수 공시 pdf 다운로드 링크 이미지"></a></li>
+								<li><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시 hwp 다운로드 링크"><img src="./public/img/icon_download.png" alt="분기결산 2021년 3분기 민원발생 건수 공시 hwp 다운로드 링크 이미지"></a></li>
+								<li><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시 word 다운로드 링크"><img src="./public/img/icon_download.png" alt="분기결산 2021년 3분기 민원발생 건수 공시 word 다운로드 링크 이미지"></a></li>
+							</ul>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<ul class="boardPage">
+			<li><button type="button" title="이전페이지 이동 버튼" id="prevBtn"><img src="./public/img/page_arrow_icon.png" alt="이전페이지 이동 아이콘"></button></li>
+			<li class="on"><span>1</span></li>
+			<li><span>2</span></li>
+			<li><span>3</span></li>
+			<li><button type="button" title="다음페이지 이동 버튼" id="nextBtn"><img src="./public/img/page_arrow_icon.png" alt="다음페이지 이동 아이콘"></button></li>
+		</ul>
+	</div>
+</section>
+
+
+<section>
+	<div class="secTitBox">
+		<div>1. 영업개황</div>
+		<p>회계기준:일반기업회계기준</p>
+		<span>16기3분기말(금분기): 2021년9월말<br> 제15기3분기말(전년동기): 2020년9월말<br> (단위: 억원, 개, 명)</span>
+	</div>
+	<div class="table-St last-Bnon th-bg td-bt th-br td-br tc">
+		<table summary="구분, 제16기 3분기말(금분기)(A), 제15기 3분기말(금분기)(A), 증강(A-B)로 구성되어 있는 영업개황 표">
+			<caption>구분, 제16기 3분기말(금분기)(A), 제15기 3분기말(금분기)(A), 증강(A-B)로 구성되어 있는 영업개황 표</caption>
+			<colgroup>
+				<col width="25%">
+				<col width="25%">
+				<col width="25%">
+				<col width="25%">
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">구분</th>
+					<th scope="col">제16기 3분기말(금분기)(A)</th>
+					<th scope="col">제15기 3분기말(금분기)(A)</th>
+					<th scope="col">증강(A-B)</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>총자산</td>
+					<td>17,875</td>
+					<td>17,875</td>
+					<td>17,875</td>
+				</tr>
+				<tr>
+					<td>총자산</td>
+					<td>17,875</td>
+					<td>17,875</td>
+					<td>17,875</td>
+				</tr>
+				<tr>
+					<td>총자산</td>
+					<td>17,875</td>
+					<td>17,875</td>
+					<td>17,875</td>
+				</tr>
+				<tr>
+					<td>총자산</td>
+					<td>17,875</td>
+					<td>17,875</td>
+					<td>17,875</td>
+				</tr>
+				<tr>
+					<td>총자산</td>
+					<td>17,875</td>
+					<td>17,875</td>
+					<td>17,875</td>
+				</tr>
+				<tr>
+					<td>총자산</td>
+					<td>17,875</td>
+					<td>17,875</td>
+					<td>17,875</td>
+				</tr>
+				<tr>
+					<td>총자산</td>
+					<td>17,875</td>
+					<td>17,875</td>
+					<td>17,875</td>
+				</tr>
+				<tr>
+					<td>총자산</td>
+					<td>17,875</td>
+					<td>17,875</td>
+					<td>17,875</td>
+				</tr>
+				<tr>
+					<td>총자산</td>
+					<td>17,875</td>
+					<td>17,875</td>
+					<td>17,875</td>
+				</tr>
+				<tr>
+					<td>총자산</td>
+					<td>17,875</td>
+					<td>17,875</td>
+					<td>17,875</td>
+				</tr>
+				<tr>
+					<td>총자산</td>
+					<td>17,875</td>
+					<td>17,875</td>
+					<td>17,875</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<br><br>
+
+	<div class="table-St last-Bnon th-bg td-bt th-br td-br">
+		<table summary="구분, 제16기 3분기말(금분기)(A), 제16기 3분기말(금분기)(A)의 구성비, 제15기 3분기말(금분기)(A), 제15기 3분기말(금분기)(A)의 구성비 증강(A-B)로 구성되어 있는 재무현황 표">
+			<caption>구분, 제16기 3분기말(금분기)(A), 제16기 3분기말(금분기)(A)의 구성비, 제15기 3분기말(금분기)(A), 제15기 3분기말(금분기)(A)의 구성비 증강(A-B)로 구성되어 있는 재무현황 표</caption>
+			<colgroup>
+				<col width="25%">
+				<col width="12.5%">
+				<col width="12.5%">
+				<col width="12.5%">
+				<col width="12.5%">
+				<col width="25%">
+			</colgroup>
+			<thead>
+				<tr class="tc">
+					<th rowspan="2">구분</th>
+					<th colspan="2">제16기 3분기말(금분기)(A)</th>
+					<th colspan="2">제15기 3분기말(금분기)(A)</th>
+					<th rowspan="2">증강(A-B)</th>
+				</tr>
+				<tr>
+					<th class="bdT0"></th><!--bdT0 : border-top:0px -->
+					<th class="bor-t tc">구성비</th>
+					<th class="bdT0"></th>
+					<th class="bor-t tc" style="border-right:solid 1px #ccc;">구성비</th><!--bdR0 : border-right:0px -->
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th colspan="6" class="bor-t tit02">1) 자산</th>
+				</tr>
+				<tr class="tc">
+					<td class="tit02">현금 및 예치금</td>
+					<td>17,875</td>
+					<td>17,875</td>
+					<td>17,875</td>
+					<td>17,875</td>
+					<td>17,875</td>
+				</tr>
+				<tr class="tc">
+					<td class="tit02">현금 및 예치금</td>
+					<td>17,875</td>
+					<td>17,875</td>
+					<td>17,875</td>
+					<td>17,875</td>
+					<td>17,875</td>
+				</tr>
+				<tr class="tc">
+					<td class="tit02">현금 및 예치금</td>
+					<td>17,875</td>
+					<td>17,875</td>
+					<td>17,875</td>
+					<td>17,875</td>
+					<td>17,875</td>
+				</tr>
+				<tr class="tc">
+					<td class="tit02">현금 및 예치금</td>
+					<td>17,875</td>
+					<td>17,875</td>
+					<td>17,875</td>
+					<td>17,875</td>
+					<td>17,875</td>
+				</tr>
+				<tr class="tc">
+					<td class="tit02">현금 및 예치금</td>
+					<td>17,875</td>
+					<td>17,875</td>
+					<td>17,875</td>
+					<td>17,875</td>
+					<td>17,875</td>
+				</tr>
+				<tr class="tc">
+					<td class="tit02">자산총계</td>
+					<td>17,875</td>
+					<td>17,875</td>
+					<td>17,875</td>
+					<td>17,875</td>
+					<td>17,875</td>
+				</tr>
+				<tr>
+					<th colspan="6" class="bor-t tit02">2) 부채</th>
+				</tr>
+				<tr class="tc">
+					<td class="tit02">현금 및 예치금</td>
+					<td>17,875</td>
+					<td>17,875</td>
+					<td>17,875</td>
+					<td>17,875</td>
+					<td>17,875</td>
+				</tr>
+				<tr class="tc">
+					<td class="tit02">현금 및 예치금</td>
+					<td>17,875</td>
+					<td>17,875</td>
+					<td>17,875</td>
+					<td>17,875</td>
+					<td>17,875</td>
+				</tr>
+				<tr class="tc">
+					<td class="tit02">현금 및 예치금</td>
+					<td>17,875</td>
+					<td>17,875</td>
+					<td>17,875</td>
+					<td>17,875</td>
+					<td>17,875</td>
+				</tr>
+				<tr class="tc">
+					<td class="tit02">부채총계</td>
+					<td>17,875</td>
+					<td>17,875</td>
+					<td>17,875</td>
+					<td>17,875</td>
+					<td>17,875</td>
+				</tr>
+				<tr>
+					<th colspan="6" class="bor-t tit02">3) 자본</th>
+				</tr>
+				<tr class="tc">
+					<td class="tit02">현금 및 예치금</td>
+					<td>17,875</td>
+					<td>17,875</td>
+					<td>17,875</td>
+					<td>17,875</td>
+					<td>17,875</td>
+				</tr>
+				<tr class="tc">
+					<td class="tit02">현금 및 예치금</td>
+					<td>17,875</td>
+					<td>17,875</td>
+					<td>17,875</td>
+					<td>17,875</td>
+					<td>17,875</td>
+				</tr>
+				<tr class="tc">
+					<td class="tit02">현금 및 예치금</td>
+					<td>17,875</td>
+					<td>17,875</td>
+					<td>17,875</td>
+					<td>17,875</td>
+					<td>17,875</td>
+				</tr>
+				<tr class="tc">
+					<td class="tit02">현금 및 예치금</td>
+					<td>17,875</td>
+					<td>17,875</td>
+					<td>17,875</td>
+					<td>17,875</td>
+					<td>17,875</td>
+				</tr>
+				<tr class="tc">
+					<td class="tit02">현금 및 예치금</td>
+					<td>17,875</td>
+					<td>17,875</td>
+					<td>17,875</td>
+					<td>17,875</td>
+					<td>17,875</td>
+				</tr>
+				<tr class="tc">
+					<td class="tit02">현금 및 예치금</td>
+					<td>17,875</td>
+					<td>17,875</td>
+					<td>17,875</td>
+					<td>17,875</td>
+					<td>17,875</td>
+				</tr>
+				<tr class="tbBgC tc"><!-- 배경색 제어 클래스 tbBgC-->
+					<td class="tit02">부채 및 자본총계</td>
+					<td>17,875</td>
+					<td>17,875</td>
+					<td>17,875</td>
+					<td>17,875</td>
+					<td>17,875</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</section>
+
+
+
+
+<section>
+	<div class="table-St th-bg td-bt td-br th-br tc">
+		<table class="style01" summary="점프론 일반 신용대출에 대한 인지비용 부담 비용 종류인 대출금액(증액대출 포함), 세액 안내표">
+			<caption>점프론 일반 신용대출에 대한 인지비용 부담 비용 종류인 대출금액(증액대출 포함), 세액 안내표</caption>
+			<colgroup>
+				<col width="50%">
+				<col width="25%">
+				<col width="25%">
+			</colgroup>
+			<thead>
+				<tr><th>대출금액(증액대출 포함)</th>
+				<th colspan="2" class="bor-Rnon">세액</th>
+			</tr></thead>
+			<tbody>
+				<tr>
+					<td>5천만원 이하</td>
+					<td>비과세</td>
+					<td rowspan="3" class="bdB0 bor-Rnon">저축은행과 고객이 각 50%씩 부담</td>
+				</tr>
+				<tr>
+					<td>5천만원 초과 ~ 1억원 이하</td>
+					<td>7만원</td>
+				</tr>
+				<tr>
+					<td>1억원 초과 ~ 10억원 이하</td>
+					<td>15만원</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<br><br>
+
+	<div class="table-St type03 th-bg th-br th-bt td-bt td-pdl40 th-pdl40 ">
+		<table class="style02" summary="점프론 일반 신용대출의 상환방식인 원금균등분할상환, 원리금균등분할상환에 대한 안내표">
+			<caption>점프론 일반 신용대출의 상환방식인 원금균등분할상환, 원리금균등분할상환에 대한 안내표</caption>
+			<colgroup>
+				<col width="20%">
+				<col width="30%">
+				<col width="20%">
+				<col width="30%">
+			</colgroup>
+			<thead>
+				<tr class="tc"><th colspan="2" class="bor-Tnon">원금균등분할상환</th>
+				<th colspan="2" class="bor-Rnon bor-Tnon">원리금균등분할상환</th>
+			</tr></thead>
+			<tbody>
+				<tr>
+					<th>대출금액</th>
+					<td >1,000만원</td>
+					<th>대출금액</th>
+					<td>1,000만원</td>
+				</tr>
+				<tr>
+					<th>대출기간</th>
+					<td>36개월</td>
+					<th>대출기간</th>
+					<td>36개월</td>
+				</tr>
+				<tr>
+					<th>적용금리</th>
+					<td>연 16.0%</td>
+					<th>적용금리</th>
+					<td>연 16.0%</td>
+				</tr>
+				<tr>
+					<th>월상환액<br>(원금+이자)</th>
+					<td>281,544원~413,668원<p class="star">시간경과 따라 낮아짐</p></td>
+					<th>월상환액<br>(원금+이자)</th>
+					<td>351,570원<p class="star">매월 동일</p></td>
+				</tr>
+				<tr>
+					<th>총이자상환액</th>
+					<td>2,468,976원</td>
+					<th>총이자상환액</th>
+					<td>2,654,963원</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<br><br>
+
+	<div class="table-St last-Bnon th-bg td-bt td-br th-br td-pdl40 th-pdl40 ">
+		<table class="" summary="햇살론(근로자)에 대한 이자납입일 지정(변경)시 유의사항의 회차별 대출일자 예시 표">
+			<caption>햇살론(근로자)에 대한 이자납입일 지정(변경)시 유의사항의 회차별 대출일자 예시 표</caption>
+			<colgroup>
+				<col width="16.6666%">
+				<col width="16.6666%">
+				<col width="16.6666%">
+				<col width="16.6666%">
+				<col width="16.6666%">
+				<col width="*">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th>1회</th>
+					<th>2회</th>
+					<th rowspan="2" class="bdB0">중략</th>
+					<th>11회</th>
+					<th>12회</th>
+					<th>13회</th>
+				</tr>
+				<tr>
+					<td>10월 25일</td>
+					<td>11월 25일</td>
+					<td>8월 25일</td>
+					<td>9월 25일</td>
+					<td>8월 27일</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<br><br>
+
+	<div class="table-St last-Bnon th-bg td-bt th-br td-br td-pdl40 ">
+		<table class="" summary="JT스탁론에 대한 담보평가 금액, 대출한도 안내표">
+			<caption>JT스탁론에 대한 담보평가 금액, 대출한도 안내표</caption>
+			<colgroup>
+				<col width="50%">
+				<col width="50%">
+			</colgroup>
+			<thead>
+				<tr class="tc">
+					<th>담보평가 금액</th>
+					<th>대출 한도</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>5천만원 이하</td>
+					<td>계좌평가금액의 300% 이내</td>
+				</tr>
+				<tr>
+					<td>5천만원 초과 ~ 1억원 이하</td>
+					<td>계좌평가금액의 250% 이내</td>
+				</tr>
+				<tr>
+					<td>1억원 초과</td>
+					<td>계좌평가금액의 200% 이내</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<br><br>
+
+	<div class="table-St last-Bnon th-bg th-br th-bt td-bt td-br td-pdl40">
+		<table class="table06" summary="개월, 적용이율 비대면, 적용이율 본점영업점(분당), 적용이율 광주, 적용이율 목포로 구성된 매월이자지급식이 단리식인 회전정기예금 금리안내 표">
+			<caption>개월, 적용이율 비대면, 적용이율 본점영업점(분당), 적용이율 광주, 적용이율 목포로 구성된 매월이자지급식이 단리식인 회전정기예금 금리안내 표</caption>
+			<colgroup>
+				<col width="20%">
+				<col width="20%">
+				<col width="20%">
+				<col width="20%">
+				<col width="20%">
+			</colgroup>
+			<thead>
+				<tr class="tc bor-tnon">
+					<th rowspan="2" class="bdL0">개월</th>
+					<th colspan="4">적용이율</th>
+				</tr>
+				<tr class="tc">
+					<th>비대면</th>
+					<th>본점영업점(분당)</th>
+					<th>광주</th>
+					<th>목포</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>12개월(회전기간)</td>
+					<td>2.35</td>
+					<td>2.35</td>
+					<td>2.35</td>
+					<td>2.35</td>
+				</tr>
+				<tr>
+					<td>만기후 이율</td>
+					<td colspan="4">
+						1개월이내 : 약정금리<br/>1개월초과 : 연 0.1%
+						<p class="rfrnc">2019년 6월 30일 이전 가입고객 : 가입당시 보통예금 이율</p>
+					</td>
+				</tr>
+				<tr>
+					<td>중도해지이율</td>
+					<td colspan="4">
+						<ul>
+							<li class="hypn">1개월 미만: 연 0.5%(단, 2021.08.10 이전 가입한 경우 0.1% 적용)</li>
+							<li class="hypn">1개월 이상 ~ 6개월 미만 : 약정금리 X 50%</li>
+							<li class="hypn">6개월 이상 ~ 12개월 미만 : 약정금리 X 60%</li>
+						</ul>
+						<p class="rfrnc">2019년 6월 30일 이전 가입고객 : 3개월 미만 - 0.5%, 3개월 이상 - 실 예치기간 적용금리 X 50%</p>
+					</td>
+				</tr>
+				
+			</tbody>
+		</table>
+	</div>
+
+
+</section>
+
+</div>
+</div>
+
+<!--<style> 기존 과장님 css
+.agree-list { display:block; margin:0px 20px 20px; text-align:left; }
+.agree-list>dt { background:#F8F8F9; border-radius:10px 10px 0px 0px;  border:1px solid 
+#ccc; padding:20px; }
+.agree-list>dd { border-bottom:1px #ccc solid; border-right:1px #ccc solid; border-left:1px #ccc solid; padding:10px; }
+.agree-list>dd fieldset { border:0px; }
+.agree-list>dd fieldset div { border-bottom:1px #ccc solid; padding:10px; }
+.agree-list>dd fieldset ol li { border-bottom:1px #ccc dashed; padding:10px; }
+.agree-list>dd fieldset ul { padding:10px 0px 0px; }
+.agree-list>dd fieldset ul:after { clear:both; display:block; content:''; }
+.agree-list>dd fieldset ul li { text-align:right; padding:10px; float:right; }
+.agree-list>dd:last-child { border-radius:0px 0px 10px 10px;  border:1px solid 
+#ccc; border-top:0px; padding:20px; }
+.choseck-p { border-bottom:0px!important; }
+.choseck-s { background:#f8f8f9; margin:0px 10px 10px; padding:10px; border-radius:8px; }
+</style>-->
+</div><!-- sampleWrap -->
+
+</body>
+</html>
+

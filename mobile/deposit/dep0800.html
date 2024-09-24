@@ -1,0 +1,246 @@
+<!--%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%-->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<!-- %@ include file="./public/inc/common.jsp" %-->
+	<title>JT 저축은행</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<link rel="stylesheet" type="text/css" href="../public/css/reset.css?v=002" />
+	<link rel="stylesheet" type="text/css" href="../public/css/common.css?v=002" />
+	<link rel="stylesheet" type="text/css" href="../public/css/slick.css" />
+	<script src="../public/js/jquery.min.js"></script>
+	<script src="../public/js/slick.js"></script>
+	<script src="../public/js/common.js"></script>
+	<script>
+		$(document).ready(function(){
+			// 아코디언 제어
+			$(".accordian > li > div:first-child").click(function(){
+			var tg = $(this).siblings("div");
+			var dis = tg.css("display");
+			if (dis=="none") {
+				$(this).addClass("Active");
+				tg.slideDown(300);
+			} else {
+				$(this).removeClass("Active");
+				tg.slideUp(300);
+			}
+			return false;
+			});
+		});
+	</script>
+</head>
+<body class="ft-fixLayout">
+
+<!-- // header -->
+<header>
+	<div>
+		<h1><a href="/"><img src="../public/img/logo.png" alt="JT저축은행" /></a></h1>
+
+		<a href="javascript:callgnb();" alt="전제메뉴 보기" >
+			<span></span>
+			<span></span>
+			<span></span>
+		</a>
+
+	</div>
+</header>
+<!-- header // -->
+
+<!-- // Aside -->
+<div class="Aside">
+	<script>
+		$(document).ready(function(){ 
+			$('.Aside').load('../public/inc/nav.html'); 
+		});
+	</script>
+</div>
+<!-- Aside // -->
+
+<div id="main">
+	<section class="SubPage-bg02">
+		
+		<article class="ContentWrap">
+
+			<div class="top-ProInfo">
+				<div class="Sub-Title subTitBg">
+					<h2>생계형저축(조세특례제한법)</h2>
+				</div>
+
+				<div class="listBoxWrap li3"><!-- 클래스 li3, li4로 갯수 조절 -->
+					<ul>
+						<li class="user">
+							<p>가입대상자</p>
+							<span>개인</span>
+						</li>
+						<li class="rate">
+							<p>가입한도</p>
+							<span>2020년 12월 31일까지</span>
+						</li>
+						<li class="calendar">
+							<p>판매시한</p>
+							<span>1인당 최대 5천만원<br />(전 금융기관 합산)</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="call-admin">
+				<div>	
+					<div class="listTxtWrap depWrap">
+						<p><span>예적금상품가입시 가입자격을 꼭 고려해보세요!<br/>전금융기간 한도내 가입가능</span></p>
+						<span>조세특례제한법에 따라 일정한 자격을 갖춘 가입자에 한해 이자소득에 대하여 세금이 면제되는 상품으로 더욱 만족스러운 수익을 얻으실 수 있는 상품입니다.<br/>가입요건을 갖추신 고객께서는 이자에 대한 비과세혜택을 드리는 필수체크상품입니다.<br/>가입대상, 가입기간, 가입한도를 확인하시고 예적금상품가입시 혜택가능여부를 꼭 문의하세요!</span>
+						<ul>
+							<li><button type="button" title="상담신청 페이지 바로가기" class="btnG01">상담신청</button></li>
+							<li><button type="button" title="1688-8877로 전화연결" class="btnG01" onclick="document.location.href='tel:1688-8877'">1688-8877</button></li>
+						</ul>
+					</div>
+
+					<div class="accordianWrap">
+						<ol class="accordian">
+							<li>
+								<div>상품안내</div>
+								<div class="sub-table">
+									<ol>
+										<li>
+											<p>상품명</p>
+											<ol>
+												<li>생계형저축 (조세특례제한법)</li>		
+											</ol>
+										</li>
+										<li>
+											<p>혜택특징</p>
+											<ol>	
+												<li><p><i>-</i>조세특례제한법에 따라 일정한 자격을 갖춘 가입자에 한해 이자소득에 대하여 세금이 면제되는 상품으로 더욱 만족스러운 수익을 얻으실 수 있는 상품입니다.</p></li>	
+												<li><p><i>-</i>가입요건을 갖추신 고객께서는 이자에 대한 비과세혜택을 드리는 필수체크상품입니다.가입대상, 가입기간, 가입한도를 확인하시고 예적금상품가입시 혜택가능여부를 꼭 문의하세요!</p></li>	
+											</ol>
+										</li>
+										<li>
+											<p>가입신청대상</p>
+											<ol>
+												<li>아래 가입요건 중 한가지 이상 해당 개인</li>
+												<li><p><i>-</i>거주자인 만 65세 이상 성인</p></li>
+												<li><p><i>-</i>장애인 복지법 제 32조의 규정에 의하여 등록한 장애인</p></li>
+												<li><p><i>-</i>국가 유공자 등 예우 및 지원에 관한 법률 제 6조의 규정에 의하여 등록한 상이자</p></li>
+												<li><p><i>-</i>국민기초생활 보장법 제2조 제2호의 규정에 의한 수급자</p></li>
+												<li><p><i>-</i>독립유공자 예우에 관한 법률 제6조 규정에 의해 등록한 독립유공자와 그 유족 및 가족</p></li>
+												<li><p><i>-</i>고엽제 후유증 환자지원 등에 관한 법률 제2조3호의 규정에 의한 고엽제 후유증 환자</p></li>
+												<li><p><i>-</i>5.18민주유공자예우에 관한 법률 제4조2호의 규정에 의한 5.18민주화운동부상자</p></li>
+												<li>단, 직전 3개 과세기간 내 1회 이상 금융소득 종합과세 대상자는 제외</li>	
+												<li><p><i>※</i>금융소득 연간 합계액 2천만원 초과</p></li>
+											</ol>
+										</li>
+										<li>
+											<p>가입한도</p>
+											<ol>
+												<li>모든 금융기관의 생계형저축으로 가입한 금액을 합하여 1인당 5천만원까지 가입가능합니다.</li>	
+											</ol>
+										</li>
+										<li>
+											<p>가입기간</p>
+											<ol>
+												<li>최소 12개월 이상</li>		
+											</ol>
+										</li>
+										<li>
+											<p>판매시한</p>
+											<ol>
+												<li>2020년 12월 31일까지</li>
+											</ol>
+										</li>
+										<li>
+											<p>가입금리</p>
+											<ol>
+												<li>신규가입일 당시 영업점 및 인터넷 홈페이지에 고시한 가입 상품별 이율 적용</li>	
+												<li>변동 금리, 객장 고시 금리 (가입일 현재 %)</li>	
+											</ol>
+										</li>
+										<li>
+											<p>적용상품</p>
+											<ol>
+												<li><p><i>-</i>거치식예금 (정기예금, 기분존정기예금 등)</p></li>	
+												<li><p><i>-</i>적립식예금 (정기적금, 자유적립예금 등)</p></li>	
+												<li><p><i>-</i>입출금자유예금 (보통예금, 저축예금 등)</p></li>	
+												<li><p><i>※</i>단, 최초가입시 예치한도액 약정시</p></li>	
+											</ol>
+										</li>
+										<li>
+											<p>예금이자에 대한 세율</p>
+											<ol>
+												<li>가입기간 중 발생된 예금이자에 대하여 비과세 종합저축 가입 여부에 따라 아래의 세액이 원천징수처리</li>	
+												<li><p><i>※</i>세액항목: 소득세 또는 법인세 + 주민세 + 농특세</p></li>	
+												<li><p><i>-</i>생계형 적용시: 0%</p></li>	
+												<li><p><i>-</i>소득세법 변경시 중도에 세율이 변동될 수 있습니다</p></li>	
+												
+											</ol>
+										</li>
+										<li>
+											<p>예금자보호</p>
+											<ol>
+												<li>입출금자유상품은 예적금담보대출이 불가합니다.</li>
+											</ol>
+										</li>
+										<li>
+											<p>구비서류</p>
+											<ol>
+												<li>이 예금은 예금자보호법에 따라 예금보험공사가 보호하되, 보호 한도는 본 상호저축은행에 있는 귀하의 모든 예금보호 대상 금융상품의 원금과 소정의 이자를 합하여 1인당 "최고 5천만원"이며, 5천만원을 초과하는 나머지 금액은 보호하지 않습니다.</li>	
+												<li><p><i>-</i>가입자의 실명확인증표 : 주민등록증, 운전면허증, 여권 등 </p></li>	
+											</ol>
+										</li>
+										<li>
+											<div class="kdic_box">
+												<span><img src="../../public/img/logo_kdic.gif" alt="KDIC 보호금융상품 1인당 최고 5천만원"></span>
+												<ol>
+													<li>이 예금은 예금자보호법에 따라 예금보험공사가 보호하되, 보호 한도는 본 상호저축은행에 있는 귀하의 모든 예금보호 대상 금융상품의 원금과 소정의 이자를 합하여 1인당 "최고 5천만원"이며, 5천만원을 초과하는 나머지 금액은 보호하지 않습니다.</li>	
+													<li><p><i>※</i>한도와 조건에 대한 자세한 설명은 예금자보호안내페이지에서 확인하시기 바랍니다.</p></li>
+												</ol>
+											</div>										
+										</li>
+										<li>
+											<p>유의사항</p>
+											<ol>
+												<li><p><i>-</i>상품 관련 내용은 사전 통보 없이 변경 가능합니다.</p></li>
+												<li><p><i>-</i>관련법규에 따라 일부고객은 가입이 제한될 수 있습니다.</p></li>
+												<li><p><i>-</i>기타 자세한 내용은 창구직원 또는 고객상담센터(1688-8877)로 문의하시거나 상품설명서 및 관련약관을 반드시 참조하시기 바랍니다.</p></li>	
+												<li><p><i>-</i>해당 상품에 대해 충분한 사전 설명을 받을 권리가 있으며, 설명을 이해한 후 거래하시기 바랍니다</p></li>	
+											</ol>
+										</li>
+										<li>
+											<p>준법승인번호</p>
+											<ol>
+												<li>JT저축은행 준법감시인 심의필 제2021-19호(2021.03.25)</li>
+											</ol>
+										</li>
+									</ol>				
+								</div>
+							</li>
+						
+						</ol>
+					</div>
+				</div>
+			</div>
+
+		</article>
+	
+	</section>
+
+	
+</div>
+<!-- main // -->
+
+
+<div class="ft-fixBtnWrap">
+	<!-- <a href="#">확인</a>
+	<a href="#">취소</a> -->
+	<p>
+		<a href="#" class="btn-cancle">간편한도조회</a>
+		<a href="#" class="btn-ok">대출신청</a>
+		
+	</p>
+</div>
+
+
+</body>
+</html>

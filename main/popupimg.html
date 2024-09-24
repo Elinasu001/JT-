@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>JT 저축은행</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="http://mattstow.com/experiment/responsive-image-maps/jquery.rwdImageMaps.min.js"></script>
+
+
+
+</head>
+
+<body>
+
+	<div style="width:700px;">
+		<img src="../public/img/popimg.png" alt="금리인하요구권" style="max-width:100%;" usemap="#image-map" >
+		<map name="image-map">
+			<area target="_blank" alt="" title="" href="https://www.jt-bank.co.kr/service/SERV0603.view" coords="1102,2519,1451,2663" shape="rect">
+		</map>
+	</div>
+
+	<script>
+		$(document).ready(function(e) {
+			$('img[usemap]').rwdImageMaps();
+		});
+		</script>
+</body>
+</html>

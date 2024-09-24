@@ -1,0 +1,515 @@
+<!--%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%-->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<!-- %@ include file="./public/inc/common.jsp" %-->
+	<title>JT 저축은행</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<link rel="stylesheet" type="text/css" href="../public/css/reset.css?v=002" />
+	<link rel="stylesheet" type="text/css" href="../public/css/common.css?v=002" />
+	<link rel="stylesheet" type="text/css" href="../public/css/slick.css" />
+	<script src="../public/js/jquery.min.js"></script>
+	<script src="../public/js/slick.js"></script>
+	<script src="../public/js/common.js"></script>
+	<script>
+		$(document).ready(function(){
+			// 아코디언 제어
+			$(".accordian > li > div:first-child").click(function(){
+			var tg = $(this).siblings("div");
+			var dis = tg.css("display");
+			if (dis=="none") {
+				$(this).addClass("Active");
+				tg.slideDown(300);
+			} else {
+				$(this).removeClass("Active");
+				tg.slideUp(300);
+			}
+			return false;
+			});
+		});
+	</script>
+</head>
+<body class="">
+
+<!-- // header -->
+<header>
+	<div>
+		<h1><a href="/"><img src="../public/img/logo.png" alt="JT저축은행" /></a></h1>
+
+		<a href="javascript:callgnb();" alt="전제메뉴 보기" >
+			<span></span>
+			<span></span>
+			<span></span>
+		</a>
+
+	</div>
+</header>
+<!-- header // -->
+
+<!-- // Aside -->
+<div class="Aside">
+	<script>
+		$(document).ready(function(){ 
+			$('.Aside').load('../public/inc/nav.html'); 
+		});
+	</script>
+</div>
+<!-- Aside // -->
+
+<div id="main">
+	<section class="SubPage-bg02">
+		
+		<article class="ContentWrap">
+			<div class="subPage-Tit pdT0 mgB0">
+				<ul>
+					<li class="on"><a href="#">회전식정기예금</a></li>
+					<li><a href="#">정기예금</a></li>
+				</ul>
+			</div>
+
+			<div class="top-ProInfo">
+				<div class="Sub-Title subTitBg">
+					<h2>회전 정기예금</h2>
+				</div>
+
+				<div class="listBoxWrap li3"><!-- 클래스 li3, li4로 갯수 조절 -->
+					<ul>
+						<li class="user">
+							<p>가입대상자</p>
+							<span>제한없음</span>
+						</li>
+						<li class="rate">
+							<p>가입금리</p>
+							<span>연 2.35% (세전,비대면 : 연2.35%, 회전주기 12개월 단리기준)</span>
+						</li>
+						<li class="calendar">
+							<p>계약기간</p>
+							<span>2년, 3년, 4년, 5년</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="call-admin">
+				<div>
+
+					<div class="listTxtWrap depWrap">
+						<p><span>고객님의 시간을 아껴드리고<br />정기예금보다 편리하고 유리하게!</span></p>
+						<b>거치식예금 · 절세혜택 · 예금자보호 · 영업점/인터넷/비대면가입</b>
+						<span>고객님과 약정한 회전 주기별로 계약기간 이내에서 이자율이 변동되는 정기예금 상품입니다.<br />&#42; 회전 주 기 도래 시 그 당시의 기간별 회전정기예금 금리가 적용됩니다.</span>
+						<ul>
+							<li><button type="button" title="상담신청 페이지 바로가기" class="btnG01">상담신청</button></li>
+							<li><button type="button" title="통장만들기" class="btnG01" onclick="document.location.href='tel:1688-8877'">통장만들기</button></li>
+						</ul>
+					</div>
+
+					<div class="accordianWrap">
+						<ol class="accordian">
+							<li>
+								<div>상품안내</div>
+								<div class="sub-table">
+									<ol>
+										<li>
+											<p>상품명</p>
+											<ol>
+												<li>회전정기예금(거치식예금)</li>		
+											</ol>
+										</li>
+										<li>
+											<p>상품특징</p>
+											<ol>	
+												<li>고객님과 약정한 회전 주기별로 계약기간 이내에서 이자율이 변동되는 정기예금 상품입니다.</li>		
+												<li>회전 주기 도래 시 그 당시의 기간별 회전정기예금 금리가 적용됩니다.</li>	
+											</ol>
+										</li>
+										<li>
+											<p>가입신청대상</p>
+											<ol>
+												<li>제한없음 (개인 및 법인)</li>	
+											</ol>
+										</li>
+										<li>
+											<p>가입계약금액</p>
+											<ol>
+												<li>최소 10만원이상 ~ 제한없음</li>		
+											</ol>
+										</li>
+										<li>
+											<p>가입기간</p>
+											<ol>
+												<li>2년, 3년, 4년, 5년</li>		
+											</ol>
+										</li>
+										<li>
+											<p>이자지급방식</p>
+											<ol>
+												<li>매월이자지급식(단리식) 또는 만기이자지급식(복리식) 중 선택가능</li>		
+												<li><p><i>-</i>매월이자지급식 : 회전주기 내 매월 이자 지급(고객 명의 계좌로 이체)</p></li>
+												<li><p><i>-</i>회전주기이자지급식 : 매 회전주기(12개월)마다 이자 지급(고객 명의 계좌로 이체)</p></li>
+												<li><p><i>-</i>회전주기이자지급식은 매월이자지급식으로 변경가능합니다.(반대의 경우는 불가능)</p></li>
+												<li><p><i>-</i>입금액을 분할 및 일부해지하시어 중도인출도 가능합니다.</p></li>
+											</ol>
+										</li>
+										<li>
+											<p>제한 사항</p>
+											<ol>
+												<li><p><i>-</i>계좌에 압류, 가압류, 질권설정 등이 등록될 경우 원금 및 이자 지급 제한</p></li>		
+												<li><p><i>-</i>예금잔액증명서 발급 당일 잔액 변동 불가 등</p></li>			
+											</ol>
+										</li>
+										<li>
+											<p>가입금리</p>
+											<ol>
+												<li><p><i>-</i>매월이자지급식 연 2.35 %(비대면:연 2.35%)(세전)</p></li>		
+												<li><p><i>-</i>회전주기 이자지급식 연 2.35 %(비대면:연 2.35%)(세전)</p></li>	
+												<li><p><i>※</i>상기금리는 본점영업점 기준 1회전 적용금리이며, 영업점별 금리가 상이할 수 있으므로 가입시 꼭 확인하시기 바랍니다.</p></li>	
+												<li><p class="txtR"><i>※</i>본 상품의 금리는 가입일 혹은 회전일 당시에 고시된 회전주기별 금리에 따라 변경 적용됩니다.</p></li>	
+											</ol>
+										</li>
+										<li>
+											<p>회전방식</p>
+											<ol>
+												<li>12개월 단위로 그 당시의 기간별 회전정기예금 금리가 적용되어 12개월 단위로 회전</li>				
+											</ol>
+										</li>
+										<li>
+											<p>만기후 이율</p>
+											<ol>
+												<li>신규가입일 당시 영업점 및 인터넷 홈페이지에 고시한 경과기간별 만기후이자율 적용</li>		
+												<li><p><i>-</i>1개월 이내 : 예치시점 약정금리(회전식 정기예금은 마지막 회전주기 적용된 이율 적용)</p></li>	
+												<li><p><i>-</i>1개월 초과 : 0.10%</p></li>	
+											</ol>
+										</li>
+										<li>
+											<p>만기이자 계산방법</p>
+											<ol>
+												<li><p><i>-</i>단리식(월단위) : 원금 x 이율/12 x 월수</p></li>	
+												<li><p><i>-</i>단리식(일단위) : 원금 x 이율/365 x 일수</p></li>	
+												<li><p><i>-</i>복리식(월단위) : 원금 x {(1+이율/12)n -1} (n은 경과월수)</p></li>	
+												<li><p><i>-</i>복리식(일단위) : 원금 + 월복리이자) x 이율/365 x 일수</p></li>
+											</ol>
+										</li>
+										<li>
+											<p>만기의 자동해지</p>
+											<ol>
+												<li>예금주와 만기의 자동해지에 대한 사전약정을 체결한 경우에는 만기도래에 따라 해당상품을 자동해지하고 예금주가 미리 지정한 본인명의 계좌(타행포함)로 이체할 수 있습니다.</li>	
+											</ol>
+										</li>
+										<li>
+											<p>중도해지이자율</p>
+											<ol>
+												<li>회전주기 도래전/도래이후에 따라 중도해지이자율이 달리 적용되오니, 상세사항은 가입하신 영업점에 문의하시기바랍니다.</li>	
+												<li><p><i>-</i>회전주기 도래 전 : 중도해지금리 적용</p></li>	
+												<li><p><i>-</i>회전주기 도래 이후</p></li>	
+												<li><p><i>1)</i>완료된 회전주기 기간 : 약정금리 적용</p></li>	
+												<li><p><i>2)</i>미완료된 회전주기 기간 : 최종 금리 결정일에 고시한 중도해지 금리 적용</p></li>	
+												<li><p><i>※</i>중도해지금리:1개월 미만은 연 0.5%(단, 2021.08.10 이전 가입한 경우 0.1% 적용), 1개월 이상~6개월미만은 약정금리의 50%, 6개월이상~12개월미만은 약정금리의 60% 적용</p></li>
+												<li><p><i></i>(2019년 6월 30일 이전 가입고객의 중도해지 금리 : 3개월 미만은 0.5%, 3개월 이상은 실 예치기간 적용금리의 50% 적용)</p></li>	
+											</ol>
+										</li>
+										<li>
+											<p>위법계약해지권</p>
+											<ol>
+												<li><p><i>·</i>금융회사가 「금융소비자 보호에 관한 법률」의 판매원칙을 위반한 사실을 고객이 제시하는 경우, 해당 계약은 위약금 등 수수료 부과 없이 해지 가능</p></li>	
+												<li><p><i>·</i>위법계약해지 요구는 계약서류를 받은 날로부터 5년, 위법사실을 안 날로부터 1년 이내에 가능(계약 종료 시 행사 불가)</p></li>
+											</ol>
+										</li>
+										<li>
+											<p>예금 해지 시 불이익</p>
+											<ol>
+												<li>만기 전 해지할 경우 계약한 이율보다 낮은 중도해지이율이 적용됩니다.</li>
+											</ol>
+										</li>
+										<li>
+											<p>예금이자에 대한 세율</p>
+											<ol>
+												<li>가입기간 중 발생된 예금이자에 대하여 비과세 종합저축 가입 여부에 따라 아래의 세액이 원천징수처리</li>	
+												<li><p><i>-</i>개인(일반예금) : 이자소득의 15.4% [이자소득세(14%) + 지방소득세(1.4%)]</p></li>	
+												<li><p><i>-</i>개인(비과세종합저축) : 이자 소득에 대한 세액 면제</p></li>	
+												<li><p><i>-</i>법인 : 이자소득의 15.4% [법인세(14%) + 지방소득세(1.4%)]</p></li>
+												<li><p><i>※</i>세율은 가입일 현재의 세율이며, 관계 법률의 개정에 따라 변경될 수 있습니다.</p></li>	
+											</ol>
+										</li>
+										<li>
+											<p>분할해지</p>
+											<ol>
+												<li>만기해지를 포함하여 4회 이내에서 분할해지 가능</li>
+											</ol>
+										</li>
+										<li>
+											<p>예적금담보대출</p>
+											<ol>
+												<li>가입 예적금을 담보로 가입 금액의 90% ~ 100%까지 가입금리의 + 1.5%의 금리로 신속한 대출이 가능</li>
+												<li><p><i>※</i>디지털 뱅킹(SB톡톡 플러스) 이용시 비대면 채널에서도 대출신청가능</p></li>	
+											</ol>
+										</li>
+										<li>
+											<p>구비서류</p>
+											<ol>
+												<li><b>본인 방문시</b></li>	
+												<li><p><i>-</i>가입자의 실명확인증표 : 주민등록증, 운전면허증, 여권, 학생증 등</p></li>	
+												<li><p><i>-</i>거래인감 (도장)<br /><br /></p></li>	
+
+												<li><b>가족 대리방문시</b></li>	
+												<li><p><i>-</i>가입자의 실명확인증표 : 주민등록증, 운전면허증, 여권, 학생증 등(사본 가능)</p></li>	
+												<li><p><i>-</i>대리인의 실명확인증표 : 주민등록증, 운전면허증, 여권, 학생증 등</p></li>	
+												<li><p><i>-</i>가족관계서류 : 주민등록등본, 가족관계등록부, 재외 국민등록부, 의료보험증 등 가족관계가 반드시 표시된 경우에 한함</p></li>	
+												<li><p><i>-</i>가족의 범위 : 배우자, 직계존/비속 (등본상에 등재되어 있는 배우자의 부모 포함)</p></li>
+												<li><p><i>-</i>형제, 자매, 삼촌, 고모, 이모, 외삼촌 등은 가족의 범위가 아니므로 대리인 방문시의 서류를 참고하여 주시기 바랍니다.<br /><br /></p></li>
+
+												<li><b>대리인 방문시</b></li>	
+												<li><p><i>-</i>가입자의 실명확인증표 : 주민등록증, 운전면허증, 여권, 학생증 등(사본 가능)</p></li>	
+												<li><p><i>-</i>대리인의 실명확인증표 : 주민등록증, 운전면허증, 여권, 학생증 등</p></li>	
+												<li><p><i>-</i>가입자의 인감이 날인된 위임장</p></li>
+												<li><p><i>-</i>가입자의 인감증명서(원본)<br /><br /></p></li>
+											</ol>
+										</li>
+										<li>
+											<div class="kdic_box">
+												<span><img src="../../public/img/logo_kdic.gif" alt="KDIC 보호금융상품 1인당 최고 5천만원"></span>
+												<ol>
+													<li>이 예금은 예금자보호법에 따라 예금보험공사가 보호하되, 보호 한도는 본 상호저축은행에 있는 귀하의 모든 예금보호 대상 금융상품의 원금과 소정의 이자를 합하여 1인당 "최고 5천만원"이며, 5천만원을 초과하는 나머지 금액은 보호하지 않습니다.</li>	
+													<li><p><i>※</i>한도와 조건에 대한 자세한 설명은 예금자보호안내페이지에서 확인하시기 바랍니다.</p></li>
+												</ol>
+											</div>
+											
+										</li>
+										<li>
+											<p>유의사항</p>
+											<ol>
+												<li><p><i>-</i>상품 관련 내용은 사전 통보 없이 변경 가능합니다.</p></li>	
+												<li><p><i>-</i>관련법규에 따라 일부고객은 가입이 제한될 수 있습니다.</p></li>
+												<li><p><i>-</i>조건만족시 비과세 종합저축에 가입가능하며, 세법변경이나 폐지 또는 한도부족시에는 자동연장 이 불가능합니다.</p></li>
+												<li><p><i>-</i>금융상품에 관한 계약을 체결하기 전에 창구직원 또는 고객상담센터(1688-8877)로 문의하시거나 상품설명서 및 관련약관을 반드시 참조하시기 바랍니다..</p></li>
+												<li><p><i>-</i>해당 상품에 대해 충분한 사전 설명을 받을 권리가 있으며, 설명을 이해한 후 거래하시기 바랍니다.</p></li>
+											</ol>
+										</li>
+										<li>
+											<p>심의번호</p>
+											<ol>
+												<li>JT저축은행 준법감시인 심의필 제2021-130호(2021.11.26)</li>	
+											</ol>
+										</li>
+									</ol>				
+								</div>
+							</li>
+							<li>
+								<div>금리안내</div>
+								<div class="sub-table">
+									<ol>
+										<li> 
+											<p>회전정기예금</p>
+											<ol>
+												<li><p><i>※</i>본 상품의 금리는 가입일 혹은 회전일 당시에 고시된 회전주기별 금리에 따라 변경 적용됩니다.<br />2021년 11년 30일 기준 (단위%, 연, 세전)</p></li>	
+												<li><b>[매월이자지급식 : 단리식]</b></li>												
+												<li>
+													<div class="table-St th-bg th-bb th-br td-bb td-pdl10 last-Bnon pdTB10">
+														<table summary="기간(개월), 지점별 적용이율, 만기후 이율, 중도해지이율로 구성되어 있는 회전식정기예금(매월이자지급식:단리식) 금리 안내표">
+															<caption>기간(개월), 지점별 적용이율, 만기후 이율, 중도해지이율로 구성되어 있는 회전식정기예금(매월이자지급식:단리식) 금리 안내표</caption>
+															<colgroup>
+																<col width="30%">
+																<col width="70%">
+															</colgroup>
+															<tbody>
+																<tr>
+																	<th class="tc">기간(개월)</th>
+																	<td>12개월(회전기간)(변동금리상품)</td>
+																</tr>
+																<tr>
+																	<th class="tc">비대면</th>
+																	<td>2.35</td>
+																</tr>
+																<tr>
+																	<th class="tc">본점(분당)</th>
+																	<td>2.35</td>
+																</tr>
+																<tr>
+																	<th class="tc">광주</th>
+																	<td>2.35</td>
+																</tr>
+																<tr>
+																	<th class="tc">목포</th>
+																	<td>2.35</td>
+																</tr>
+																<tr>
+																	<th class="tc">만기후 <br />이율</th>
+																	<td>1개월이내:예치시점 약정금리 1개월초과:연0.1%<br />
+																	2019년 6월 30일 이전 가입고객 : 가입당시 보통예금 이율</td>
+																</tr>
+																<tr>
+																	<th class="tc">중도해지<br />이율</th>
+																	<td>
+																		1개월 미만: 0.5% (2021.08.10 이전 가입한 경우 0.10%)<br />
+																		1개월 이상~6개월미만: 약정금리x50%<br />
+																		6개월이상~12개월미만:약정금리x60%<br />
+																		2019년 6월 30일 이전 가입고객 : 3개월미만-0.5%, 3개월이상-실 예치기간 적용금리 x 50%
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												
+												</li>
+											</ol>
+											<ol>
+												<li><br /><b>[만기이자지급식 : 복리식 - 연복리 수익률]</b></li>	
+												<li>
+													<div class="table-St th-bg th-bb th-br td-bb td-pdl10 last-Bnon pdTB10">
+														<table summary="기간(개월), 지점별 연복리 수익률, 만기후 이율, 중도해지이율로 구성되어 있는 회전식정기예금(만기이자지급식 : 복리식) 금리 안내표">
+															<caption>기간(개월), 지점별 연복리 수익률, 만기후 이율, 중도해지이율로 구성되어 있는 회전식정기예금(만기이자지급식 : 복리식) 금리 안내표</caption>
+															<colgroup>
+																<col width="30%">
+																<col width="70%">
+															</colgroup>
+															<tbody>
+																<tr>
+																	<th class="tc">기간(개월)</th>
+																	<td>12개월(회전기간)(변동금리상품)</td>
+																</tr>
+																<tr>
+																	<th class="tc">비대면</th>
+																	<td>2.37</td>
+																</tr>
+																<tr>
+																	<th class="tc">본점(분당)</th>
+																	<td>2.37</td>
+																</tr>
+																<tr>
+																	<th class="tc">광주</th>
+																	<td>2.37</td>
+																</tr>
+																<tr>
+																	<th class="tc">목포</th>
+																	<td>2.37</td>
+																</tr>
+																<tr>
+																	<th class="tc">만기후 <br />이율</th>
+																	<td>1개월이내:예치시점 약정금리 1개월초과:연0.1%<br />
+																	2019년 6월 30일 이전 가입고객 : 가입당시 보통예금 이율</td>
+																</tr>
+																<tr>
+																	<th class="tc">중도해지<br />이율</th>
+																	<td>
+																		1개월 미만: 0.5% (2021.08.10 이전 가입한 경우 0.10%)<br />
+																		1개월 이상~6개월미만: 약정금리x50%<br />
+																		6개월이상~12개월미만:약정금리x60%<br />
+																		2019년 6월 30일 이전 가입고객 : 3개월미만-0.5%, 3개월이상-실 예치기간 적용금리 x 50%
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>											
+												</li>
+											</ol>
+										</li>
+									</ol>		
+								</div>
+							</li>
+							<li>
+								<div>가입절차 / 기타안내</div>
+								<div class="sub-table">
+									<ol>
+										<li> 
+											<p><b>가입신청절차</b></p>
+											<p>1. 상담신청</p>
+											<ol>
+												<li>전화상담/온라인문의/영업점방문상담등 다양한 방법으로 상담이 가능합니다.</li>	
+												<li><p><i>-</i>전화상담 : 궁금한점 바로 문의해보세요. (1688-8877)</p></li>	
+												<li><p><i>-</i>온라인문의 : 편하신 시간에 연락드립니다.</p></li>	
+												<li><button type="button" title="온라인상담신청 바로가기" class="txtBtnArr" style="margin-left:20px;">온라인상담신청</button></li>	
+												<li><p><i>-</i>영업점방문상담 : 가까운 영업점에서 상담받으세요.</p></li>	
+												<li><button type="button" title="영업점안내 바로가기" class="txtBtnArr" style="margin-left:20px;">영업점안내</button></li>	
+											</ol>
+										</li>
+										<li>
+											<p>2. 영업점방문 또는 디지털뱅킹(SB톡톡플러스) 설치</p>
+											<ol>	
+												<li><p><i>-</i>필요한 서류와 실명확인증표를 지참하여 가까운 영업점으로 방문하여 주십시오.</p></li>	
+												<li><p><i>-</i>웹스토어 또는 플레이스토어에서 SB톡톡 플러스를 검색 해 보세요</p></li>	
+												<li><p><i></i>디지털 뱅킹 가입은 SB톡톡 플러스를 통하거나 영업점 방문시 가능 합니다.</p></li>	
+											</ol>
+										</li>
+										<li>
+											<p>3. 가입신청서 작성 또는 디지털뱅킹(SB톡톡플러스) 가입</p>
+											<ol>
+												<li><p><i class="square"></i>영업점 방문 시</p></li>	
+												<li><p><i>-</i>영업점직원의 도움을 받으시어 서류를 작성하시면 상품에 가입완료됩니다.</p></li>	
+												<li><p><i class="square"></i>SB톡톡+ 이용시</p></li>	
+												<li><p><i>-</i>가입 가능 상품 : 회전식 정기예금, 정기예금, 정기적금, JT 점프업 저축예금</p></li>	
+												<li><p><i class="square"></i>인터넷뱅킹 이용시</p></li>	
+												<li><p><i>-</i>가입 가능 상품 : 회전식 정기예금, 정기예금, 정기적금</p></li>	
+											</ol>
+										</li>
+										<li>
+											<p><b>이용시간</b></p>
+											<p>상품상담시간</p>
+											<ol>
+												<li>당행콜센터 : 평일 9시 ~ 오후 6시 (1688-8877)</li>	
+												<li>영업점 : 평일 오전 9시 ~ 오후 4시</li>	
+											</ol>
+										</li>
+										<li>
+											<p>영업점운영시간</p>
+											<ol>
+												<li>평일 오전 9시 ~ 오후 4시</li>	
+											</ol>
+										</li>
+										<li>
+											<p>디지털뱅킹서비스 이용시간</p>
+											<ol>
+												<li>00:10 ~ 23:50(주말,공휴일은 해지 업무 이용불가)</li>	
+												<li>디지털뱅킹 고객 센터 상담 : 1544-3637 주/야간 및 (공) 휴일 24시간 365일</li>	
+											</ol>
+										</li>
+										<li>
+											<p><b>디지털뱅킹서비스 </b> </p>
+											<p>가입신청 </p> 
+											<ol>
+												<li><p><i>-</i>디지털뱅킹은 당사 방문 신청 또는 ‘SB톡톡+’ 앱을 통한 본인확인 절차 완료 후 신청이 가능합니다.(타행OTP기기 이용가능)</p></li>	
+											</ol>
+										</li>
+										<li>
+											<p>제공서비스</p>
+											<ol>
+												<li><p><i>-</i>당행 예금가입/조회/이체/해지서비스가 가능합니다.</p></li>
+												<li><p><i>※</i>‘SB톡톡+ 앱(비대면뱅킹)’을 이용하면 당사 방문없는 예금 가입이 가능합니다.</p></li>
+											</ol>
+										</li>
+										<li>
+											<p>이용시간</p>
+											<ol>
+												<li><p><i>-</i>24시간 (시스템점검시간 제외)</p></li>
+											</ol>
+										</li>
+										<li>
+											<p>송금수수료</p>
+											<ol>
+												<li><p><i>-</i>타 금융기간에 대한 송금 수수료 면제</p></li>
+												<li><button type="button" title="디지털뱅킹 바로가기" class="txtBtnArr" style="margin-left:20px;">디지털뱅킹 바로가기</button></li>
+											</ol>
+										</li>
+									</ol>		
+								</div>
+							</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+
+		</article>
+	
+	</section>
+
+	
+</div>
+<!-- main // -->
+
+
+
+
+
+</body>
+</html>

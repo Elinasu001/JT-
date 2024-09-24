@@ -1,0 +1,139 @@
+<!--%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%-->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<!-- %@ include file="./public/inc/common.jsp" %-->
+	<title>JT 저축은행</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<link rel="stylesheet" type="text/css" href="../public/css/reset.css?v=002" />
+	<link rel="stylesheet" type="text/css" href="../public/css/common.css?v=002" />
+	<link rel="stylesheet" type="text/css" href="../public/css/slick.css" />
+	<script src="../public/js/jquery.min.js"></script>
+	<script src="../public/js/slick.js"></script>
+	<script src="../public/js/common.js"></script>
+	<script>
+
+	</script>
+</head>
+<body>
+
+<!-- // header -->
+<header>
+	<div>
+		<h1><a href="/"><img src="../public/img/logo.png" alt="JT저축은행" /></a></h1>
+
+		<a href="javascript:callgnb();" alt="전제메뉴 보기" >
+			<span></span>
+			<span></span>
+			<span></span>
+		</a>
+
+	</div>
+</header>
+<!-- header // -->
+
+<!-- // Aside -->
+<div class="Aside">
+	<script>
+		$(document).ready(function(){ 
+			$('.Aside').load('../public/inc/nav.html'); 
+		});
+	</script>
+</div>
+<!-- Aside // -->
+
+<div id="main">
+	<section>
+		
+		<article class="ContentWrap">
+
+			<div class="subPage-Tit">
+				<h2>이용시간안내</h2>
+				<p>JT저축은행의 서비스 이용시간을 알려드립니다.</p>
+			</div>
+			
+			<div class="call-admin">
+				<div>
+					<div class="table-St last-Bnon th-bg td-bt th-br td-br tc">
+						<table summary="서비스종류, 이용가능시간(평일, 토요일, 공휴일)로 구성되어 있는 이용시간 안내 표">
+							<caption>서비스종류, 이용가능시간(평일, 토요일, 공휴일)로 구성되어 있는 이용시간 안내 표</caption>
+							<colgroup>
+								<col width="12%">
+								<col width="12%">
+								<col width="25.333%">
+								<col width="25.333%">
+								<col width="25.333%">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col" rowspan="2" colspan="2">서비스종류</th>
+									<th scope="col" colspan="3">이용가능 시간</th>
+								</tr>
+								<tr class="th-bt">
+									<th scope="col">평일</th>
+									<th scope="col">토요일</th>
+									<th scope="col">공휴일</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td colspan="2">인터넷<br/>대출신청</td>
+									<td colspan="3">24시간 (오후 6시 이후 접수건은 익일 상담 / 공휴일 제외)</td>
+								</tr>
+								<tr>
+									<td colspan="2">전화<br/>대출신청</td>
+									<td>오전 9:00 ~ 오후 6:00</td>
+									<td>휴무</td>
+									<td>휴무</td>
+								</tr>
+								<tr>
+									<td rowspan="2">대출금지급</td>
+									<td>인터넷 대출신청</td>
+									<td>오전 9:00 ~ 오후 6:00</td>
+									<td>휴무</td>
+									<td>휴무</td>
+								</tr>
+								<tr>
+									<td>전화대출 신청</td>
+									<td>오전 9:00 ~ 오후 6:00</td>
+									<td>휴무</td>
+									<td>휴무</td>
+								</tr>
+								<tr>
+									<td rowspan="2">대출상담/<br/>서비스이용문의</td>
+									<td>신규대출 상담</td>
+									<td>오전 9:00 ~ 오후 6:00</td>
+									<td>휴무</td>
+									<td>휴무</td>
+								</tr>
+								<tr>
+									<td>대출금 상환문의</td>
+									<td>오전 9:00 ~ 오후 6:00</td>
+									<td>휴무</td>
+									<td>휴무</td>
+								</tr>
+								<tr>
+									<td>고객서비스<br/>센터</td>
+									<td>각종 문의사항 응대</td>
+									<td>오전 9:00 ~ 오후 6:00</td>
+									<td>휴무</td>
+									<td>휴무</td>
+								</tr>
+								
+							</tbody>
+						</table>
+					</div>
+	
+				</div>
+			</div>
+	
+		</article>
+	
+	</section>
+</div>
+<!-- main // -->
+</body>
+</html>

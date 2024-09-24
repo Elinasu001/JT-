@@ -1,0 +1,445 @@
+ <!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>JT 저축은행</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" type="text/css" href="../public/css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/common.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/common01.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/common02.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/footer.css" />
+	
+	<script src="../public/js/jquery.min.js"></script>
+	
+</head>
+
+<body>
+<!-- // header -->
+<header>
+	<div id="gnb">
+		<h1><a href="./index.jsp"></a></h1>
+		<nav>
+			<script>
+				
+				$(document).ready(function(){ 
+					$('nav').load('../public/inc/nav.html');
+				});
+
+								
+				/* 모달 */
+				function modalOn(modalID) { // 모달 On 모달 창 호출 후 해당 모달 컨텐츠 로드
+					$("." + modalID).addClass('on');
+					$("html").css("overflow","hidden");
+				};
+
+				function modalOff() { // 모달 Off
+					$('.Acuon-Modal').removeClass('on');
+					$("html").css("overflow","auto").css("height","100%");
+				};
+
+
+			</script>
+		</nav>
+	</div>
+</header>
+<!-- header // -->
+
+<!-- // section -->
+<section class="SubPage-bg03">
+
+	<article class="Path PathBg">
+		<div>
+			<a href="/">Home</a><span class="bullet_right">→</span><a href="/">금융</a><span class="bullet_right">→</span><a href="/">금융서비스</a><span class="bullet_right">→</span><a href="/">적합성 결과서</a>
+		</div>
+	</article>
+
+	<article class="ContentWrap">
+
+		<div class="Sub-Title subTitBg">
+			<h2>적합성 결과서<br />
+			<span>JT저축은행이 제공하는 금융서비스입니다.</span>
+			</h2>
+		</div>
+
+		<div class="call-admin">
+			<div>
+
+			<div class="tableWrap">
+				<div class="secTitBox02">
+					<div>적합성 원칙 확인 결과서</div>
+				</div>
+
+				<div class="table-St last-Bnon th-bg td-bt th-br td-br tc">
+					<table summary="번호, 대출상태, 적합여부, 금융소비자관리번호, 판단결과일자, 상세보기 에 대한 적합성 원칙 확인 결과서 표">
+						<caption>번호, 대출상태, 적합여부, 금융소비자관리번호, 판단결과일자, 상세보기 에 대한 적합성 원칙 확인 결과서 표</caption>
+						<colgroup>
+							<col width="8%">
+							<col width="12%">
+							<col width="12%">
+							<col width="*">
+							<col width="20%">
+							<col width="20%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">번호</th>
+								<th scope="col">대출상태</th>
+								<th scope="col">적합여부</th>
+								<th scope="col">금융소비자관리번호</th>
+								<th scope="col">판단결과일자</th>
+								<th scope="col">상세보기</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td></td>
+								<td>적합</td>
+								<td>3322202009821</td>
+								<td>2022-02-23</td>
+								<td><button class="btnG03" onclick="modalOn('test05');">상세보기</button></td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td></td>
+								<td>적합</td>
+								<td>3322202009821</td>
+								<td>2022-02-23</td>
+								<td><button class="btnG03" onclick="modalOn('test05');">상세보기</button></td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td></td>
+								<td>적합</td>
+								<td>3322202009821</td>
+								<td>2022-02-23</td>
+								<td><button class="btnG03" onclick="modalOn('test05');">상세보기</button></td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td></td>
+								<td>적합</td>
+								<td>3322202009821</td>
+								<td>2022-02-23</td>
+								<td><button class="btnG03" onclick="modalOn('test05');">상세보기</button></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<ul class="boardPage">
+				<li><button type="button" title="이전페이지 이동 버튼"><img src="../public/img/page_arrow_icon.png" alt="이전페이지 이동 아이콘"></button></li>
+				<li class="on"><span>1</span></li>
+				<li><span>2</span></li>
+				<li><span>3</span></li>
+				<li><button type="button" title="다음페이지 이동 버튼"><img src="../public/img/page_arrow_icon.png" alt="다음페이지 이동 아이콘"></button></li>
+			</ul>	
+
+			</div>
+		</div>
+	</article>
+
+</section>
+<!-- // section -->
+
+<!-- // footer -->
+<footer>
+	<script>
+	$(document).ready(function(){ 
+		$('footer').load('../public/inc/footer.html'); 
+	});
+	</script>
+</footer>
+
+<div class="Acuon-Modal test05" rel="적합성·적정성 원칙 확인 결과서">
+	<div class="modal-type02">
+		<dl>
+			<dt>적합성·적정성 원칙 확인 결과서</dt>
+			<dd>
+				<div>
+					<p>적합성·적정성 원칙 확인 결과서</p>
+					<div class="tableWrap pdT0">
+						<div class="secTitBox02">
+							<h3>기본 정보 입력</h3>
+						</div>
+						<div class="table-St th-bg th-bb td-bb th-br td-pdl40 th-pdl10">
+							<table summary="이름, 주민등록번호 로 구성된 적합성 적정성 확인 고객정보 결과서">
+								<caption>이름, 주민등록번호 로 구성된 적합성 적정성 확인 고객정보 결과서</caption>
+								<colgroup>
+									<col width="15%">
+									<col width="*">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="col">이름</th>
+										<td>홍길동</td>
+									</tr>
+									<tr>
+										<th scope="col">주민등록번호</th>
+										<td>990101-*******</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="secTitBox02">
+							<h3>상품정보</h3>
+						</div>
+						<div class="table-St th-bg th-bb td-bb th-br td-pdl40 th-pdl10">
+							<table summary="작성구분, 상품구분, 희망상품명 으로 구성된 적합성 적정성 확인 상품정보 결과서">
+								<caption>작성구분, 상품구분, 희망상품명 으로 구성된 적합성 적정성 확인 상품정보 결과서</caption>
+								<colgroup>
+									<col width="15%">
+									<col width="*">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="col">작성 구분</th>
+										<td>
+											<ul class="inpRadio">
+												<li>
+													<input type="radio" id="rad01-1" name="table_radio01" title="적합성"  disabled="disabled" checked="checked">
+													<label for="rad01-1">적합성</label>
+												</li>
+												<li>
+													<input type="radio" id="rad01-2" name="table_radio01" title="적정성"  disabled="disabled">
+													<label for="rad01-2">적정성</label>
+												</li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<th scope="col">상품 구분</th>
+										<td>
+											<ul class="inpRadio">
+												<li>
+													<input type="radio" id="rad02-1" name="table_radio02" title="신용"  disabled="disabled" checked="checked">
+													<label for="rad02-1">신용</label>
+												</li>
+												<li>
+													<input type="radio" id="rad02-2" name="table_radio02" title="담보"  disabled="disabled">
+													<label for="rad02-2">담보</label>
+												</li>
+												<li>
+													<input type="radio" id="rad02-2" name="table_radio02" title="기타"  disabled="disabled">
+													<label for="rad02-2">기타</label>
+												</li>
+
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<th scope="col">희망 상품명</th>
+										<td>개인신용대출 </td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						
+						<div class="secTitBox02">
+							<h3>고객의 확인서 주요 응답 내용</h3>
+						</div>
+						<div class="table-St th-bg th-bb td-bb th-br td-pdl40 th-pdl10">
+							<table summary="연령대, 체결목적, 연간소득, 순자산규모, 부채규모, 신용점수, 변제계획, 연간 고정 지출 으로 구성된 적합성 적정성 확인 주용 응답 내용 결과서">
+								<caption>연령대, 체결목적, 연간소득, 순자산규모, 부채규모, 신용점수, 변제계획, 연간 고정 지출 으로 구성된 적합성 적정성 확인 주용 응답 내용 결과서 </caption>
+								<colgroup>
+									<col width="15%">
+									<col width="*">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="col">연령대</th>
+										<td>20대 이하</td>
+									</tr>
+									<tr>
+										<th scope="col">체결목적</th>
+										<td>가계자금</td>
+									</tr>
+									<tr>
+										<th scope="col">연간소득</th>
+										<td>6백만원 이상 ~ 5천만원 미만</td>
+									</tr>
+									<tr>
+										<th scope="col">순자산규모</th>
+										<td>1억원 미만 </td>
+									</tr>
+									<tr>
+										<th scope="col">부채규모</th>
+										<td>1천만원 미만</td>
+									</tr>
+									<tr>
+										<th scope="col">신용점수</th>
+										<td>600점  이상</td>
+									</tr>
+									<tr>
+										<th scope="col">변제계획</th>
+										<td>근로소득</td>
+									</tr>
+									<tr>
+										<th scope="col">연간 고정 지출</th>
+										<td>
+											<ul class="inpRadio">
+												<li>
+													<input type="radio" id="rad03-1" name="table_radio03" title="연간 소득 초과"  disabled="disabled" checked="checked">
+													<label for="rad03-1">연간 소득 초과</label>
+												</li>
+												<li>
+													<input type="radio" id="rad03-2" name="table_radio03" title="연간 소득 초과하지 않음"  disabled="disabled">
+													<label for="rad03-2">연간 소득 초과하지 않음 </label>
+												</li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						
+						<div class="secTitBox02">
+							<h3>저축은행 적합성·적정성 진단 결과</h3>
+						</div>
+						<div class="table-St type03 th-bg th-br th-bt td-bt td-pdl10 th-pdl10 ">
+							<table class="style02" summary="판단기준 신용점수600점, 대출상품 가입조건 충족여부, 고객의 채무상환 능력, 기타 대출취급 기준 충족의 진단결과, 추가의견 에 대한 진단 결과표">
+								<caption>판단기준 신용점수600점, 대출상품 가입조건 충족여부, 고객의 채무상환 능력, 기타 대출취급 기준 충족의 진단결과, 추가의견 에 대한 진단 결과표</caption>
+								<colgroup>
+									<col width="30%">
+									<col width="30%">
+									<col width="*">
+								</colgroup>
+								<thead>
+									<tr class="tc">
+									<th class="bor-Tnon">진단기준</th>
+									<th class="bor-Rnon bor-Tnon">진단결과</th>
+									<th class="bor-Rnon bor-Tnon">추가의견</th>
+								</tr></thead>
+								<tbody>
+									<tr>
+										<th>신용점수600점</th>
+										<td>
+											<ul class="inpRadio">
+												<li>
+													<input type="radio" id="rad04-1" name="table_radio04" title="적합"  disabled="disabled" checked="checked">
+													<label for="rad04-1">적합</label>
+												</li>
+												<li>
+													<input type="radio" id="rad04-2" name="table_radio04" title="부적합"  disabled="disabled">
+													<label for="rad04-2">부적합</label>
+												</li>
+											</ul>
+										</td>
+										<td>기타의견없음</td>
+									</tr>
+									<tr>
+										<th>대출상품 가입 조건 충족여부</th>
+										<td>
+											<ul class="inpRadio">
+												<li>
+													<input type="radio" id="rad05-1" name="table_radio05" title="적합"  disabled="disabled" checked="checked">
+													<label for="rad05-1">적합</label>
+												</li>
+												<li>
+													<input type="radio" id="rad05-2" name="table_radio05" title="부적합"  disabled="disabled">
+													<label for="rad05-2">부적합</label>
+												</li>
+											</ul>
+										</td>
+										<td>기타의견없음</td>
+									</tr>
+									<tr>
+										<th>고객의 채무상환 능력</th>
+										<td>
+											<ul class="inpRadio">
+												<li>
+													<input type="radio" id="rad06-1" name="table_radio06" title="적합"  disabled="disabled" checked="checked">
+													<label for="rad06-1">적합</label>
+												</li>
+												<li>
+													<input type="radio" id="rad06-2" name="table_radio06" title="부적합"  disabled="disabled">
+													<label for="rad06-2">부적합</label>
+												</li>
+											</ul>
+										</td>
+										<td>기타의견없음</td>
+									</tr>
+									<tr>
+										<th>기타 대출취급 기준 충족</th>
+										<td>
+											<ul class="inpRadio">
+												<li>
+													<input type="radio" id="rad07-1" name="table_radio07" title="적합"  disabled="disabled" checked="checked">
+													<label for="rad07-1">적합</label>
+												</li>
+												<li>
+													<input type="radio" id="rad07-2" name="table_radio07" title="부적합"  disabled="disabled">
+													<label for="rad07-2">부적합</label>
+												</li>
+											</ul>
+										</td>
+										<td>기타의견없음</td>
+									</tr>
+									
+								</tbody>
+							</table>
+						</div>
+						<div class="txtBox">
+							<p class="rfrnc">'적합성'인 경우 적합/부적합, '적정성'인 경우 적정/부적정</p>
+						</div>
+
+						<div class="secTitBox02">
+							<h3>종합 판단 결과</h3>
+						</div>
+						<div class="table-St type03 th-bg th-br td-pdl10 th-pdl10 ">
+							<table class="style02" summary="종합 판단 결과 에 대한 진단 결과표">
+								<caption>종합 판단 결과 에 대한 진단 결과표</caption>
+								<colgroup>
+									<col width="30%">
+									<col width="*">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th>종합 판단 결과</th>
+										<td>
+											<ul class="inpRadio">
+												<li>
+													<input type="radio" id="rad08-1" name="table_radio08" title="적합"  disabled="disabled" checked="checked">
+													<label for="rad08-1">적합</label>
+												</li>
+												<li>
+													<input type="radio" id="rad08-2" name="table_radio08" title="부적합"  disabled="disabled">
+													<label for="rad08-2">부적합</label>
+												</li>
+											</ul>
+										</td>
+									</tr>
+									
+									
+								</tbody>
+							</table>
+						</div>
+
+
+						<div class="txtBox">
+							<span>2022년 02월 08일</span>
+							<span>제이티저축은행(주)</span>
+						</div>
+
+					</div>
+
+
+				</div>
+				<p class="subBtnWrap">
+					<button type="button" onclick="modalOff();" title="확인" class="lone_ok">확인</button>
+				</p>
+			</dd>
+		</dl>
+	</div>
+</div>
+
+<script src="../public/js/common.js"></script>
+
+<!-- footer // -->
+</body>
+</html> 

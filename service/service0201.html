@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>JT 저축은행</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" type="text/css" href="../public/css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/common.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/common01.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/common02.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/footer.css" />
+	
+	<script src="../public/js/jquery.min.js"></script>
+	<script src="../public/js/common.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".boardPage > li > span").on("click",function(){
+				$(".boardPage > li").removeClass("on");
+				$(this).parent("li").addClass("on");
+			});
+		});
+	</script>
+</head>
+
+<body>
+<!-- // header -->
+<header>
+	<div>
+		<h1><a href="./index.jsp"></a></h1>
+		<nav>
+			<script>
+				$(document).ready(function(){ 
+					$('nav').load('../public/inc/nav.html'); 
+				});
+			</script>
+		</nav>
+	</div>
+</header>
+<!-- header // -->
+
+<!-- // section -->
+<section class="SubPage-bg04">
+
+	<article class="Path PathBg">
+		<div>
+			<a href="/">Home</a><span class="bullet_right">→</span><a href="/">고객센터</a><span class="bullet_right">→</span><a href="/">이벤트</a>
+		</div>
+	</article>
+
+	<article class="ContentWrap">
+
+		<div class="Sub-Title subTitBg">
+			<h2>이벤트<br /><span>다양한 혜택이 담긴 이벤트를 만나보세요.</span></h2>
+		</div>
+
+		<ul class="tabWrap li2"><!--li2, li3, li4, li5 로 갯수 조절-->
+			<li class="on"><a>진행중인 이벤트</a></li> 
+			<li><a>당첨자 발표</a></li>
+		</ul>
+		
+		<div class="call-admin">
+			<div>
+
+				<!--// * D : 이벤트리스트 없을 경우 노출 -->
+				<div class="list-None">
+					 <p>진행중인 이벤트가 없습니다.</p>
+				</div>
+				<!-- * D : 이벤트리스트 없을 경우 노출 // -->
+
+				<div class="txtBox02">
+					<div class="txtInp">
+						<label>
+							<input type="text" name="txtBox01" title="이벤트 검색 입력창" placeholder="검색어를 입력해주세요.">
+							<button type="button" name="txtBox01_2" title="이벤트 검색 버튼"><img src="../public/img/icon_search.png" alt="이벤트 검색 아이콘"></button>
+						</label>
+					</div>
+				</div>
+
+				<div class="tableWrap">
+				<div class="table-St type01 th-bg td-bt tc">
+					<table summary="제목, 이벤트기간으로 구성된 이벤트 게시판 표">
+						<caption>제목, 이벤트기간으로 구성된 이벤트 게시판 표</caption>
+						<colgroup>
+							<col width="*" />
+							<col width="20%" />
+						</colgroup> 
+						<thead>
+							<tr>
+								<th scope="col">제목</th>
+								<th scope="col">이벤트기간</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<!-- 클래스 titB, titGr, titYw 로 span 태그 색상 제어 -->
+								<td class="titB"><a href="#" title="블로그 이웃 초청 이벤트"><span>진행중</span>블로그 이웃 초청 이벤트!</a></td>
+								<td>2021.05.25~ 2021.06.07</td>
+							</tr>
+							<tr>
+								<td class="titB"><a href="#" title="토스 전용대출 출시 이벤트"><span>진행중</span>토스 전용대출 출시 이벤트!</a></td>
+								<td>2021.01.18~ 2021.01.21</td>
+							</tr>
+							<tr>
+								<td class="titB"><a href="#" title="파라솔100 실적 천억원 돌파 기념 고객 감사 이벤트"><span>진행중</span>파라솔100 실적 천억원 돌파 기념 고객 감사 이벤트</a></td>
+								<td>2020.08.18~ 2020.10.30</td>
+							</tr>
+							<tr>
+								<td class="titB"><a href="#" title="멤버십 5만명 달성기념 오마니 이벤트"><span>진행중</span>멤버십 5만명 달성기념 오마니 이벤트~</a></td>
+								<td>2018.11.20~ 2018.12.24</td>
+							</tr>
+							<tr>
+								<td class="titB"><a href="#" title="제3회 JT왕왕콘테스트 개최"><span>진행중</span>제3회 JT왕왕콘테스트 개최</a></td>
+								<td>2018.09.10~ 2018.11.04</td>
+							</tr>
+							<tr>
+								<td class="titGr"><a href="#" title="댕댕이와 함께라면 금리가 높아진다"><span>마감</span>댕댕이와 함께라면 금리가 높아진다!!</a></td>
+								<td>2018.09.07~ 2018.11.30</td>
+							</tr>
+							<tr>
+								<td class="titGr"><a href="#" title="다이렉트 자동차보험 가입하면 최대 3만원 혜택"><span>마감</span>다이렉트 자동차보험 가입하면 최대 3만원 혜택!</a></td>
+								<td>2018.07.05~ 2019.07.04</td>
+							</tr>
+							<tr>
+								<td class="titGr"><a href="#" title="꽃피는 3월에! 멤버십 3만명 돌파기념 신용대출 최대 3%p 할인"><span>마감</span>꽃피는 3월에! 멤버십 3만명 돌파기념~! 신용대출 최대 3%p 할인!</a></td>
+								<td>2018.03.01~ 2018.04.30</td>
+							</tr>
+							<tr>
+								<td class="titGr"><a href="#" title="제이티에게 말해봐 소원지원 이벤트"><span>마감</span>'제이티에게 말해봐' 소원지원 이벤트</a></td>
+								<td>2017.12.18~ 2018.01.26</td>
+							</tr>
+							<tr>
+								<td class="titGr"><a href="#" title="제2회 JT왕왕 콘테스트 개최 안내"><span>마감</span>제2회 JT왕왕 콘테스트 개최 안내</a></td>
+								<td>2017.08.28~ 2017.11.03</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<ul class="boardPage">
+					<li><button type="button" title="이전페이지 이동 버튼"><img src="../public/img/page_arrow_icon.png" alt="이전페이지 이동 아이콘" /></button></li>
+					<li class="on"><span>1</span></li>
+					<li><span>2</span></li>
+					<li><span>3</span></li>
+					<li><button type="button" title="다음페이지 이동 버튼"><img src="../public/img/page_arrow_icon.png" alt="다음페이지 이동 아이콘" /></button></li>
+				</ul>
+			</div>
+
+			</div>
+		</div>
+
+	</article>
+
+</section>
+<!-- // section -->
+
+<!-- // footer -->
+<footer>
+	<script>
+	$(document).ready(function(){ 
+		$('footer').load('../public/inc/footer.html'); 
+	});
+	</script>
+</footer>
+<!-- footer // -->
+</body>
+</html> 

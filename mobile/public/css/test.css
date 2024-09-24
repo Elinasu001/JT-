@@ -1,0 +1,77 @@
+@charset "UTF-8";
+.cus-ViewBox .note-table>strong{font-weight: 400 !important;}
+.cus-ViewBox .note-table{background-color: white !important; padding: 10px !important; line-height: 1.4 !important; display: block !important;}
+.cus-ViewBox .note-table>div{overflow: unset !important;}
+.cus-ViewBox .note-table>div,.cus-ViewBox .note-table>div>p{text-align: start !important; line-height: 1.4; font-size: 16px; font-weight: 400;} 
+.cus-ViewBox .note-table>div>span:only-child,.cus-ViewBox .note-table> div:nth-child(12)>div:nth-child(21)> div:nth-child(6) > div:nth-child(10)>span{font-size: unset !important;} 
+.cus-ViewBox .note-table>div:only-of-type>div,.cus-ViewBox .note-table>div:only-child>div>div>span>span:only-child,
+.cus-ViewBox .note-table>div:only-of-type>div:only-of-type
+{font-size: 16px !important; font-family: 'GmarketSans' !important; font-weight: 400; line-height: 1.4 !important;}
+.cus-ViewBox .note-table>div:only-child{margin-bottom: 10px;}
+/* 제목: */
+/* .title{font-weight: 500 !important; font-size: 20px !important; font-family: 'GmarketSans' !important;} */
+.cus-ViewBox .note-table>div>p:first-child,.cus-ViewBox .note-table>p:first-child{text-align: start !important;}
+.cus-ViewBox .note-table>div+div:nth-child(2)>span:only-child>strong,
+.cus-ViewBox .note-table>div>div:first-child>strong>span,
+.cus-ViewBox .note-table>div:only-child>div:first-child>span>strong,
+.cus-ViewBox .note-table>div:nth-child(2)>div:first-child>span>strong,.cus-ViewBox .note-table>div:first-child>span:only-child>span:only-child>strong:only-child,.cus-ViewBox .note-table>div>div>div>div>div>div>div>span:only-child>strong:only-child,.cus-ViewBox .note-table>div>div:first-child>span>strong,.cus-ViewBox .note-table>div>div>div>div>div>div>div>div>span:only-child>strong:only-child,.cus-ViewBox .note-table>div:first-child>span:only-child,.cus-ViewBox .note-table> div:first-child>div:first-child>span:only-child>strong+span,.cus-ViewBox .note-table>div:only-child>div:first-child>strong>span:only-of-type,.cus-ViewBox .note-table>div:nth-child(2)>div:first-child>span:only-child>strong:only-child,.cus-ViewBox .note-table>div:only-child>div:first-child>br+span:last-child,.cus-ViewBox .note-table>div:only-child>p:first-child>span:only-child{font-weight: 500 !important; font-size: 20px !important;}
+.cus-ViewBox .note-table>div:first-child>div:first-child>div:first-child>span:only-of-type>span:only-of-type{font-size: 20px !important; font-weight: 500 !important;}
+.cus-ViewBox .note-table>div>div:only-child>span>strong,
+.cus-ViewBox .note-table>div:first-child>span>strong,.cus-ViewBox .note-table>div:first-child>p:first-child>span>strong:only-child,.cus-ViewBox .note-table>p:first-child>span>strong,.cus-ViewBox .note-table>div>div:first-child{font-weight: 500; font-size: 20px !important; display: block; margin-bottom: 15px;}
+/* ====본문====: */
+.cus-ViewBox .note-table>div:only-child>div{text-align: start !important;}
+.cus-ViewBox .note-table>div>div>div>div>strong,.cus-ViewBox .note-table>div>span:only-of-type>strong:only-of-type{font-weight: 500 !important;}
+/* 본문-부제목류: */
+/* .subtitle{font-weight: 500 !important; font-size: 16px !important; font-family: 'GmarketSans' !important; text-align: left !important;} */
+.cus-ViewBox .note-table>div>div>div>div>span>span>u>b,.cus-ViewBox .note-table>div>div>div>div>span>span,.cus-ViewBox .note-table>div>span:only-child,
+.cus-ViewBox .note-table>div:not(:nth-child(20))>strong:only-child>span:only-child,
+.cus-ViewBox .note-table>div:only-of-type:not(:first-child,:last-child)>br+strong
+{font-family: 'GmarketSans' !important; font-size: 16px !important; font-weight: 500;}
+.cus-ViewBox .note-table>div>p>br+span>strong,.cus-ViewBox .note-table>div>div>strong>span:only-of-type,
+.cus-ViewBox .note-table>p:not(:first-child)>span>strong,.cus-ViewBox .note-table>div>div> div>div>strong>span,.cus-ViewBox .note-table>div>div>div>strong>span,.cus-ViewBox .note-table>div>div:not(:first-child)>span>strong,.cus-ViewBox .note-table>div>div>div>div>div>div>div>div>div>div>strong>span,.cus-ViewBox .note-table>div>div>div>div>div>div>div>div>div>div>span>strong,.cus-ViewBox .note-table>div>div>div>div>div>div>div>span>strong:only-of-type,
+.cus-ViewBox .note-table>div>div>div>div>div>div>div>div>div>div>span>span:only-child>strong:only-child,.cus-ViewBox .note-table>div>div>div>div>div>div>div>div>div>div>span>span>strong,div>span>strong,.cus-ViewBox .note-table> div:first-child>div:nth-child(7)>span:only-child>span:only-child
+{font-size: 16px !important; font-weight: 500; margin-bottom: 15px;}
+.cus-ViewBox .note-table>div>div>strong,.cus-ViewBox .note-table>div>div>div>strong:only-of-type,.cus-ViewBox .note-table>div>div>span>strong>span,.cus-ViewBox .note-table>table> tbody:nth-child(2)>tr:only-child> td:only-child>p:only-child>span:only-child,.cus-ViewBox .note-table> div:nth-child(12)>div,.cus-ViewBox .note-table> div:nth-child(12)>div>span>span:nth-of-type(1),.cus-ViewBox .note-table> div:nth-child(12)>div>span,.cus-ViewBox .note-table> div:nth-child(12) > div:nth-child(17) > table > tbody:nth-child(2) > tr > td > p > span,.cus-ViewBox .note-table> div:nth-child(12) > div:nth-child(21) > div:nth-child(6) > table > tbody> tr > td > p:only-child,.cus-ViewBox .note-table>div>div:only-of-type>strong:only-child>span:only-child,
+/* 고객참여제도 참여방법 안내(12차): */
+.cus-ViewBox .note-table>div:only-child>div:nth-child(6)
+/* :고객참여제도 참여방법 안내(12차) */
+{font-weight: 500 !important; line-height: 1.4; font-size: 16px !important;}
+/* 본문-일반내용: */
+/* .paragraph{font-weight: 400 !important; font-size: 16px !important; font-family: 'GmarketSans' !important; line-height: 2;} */
+.cus-ViewBox .note-table>div:first-child>div:only-child>div>div>span>span,.cus-ViewBox .note-table>div:first-child>div:only-child>div>div> span>span>span,.cus-ViewBox .note-table>div:first-child>div:only-child>div>div>span,.cus-ViewBox .note-table > div:nth-child(12) > div:nth-child(5) > span:nth-child(4)>strong,.cus-ViewBox .note-table> div:nth-child(12) > div:nth-child(21) > div:nth-child(1) >p> span,.cus-ViewBox .note-table> div:nth-child(12) > div:nth-child(21) > div:nth-child(2) > span,
+.cus-ViewBox .note-table>div:nth-child(12)> div:nth-child(21)> div:nth-child(6)> div:nth-child(10)>span>span:nth-child(2),.cus-ViewBox .note-table > div:nth-child(12) > div:nth-child(21) > div:nth-child(6) > div:nth-child(12) > span > span:nth-child(3),.cus-ViewBox .note-table> div > div > div:nth-child(5)>div:nth-child(20)>strong>strong:only-child> strong:only-child> span:only-child>span:only-child,.cus-ViewBox .note-table>div>div> div:nth-child(5)> div:nth-child(23) >div>p:only-child>strong:only-child>strong:only-child>strong:only-child>span,.cus-ViewBox .note-table>div>div:only-child>div>div:nth-child(21)>strong:only-child>strong:only-child>strong:only-child>span>span,.cus-ViewBox .note-table> div:nth-child(12)> div:nth-child(8)>span:only-child>strong:only-child,
+/* “대출계약 철회권” 시행 안내(상시): */
+.cus-ViewBox .note-table> div:nth-child(10)>span:only-child,
+.cus-ViewBox .note-table>div:nth-child(8)>span:only-child,
+.cus-ViewBox .note-table>div:nth-child(13)>span:only-child,
+/* : “대출계약 철회권” 시행 안내(상시) */
+.cus-ViewBox .note-table>div>div>div>span,.cus-ViewBox .note-table>div+div>div>span:only-child,.cus-ViewBox .note-table>div>span,.cus-ViewBox .note-table>div>div>span,.cus-ViewBox .note-table>div>p>span,.cus-ViewBox .note-table>div+div>div>div>div>span>strong,.cus-ViewBox .note-table>div+div>div>div>div>div>span,.cus-ViewBox .note-table>div>div>div>div>div>div>strong>span,.cus-ViewBox .note-table>div>div>div>div>div>div>div>span,.cus-ViewBox .note-table> div>div>div>div>div>div>div>div>strong>span,.cus-ViewBox .note-table> div>div>div>div>div>div>div>div>span,.cus-ViewBox .note-table>div> div>div>div>div>div>div>div>div>span,.cus-ViewBox .note-table> div>div>div,.cus-ViewBox .note-table>div>div>div>div,.cus-ViewBox .note-table>div>div>div>div>div>div>div>div>div>div>span:only-of-type,.cus-ViewBox .note-table>div>strong:not(:only-child)>span:not(:only-child),.cus-ViewBox .note-table>div>table>tbody>tr>td,.cus-ViewBox .note-table>div>table>tbody>tr>td>div,.cus-ViewBox .note-table>p:not(:first-child)>span:not(strong),.cus-ViewBox .note-table>div>div>table>tbody>tr>td,.cus-ViewBox .note-table>div>table>tbody>tr>td>div>span,.cus-ViewBox .note-table>div>div>table>tbody>tr>td>div>span,.cus-ViewBox .note-table>div:only-child>div:only-child>div>div>span,.cus-ViewBox .note-table>div>ul>li>span:only-child,.cus-ViewBox .note-table>div>div>div>div>div>div>div>div>div>div>span:not(strong),
+.cus-ViewBox .note-table>div>div:nth-child(8)>table>tbody>tr>td>div>span>span,
+.cus-ViewBox .note-table>div>div>span>span,.cus-ViewBox .note-table>div>div>strong>span>span,.cus-ViewBox .note-table>div>div:nth-child(8)>div:first-child>strong>span>span,.cus-ViewBox .note-table>div:only-child>div>span>span,.cus-ViewBox .note-table>div>div>div>div>div>div>div>div>div>div,
+.cus-ViewBox .note-table>div>div>div:nth-child(5)>div:nth-child(19)>strong>strong>strong>span:nth-child(4)>span,.cus-ViewBox .note-table>div>div:first-child,.cus-ViewBox .note-table>div>div{font-weight: 400 !important; font-size: 16px !important; font-family: 'GmarketSans' !important; line-height: 1.4;}
+/* 테이블: */
+.cus-ViewBox .note-table table{border-radius: 10px; border: 1px solid #DADCE1;}
+.cus-ViewBox .note-table table tbody tr:first-child td,
+.cus-ViewBox .note-table table tbody tr:first-child td div,
+.cus-ViewBox .note-table table tbody tr:first-child td div strong span,
+.cus-ViewBox .note-table table tbody tr:first-child td strong{background: #F8F8F9 !important; font-weight: 500 !important; font-size: 1.8rem !important;}
+.cus-ViewBox .note-table table tbody tr:first-child td:first-child{border-radius: 10px 0 0 0;}
+.cus-ViewBox .note-table table tbody tr:first-child td:last-child{border-radius: 0 10px 0 0;}
+.cus-ViewBox .note-table table tbody tr td{border: 0; border-bottom: 1px solid #DADCE1; padding: 5px;}
+.cus-ViewBox .note-table table tbody tr td:not(:last-child){border-right: 1px solid #DADCE1;}
+.cus-ViewBox .note-table table tbody tr:last-child td{border-bottom: 0;} 
+/* 하단: */
+/* .footer{font-size: 16px !important; font-weight: 500 !important;} */
+.cus-ViewBox .note-table>div:last-child>span:first-child>strong:only-child{display: inline-block !important;}
+.cus-ViewBox .note-table>div>div:last-child>strong>span:only-child,
+.cus-ViewBox .note-table>div>p:last-child>strong>span:only-child,.cus-ViewBox .note-table>div:last-child>span>span>strong,
+.cus-ViewBox .note-table>div:only-child>p:not(:first-child,:last-child)>span:only-child
+{font-size: 18px !important; font-weight: 500; }
+
+
+.cus-ViewBox .table-scroll { overflow-y:scroll; }
+.note-ViewBox.cus-ViewBox .note-table > div > a { width:auto; padding:0; }
+.note-ViewBox.cus-ViewBox .note-table > div > a:before { content:''; display:none; background:none; }
+
+
+.cus-ViewBox .CUS0201>dd>div { border:none!important; padding:0!important;}

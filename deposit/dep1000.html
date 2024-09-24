@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>JT 저축은행</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" type="text/css" href="../public/css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/common.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/common01.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/common02.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/footer.css" />
+	
+	<script src="../public/js/jquery.min.js"></script>
+	<script src="../public/js/common.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			// 아코디언 제어
+			$(".accordian02 > li > div:first-child").click(function(){
+			var tg = $(this).siblings("div");
+			var dis = tg.css("display");
+			if (dis=="none") {
+				$(this).addClass("Active");
+				tg.slideDown(300);
+			} else {
+				$(this).removeClass("Active");
+				tg.slideUp(300);
+			}
+			return false;
+			});
+		});
+	</script>
+</head>
+
+<body>
+<!-- // header -->
+<header>
+	<div id="gnb">
+		<h1><a href="./index.jsp"></a></h1>
+		<nav>
+			<script>
+				$(document).ready(function(){ 
+					$('nav').load('../public/inc/nav.html'); 
+				});
+			</script>
+		</nav>
+	</div>
+</header>
+<!-- header // -->
+
+<!-- // section -->
+<section class="SubPage-bg02">
+
+	<article class="Path PathBg">
+		<div>
+			<a href="/">Home</a><span class="bullet_right">→</span><a href="/">이용안내</a><span class="bullet_right">→</span><a href="/">인터넷뱅킹 이용안내</a>
+		</div>
+	</article>
+
+	<article class="ContentWrap">
+
+		<div class="Sub-Title subTitBg">
+			<h2>인터넷뱅킹 이용안내<br /><span>JT저축은행이 제공하는 예금서비스입니다.</span>
+				<ul class="txtBtnWrap li4"><!-- 클래스 li4, li5 로 li 크기 조절 -->
+					<li>
+						<button type="button" href="#" title="인터넷뱅킹 바로가기">
+							<!-- <img src="../public/img/loan_service_list_icon_09.png" alt="모니터 모양 아이콘" /> -->
+							<p>인터넷뱅킹 바로가기</p>
+						
+						</button>
+					</li>
+				</ul>
+			</h2>
+			
+		</div>
+
+		<div class="call-admin pdT60">
+			<div>
+				
+				<div class="listTxtWrap type01"><!-- 묶인 이미지 일 때 클래스 full 추가 -->
+					<!-- <img src="../public/img/dep_service_icon.png" alt=" "> -->
+					<p><span>언제 어디서나<br/> 은행업무를 간편하게!</span></p>
+					<span>집, 직장 어디에서나 인터넷만 연결되어 있으면 간편하고 쉽게 JT저축은행 업무를 보실 수 있습니다.</span>
+					
+				</div>
+
+				<div class="accordianWrap">
+                    <!-- 20240802 -->
+					<ol class="accordian02">
+						<li>
+							<div>안내 및 고객유의사항</div>
+							<div class="sub-table">
+								<p class="dot"><b>인터넷뱅킹이란 고객께서 보유하고 계신 PC를 인터넷으로 연결하여 가정이나 사무실 등 장소에 구애받지 않고 은행 업무를 처리할 수 있는 최첨단 금융서비스입니다.</b></p>
+								
+								<table>
+									<caption>인터넷뱅킹의 특징, 인터넷뱅킹 이용대상 및 가입방법, 고객 유의사항 안내 표</caption>
+									<colgroup>
+										<col width="15%">
+										<col width="*">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row">인터넷뱅킹의 특징</th>
+											<td>
+												<ul>
+													<li class="dot">당 저축은행 창구에 직접 나오시지 않으셔도 창구 업무를 이용하실 수 있습니다.</li>
+													<li class="dot">재직 1개월 이상(프리랜서 6개월 이상)</li>
+													<li class="dot">인터넷이 연결된 곳이라면 어디서나 편리하게 이용하실 수 있습니다.</li>
+													<li class="dot">128bit 암호화 통신 및 인증서 암호, 보안카드, 사용자 비밀번호, 이체 비밀번호 등을 통한 안전장치를 단계별로 사용하였습니다.</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">인터넷뱅킹 이용대상 및 가입방법</th>
+											<td>
+												<ul>
+													<li class="dot">당 저축은행에 입출금이 가능한 계좌(보통예금, 기업자유예금, 저축예금)를 가지고 계신 고객</li>
+													<li class="dot">모든 서비스를 이용하시고자 하는 경우 당시 창구를 방문하신 후, 인터넷뱅킹 이용신청을 하신 후 사용 가능합니다.<br>인터넷뱅킹 이체서비스 신청 시 준비물은 신분증, 사용하실 출금계좌의 통장, 인감이 필요합니다.</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">고객 유의사항</th>
+											<td>
+												<ul>
+													<li class="dot">사용을 종료할 경우에는 반드시 로그아웃 버튼을 클릭하여 타인에게 고객의 정보가 유출되지 않도록 각별히 주의하시기 바랍니다.</li>
+													<li class="dot">사용자 아이디, 사용자 비밀번호, 계좌 비밀번호, 보안카드를 잘 관리하여 분실 또는 유출되지 않도록 하십시오.</li>
+												</ul>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+
+								<div class="txtBox">
+									<p class="rfrnc">3회 이상 연속하여 오류입력 하셨을 경우에는 안전을 위하여 거래를 중단합니다.</p>
+									<p class="rfrnc">당 저축은행 인터넷 뱅킹에 처음 접속하는 사용자인 경우 인터넷뱅킹 신청 후 반드시 3 영업일 이내 사용자 비밀번호를 등록하셔야 합니다.<br>(3 영업일 내 등록하지 못한 경우에는 로그인 화면에서 아이디 입력란 위에 있는 사용자 비밀번호 분실 재등록을 하시면 됩니다.)</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div>수수료 및 이체한도</div>
+							<div class="sub-table">
+								<p class="dot">인터넷뱅킹의 수수료 및 이체한도는 <b>서비스 내용, 보안등급, 개인, 법인의 구분에 따라 상이합니다.</b></p>
+								
+								<div class="secTitBox">
+									<h3>인터넷뱅킹 이용수수료</h3>
+								</div>
+								<div class="table-St th-bg th-br td-br td-bt tc pdTB10 last-Bnon">
+									<table>
+										<caption>인터넷뱅킹 당행이체, 타행이체 시 이용 수수료 안내표</caption>
+										<colgroup>
+											<col width="25%">
+											<col width="25%">
+											<col width="25%">
+											<col width="25%">
+										</colgroup>
+										<thead>
+											<tr><th>서비스 종류</th>
+											<th>송금금액</th>
+											<th>수수료</th>
+											<th>비고</th></tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td><b>당행이체</b></td>
+												<td>구분없음</td>
+												<td>0 원</td>
+												<td rowspan="2"><b>서비스 내용, 보안등급, 개인, 법인의 구분에 따라 상이합니다.</b></td>
+											</tr>
+											<tr>
+												<td><b>타행이체</b></td>
+												<td>구분없음</td>
+												<td class="bor-r">0 원</td>
+											</tr>
+											
+										</tbody>
+									</table>
+								</div>
+
+								<div class="secTitBox">
+									<h3>보안매체별 최대 이체한도</h3>
+								</div>
+								<div class="table-St th-bg th-br td-br td-bt tc pdTB10 last-Bnon">
+									<table>
+										<caption>보안매체에 따른 개인, 기업별 최대 이체 한도 안내표</caption>
+										<colgroup>
+											<col width="12.5%">
+											<col width="12.5%">
+											<col width="25%">
+											<col width="25%">
+											<col width="25%">
+										</colgroup>
+										<thead>
+											<tr><th rowspan="2" colspan="2">구분</th>
+											<th colspan="3">보안매체</th>
+											</tr>
+											<tr class="th-bt">
+											<th>OTP</th>
+											<th>SMS+보안카드</th>
+											<th>보안카드, 모바일OTP</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td rowspan="2">개인</td>
+												<td>1회</td>
+												<td>1억원까지</td>
+												<td>5천만원까지</td>
+												<td>1천만원까지</td>
+											</tr>
+											<tr>
+												<td>1일</td>
+												<td>5억원까지</td>
+												<td>2억5천만원까지</td>
+												<td>5천만원까지</td>
+											</tr>
+											<tr>
+												<td rowspan="2">기업</td>
+												<td>1회</td>
+												<td colspan="3">10억(OTP사용필수)</td>
+											</tr>
+											<tr>
+												<td>1일</td>
+												<td colspan="3">50억(OTP사용필수)</td>
+											</tr>
+											
+										</tbody>
+									</table>
+								</div>
+								
+
+							</div>
+						</li>
+						<li>
+							<div>이용시간안내</div>
+							<div class="sub-table">
+								<p class="dot">인터넷뱅킹 및 스마트폰뱅킹의 거래 가능시간입니다. (단, 일부 거래는 인터넷뱅킹에서만 이용 가능합니다.)</p>
+								
+								<div class="secTitBox">
+									<h3>인터넷뱅킹 이용시간안내</h3>
+								</div>
+								<div class="table-St th-bg th-br td-br td-bt tc pdTB10 last-Bnon">
+									<table>
+										<caption>인터넷뱅킹 이용시간 안내에 따른 조회, 이체, 사고신고, 예금, 대출 및 상환, 고객정보 변경, 체크카드 발급 신청, 공과금 안내표</caption>
+										<colgroup>
+											<col width="20%">
+											<col width="20%">
+											<col width="30%">
+											<col width="30%">
+										</colgroup>
+										<thead>
+											<tr><th rowspan="2" colspan="2">구분</th>
+											<th colspan="2">이용시간</th></tr>
+											<tr class="th-bt">
+												<th>평일</th>
+												<th>토,일요일/공휴일</th>				
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td><b>조회</b></td>
+												<td><b>각종조회</b></td>
+												<td>00:10 ~ 23:50</td>
+												<td>00:10 ~ 23:50</td>
+											</tr>
+											<tr>
+												<td><b>이체</b></td>
+												<td><b>타행</b></td>
+												<td>00:10 ~ 23:50</td>
+												<td>00:10 ~ 23:50</td>
+											</tr>
+											<tr>
+												<td><b>사고신고</b></td>
+												<td><b></b></td>
+												<td>00:00 ~ 23:59</td>
+												<td>00:00 ~ 23:59</td>
+											</tr>
+											<tr>
+												<td rowspan="2"><b>예금</b></td>
+												<td><b>신규</b></td>
+												<td>00:10 ~ 23:45</td>
+												<td>00:10 ~ 23:45</td>
+											</tr>
+											<tr>
+												<td><b>해지</b></td>
+												<td>00:10 ~ 23:45</td>
+												<td>이용불가</td>
+											</tr>
+											<tr>
+												<td rowspan="4"><b>대출 및 상환</b></td>
+												<td><b>대출신청</b></td>
+												<td>09:00 ~ 16:00</td>
+												<td>이용불가</td>
+											</tr>
+											<tr>
+												<td><b>대출실행</b></td>
+												<td>09:00 ~ 23:50</td>
+												<td>이용불가</td>
+											</tr>
+											<tr>
+												<td><b>상환</b></td>
+												<td>00:10 ~ 23:50</td>
+												<td>00:10 ~ 23:50</td>
+											</tr>
+											<tr>
+												<td><b>상계</b></td>
+												<td>00:10 ~ 23:50</td>
+												<td>이용불가</td>
+											</tr>
+											<tr>
+												<td><b>고객정보변경</b></td>
+												<td><b></b></td>
+												<td>00:10 ~ 23:50</td>
+												<td>00:10 ~ 23:50</td>
+											</tr>
+											<tr>
+												<td><b>체크카드발급신청</b></td>
+												<td><b></b></td>
+												<td>00:10 ~ 23:50</td>
+												<td>00:10 ~ 23:50</td>
+											</tr>
+											<tr>
+												<td rowspan="3"><b>공과금</b></td>
+												<td><b>지로요금</b></td>
+												<td>07:00 ~ 23:30</td>
+												<td>07:00 ~ 23:30</td>
+											</tr>
+											<tr>
+												<td><b>국고/범칙금</b></td>
+												<td>04:00 ~ 17:30</td>
+												<td>04:00 ~ 17:30</td>
+											</tr>
+											<tr>
+												<td><b>지방세</b></td>
+												<td>07:00 ~ 23:30</td>
+												<td>07:00 ~ 23:30</td>
+											</tr>
+											
+										</tbody>
+									</table>
+								</div>
+								<div class="txtBox">
+									<p class="rfrnc">토요일, 일요일, 공휴일에는 예금/적금 해지가 불가능합니다.</p>
+									<p class="rfrnc">인증서 발급/재발급/갱신 및 타기관 인증서 등록 등의 업무는 각종 조회가 가능한 시간에만 가능합니다.</p>
+									<p class="rfrnc">대출신청은 모바일APP 이용시 24시간 가능 합니다.</p>
+								</div>
+								
+								
+
+							</div>
+						</li>
+						<li>
+							<div>비밀번호 및 이용계좌</div>
+							<div class="sub-table">
+								<div class="secTitBox">
+									<h3>인터넷뱅킹 비밀번호</h3>
+								</div>
+								<table>
+									<caption>사용자아이디/사용자비밀번호, 인증서암호, 출금계좌 비밀번호, 보안카드 번호로 구분되는 인터넷뱅킹 비밀번호 안내표</caption>
+									<colgroup>
+										<col width="15%">
+										<col width="*">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row">사용자아이디/사용자비밀번호</th>
+											<td>
+												<ul>
+													<li class="dot">사용자 아이디는 지점에서 인터넷뱅킹신청 시 고객께서 지정하며, 사용자 비밀번호는 3 영업일 이내에 PC에서 사용자 비밀번호등록을 하셔야합니다.</li>
+													<li class="dot">사용자아이디/사용자비밀번호는 인터넷뱅킹 로그인 시 필요합니다.</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">인증서암호</th>
+											<td>
+												<ul>
+													<li class="dot">이체 또는 각종 정보변경, 사고신고 시에 사용되는 확인용 비밀번호로써 정당한 인증서 사용자 인지를 확인해 줍니다.</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">출금계좌 비밀번호</th>
+											<td>
+												<ul>
+													<li class="dot">통장신규 시 발급되며, 이체 또는 조회거래 시 지급계좌의 확인을 위하여 사용되는 비밀번호 입니다.</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">보안카드 번호</th>
+											<td>
+												<ul>
+													<li class="dot">이체 등 출금이 발생되는 거래와 보안인증, 이체승인을 위해 사용됩니다.</li>
+													<li class="dot">영업점에서 인터넷뱅킹 이용신청 시 발급받습니다.</li>
+												</ul>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<div class="secTitBox">
+									<h3>인터넷뱅킹 이용계좌의 종류</h3>
+								</div>
+								<table>
+									<caption>출금계좌, 조회계좌, 출금계좌 비밀번호, 보안카드번호로 구분되는 이용계좌 종류 안내표</caption>
+									<colgroup>
+										<col width="15%">
+										<col width="*">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row">출금계좌</th>
+											<td>
+												<ul>
+													<li class="dot">인터넷뱅킹에서 이체, 자금결제 등의 출금이 수반되는 거래는 당사 창구에서만 신청 가능합니다.</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">조회거래</th>
+											<td>
+												<ul>
+													<li class="dot">인터넷뱅킹을 통하여 계좌의 잔액, 대출금, 만기일, 이자조회 등의 정보를 조회할 수 있는 계좌입니다.</li>
+													<li class="dot">당사와 거래하시고 계시는모든 계좌의 내용을 조회하실 수 있습니다.</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">출금계좌 비밀번호</th>
+											<td>
+												<ul>
+													<li class="dot">통장신규 시 발급되며, 이체 또는 조회거래 시 지급계좌의 확인을 위하여 사용되는 비밀번호 입니다.</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">보안카드 번호</th>
+											<td>
+												<ul>
+													<li class="dot">이체 등 출금이 발생되는 거래와 보안인증, 이체승인을 위해 사용됩니다.</li>
+													<li class="dot">영업점에서 인터넷뱅킹 이용신청 시 발급받습니다.</li>
+												</ul>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								
+
+							</div>
+						</li>
+						<li>
+							<div>OTP 이용안내</div>
+							<div class="sub-table">
+								<div class="otpInfo">
+									<p>OTP (One Time Password)</p>
+									<span>전자금융서비스의 안전한 거래를 위해 기존 보안카드를 대체하는 <b>일회용 비밀번호발생기</b>로써 전자금융서비스 이용 시 외부노출 및 해킹방지를 완벽하게 차단하여 안전하게 전자금융서비스를 이용하실 수 있습니다.</span>
+								</div>
+								<table>
+									<caption>OTP 발급준비물, 사용방법, 잠금/해제, 사고(분실) 등록 및 해제 안내표</caption>
+									<colgroup>
+										<col width="15%">
+										<col width="*">
+									</colgroup>
+									<tbody>
+										<tr>
+						 					<th scope="row">발급 준비물</th>
+											<td>
+												<ul>
+													<li>준비서류 지참하여 가까운 영업점에 방문하여 신청</li>
+													<li class="dot">개인 : 실명확인증표, 출금계좌통장, 거래인감</li>
+													<li class="dot">법인 : 실명확인증표, 법인인감증명서, 법인인감, 법인등기부등본 또는 사업자등록증, 출금계좌통장, 거래인감</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+						 					<th scope="row">사용방법</th>
+											<td>
+												<p class="otp_bg"></p>
+												<ul>
+													<li class="dot">OTP 기기에 있는 전원 버튼을 누르면 6자리 비밀번호가 생성되며, 전자금융서비스 이용 시 OTP에 표시되는 비밀번호 입력</li>
+													<li class="dot">LCD의 좌측에 표시된 Time Dot은 매 초마다 깜박여서 작동여부 표시</li>
+													<li class="dot">전원 버튼을 매 번 누르지 않아도 1분마다 자동으로 인증번호가 변경되며, 일정시간이 지나면 자동으로 꺼짐</li>
+													<li class="dot">LCD의 좌측에 표시된 Time Bar는 비밀번호가 바뀌게 될 남은 시간 표시</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">잠금/해제 </th>
+											<td>
+												<ul>
+													<li class="dot">통합 OTP 발생기는 이체 거래 시 발생번호를 연속적으로 10회(사용하고 계신 금융기간 합산) 틀렸을 경우 거래가 정지되며, 잠김 해제는 가까운 영업점을 방문하시기 바랍니다.</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">사고(분실) 등록 및 해제</th>
+											<td>
+												<ul>
+													<li class="dot">사고(분실)신고는 영업점, 인터넷뱅킹, ARS를 통해서 가능하며, 해제는 반드시 영업점(본인 확인서류 지참)에 방문하여 해제 신청하시기 바랍니다.</li>
+												</ul>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<div class="secTitBox">
+									<h3>하드웨어형 OTP 제품별 배터리 잔량 확인방법</h3>
+								</div>
+								<div class="table-St th-bg th-br td-br td-bt tc pdTB10 last-Bnon">
+									<table>
+										<caption>제조업체명(벤더코드), 종류, 모델명에 따른 제품별 배터리 잔량 확인방법 안내표</caption>
+										<colgroup>
+											<col width="25%">
+											<col width="25%">
+											<col width="25%">
+											<col width="25%">
+										</colgroup>
+										<thead>
+											<tr>
+												<th>제조업체명(벤더코드)</th>
+												<th>종류</th>
+												<th>모델명</th>
+												<th>확인방법</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td rowspan="5">미래테크놀로지(벤더코드 001)</td>
+												<td rowspan="5">토큰형</td>
+												<td>MRT-200P(PIN입력방식)</td>
+												<td>전원을 켜면 배터리 표시가<img class="otpBtyImg1" src="/asset/public/w/img/icon_btr.png" alt="배터리 한 칸표시 이미지">상태로 점등(통상 3개월 이내방전)</td>
+											</tr>
+											<tr>
+												<td>MRT-300nP</td>
+												<td rowspan="4"><img class="otpBtyImg2" src="/asset/public/w/img/bg_otpimg3.gif" alt="배터리 전원을 켜면 Low Battery표시와 OTP숫자가 번갈아가며 노출되는 이미지">배터리 방전 3개월 전부터 전원을 켜면 LowBattery 표시(Lo bAt)와 OTP 숫자가 번갈아가며 반복</td>
+											</tr>
+											<tr>
+												<td class="bor-r">MRT-400nP</td>
+											</tr>
+											<tr>
+												<td class="bor-r">MRT-600nP</td>
+											</tr>
+											<tr>
+												<td class="bor-r">MRT-700nP</td>
+											</tr>
+											<tr>
+												<td>오티피멀티솔루션(벤더코드 004)</td>
+												<td>토큰형</td>
+												<td>Digipass Go6</td>
+												<td>OTP가 생성된 상태에서 버튼을 길게 눌러 Battery 잔량을 백분율로 확인</td>
+											</tr>
+											<tr>
+												<td>코나씨(벤더코드 016)</td>
+												<td>카드형</td>
+												<td>KONA O1032TT</td>
+												<td>전원버튼을 길게 눌러 배터리모양으로 잔량 확인</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+
+							</div>
+						</li>
+					</ol>
+				</div>
+
+			</div>
+		</div>
+
+	</article>
+
+</section>
+<!-- // section -->
+
+<!-- // footer -->
+<footer>
+	<script>
+	$(document).ready(function(){ 
+		$('footer').load('../public/inc/footer.html'); 
+	});
+	</script>
+</footer>
+<!-- footer // -->
+</body>
+</html>

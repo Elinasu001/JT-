@@ -1,0 +1,194 @@
+<!--%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%-->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<!-- %@ include file="./public/inc/common.jsp" %-->
+	<title>JT 저축은행</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<link rel="stylesheet" type="text/css" href="../public/css/reset.css?v=002" />
+	<link rel="stylesheet" type="text/css" href="../public/css/common.css?v=002" />
+	<link rel="stylesheet" type="text/css" href="../public/css/slick.css" />
+	<script src="../public/js/jquery.min.js"></script>
+	<script src="../public/js/slick.js"></script>
+	<script src="../public/js/common.js"></script>
+	<script>
+		$(document).ready(function(){
+
+			//상단 tab 제어
+			$(".tab-menu>li").on("click",function(){
+				$(this).parents("ul").find("li").removeClass("active");
+				$(this).addClass("active");
+			});
+			
+		});
+		</script>
+</head>
+<body class="ft-fixLayout">
+
+<!-- // header -->
+<header>
+	<div>
+		<h1><a href="/"><img src="../public/img/logo.png" alt="JT저축은행" /></a></h1>
+
+		<a href="javascript:callgnb();" alt="전제메뉴 보기" >
+			<span></span>
+			<span></span>
+			<span></span>
+		</a>
+
+	</div>
+</header>
+<!-- header // -->
+
+<!-- // Aside -->
+<div class="Aside">
+	<script>
+		$(document).ready(function(){ 
+			$('.Aside').load('../public/inc/nav.html'); 
+		});
+	</script>
+</div>
+<!-- Aside // -->
+
+<div id="main">
+	<section>
+		
+		<article class="ContentWrap">
+
+			<div class="subPage-Tit">
+				<h2>온라인상담</h2>
+				<p>고객님들의 이용에 어려움이 없도록 도와드립니다.</p>
+				<ul>
+					<li><a href="">일반상담</a></li>
+					<li class="on"><a href="">민원접수</a></li>
+				</ul>
+			</div>
+			
+			<div class="call-admin">
+				<div>
+					<div class="inpWrap">
+						<label for="">문서구분</label>
+						<p>
+							<select title="문서구분 종류">
+								<option value="1">예금</option>
+								<option value="2">대출</option>
+								<option value="3">부동산</option>
+								<option value="4">채용</option>
+								<option value="5">기타</option>
+							</select>
+						</p>
+					</div>	
+
+					<div class="inpWrap">
+						<label for="ipt01_01">작성자</label>
+						<p>
+							<input type="text" name="ipt01_01" placeholder="한글만 입력해주세요." title="작성자">
+						</p>
+					</div>	
+
+					<div class="inpWrap">
+						<label for="ipt02_01">생년월일</label>
+						<p>
+							<input type="text" name="ipt02_01" placeholder="(예:940807)" title="생년월일">
+						</p>
+					</div>	
+
+					<div class="inpWrap">
+						<label for="ipt03_01">핸드폰번호</label>
+						<p>
+							<input type="tel" name="ipt03_01" placeholder="'-'없이 입력해주세요." title="휴대전화 번호">
+						</p>
+					</div>	
+
+					<div class="inpWrap">
+						<label for="ipt04_01">이메일</label>
+						<p>
+							<input type="text" name="ipt04_01" title="이메일">
+						</p>
+					</div>	
+
+					<div class="inpWrap" data-role="tab">
+						<span>회선방식</span>
+						<ul class="tab-menu" role="tablist">
+							<li class="active">
+								<button role="tab">이메일</button>
+							</li>
+							<li>
+								<button role="tab">전화</button>
+							</li>
+						</ul>
+					</div>	
+
+					<div class="inpWrap">
+						<label for="ipt05_01">제목</label>
+						<p>
+							<input type="text" name="ipt05_01" title="제목">
+						</p>
+					</div>
+
+					<div class="inpWrap">
+						<label for="ipt06_01">내용</label>
+						<p class="ipt_noti">
+							<textarea>동해물과백두산이마르고닳도록</textarea>
+						</p>
+					</div>
+
+					<div class="inpWrap">
+					<script>
+						function getCapImage(){
+							//인증코드 이미지
+							//alert("reload Captcha Image");
+							var v = new Image();
+							v.src = "http://loan.jt-bank.co.kr/qna/captcha.do"+new Date().getTime();
+							document.getElementById("capImg").src = v.src;    
+						}
+						function reCapImage(){
+							//인증코드 이미지 새로고침 기능
+							//alert("reload Captcha Image");
+							var r = new Image();
+							r.src = "http://loan.jt-bank.co.kr/qna/captcha.do";
+							document.getElementById("capImg").src = r.src;    
+						}
+					</script>
+						<label for="ipt05_01">인증코드</label>
+						<ul class="captcha">
+							<li class="pdB10">
+								<img src="http://loan.jt-bank.co.kr/qna/captcha.do"  alt="인증코드" id="capImg">
+								<a onClick="reCapImage()"></a>
+							</li>
+							<li>
+								<input type="tel" id="ipt07-1" name="ipt07-1" placeholder="입력해주세요." title="인증코드 입력">
+							</li>
+						</ul>
+					</div>
+
+					<div class="txtBox">
+						<p class="hypn">작성 완료 후 14일 이내 답변을 드리겠습니다.</p>
+						<p class="hypn">본 페이지는 정보통신망 이용촉진 및 정보보호 등에 관련 법률에 의거하여 개인정보를 송수신할 때 암호화 함으로써 개인정보를 취급함에 있어서 안전하게 보호합니다.</p>
+					</div>
+	
+				</div>
+			</div>
+	
+		</article>
+	
+	</section>
+</div>
+<!-- main // -->
+
+<div class="ft-fixBtnWrap">
+	<!-- <a href="#">확인</a>
+	<a href="#">취소</a> -->
+	<p>
+		<a href="#" class="btn-cancle">취소</a>
+		<a href="#" class="btn-normal">등록</a>
+		
+	</p>
+</div>
+
+
+</body>
+</html>

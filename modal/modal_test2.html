@@ -1,0 +1,1359 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>JT 저축은행</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" type="text/css" href="../public/css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/common.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/common01.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/footer.css" />
+	
+	<script src="../public/js/jquery.min.js"></script>
+	<script src="../public/js/common.js"></script>
+
+	<script>
+	
+		/* 모달 */
+		function modalOn(modalID) { // 모달 On 모달 창 호출 후 해당 모달 컨텐츠 로드
+			$("." + modalID).addClass('on');
+			$("html").css("overflow","hidden");
+		};
+
+		function modalOff() { // 모달 Off
+			$('.Acuon-Modal').removeClass('on');
+			$("html").css("overflow","auto").css("height","100%");
+		};
+	</script>
+
+</head>
+
+<body>
+<!-- // header -->
+<header>
+	<div id="gnb">
+		<h1><a href="./index.jsp"></a></h1>
+		<nav>
+			<script>
+				$(document).ready(function(){ 
+					$('nav').load('../public/inc/nav.html'); 
+				});
+			</script>
+		</nav>
+	</div>
+</header>
+<!-- header // -->
+
+<!-- // section -->
+<section class="SubPage-bg01">
+
+	<article class="Path PathBg">
+		<div>
+			<a href="/">Home</a><span class="bullet_right">→</span><a href="/">모달창test</a>
+		</div>
+	</article>
+
+	<article class="ContentWrap">
+
+		<div class="Sub-Title subTitBg">
+			<h2>모달창test<br /><span></span></h2>
+		</div>
+
+		<div class="call-admin">
+			<div>
+			<div class="tableWrap">
+				<div class="secTitBox02">
+					<div>모달창 test</div>
+				</div>
+
+				<ul class="agreeList scraping">
+					<li class="agreeHead">
+						<div>여신거래약정서</div>
+						<button type="button" title="" class="btnWh01" onclick="modalOn('agree08');">자세히보기</button>
+					</li>
+				</ul>
+				<ul class="agreeList scraping">
+					<li class="agreeHead">
+						<div>가계대출상품설명서</div>
+						<button type="button" title="" class="btnWh01" onclick="modalOn('agree09');">자세히보기</button>
+					</li>
+				</ul>
+
+			</div><!-- tableWrap -->
+
+			
+
+			<div class="subBtnWrap">
+				<button type="submit" title="신용대출신청 기본정보 입력창 보여주기" class="lone_ok next01">다음</button>
+			</div>
+
+			</div>
+		</div><!-- call-admin -->
+
+	</article>
+
+</section>
+<!-- // section -->
+
+<!-- // footer -->
+<footer>
+	<script>
+	$(document).ready(function(){ 
+		$('footer').load('../public/inc/footer.html'); 
+	});
+	</script>
+</footer>
+<!-- footer // -->
+
+<div class="Acuon-Modal agree08" rel="여신거래약정서">
+	<div class="modal-type02">
+		<dl>
+			<dt>여신거래약정서</dt>
+			<dd>
+				<div>
+					<p>여신거래약정서</p>
+					<div class="table-St" style="padding:5px;">
+						<table style="border:0; border-radius:0;" summary="수입인지, 결재, 담당, 책임자, 부/점장 입력표"> 
+							<colgroup>
+								<col width="10%">
+								<col width="*">
+								<col width="4%">
+								<col width="8%">
+								<col width="16%">
+								<col width="8%">
+							</colgroup>
+							<tbody>
+								<tr>
+									<td rowspan="2">
+										<div style="width:80px; height:80px; text-align:center; line-height:78px; border:1px solid #DADCE1;">수입인지</div>
+									</td>
+									<td style="font-size:18px;">여신거래약정서</td>
+									<td rowspan="2" style="padding:5px 0px 5px 5px; border:1px solid #DADCE1; border-right:0;">결<br />재 </td>
+									<td class="tc" style="padding:5px 0px 5px 5px; border:1px solid #DADCE1; border-right:0; border-bottom:0;">담당 </td>
+									<td class="tc" colspan="2" style="padding:5px 0px 5px 5px; border:1px solid #DADCE1; border-right:0; border-bottom:0;">책임자 </td>
+									<td class="tc" style="padding:5px 0px 5px 5px; border:1px solid #DADCE1; border-bottom:0;">부/점장 </td>
+								</tr>
+								<tr>
+									<td>( <input type="checkbox" title="기업용" id="forcompany" name="" disabled = "true"/>  기업용,  <input type="checkbox" title="가계용" id="forhome" name="" checked ="checked" onclick="chkRadioVal(this);"/>가계용 )</td>
+									<td style="padding:5px 0px 5px 5px;border:1px solid #DADCE1; border-right:0;"> </td>
+									<td style="padding:5px 0px 5px 5px;border:1px solid #DADCE1; border-right:0;"> </td>
+									<td style="padding:5px 0px 5px 5px;border:1px solid #DADCE1; border-right:0;"> </td>
+									<td style="padding:5px 0px 5px 5px;border:1px solid #DADCE1;"> </td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div class="txtBox">
+						<span>20XX년 XX월 XX일</span> 
+					</div>
+
+					<p class="subTitle">JT저축은행 주식회사앞</p>
+					<ol>
+						<li><p><span>※</span> 본 여신거래약정서 중 제3조, 제4조, 제6조, 제10조, 제11조의 내용은 가계용인 경우에는 적용되지 않습니다.</p></li>
+						<li><p><span>1.</span> 본인은 JT저축은행 주식회사(이하 "저축은행"이라 합니다)과 아래의조건에 따라 여신거래를 함에 있어 [상호저축은행여신거래기본약관]이 적용됨을 승인하고, 다음 각 조항을 확약합니다.</p></li>
+						<li><p><span>2.</span> 본인은 상호저축은행여신거래기본약관 및 이 약정서 사본을 확실히 수령하였으며, 주요내용에 대하여 충분한 설명을 듣고 이해하였습니다.</p></li>
+						<li><p><span>3.</span> 본인은 여신 신청시 대출상품설명서를 교부받고, 이에 대한 충분한 설명을 듣고 이해하였습니다.</p></li>
+					</ol>
+					
+					<div class="table-St">
+						<table style="border:0px;" summary="채무자 주소, 이름 및 서명 입력표"> 
+							<tr>
+								<td rowspan="2" style="width:30%; "> &nbsp; <br />  &nbsp; </td>
+								<td style="padding:5px 0px 5px 5px;width:20%;">채무자 <br />주소 </td>
+								<td style="padding:5px 0px 5px 5px;width:*;text-align:right;"><strong>홍길동</strong> (인)<br /> &nbsp;</td>
+								 
+							</tr> 
+						</table>
+					</div>
+
+					<p class="subTitle">제1조 (거래조건)</p>
+					<ol>
+						<li><p><span>①</span>거래조건은 다음과 같습니다. (거래방식이 수 개로 되어 있는 경우 저축은행 직원의 설명을 듣고 해당되는 "ㅁ"내에 "V"표시합니다.)[개정 2016.12.19]</p></li>
+					</ol>
+					<div class="table-St phLR10 th-bg th-br th-bb td-bb ">
+					<table summary="여신과목, 거래구분, 자금용도, 여신(한도)금액, 여신개시일, 여신만료일, 계좌번호, 이자율등, 이자 및 지연배상금계산방법, 여신기한전상환수수료, 여신실행방법, 상환방법, 이자지급시기 및 방법, 부금드의 납입특약, 상계특약, 수수료 등의 입력표">
+						<col style="width:30%;">
+						<col style="width:70%;">
+						<tr>
+							<th>여신과목<br />(여신종류) </th>
+							<td><p>일반자금대출</p></td>
+						</tr>
+						<tr>
+							<th>거래구분</th>
+							<td><p><input type="checkbox" title="한도거래" disabled>  한도거래,  <input type="checkbox" title="개별거래" disabled checked="checked">개별거래 </p></td>
+						</tr>
+						<tr>
+							<th>자금용도 </th>
+							<td><p>기타가계자금</p></td>
+						</tr>
+						<tr>
+							<th>여신(한도)금액   </th>
+							<td><p><strong>금 &nbsp; &nbsp; &nbsp; </strong>원 </p></td>
+						</tr>
+						<tr>
+							<th>여신개시일 </th>
+							<td><p><strong> </strong></p></td>
+						</tr>
+						<tr>
+							<th>여신만료일 </th>
+							<td><p><strong> </strong>  </p></td>
+						</tr>
+						<tr>
+							<th>계좌번호</th>
+							<td><p> </p></td>
+						</tr> 
+
+						<tr>
+							<th rowspan="6">이자율 등</th>
+							<td><p><input type="checkbox" title="고정" disabled checked="checked"> 고정 (여신거래기본약관 제3조 제2항 제1호 선택) </p></td>
+						</tr>
+						<tr>
+							<td><p><input type="checkbox" title="변동" disabled> 변동 (상호저축은행 여신거래기본 약관 제3조 제2항 제2호 선택) </p></td>
+						</tr>
+						<tr>
+							<td>
+								<p>
+									<input type="checkbox" title="지연배상금률" disabled checked="checked"> 지연배상금률 (상호저축은행여신거래기본약관 제3조 제5항 적용)
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p>
+									여신기간 만료일까지 <strong>연 0 %</strong>
+								</p>
+							</td>
+						</tr>	
+						<tr>
+							<td>
+								<p>
+									<input type="checkbox" title="기준금" disabled> 기준금 +  <strong>연 (  &nbsp; &nbsp; )%</strong><br />
+									<input type="checkbox" title="금리변동주기" disabled> 금리변동주기 ( &nbsp; &nbsp; )개월
+								</p>
+							</td>
+						</tr>	
+						<tr>
+							<td>
+								<p>
+									최고 <strong>연 0 %</strong>
+								</p>
+							</td>
+						</tr>	
+						 
+						<tr>
+							<th>이자 및 지연배상금 계산방법 </th>
+							<td><p>1년을 365일(윤년은 366일)로 보고 1일 단위로 계산합니다. </p></td>
+						</tr>
+						<tr>
+							<th>여신기한전 상환수수료 </th>
+							<td>
+								<p>
+									대출이 상환기일 이전에 상환되는 경우 아래와 같이 적용하기로 합니다.<br />
+									<input type="checkbox" title="기한전상환대출금액x이자율x(잔존일수/약정기간)" disabled> 기한전상환대출금액 x( )% x (잔존일수/약정기간)<br />
+									<input type="checkbox" title="해당없음" disabled checked="checked"> 해당없음 
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<th>여신실행 방법 </th>
+							<td>
+								<p>
+									<input type="checkbox" title="여신개시일에전액실행" disabled checked="checked"> 여신개시일에 전액 실행합니다.<br />
+									<input type="checkbox" title="분할실행" disabled> 증빙서류나 현물등에 의하여 저축은행이 자금 용도와 필요금액을 확인하고 분할 실행합니다.<br />
+									<input type="checkbox" title="본인의청구대로실행" disabled> 일정한 요건을 갖춘 본인의 청구가 있는 대로 실행합니다. 
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<th>상 환 방 법 </th>
+							<td>
+								<p>
+									<input type="checkbox" title="만료일전액상환" disabled> 여신기간 만료일에 전액 상환합니다.<br />
+									<input type="checkbox" title="매선택일분할상환" disabled checked="checked"> 매 (    )일 마다 분할 상환합니다.<br />
+									<input type="checkbox" title="매월선택일분할상환" disabled> 매월 (    )일과 (    )일에 분할 상환합니다.<br /> 
+									<input type="checkbox" title="자유상환,만료일전일시전액상환,만료전액상환" disabled> 자유로이 상환하되, 1회전기간 만료일 또는 만료일 전에 일시 전액 상환하며, 여신기간 만료일에 전액 상환합니다.<br />
+									<input type="checkbox" title="분활상환의경우n일거치" disabled> 분할 상환하는 경우 여신개시일로부터 (    )년 (    )개월 (    )일 동안 거치합니다.<br />
+									※저축은행 영업시간 마감이후 자동화기기 또는 전자금융매체를 통한 계좌 입금분은 당일 중 상환으로 처리되지 않을 수 있음을 유의하시기 바랍니다. 
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<th>이자지급시기 및 방법 </th>
+							<td>
+								<p>
+									<input type="checkbox" title="실행익일매일지급" disabled> 여신 실행일 익일부터 매일 지급합니다.<br />
+									<input type="checkbox" title="매n월지급" disabled> 매(    )월 마다 대출해당일에 지급합니다.<br />
+									<input type="checkbox" title="분할상환원금상환일또는월적립금납입일지급" disabled checked="checked"> 분할상환원금 상환일 또는 월적립금 납입일에 지급합니다.<br />
+									<input type="checkbox" title="이자지급일또는이자원가일지급" disabled> 담보 예금등의 이자지급일 또는 이자원가일에 지급합니다.<br />
+									<input type="checkbox" title="어음기일전일선지급" disabled> 어음할인일에 어음기일 전일까지 선지급합니다.<br />
+									<input type="checkbox" title="매월결산일지급" disabled> 저축은행이 정한 매월 결산일에 지급합니다.<br />
+									※ 저축은행 영업시간 마감이후 자동화기기 또는 전자금융매체를 통한 계좌입금분은 당일 중 상환으로 처리되지 않을 수 있음을 유의하시기 바랍니다. 
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<th>부금등의 납입특약 </th>
+							<td>
+								<p>
+									<input type="checkbox" title="약정에따라계속납입" disabled> 부금 등의 적립금을 약정에 따라 계속 납입합니다.  다만, 그 적립금의 납입을(    ) 개월 동안 유예합니다. <br />
+									<input type="checkbox" title="약정에따라일별납입" disabled> 부금 등의 적립금을 약정에 따라 일별로 납입합니다.   다만, 그 적립금의 납입을 (  )일 동안 유예합니다. 
+
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<th>상 계 특 약 </th>
+							<td>
+								<p>
+									 <input type="checkbox" title="4월이상연체되는경우" disabled> 계약금액내대출에 대하여 관련 부금의 적립금이 계속하여 4월이상 연체되는 경우는 여신기간만료일 이전이라도 저축은행은 통지에 의하여 관련 예금과 대출금을 상계할 수 있습니다.<br />
+
+									 <input type="checkbox" title="3회차이상연체되는경우" disabled> 부금의 적립금이 계속하여 3회차 이상 연체되는 경우는 여신기간 만료일 이전이라도 저축은행은 통지에 의하여 관련 예금과 대출금을 상계할 수 있습니다.
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<th>수수료</th>
+							<td>
+								<p>
+									 <input type="checkbox" title="취급수수료" disabled> 취급수수료는 대출원금의 (  )%를 상호저축은행에서 정하는 바에 따라 지급한다.<br />
+
+									 <input type="checkbox" title="만기도래후기간연장시수수료" disabled> 만기도래 후 기간연장시에는 대출원금의 (  )%를 상호저축은행에서 정하는 바에 따라 지급한다.
+								</p>
+							</td> 
+						</tr>
+					</table>
+					</div>
+					<ol>
+						<li><p><span>②</span> 제1항의 거래방식에 있어서 한도거래라 함은 약정금액 및 거래기한 범위내에서 대출과 상환을 자유롭게 하기로 하는 것을, 개별거래라 함은 대출한 금액을 여신기간만료일에 일시 상환하거나 거래기한까지 분할 상환하기로 하는 것을 말합니다.</p></li>
+						<li><p><span>③</span> 한도거래의 경우는 제 1항의 여신기간만료일 이내에서 1회전기간을 정하여 운용할 수 있습니다.</p></li>
+						<li><p><span>④</span> 기타 특약사항</p></li>
+					</ol>
+					<div class="table-St phLR10 th-bg th-br th-bb td-bb ">
+					<table summary="기타 특약사항, 채무자명, (인) 입력표">
+						<col style="width:30%;">
+						<col style="width:70%;">
+						
+						
+						<tr>
+							<td colspan="2">
+								<p>
+									<br /><br /><br /><br /><br /><br />
+								</p>
+							</td>
+						</tr>
+						 
+						<tr>
+							<th>채무자</th>
+							<td><p>홍길동 (인)</p></td>
+						</tr>
+					</table>
+					</div>
+
+					<p class="subTitle">제2조 (지연배상금)</p>
+					<ol>
+						<li><p><span>①</span> 이자 · 분할상환금 · 분할상환원리금을 그 기일에 지급하지 아니한 때에는 지급하여야 할 금액에 대하여, 기일의 다음 영업일부터 지연배상금을 지급하기로 합니다. [개정 2016.12.19]</p></li>
+						<li><p><span>②</span> 여신기간 만료일에 채무를 이행하지 아니하거나, 상호저축은행여신거래기본약관 제7조에 의하여 기한의 이익을 상실한 때(상호저축은행여신거래기본약관 제9조에 의한 할인어음의 환매채무 발생 포함)에는, 여신기간의 만료일의 다음 영업일 또는 기한의 이익상실일의 다음 영업일부터 여신잔액에 대하여 지연배상금을 지급하기로 합니다. [개정 2016.12.19]</p></li>
+						<li><p><span>③</span> 계약금액내대출의 경우 상계전일까지는 지급하여야 할 이자에 대하여, 상계후에는 대출금잔액에 대하여 지연배상금을 지급하기로 합니다. [개정 2016.12.19]</p></li>
+						<li><p><span>④</span> 종합통장대출의 경우 이자원가 등으로 한도금액을 초과한 금액에 대하여 결산기준일 다음 영업일부터 지연 배상금을 지급하기로 합니다. [개정 2016.12.19]</p></li>
+					</ol>
+
+					<p class="subTitle">제3조 (차용총액 확정 및 분할 상환기일표 통지)</p> 
+					<ol>
+						<li><p><span>①</span> 분할 실행하는 여신의 경우, 채무총액은 최종의 실행후에 확정되며, 확정방법은 분할상환기일표 및 영수증 기타 증빙자료에 의합니다.</p></li>
+						<li><p><span>②</span> 계약금액내대출과 급부금을 제외한 분할상환 여신의 경우, 저축은행은 확정된 채무총액에 대한 분할상환기일표를 작성하여 채무관계인에게 통지하여야 합니다.</p></li>
+					</ol>
+
+					<p class="subTitle">제4조 (감액 · 정지)</p>
+					<ol>
+						<li><p><span>①</span> 한도거래 및 분할 실행하는 여신의 경우, 국가경제·금융사정의 급격한 변동 또는 본인의 신용상태의 현저한 악화 등으로 여신거래에 중대한 지장을 초래한다고 판단될 때에는, 저축은행은 통지에 의하여 제1조의 여신(한도)금액을 줄이거나 거래기간에 불구하고 여신실행을 일시 정지할 수 있습니다. 이 경우 본인은 감액으로 말미암은 한도초과 금액은 한도 초과된 당일 갚기로 합니다. [개정 2016.12.19]</p></li>
+						<li><p><span>②</span> 제1항에서 정한 사유가 해소되어 정상적 여신거래가 가능한 경우에는 저축은행은 곧 감액 · 정지를 해소하기로 합니다.</p></li>
+					</ol>
+
+					<p class="subTitle">제5조 (종합통장대출에 대한 약정)</p>
+					<ol>
+						<li><p><span>①</span> 이 약정에 의한 채무가 있는 때에는 종합통장기본계좌(이하 "모계좌"라 합니다)에 입금된 자금(증권류의 금액은 결제될때까지 이 자금에서 제외하며, 입금된 증권등은 이 약정에 의한 채무의 담보로서 저축은행에 양도한 것으로 합니다)은 자동적으로 대출금변제에 충당하기로 합니다.</p></li>
+						<li><p><span>②</span> 모계좌에 대해 그 잔액을 초과해서 지급청구하거나, 정기적 지급금 및 각종 요금등의 자동납부 청구가 있는 때에는 모계좌를 통하여 대출금을 지급하거나 자동납부하는 것으로 합니다.</p></li>
+						<li><p><span>③</span> 저축은행은 이자의 원가 등을 위하여 필요한 경우에는 본인에게 사전통지를 하지 않더라도 제1조의 여신한도를 초과하여 지급할 수 있습니다. 이 경우 본인은 초과된 금액을 한도 초과된 당일 갚기로 합니다. [개정 2016.12.19]</p></li>
+						<li><p><span>④</span> 이자 및 지연배상금은 모계좌에서 빼거나 제1조의 한도금액 초과여부에 불구하고 대출금에 더하기로 하며, 이 경우 한도를 초과한 금액은 한도 초과된 당일 갚기로 합니다. [개정 2016.12.19]</p></li>
+						<li><p><span>⑤</span> 대출의 이자계산은 매일의 마감잔액을 기준으로 계산합니다. 다만, 당일중의 최고 잔액이 당일중의 개시잔액 또는 마감잔액보다 클 경우에는 개시잔액과 마감 잔액중 큰 금액을 최고잔액에서 차감하여 그 차액을 마감잔액에 가산한 금액을 기준으로 하며, 연체좌에 대하여는 매일의 최고잔액을 기준으로 합니다.</p></li>
+						<li><p><span>⑥</span> 종합통장대출의 경우 1회전기간 만료일 1개월 전까지 저축은행은 1회전기간 만료일을 통지하고 연장에 관한 본인의 의사를 확인합니다. 이 경우 본인이 1회전기간 만료일까지 연장에 관한 의사표시를 하지 아니하고 저축은행도 다른 의사표시를 하지 아니한 경우에는 여신기간만료일 이내에서 자동적으로 직전의 1회전기간만큼 거래기간이 연장되는 것으로 합니다. [개정 2016.8.11]</p></li>
+					</ol>
+
+					<p class="subTitle">제6조 (한도약정 수수료 또는 약정한도 미사용수수료)</p>
+					<ol>
+						<li>한도 거래의 경우 제1조의 여신(한도)금액을 설정하거나 여신(한도)금액 중 미사용금액에 대하여 따로 정한 약정이 있는 때에는, 약정으로 정한 기준에 의한 수수료를 지급하기로 합니다.</li>
+					</ol>
+
+					<p class="subTitle">제7조 (인지세의 부담)</p>
+					<ol>
+						<li><p><span>①</span> 이 약정서 작성에 따른 인지세는 은행과 채무자(또는 설정자)가 각각 50%씩 부담 합니다.</p></li>
+						<li><p><span>②</span> 채무자가 상호저축은행여신거래기본약관 제4조의 2에 따라 대출계약을 철회하는 경우 제1항에 따라 채권자가 부담하거나 지급한 비용은 채무자가 부담합니다. [신설 2016.12.19]</p></li>
+					</ol>
+
+					<p class="subTitle">제8조 (담보·보험)</p>
+					<ol>
+						<li>본인은 저축은행의 다른 의사표시가 없는 한, 이 약정에 의해 실행된 여신으로 건설 또는 설치된 시설물을 그것이 설치된 토지 · 건물 및 그 안의 기타 시설과 함께 저축은행에 담보로 제공하기로 하며, 저축은행이 요청하는 경우 저축은행이 동의하는 종류와 금액의 보험에 가입하고 그 보험금 청구권에 저축은행을 위하여 질권을 설정 하기로 합니다.</li>
+					</ol>
+
+
+					<p class="subTitle">제9조 (담보권 설정)</p>
+					<ol>
+						<li><p><span>①</span> 이 약정에 의한 채무를 담보하기 위하여 아래에 표시한 예금 등에 질권을 설정하고 저축은행앞으로 그 증서(통장)의 인도를 마칩니다.</p></li>
+						<li><p><span>②</span> 제1항의 질권으로 효력은 원금 · 수익권(이 계약 이후에 적립되는 금액을 포함합니다)과 이에 부수하는 이자 · 수익의 수익권, 특별장려금, 법정장려금 등에 미칩니다.</p></li>
+						<li><p><span>③</span>제1항의 질권은 그 목적인 예금등이 기한연장 · 개서 · 갱신 · 분할 · 병합 · 증액 · 감액 또는 이자원가된 경우에도 그 위에 질권의 효력이 미침을 승인합니다.</p></li>
+						<li><p><span>④</span> 저축은행은 제1항에 의한 질권을 행사하지 아니하고 상호저축은행여신거래기본약관의 정하는 바에 따라 저축은행의 채권과 아래 표시의 예금등을 상계 또는 대리 환급변제충당을 할 수 있습니다.</p></li>
+					</ol>
+					
+					<p class="subTitle">■ 질권의 목적인 예금등의 표시 :</p>
+					<div class="table-St phLR10 th-bg th-br th-bb td-bb ">
+					<table summary="종별, 증서(계좌)번호, 명의인, 금액(계약액), 까지(입금누계액), 증서일자, 지급기일 입력표">
+						<col style="width:10%;">
+						<col style="width:18%;">
+						<col style="width:10%;">
+						<col style="width:14%;">
+						
+						<col style="width:*;">
+						<col style="width:12%;">
+						<col style="width:12%;">
+						 
+						
+						<tr>
+							<th>종별</th>
+							<th>증서(계좌)번호</th>
+							<th>명의인</th>
+							<th>금액(계약액)</th>
+							<th>까지(입금누계액)</th>
+							<th>증서일자</th>
+							<th>지급기일</th>
+						</tr>
+						<tr>
+							<td style="border-right:1px solid #DADCE1;">
+								<p>
+									<br /><br /><br /><br /><br /><br />
+								</p>
+							</td>
+							<td style="border-right:1px solid #DADCE1;">
+								<p>
+									<br /><br /><br /><br /><br /><br />
+								</p>
+							</td>
+							<td style="border-right:1px solid #DADCE1;">
+								<p>
+									<br /><br /><br /><br /><br /><br />
+								</p>
+							</td>
+							<td style="border-right:1px solid #DADCE1;">
+								<p>
+									<br /><br /><br /><br /><br /><br />
+								</p>
+							</td>
+							<td style="border-right:1px solid #DADCE1;">
+								<p>
+									<br /><br /><br /><br /><br /><br />
+								</p>
+							</td>
+							<td style="border-right:1px solid #DADCE1;">
+								<p>
+									<br /><br /><br /><br /><br /><br />
+								</p>
+							</td>
+							<td>
+								<p>
+									<br /><br /><br /><br /><br /><br />
+								</p>
+							</td>
+						</tr> 
+					</table>
+					</div>
+
+					<p class="subTitle">제10조 (상환자력 유지의무 등)</p>
+					<ol>
+						<li><p><span>①</span> 본인은 이 거래약정으로 말미암은 채무의 상환자력유지를 위하여 다음과 같이 적절한 재무비율을 유지하기로 합니다. 그 밖에 재무구조개선약정 등이 따로 있는 경우에는 이 거래 약정의 끝부분에 이를 붙이고 그 내용은 이 거래 약정의 일부로 봅니다.</p></li>
+					</ol>
+					<div class="table-St phLR10 th-bg th-br th-bb td-bb ">
+					<table summary="종별, 증서(계좌)번호, 명의인, 금액(계약액), 까지(입금누계액), 증서일자, 지급기일 입력표">
+						<col style="width:*;">
+						<col style="width:15%;">
+						<col style="width:15%;">
+						<col style="width:15%;">
+						<col style="width:15%;">
+						<col style="width:15%;">
+						<tr>
+							<th>구분</th>
+							<th>20.</th>
+							<th>20.</th>
+							<th>20.</th>
+							<th>20.</th>
+							<th>20.</th> 
+						</tr>
+						<tr>
+							<td style="border-right:1px solid #DADCE1;">
+								<p>
+									 부채비율
+								</p>
+							</td>
+							<td style="border-right:1px solid #DADCE1;">
+								<p style="text-align:right;">
+									 % &nbsp;
+								</p>
+							</td>
+							<td style="border-right:1px solid #DADCE1;">
+								<p style="text-align:right;">
+									 % &nbsp;
+								</p>
+							</td>
+							<td style="border-right:1px solid #DADCE1;">
+								<p style="text-align:right;">
+									 % &nbsp;
+								</p>
+							</td>
+							<td style="border-right:1px solid #DADCE1;">
+								<p style="text-align:right;">
+									 % &nbsp;
+								</p>
+							</td>
+							<td style="border-right:1px solid #DADCE1;">
+								<p style="text-align:right;">
+									 % &nbsp;
+								</p>
+							</td> 
+						</tr>
+						<tr>
+							<td style="border-right:1px solid #DADCE1;">
+								<p>
+									 자기자본비율
+								</p>
+							</td>
+							<td style="border-right:1px solid #DADCE1;">
+								<p style="text-align:right;">
+									 % &nbsp;
+								</p>
+							</td>
+							<td style="border-right:1px solid #DADCE1;">
+								<p style="text-align:right;">
+									 % &nbsp;
+								</p>
+							</td>
+							<td style="border-right:1px solid #DADCE1;">
+								<p style="text-align:right;">
+									 % &nbsp;
+								</p>
+							</td>
+							<td style="border-right:1px solid #DADCE1;">
+								<p style="text-align:right;">
+									 % &nbsp;
+								</p>
+							</td>
+							<td style="border-right:1px solid #DADCE1;">
+								<p style="text-align:right;">
+									 % &nbsp;
+								</p>
+							</td> 
+						</tr>
+						<tr>
+							<td style="border-right:1px solid #DADCE1;">
+								<p>
+									 ()비율
+								</p>
+							</td>
+							<td style="border-right:1px solid #DADCE1;">
+								<p style="text-align:right;">
+									 % &nbsp;
+								</p>
+							</td>
+							<td style="border-right:1px solid #DADCE1;">
+								<p style="text-align:right;">
+									 % &nbsp;
+								</p>
+							</td>
+							<td style="border-right:1px solid #DADCE1;">
+								<p style="text-align:right;">
+									 % &nbsp;
+								</p>
+							</td>
+							<td style="border-right:1px solid #DADCE1;">
+								<p style="text-align:right;">
+									 % &nbsp;
+								</p>
+							</td>
+							<td style="border-right:1px solid #DADCE1;">
+								<p style="text-align:right;">
+									 % &nbsp;
+								</p>
+							</td> 
+						</tr>
+						<tr>
+							<td style="border-right:1px solid #DADCE1;">
+								<p>
+									 ()비율
+								</p>
+							</td>
+							<td style="border-right:1px solid #DADCE1;">
+								<p style="text-align:right;">
+									 % &nbsp;
+								</p>
+							</td>
+							<td style="border-right:1px solid #DADCE1;">
+								<p style="text-align:right;">
+									 % &nbsp;
+								</p>
+							</td>
+							<td style="border-right:1px solid #DADCE1;">
+								<p style="text-align:right;">
+									 % &nbsp;
+								</p>
+							</td>
+							<td style="border-right:1px solid #DADCE1;">
+								<p style="text-align:right;">
+									 % &nbsp;
+								</p>
+							</td>
+							<td style="border-right:1px solid #DADCE1;">
+								<p style="text-align:right;">
+									 % &nbsp;
+								</p>
+							</td> 
+						</tr>
+					</table>
+					</div>
+
+					<ol>
+						<li><p><span>②</span> 본인이 다음 각 호의 행위를 하고자 할 때에는 사전에 저축은행과 협의하기로 합니다.</p></li>
+						<li>
+							<ol>
+								<li><p><span>1.</span> 합병, 영업양수도 및 중요한 재산의 매각 · 임대</p></li>
+								<li><p><span>2.</span> 이 거래약정에 따른 자금용도 외의 고정자산에 대한 투자</p></li>
+								<li><p><span>3.</span> 타인의 채무를 위한 보증</p></li>
+								<li><p><span>4.</span> 신규사업 진출 또는 해외투자</p></li>
+								<li><p><span>5.</span> 기업구조 개선 작업(Work Out) 또는 사적화의 신청 등 경영상 중대한 변화가 생길 우려가 있는 경우</p></li>
+							</ol>
+						</li>
+						<li><p><span>③</span> 본인은 저축은행이 이 거래약정의 사후관리상 그 필요성이 현저하다고 인정하여 다음 각 호의 행위를 청구하는 경우 그에 응하기로 합니다.</p></li>
+						<li>
+							<ol>
+								<li><p><span>1.</span> 보유 부동산 및 유가증권 매각</p></li>
+								<li><p><span>2.</span> 지배주주의 출자</p></li>
+								<li><p><span>3.</span> 유상증자 또는 기업공개</p></li>
+							</ol>
+						</li>
+						<li><p><span>④</span> 제1항 내지 제3항의 규정은 본인과 저축은행간에 각 항별로 별도의 특약이 있는 경우에만 적용합니다.</p></li>
+					</ol>
+
+					<p class="subTitle">제11조 (자료의 제출 등)</p>
+					<ol>
+						<li>본인은 저축은행이 상호저축은행여신거래기본약관 제17조 및 제19조에 근거하여 매 시기별로 요청하는 다음 각 호의 자료 기타 여신의 사회관리를 위하여 필요한 자료를 저축은행의 요청이 있는 대로 제출하기로 합니다.</li>
+						<li>
+							<ol>
+								<li><p><span>1.</span> 매분기 : 부가가치세 과세표준 증명원, 합계잔액시산표, 판매처 및 제품별 매출예상표 등</p></li>
+								<li><p><span>2.</span> 매반기 : 반기결산보고서, 부가가치세 과세표준증명원, 합계잔액시산표, 판매처 및 제품별 매출예상표 등</p></li>
+								<li><p><span>3.</span> 매    년 : 공인회계사 감사보고서(결산재무제표), 연결재무제표, 법인등기부등본, 사업자등록증, 주주명부, 정관, 근로소득세징수액집계표, 사업계획서, 추정재무제표(3개년), 주요거래처현황, 각종 인허가 및 기술인증관련 서류사본(KS, ISO, 특허권 등), 노사분규확인서, 기타 제품설명서, 동업계 참고자료 등</p></li>
+								<li><p><span>4.</span> 수  시 : 합계잔액시산표,자금용도확인서류 등</p></li>
+							</ol>
+						</li>
+					</ol> 
+
+					<p class="subTitle">제12조 (기타 특약사항)</p>
+					<div class="table-St phLR10 th-bg th-br th-bb td-bb ">
+					<table summary="제12조 (기타 특약사항), 본인, (인) 입력표">
+						<col style="width:30%;">
+						<col style="width:70%;">
+						
+						
+						<tr>
+							<td colspan="2">
+								<p>
+									<br /><br /><br /><br /><br /><br />
+								</p>
+							</td>
+						</tr>
+						 
+						<tr>
+							<th>본인</th>
+							<td><p  style="text-align:right;">홍길동 (인)</p></td>
+						</tr>
+					</table>
+					</div>
+
+					<p class="subTitle">제13조 (입금 의뢰)</p>
+					<div class="table-St phLR10 th-bg th-br th-bb td-bb ">
+					<table summary="금융기관, 예금주, 계좌번호, 입금액 입력표">
+						<col style="width:20%;">
+						<col style="width:30%;">
+						<col style="width:20%;">
+						<col style="width:30%;">
+						
+						
+						<tr>
+							<td colspan="4">
+								<p>
+									본인은 이 약정에 따른 대출금을 다음과 같이 입금하여 줄 것을 의뢰합니다. 이 경우 입금에 따른 비용이 발생하면 본인이 부담합니다.[본조신설 2016.12.19]
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td style="border-right:1px solid #DADCE1;">
+								<p>
+									금융기관명
+								</p>
+							</td> 
+							<td style="border-right:1px solid #DADCE1;">
+								<p>
+									
+								</p>
+							</td> 
+							<th>
+								<p>
+									예금주
+								</p>
+							</th> 
+							<td>
+								<p>
+									 
+								</p>
+							</td> 
+						</tr>
+						<tr>
+							<td style="border-right:1px solid #DADCE1;">
+								<p>
+									계좌번호
+								</p>
+							</td> 
+							<td colspan="3">
+								<p style="text-align:right;">
+									 
+								</p>
+							</td> 
+						</tr>
+						<tr>
+							<td style="border-right:1px solid #DADCE1;">
+								<p>
+									입금액
+								</p>
+							</td> 
+							<td colspan="3">
+								<p style="text-align:right;">
+									 000,000 원
+								</p>
+							</td> 
+						</tr>
+					</table>
+					</div>
+
+					<p class="subTitle">&nbsp;</p>
+
+					<div class="table-St phLR10 th-bg th-br th-bb td-bb ">
+					<table summary="사본수령에 대한 본인서명 입력표">
+						<col style="width:30%;">
+						<col style="width:70%;">
+						
+						<tr>
+							<td colspan="2">
+								<p>
+									본인은 상호저축은행여신거래기본약관, 대출상품설명서 및 이 약정서 사본을 확실히 수령하고, 주요내용에 대하여 충분한 설명을 듣고 이해하였음.
+								</p>
+							</td>
+						</tr>
+						 
+						<tr>
+							<th>본인</th>
+							<td><p  style="text-align:right;">홍길동 (인)</p></td>
+						</tr>
+					</table>
+					</div>
+					
+					<p class="subTitle">&nbsp;</p>
+					<ol>
+						<li>본인은 보유중인 대출 상환을 위해 본인을 대신하여 JT저축은행이 아래 계좌로 대출금을 송금하는 것에 동의합니다.</li>
+					</ol>	
+					<div class="table-St phLR10 th-bg th-br th-bb td-bb ">
+					<table summary="종별, 증서(계좌)번호, 명의인, 금액(계약액), 까지(입금누계액), 증서일자, 지급기일 입력표">
+						<col style="width:*;">
+						<col style="width:33%;">
+						<col style="width:33%;"> 
+						<tr>
+							<th>계좌번호</th>
+							<th>금융기관</th>
+							<th>상환원금</th> 
+						</tr>
+						<tr>
+							<td style="border-right:1px solid #DADCE1;">
+								<p>
+									  
+								</p>
+							</td>
+							<td style="border-right:1px solid #DADCE1;">
+								<p>
+									 
+								</p>
+							</td>
+							<td style="border-right:1px solid #DADCE1;">
+								<p style="text-align:right;">
+									 
+								</p>
+							</td>
+						</tr>
+					</table>
+					</div>
+					
+
+				</div>
+				<p class="subBtnWrap">
+					<button type="button" onclick="modalOff();" title="확인" class="lone_ok">확인</button>
+				</p>
+
+				
+
+
+
+			</dd>
+		</dl>
+
+
+
+	</div>
+</div>
+
+<div class="Acuon-Modal agree09" rel="대출상품설명서">
+	<div class="modal-type02">
+		<dl>
+			<dt>대출상품설명서</dt>
+			<dd>
+				<div>
+					<p>대출상품설명서</p>
+					
+					<div class="txtBox">
+						<p>본인은 JT저축은행과 대출거래에 있어 저축은행 직원과 상담하여 아래에서 설명한 내용을 포함하여 대출거래의 주요내용 및 고객부담 비용에 대하여 충분히 설명을 듣고 이해하였음을 확인합니다.</p>
+						<div class="table-St">
+							<table style="border:0;" summary="채무자본인, 연대보증인/제3자 담보제공자 서명 입력표"> 
+								<caption>채무자본인, 연대보증인/제3자 담보제공자 서명 입력표</caption>
+								<colgroup>
+									<col width="30%">
+									<col width="*">
+									<col width="30%">
+								</colgroup>
+								<tbody>
+									<tr>
+										<td rowspan="2"></td>
+										<td class="tl">채무자본인</td>
+										<td>(서명 또는 인)</td>
+									</tr> 
+									<tr>
+										<td class="tl">연대보증인/제3자 담보제공자</td>
+										<td>(서명 또는 인)</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+					<div class="txtBox olBox">
+						<p>이 설명서는 고객께서 받으신 대출상품에 대한 이해를 돕고, 여신거래기본약관의 중요내용을 알려드리기 위한 참고자료이며, 실제 대출거래약정은 여신거래기본약관과 그 부속약정서의 적용을 받습니다.</p>
+					</div>
+				
+
+					<div class="secTitBox02">
+						<h3>상품개요 및 특성</h3>
+					</div>
+					<div class="table-St th-bg th-br th-bb td-bb">
+						<table class="style02" summary="종합 판단 결과 에 대한 진단 결과표">
+							<caption>종합 판단 결과 에 대한 진단 결과표</caption>
+							<colgroup>
+								<col width="30%">
+								<col width="*">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>대출신청금액</th>
+									<td>30,000,000</td>
+								</tr>
+								<tr>
+									<th>대출기간</th>
+									<td>( <span>3</span> )년 중 거치기간 ( <span></span> )개월</td>
+								</tr>
+								<tr>
+									<th>적용예정금리</th>
+									<td><span>0</span> %(금리적용방식 : □ 변동 □ 고정 □ 기타 ( ),연체이자율 <span></span>%</td>
+								</tr>
+								<tr>
+									<th>채권보전</th>
+									<td>
+										<ul>
+											<li>
+												<input type="checkbox" id="chk01-1" name="chk01" title="담보" disabled="disabled">
+												<label for="chk01-1">담보</label>
+											</li>
+											<li>
+												<input type="checkbox" id="chk01-2" name="chk01" title="신용">
+												<label for="chk01-2">신용</label>
+												(
+												<input type="checkbox" id="chk01-2-1" name="chk01" title="신용-보증" disabled="disabled" checked>
+												<label for="chk01-2-1">보증</label>
+												<input type="checkbox" id="chk01-2-2" name="chk01" title="신용-무보증" disabled="disabled" checked>
+												<label for="chk01-2-2">무보증</label>
+												)
+											</li>
+											<li>
+												<input type="checkbox" id="chk01-3" name="chk01" title="기타" disabled="disabled">
+												<label for="chk01-3">기타</label>
+											</li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<th>대출상환방법</th>
+									<td>원리금균등분할상환</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					
+					<p class="subTitle">거래구분</p>
+					<ol>
+						<li><p><span>■</span> 개별거래 : 약정액 범위내에서 일괄(또는 분할)하여 대출이 발생하고 상환한 금액을 재사용 할 수 없는 방식</p></li>
+						<li><p><span>■</span> 한도거래 : 약정한 한도금액 범위내에서 동일과목의 대출을 자유롭게 재사용하고 여신기간 만료일에 한도금액을 상환하는 방식</p></li>						
+					</ol>
+
+					<p class="subTitle">대출이자율</p>
+					<ol>
+						<li><p><span>■</span> 고정금리 : 대출실행시 결정한 금리가 약정기간 동안 동일하게 적용되는 금리입니다.</p></li>
+						<li>
+							<p><span>■</span> 변동금리 : 대출약정 기간내에 기준금리가 변경될 경우 당해 대출금리가 변경되는 금리로서 기준금리가 인상될 경우 고객의 이자부담이 증가 될 수 있습니다.</p>
+							<ol class="olBox">
+								<li><p><span>※</span> 변동금리(예시)</p></li>
+								<li><p><span>-</span> CD 연동금리, 「COFIX」 연동금리, 금융채 연동금리 등</p></li>						
+							</ol>
+						</li>
+						<li><p><span>■</span> 대출금리 결정 요인 : 대출금리는 저축은행의 자금조달비용, 고객신용도에 따른 신용원가, 제비용인 업무원가, 마진 등을 고려하여 저축은행이 결정합니다.</p></li>
+					</ol>
+
+					<p class="subTitle">대출관련 비용부담</p>
+					<ol>
+						<li>
+							<p><span>■</span> 근저당권 등 설정비용 부담주체</p>
+							<ol class="olBox">
+								<li><p><span>※</span> 근저당권 등 비용부담주체</p></li>
+								<li><p><span>-</span> 국민주택채권매입비 : 채무자 (또는 설정자)</p></li>
+								<li>
+									<p><span>-</span> 등록세, 지방교육세, 등기신청수수료 및 법무사수수료</p>	
+									<ol>
+										<li><p><span>:</span> 근저당권 설정등기를 하는 경우 - 채권자</p></li>
+										<li><p><span>:</span> 근저당권 말소등기를 하는 경우 - 채무자(또는 설정자)</p></li>
+									</ol>
+								</li>
+								<li>
+									<p><span>-</span> 근저당물건의 조사 또는 감정평가수수료</p>	
+									<ol>
+										<li><p><span>:</span> 근저당권을 설정하기 위한 경우 - 채권자</p></li>
+										<li><p><span>:</span> 채무자의 채무불이행으로 근저당권을 행사하는 경우 - 채무자(또는 설정자)</p></li>
+									</ol>
+								</li>
+								<li><p><span>-</span> 기타 비용으로 부담주체가 분명하지 아니한 경우 - 채권자와 채무자(또는 설정자)의 균등부담</p></li>
+							</ol>
+						</li>
+						<li>
+							<p><span>■</span> 중도상환수수료 : 당초 대출일로부터 만기일이 도래하기 전에 대출금을 상환할 경우 고객이 부담하는 금액을 말합니다.</p>
+							<ol class="olBox">
+								<li><p><span>※</span> 중도상환수수료 산식</p></li>
+								<li><p><span>-</span> 기한전상환대출금액 x 기간전상환수수료율 x (잔존일수/약정기간)</p></li>		
+								<li><p><span>*</span> 기한전상환수수료율은 2% 이내에서 저축은행이 정함</p></li>							
+							</ol>
+						</li>	
+						<li>
+							<p><span>■</span> 인지세 : 0 원</p>
+							<p>인지세법에 의해 대출약정이 체결시 납부하는 세금으로 대출금액에 따라 세액이 차등적용되며, 고객과 저축은행이 50%씩 부담합니다.</p>
+						</li>
+						<li><p><span>■</span> 기타수수료:(항목) (금액) 0원</p></li>
+						<li><p><span>■</span> 채무불이행으로 인해 발생하는 비용은 여신거래기본약관 제4조(비용의 부담)에 의거하여 채무자가 부담합니다.</p></li>
+					</ol>
+
+					<p class="subTitle">연체이자(지연배상금)</p>
+					<ol>
+						<li>
+							<p><span>■</span> 원리금을 납입하기로 약정한 날에 납입하지 아니한 경우 연체이자를 납입하여야 합니다.</p>
+							<ol class="olBox">
+								<li><p><span>※</span> 연체이자를 납입하여야 하는 경우</p></li>
+								<li>
+									<p><span>1.</span> 이자를 납입하기로 약정한 날에 납입하지 아니한 때</p>	
+									<ol>
+										<li><p><span>-</span> 이자를 납입하여야 할 날의 다음날로부터 1개월(가계주택담보대출의 경우 2개월)까지는 내셔야 할 약정이자에 대해 연체이자가 적용되고, 1개월(가계주택담보대출의 경우 2개월)이 경과하면 기한이익상실로 인하여 대출잔액에 연체이율을 곱한 연체이자를 납입하여야 합니다.</p></li>
+									</ol>
+								</li>
+								<li>
+									<p><span>2.</span> 원금을 산환하기로 약정한 날에 상환하지 아니한 때</p>	
+									<ol>
+										<li><p><span>-</span> 원금을 상환하여야 할 날의 다음날루부터는 대출 잔액에 대한 연체이자를 납입하여야 합니다.</p></li>
+									</ol>
+								</li>
+								<li>
+									<p><span>3.</span> 분할상환금(또는 분할상환원리금)을 상환하기로 한 날에 상환하지 아니한 때</p>	
+									<ol>
+										<li><p><span>-</span> 분할상환금(또는 분할상환원리금)을 상환하여야 할 날의 다음날로부터는 해당 분할상환금(또는 분할상환원리금)에 대해 연체이율이 적용되고, 2회(주택담보대출의 경우 3회) 이상 연속하여 지체한 때에는 대출잔액에 대한 연체이자를 납입하여야 합니다.</p></li>
+									</ol>
+								</li>
+								<li>
+									<p><span>4.</span> 기타 여신거래기본약관 제7조에서 정한 대출기한 전의 채무변제 의무사유에 해당되어 기한의 이익이 상실된 때</p>	
+									<ol>
+										<li><p><span>-</span> 기한 이익 상실일 다음 영업일부터 대출 잔액에 대한 연체이자를 납입하여야 합니다.</p></li>
+									</ol>
+								</li>
+							</ol>
+						</li>
+					</ol>
+
+					<p class="subTitle">연체이자율</p>
+					<ol>
+						<li><p><span>■</span> 연체이자율이란 대출이자율에 연체가산이자율을 더한 것을 의미합니다.</p></li>
+						<li>
+							<p><span>※</span> 연체기간별로 연체가산이자율을 차등하거나 단일이율로 적용할 수 있습니다.</p>
+							<ol class="olBox">
+								<li>
+									<p><span>※</span> 연체이자율 적용 방식</p>
+									<ol>
+										<li><p><span>-</span> 연체이자율(c) : 약정금리(a) + 연체가산이자율(b)</p></li>
+										<li><p><span>-</span> 연체가산이자율(b)은 최대 3%입니다.</p></li>
+									</ol>
+								</li>
+							</ol>
+						</li>
+					</ol>
+
+					<p class="subTitle">대출 상환방법</p>
+					<ol>
+						<li><p><span>■</span> 만기일시상환방식 : 이자납입일을 정하여 일정기간마다 이자를 납입하고, 대출기간 만료일에 전액 상환하는 방식을 말합니다.</p></li>
+						<li><p><span>■</span> 분할상환방식 : 대출원금 또는 원리금을 대출 개시일부터 익월 또는 일정주기마다 분할하여 상환하는 방식을 말합니다.</p></li>
+						<li><p><span>■</span> 종합통장대출 : 저축은행이 정한 매월결산일에 이자를 지급하며 대출기간중 자유로이 상환하고 재사용하며, 대출기간 만료일에 전액 상환하는 방식을 말합니다.</p></li>
+						<li><p><span>■</span> 기타 대출 상환방법은 여신거래약정서를 참조하시기 바랍니다.</p></li>
+					</ol>
+
+					<p class="subTitle">이자 납입방법</p>
+					<ol>
+						<li><p><span>■</span> 이자납입일을 정하여 일정주기(매월, 매3개월 등)마다 이자를 납입하여야 합니다.</p></li>
+						<li><p><span>■</span> 종합통장대출 : 저축은행이 정한 매월결산일에 이자를 지급하며 대출기간중 자유로이 상환하고 재사용하며, 대출기간 만료일에 전액 상환하는 방식을 말합니다.</p></li>
+						<li><p><span>■</span> 기타 이자납입방법은 여신거래약정서를 참조하시기 바랍니다.</p></li>
+					</ol>
+
+					<p class="subTitle">대출의 제한</p>
+					<ol>
+						<li>
+							<p><span>■</span> 저축은행의 연체대출금 보유자, 저축은행에 손해를 끼친자, 불건전한 대출이 있는 자*는 대출을 취급(연장·대환포함)하지 않거나 제한하여 운용할 수 있습니다.</p>
+							<ol class="olBox">
+								<li><p><span>※</span> 대출기한 전에 채무를 상환해야 하는 경우</p></li>
+								<li><p><span>1.</span> 당해 저축은행의 본인채무 또는 보증채무가 연체중인 자</p></li>
+								<li><p><span>2.</span> 특수채권의 채무자 및 연대보증인</p></li>
+								<li><p><span>3.</span> 신용회복지원, 회생절차, 파산·면책 등의 신청 또는 확정을 받은 자</p></li>
+								<li><p><span>4.</span> 종합신용정보집중기관의 신용도판단정보(기록보유자 포함)에 등록된 자<br/>다만, 공공정보에 등록된 자중 대출과 무관한 사유(예:세금체납)로 등록된 자는 제외</p></li>
+								<li><p><span>5.</span> 기타 이에 준하는 자</p></li>
+							</ol>
+						</li>
+					</ol>
+
+					<p class="subTitle">기한의 이익 상실 사유</p>
+					<ol>
+						<li>
+							<p><span>■</span> 대출기한 전에 채무를 상환해야 하는 경우(기한의 이익 상실 사유)</p>
+							<ol class="olBox">
+								<li><p style="font-weight:bold;"><span>※</span> 대출기한 전에 채무를 상환해야 하는 경우</p></li>
+								<li>
+									<p style="font-weight:bold; text-decoration:underline;"><span>1.</span> 채무자인 고객소유의 예금, 담보부동산에 법원이나 세무서 등으로부터의 (가)압류명령 등이 있는때 등</p>
+									<p>(여신거래기본약관 제7조 제1항, 제2항에서 정한 사유)</p>
+									<ol>
+										<li><p><span>-</span> 저축은행으로부터 별도 청구가 없더라도 모든 대출금(또는 해당 대출금)을 대출기한이 도래하기 전임에도 불구하고 곧 상환하셔야 합니다.</p></li>
+									</ol>
+								</li>
+								<li>
+									<p style="font-weight:bold; text-decoration:underline;"><span>2.</span> 대출기한이 도래되었거나 기한이익이 상실된 대출을 하나라도 상환하지 아니한 때 등</p>
+									<ol>
+										<li><p><span>-</span> 저축은행의 서면청구에 의해 모든 대출금(또는 해당 대출금)을 대출기한이 도래하기 전임에도 불구하고 곧 상환하셔야 합니다.</p></li>
+									</ol>
+								</li>
+							</ol>
+							<ol class="olBox">
+								<li><p><span>※</span> 기한의 이익</p></li>
+								<li><p>기한의 존재로 말미암아 당사자가 받는 이익을 말하며, 저축은행과의 대출거래에서 채무자인 고객은 당초 약정한 대출기한까지는 대출금을 상환하지 않아도 되므로 그 기간동안 채무자인 고객이 가지는 이익을 기한의 이익이라 합니다.</p></li>
+								<li>
+									<p><span>※</span> 기한의 이익이 상실되면?</p>
+									<ol>
+										<li><p><span>-</span> 모든 대출금(또는 해당 대출금) 즉시 상환</p></li>
+										<li><p><span>-</span> 연체이자 부담</p></li>
+										<li><p><span>-</span> 일정기간 경과 후 신용도판단정보 등록 등</p></li>
+									</ol>
+								</li>
+							</ol>
+						</li>
+					</ol>
+
+					<p class="subTitle">금리인하요구권</p>
+					<ol>
+						<li><p><span>■</span> 가계여신 : 채무자인 <b style="text-decoration:underline;">고객은 본인의 신용상태에 현저한 변동이 있는 경우(직장의 변동, 승진, 자산의 증가, 부채의 감소, 은행의 우수고객으로 선정 등)에는 증빙자료를 첨부한 금리인하신청서를 저축은행에 제출하여 금리변경을 요구</b>할 수 있습니다. 단, 저축은행의 심사 결과에 따라서 금리인하가 되지 않을 수도 있습니다.</p></li>
+						<li><p><span>■</span> 기업여신 : 채무자는 본인의 신용상태가 호전 또는 담보가 보강되었다고 인정되는 경우(회사채 등급상승, 재무상태 개선, 특허권 신규취득, 담보제공 등)에는 증빙자료를 첨부한 금리인하신청서를 저축은행에 제출하여 금리인하를 요구할 수 있습니다. 단, 저축은행의 심사 결과에 따라서 금리인하가 되지 않을 수도 있습니다.</p></li>
+						<li><p><span>■</span> 금리인하 대상여신 : 보험계약대출 · 집단대출 · 리스 · 신차할부 등 차주의 신용상태와 관계없이 금리가 결정되는 대출상품 및 햇살론 등 정책자금대출의 경우 적용대상에서 제외할 수 있습니다.</p></li>
+					</ol>
+					
+					<p class="subTitle">대출계약철회권</p>
+					<ol>
+						<li>
+							<p><span>■</span> 개인대출자는 대출계약 후 14일 이내에 철회의 의사표시(서면,전화,컴퓨터통신 등)를 하고 원리금 등을 상환하여 대출계약으로부터 탈퇴할 수 있습니다. 이 경우, 고객은 원리금 상환 및 부대비용을 반환하여야 하며 일부 외부기관 위탁대출 및 기타 협약대출의 경우에는 대출계약철회권의 적용이 배제됩니다. 대출계약 철회권을 행사한 경우에는 중도상환수수료가 면제 되며 5영업일 이내에 해당대출과 관련한 대출정보가 삭제됩니다. 또한, 대출계약철회권의 효력이 발생한 이후에는 이를 취소할 수 없습니다.</p>
+							<ol class="olBox"> 
+								<li><p><span>※</span> 적용상품(일부 외부기관 위탁대출 및 기타 협약대출은 제외)</p></li>
+								<li><p><span>-</span> 신용대출 : 대출금액이 4천만원 이하인 대출</p></li>
+								<li><p><span>-</span> 담보대출 : 대출금액이 2억원 이하인 대출</p></li>
+							</ol>
+						</li>
+					</ol>
+
+					<p class="subTitle">연체정보 등 등록</p>
+					<ol>
+						<li><p><span>■</span> 대출권금, 이자 등을 3개월 이상 연체한 경우에는 3개월이 되는 날 을 등록사유 발생일로 하여 그 때로 부터 7영업일 이내에 연체 정보 등이 등록됩니다.</p></li>
+						<li><p><span>-</span> 「신용정보관리규약」 개정으로 연체정도등 등록 기준이 변경될 수 있습니다.</p></li>
+						<li>
+							<p><span>-</span> 연체정보 등이 등록되면, 금융거래제약 등 불이익을 받을 수 있습니다.</p>
+							<ol class="olBox"> 
+								<li><p><span>※</span> 예시</p></li>
+								<li><p>원금 또는 이자를 납입하여야 할 날 : 5/10</p></li>
+								<li><p>◎ 연체발생일 : 5/11 ◎ 등록사유발생일 : 8/11</p></li>
+								<li><p><span>※</span> 한도거래대출의 경우에는 한도초과일 다음날부터 3개월 후에 연체정보 등이 등록됩니다.</p></li>
+							</ol>
+						</li>
+						<li><p><span>-</span> 연체정보등이 정보 거래처로 등록된 후 연체금액의 상환하여 등록 사유가 해제되는 경우에도 등록기간 및 해제기록이 1년 동안 남아있을 수 있어 동 기록으로 인해 금융상의 불편이 초래될 수도 있음에 유의하시기 바랍니다.</p></li>
+						<li><p><span>-</span> 또한, "연체기간 5영업일 이상, 연체금액 10만원 이상"의 「단기 연체」가 발생하는 경우도 신용조회회사를 통해 금융회사 간에 해당 연체정보가 공유되어 신용등급 하락의 원인이 될 뿐만 아니라 신용카드 사용정지 등 금융거래가 제한되어 예상하지 못한 불편이 발생할 수 있으므로 신중한 관리가 필요합니다.</p></li>
+					</ol>
+
+					<p class="subTitle">채무변제충당순서 변경 신청</p>
+					<ol>
+						<li>
+							<p><span>■</span> 개인대출자가 연체로 인하여 기한의 이익이 상실된 대출에 대하여 원금부터 상환을 원하시는 경우, 영업점에 방문하여 채무변제충당순서 변경을 신청하실 수 있습니다.</p>
+							<p><span>※</span> (변경신청전) 비용, 이자, 원금 순서로 상환 -> (변경신청후) 비용, 원금, 이자 순서로 상환</p>
+						</li>
+						<li><p><span>■</span> 채무변제충단순서 변경 이후 비용, 이자, 원금 순서로 재변경하는 것은 저축은행의 명시적 의사표시가 있거나 연체된 금액(이자 및 원금)을 전액 상환함으로써 기한의 이익 부활이 가능한 경우에 한하며, 영업점에 방문하여 채무변제충당순서 재변경을 신청하셔야 합니다.</p></li>
+					</ol>
+
+					<p class="subTitle">대출모집인 설명확인서</p>
+					<ol>
+						<li><p><span>■</span> 금융회사는 대출모집인을 통해 접수된 대출의 경우"대출모집인 제도 모범규준"에 따라 대출 실행 이전에 대출신청인에게 아래 각 사항을 확인하여야 합니다.</p></li>
+						<li><p><span>■</span> 이미 대출모집인을 통해서 아래 확인사항을 설명 받으셨습니까?<br/>(이미 별도의 서류로 설명을 받은 경우"설명 확인사항"을 작성하지 않아도 됩니다.)</p></li>
+						<li><p><span>■</span> 설명을 받지 못한 경우 아래 각항의 질문사항에 대하여 사실대로 기재하여 주시기 바랍니다.</p></li>
+						<li>
+							<p style="font-weight:bold; padding:5px 0; ">상품 개요 및 특성</p>
+							<div class="table-St th-bg th-br td-bt td-br pdr40 last-Bnon">
+								<table>
+									<caption>대출모집인 설명확인서 상품 개요 및 특성 확인표</caption>
+									<colgroup>
+										<col width="*">
+										<col width="15%">
+										<col width="18%">
+									</colgroup>
+									<thead>
+										<tr>
+											<th colspan="3">설명 확인사항</th>	
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												1. 대출계약을 체결하기 전에 대출모집인으로부터 대출상품의 조건 및 대출내용 등에 관하여 충분한 설명을 받으셨나요?<br/>
+												- 대출계약 중요사항(금리, 대출금액, 대출기간, 중도상환 수수료 등)에 대한 설명 포함
+											</td>
+											<td>
+												<ul class="inpRadio">
+													<li>
+														<input type="radio" id="rad01-1" name="table_radio01" title="예" disabled="disabled" checked="checked">
+														<label for="rad01-1">예</label>
+													</li>
+												</ul>
+											</td>
+											<td>
+												<ul class="inpRadio">
+													<li>
+														<input type="radio" id="rad01-2" name="table_radio01" title="아니오" disabled="disabled">
+														<label for="rad01-2">아니오</label>
+													</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<td>2. 대출모집인으로부터 대출모집인은 금융회사의 업무위탁을 받아 대출모집 및 소개 등의 섭외활동을 한다는 사실에 대하여 사전에 고지 받으셨나요?</td>
+											<td>
+												<ul class="inpRadio">
+													<li>
+														<input type="radio" id="rad02-1" name="table_radio02" title="예" disabled="disabled" checked="checked">
+														<label for="rad02-1">예</label>
+													</li>
+												</ul>
+											</td>
+											<td>
+												<ul class="inpRadio">
+													<li>
+														<input type="radio" id="rad02-2" name="table_radio02" title="아니오" disabled="disabled">
+														<label for="rad02-2">아니오</label>
+													</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<td>3. 대출모집인으로부터 대출모집인은 고객에게 별도의 수수료를 요구하거나 수취할 수 없다는 사실에 대하여 사전에 고지 받으셨나요?</td>
+											<td>
+												<ul class="inpRadio">
+													<li>
+														<input type="radio" id="rad03-1" name="table_radio03" title="예" disabled="disabled" checked="checked">
+														<label for="rad03-1">예</label>
+													</li>
+												</ul>
+											</td>
+											<td>
+												<ul class="inpRadio">
+													<li>
+														<input type="radio" id="rad03-2" name="table_radio03" title="아니오" disabled="disabled">
+														<label for="rad03-2">아니오</label>
+													</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<td>4. 대출모집인으로부터 여신심사 등을 통한 대출실행의 결정은 금융회사가 한다는 사실에 대하여 사전에 고지 받으셨나요?</td>
+											<td>
+												<ul class="inpRadio">
+													<li>
+														<input type="radio" id="rad04-1" name="table_radio04" title="예" disabled="disabled" checked="checked">
+														<label for="rad04-1">예</label>
+													</li>
+												</ul>
+											</td>
+											<td>
+												<ul class="inpRadio">
+													<li>
+														<input type="radio" id="rad04-2" name="table_radio04" title="아니오" disabled="disabled">
+														<label for="rad04-2">아니오</label>
+													</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<td>5. 대출모집인으로부터 귀하의 소득,재산,부채상황,신용 및 변제계획 등을 고려하여 적합한 대출 상품을 권유 받으셨나요?</td>
+											<td>
+												<ul class="inpRadio">
+													<li>
+														<input type="radio" id="rad05-1" name="table_radio05" title="예" disabled="disabled" checked="checked">
+														<label for="rad05-1">예</label>
+													</li>
+												</ul>
+											</td>
+											<td>
+												<ul class="inpRadio">
+													<li>
+														<input type="radio" id="rad05-2" name="table_radio05" title="아니오" disabled="disabled">
+														<label for="rad05-2">아니오</label>
+													</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<td>6. 대출모집인으로부터 귀하가 필요한 자금의 범위를 초과하여 대출을 받도록 권유 또는 유도 받으셨나요?</td>
+											<td>
+												<ul class="inpRadio">
+													<li>
+														<input type="radio" id="rad06-1" name="table_radio06" title="예" disabled="disabled" checked="checked">
+														<label for="rad06-1">예</label>
+													</li>
+												</ul>
+											</td>
+											<td>
+												<ul class="inpRadio">
+													<li>
+														<input type="radio" id="rad06-2" name="table_radio06" title="아니오" disabled="disabled">
+														<label for="rad06-2">아니오</label>
+													</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<td>7. 대출상담사로부터 귀하가 원하지 않는 고금리 대출로 변경하도록 권유 또는 유도 받으셨나요?</td>
+											<td>
+												<ul class="inpRadio">
+													<li>
+														<input type="radio" id="rad07-1" name="table_radio07" title="예" disabled="disabled" checked="checked">
+														<label for="rad07-1">예</label>
+													</li>
+												</ul>
+											</td>
+											<td>
+												<ul class="inpRadio">
+													<li>
+														<input type="radio" id="rad07-2" name="table_radio07" title="아니오" disabled="disabled">
+														<label for="rad07-2">아니오</label>
+													</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<td>8. 대출상담을 진행한 대출상담사의 성명은 무엇인가요?</td>
+											<td colspan="2"></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</li>
+					</ol>
+					
+					<p class="subTitle">대출거절사유 고지신청서</p>
+					<ol>
+						<li><p><span>■</span> 대출신청에 따른 저축은행 심사 결과 불승인시 그 사유를 고지 받으시겠습니까? (다만, 「신용정보법」(연체, 부도, 개인회생 등) 이외의 사항으로 대출이 거절된 경우에는 거절사유를 고지하지 아니합니다.</p></li>
+					</ol>
+
+					<p class="subTitle">대학생·청년층 확인서</p>
+					<ol>
+						<li><p><span>■</span> 본인은 귀 저축은행과의 대출 계약 체결 이전에 귀 저축은행으로부터 대학생·청년층을 위한 공적 지원제도 안내문을 교부받고, 이에 대해 충분한 설명을 받았으며, FINE 등 금리비교공시 사이트에 대해 안내받았음에도 불구하고 본인의 판단에 따라 귀 저축은행과의 대출 계약을 체결하고자 합니다.</p></li>
+					</ol>
+					
+					<p class="subTitle">금융소비자 불이익사항 우선설명확인서</p>
+					<ol>
+						<li>
+							<ol class="olBox">
+								<li>저축은행은 금융소비자 보호를 위하여 대출거래의 주요내용 및 고객부담비용에 대하여 충분히 설명하여야 하며, 특히 취약한 금융소비자에 대해서는 금융소비자의 불이익 사항을 다른 정보보다 우선적으로 설명하고 그 이해여부를 확인하여야 합니다.</li>
+								<li>「금융소비자보호 모범규준」상 강화된 설명의무 이행대상에 해당하는지 여부를 확인하고자 하오니 아래의 항목 중 해당하는 유형에 체크하여 주시기 바랍니다.</li>
+								<li>[금융소비자의 불이익 사항]</li>
+								<li>기한의 이익 상실 사유·변동금리 또는 고정금리 유의사항·중도상환해약금·연체 이자율 및 부과사유·연체 등 정보등재</li>
+								<li><p><span>※</span> 금융소비자의 불이익 사항에는 본 상품설명서의 내용 중 3. 대출이자율 4. 대출관련 비용부담 5. 연체이자 6. 연체이자율 10. 기한의 이익상실사유 13. 연체정보 등 등록이 포함됩니다.</p></li>
+							</ol>
+						</li>
+					</ol>
+					
+					<p class="subTitle">기타 유의사항</p>
+					<ol>
+						<li><p><span>■</span> 신용공여(대출 등) 사실만으로 신용점수가 하락할 수 있습니다.</p></li>
+						<li><p><span>■</span> 평균적으로 연체율이 높은 금융권역(또는 형태)의 신용공여는 여타 금융권역 또는 일반적인 형태의 신용공여보다 신용점수가 더 큰 폭으로 하락할 수 있습니다.</p></li>
+					</ol>
+
+					<ol class="olBox">
+						<li><p><span>◈</span> 이 설명서는 여신거래기본약관의 이자 및 지연배상금 및 비용 등에 대한 이해를 돕기 위하여 약정 전에 제공되는 자료로서 상담후 신청금액, 설정금액 등 변경에 의하여 일부 내용이 달라 질 수 있습니다.</p></li>
+						<div class="txtBox">
+							<p>□ 상담지점명 : <span></span></p>
+							<p>□ 담당직원명 : <span></span></p>
+							<p>□ 상담일 : <span></span></p>
+							<p>□ 연락처 : <span></span></p>
+						</div>
+					</ol>
+
+					<ol class="olBox">
+						<li>상품가입 후 의문사항 또는 불만(민원)이 있을 경우 상담센터 (☏ : 1544-9191) 또는 인터넷 홈페이지(www.jt-bank.co.kr) 에 문의할 수 있고, 분쟁이 발생한 경우에는 금융감독원(국번없이 1332) 등에 도움을 요청할 수 있습니다.</li>
+					</ol>
+
+				</div>
+				<p class="subBtnWrap">
+					<button type="button" onclick="modalOff();" title="확인" class="lone_ok">확인</button>
+				</p>
+			</dd>
+		</dl>
+	</div>
+</div>
+
+<!-- 
+<div id="makeCertManager"><div id="cert_pop" class="CertManager"><div class="cert_top"><h1>인증서 선택</h1><a class="close" title="닫기"></a></div><div class="cert_mid"><div><h2 class="bul1">인증서를 선택해 주세요.</h2><div class="ctable tb_thead"><table><colgroup><col style="width:15%;"><col style="width:10%;"><col><col style="width:15%;"><col style="width:15%;"></colgroup><tbody><tr><th>구분</th><th>Disk</th><th>사용자</th><th>만료기간</th><th>발급자</th></tr></tbody></table></div><div class="ctable tb_scroll"><table><colgroup><col style="width:15%;"><col style="width:10%;"><col><col style="width:15%;"><col style="width:15%;"></colgroup></table></div></div><div><h2 class="bul1">인증서 암호를 입력해 주세요.</h2><div class="cipt"><input type="password" placeholder="인증서 암호는 대소문자를 구분합니다."></div></div><div class="cbtn_wrap"><a class="cbtn type1">확인</a> <a class="cbtn type2">취소</a></div></div></div></div>
+ -->
+
+<script>
+
+</script>
+
+</body>
+</html>

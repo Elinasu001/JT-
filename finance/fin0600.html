@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>JT 저축은행</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" type="text/css" href="../public/css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/common.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/common01.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/common02.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/footer.css" />
+	
+	<script src="../public/js/jquery.min.js"></script>
+	<script src="../public/js/common.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			// 아코디언 제어
+			$(".accordian02 > li > div:first-child").click(function(){
+			var tg = $(this).siblings("div");
+			var dis = tg.css("display");
+			if (dis=="none") {
+				$(this).addClass("Active");
+				tg.slideDown(300);
+			} else {
+				$(this).removeClass("Active");
+				tg.slideUp(300);
+			}
+			return false;
+			});
+		});
+	</script>
+</head>
+
+<body>
+<!-- // header -->
+<header>
+	<div id="gnb">
+		<h1><a href="./index.jsp"></a></h1>
+		<nav>
+			<script>
+				$(document).ready(function(){ 
+					$('nav').load('../public/inc/nav.html'); 
+				});
+			</script>
+		</nav>
+	</div>
+</header>
+<!-- header // -->
+
+<!-- // section -->
+<section class="SubPage-bg03">
+
+	<article class="Path PathBg">
+		<div>
+			<a href="/">Home</a><span class="bullet_right">→</span><a href="/">금융</a><span class="bullet_right">→</span><a href="/">금융서비스</a><span class="bullet_right">→</span><a href="/">공동인증서가져오기</a>
+		</div>
+	</article>
+
+	<article class="ContentWrap">
+
+		<div class="Sub-Title subTitBg">
+			<h2>공동인증서가져오기<br />
+			<span>간편한 인증서 내보내기 방법을 안내해드립니다. </span>
+			</h2>
+		</div>
+
+		<div class="call-admin pdT60">
+			<div>
+
+				<div class="listTxtWrap type01"><!-- 묶인 이미지 일 때 클래스 full 추가 -->
+					<!-- <img src="../public/img/dep_service_icon.png" alt=" "> -->
+					<p><span>모바일APP에서 대출서비스를 원활히 이용하시려면<br/>모바일APP에 공동인증서를 저장하셔야 합니다.</span></p>
+					<span>모바일 앱 공동인등서 가져오기<br/>PC > 스마트폰 인증서 가져오기</span>
+				</div>
+
+				<div class="subBtnWrap">
+					<button type="button" title="공동인증서 가져오기" class="lone_ok">공동인증서 가져오기</button>
+				</div>
+
+				
+				<ol class="Public-Key">
+					<li>
+						<dl>
+							<dt><b>STEP1</b><br/>스마트폰에서 모바일 앱 접속</dt>
+							<dd>PC에 저장된 공동인증서를<br/>스마트폰에서 동일하게 사용하시려면 <br/>다음단계를 진행하셔야 합니다. </dd>
+						</dl>
+						<p><img src="../public/img/content_public01.png" alt="JT저축은행앱실행 > '전체메뉴' - '공동인증센터' - '공동인증서가져오기' 선택 > 인증번호확인 절차 이미지"></p>
+					</li> 
+					<li>
+						<dl>
+							<dt><b>STEP2</b><br/>PC에서 웹사이트로 접속</dt>
+							<dd>웹사이트 접속하여 금융서비스 > <br/>공동인증서 가져오기 페이지로 이동 후<br/>공동인증서 가져오기 버튼 선택</dd>
+						</dl>
+						<p><img src="../public/img/content_public02.png" alt="JT저축은행 웹사이트 금융서비스 접속 > 공동인증서 가져오기페이지 이동 > 공동인증서 가져오기 버튼 색선택 안내 이미지"></p>
+					</li>
+					<li>
+						<dl>
+							<dt><b>STEP3</b><br/>스마트폰에서 모바일 앱 접속</dt>
+						</dl>
+						<p><img src="../public/img/content_public03.png" alt="JT저축은행 앱 '인증서가져오기' 화면에서 인증서 가져오기 버튼 선택 > 공동인증서 관리애서 확인 아내 이미지"></p>
+					</li>
+				</ol>
+				
+			</div>
+		</div>
+
+	</article>
+
+</section>
+<!-- // section -->
+
+<!-- // footer -->
+<footer>
+	<script>
+	$(document).ready(function(){ 
+		$('footer').load('../public/inc/footer.html'); 
+	});
+	</script>
+</footer>
+<!-- footer // -->
+</body>
+</html>

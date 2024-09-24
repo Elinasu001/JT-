@@ -1,0 +1,275 @@
+<!--%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%-->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<!-- %@ include file="./public/inc/common.jsp" %-->
+	<title>JT 저축은행</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<link rel="stylesheet" type="text/css" href="../public/css/reset.css?v=002" />
+	<link rel="stylesheet" type="text/css" href="../public/css/common.css?v=002" />
+	<link rel="stylesheet" type="text/css" href="../public/css/slick.css" />
+	<script src="../public/js/jquery.min.js"></script>
+	<script src="../public/js/slick.js"></script>
+	<script src="../public/js/common.js"></script>
+
+</head>
+<body>
+
+<!-- // header -->
+<header>
+	<div>
+		<h1><a href="/"><img src="../public/img/logo.png" alt="JT저축은행" /></a></h1>
+
+		<a href="javascript:callgnb();" alt="전제메뉴 보기" >
+			<span></span>
+			<span></span>
+			<span></span>
+		</a>
+
+	</div>
+</header>
+<!-- header // -->
+
+<!-- // Aside -->
+<div class="Aside">
+	<script>
+		$(document).ready(function(){ 
+			$('.Aside').load('../public/inc/nav.html'); 
+		});
+	</script>
+</div>
+<!-- Aside // -->
+
+<div id="main">
+	<section>
+		
+		<article class="ContentWrap">
+
+			<div class="subPage-Tit">
+				<h2>예금금리</h2>
+				<p>상품별, 영업점별, 예금 및 적금 금리정보입니다.</p>
+				<ul>
+					<li><a href="#">목돈굴리기 상품</a></li> 
+					<li><a href="#">목돈모으기 상품</a></li>
+					<li><a href="#">입출금자유상품</a></li>
+					<li class="on"><a href="#">ISA/퇴직연금예금상품</a></li>
+				</ul>
+			</div>
+			
+			<div class="call-admin">
+				<div>
+					<div class="secTitBox">
+						<div>퇴직연금 정기예금</div>
+						<p>본 상품은 당사 협약기관인 ‘우리은행, 하나은행, 미래에셋 대우, 미래에셋 생명, 한국투자증권, KB증권, NH농협은행, 삼성화재해상보험, KB국민은행, 삼성증권’에서 가입하실 수 있습니다.</p>
+						<p>※ 협약기관의 한도 소진 및 개별 사정에 따라 가입이 불가할 수 있습니다. 사전에 거래하시는 협약기관에 문의하여 주시기 바랍니다.</p>
+						<p>※ JT저축은행 영업점에서는 가입이 불가능합니다.</p>
+						<span>2022년 2월 1일 기준 (단위:%, 연, 세전, 연수익률은 복리식)</span>
+					</div>
+					<div class="tableWrap table-scroll pdT0">
+						<div class="scrollWrap table-St last-Bnon th-bg td-bt th-br td-br tc">
+							<table summary="기간(개월), DB(적용이율), DB(연수익률), DC/IRP(적용이율), DC/IRP(연수익률), 중도해지이율 로 구성되어 있는 퇴직연금 정기예금 금리 안내표">
+								<caption>기간(개월), DB(적용이율), DB(연수익률), DC/IRP(적용이율), DC/IRP(연수익률), 중도해지이율 로 구성되어 있는 퇴직연금 정기예금 금리 안내표</caption>
+								<colgroup>
+									<col width="16%">
+									<col width="12%">
+									<col width="12%">
+									<col width="12%">
+									<col width="24%">
+									<col width="24%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">기간(개월)</th>
+										<th scope="col">DB(적용이율)</th>
+										<th scope="col">DB(연수익률)</th>
+										<th scope="col">DC/IRP(적용이율)</th>
+										<th scope="col">DC/IRP(연수익률)</th>
+										<th scope="col">중도해지이율</th>
+									</tr>
+
+								</thead>
+								<tbody>
+									<tr>
+										<td>1개월 이상 - 6개월 미만</td>
+										<td>1.30</td>
+										<td>1.30</td>
+										<td>1.30</td>
+										<td>1.30</td>
+										<td rowspan="5">
+											<ul>
+												<li class="hypn">1개월 미만: 0.5% (2021.08.10 이전 가입한 경우 0.10%)</li>
+												<li class="hypn">1개월 이상~6개월미만: 약정금리x50%</li>
+												<li class="hypn">6개월이상~12개월미만:약정금리x60%</li>
+												<li class="hypn">12개월이상:약정금리x70%</li>
+											</ul>
+											<p class="rfrnc">2019년 6월 30일 이전 가입고객 : 3개월미만-0.5%, 3개월이상-실 예치기간 적용금리 x 50%</p>
+										</td>
+									</tr>
+									<tr>
+										<td>6개월 이상 - 12개월 미만</td>
+										<td>1.50</td>
+										<td>1.50</td>
+										<td>1.50</td>
+										<td class="bor-r">1.50</td>
+									</tr>
+									<tr>
+										<td>12개월 이상 - 24개월 미만</td>
+										<td>2.45</td>
+										<td>2.47</td>
+										<td>2.35</td>
+										<td class="bor-r">2.37</td>
+									</tr>
+									<tr>
+										<td>24개월 이상 - 36개월 미만</td>
+										<td>2.45</td>
+										<td>2.50</td>
+										<td>2.35</td>
+										<td class="bor-r">2.40</td>
+									</tr>
+									<tr>
+										<td>36개월</td>
+										<td>2.45</td>
+										<td>2.53</td>
+										<td>2.35</td>
+										<td class="bor-r">2.43</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="txtBox">
+							<p class="rfrnc">만기 전 해지할 경우, 특별중도해지 사유에 해당하는 경우 가입기간별 특별중도해지이율이 적용되며, 특별중도해지 사유에 해당하지 않는 경우 일반중도해지이율이 적용됩니다.</p>
+						</div>
+					</div>
+					<div class="secTitBox">
+						<div>ISA 정기예금</div>
+						<p>본 상품은 당사 협약기관인 ‘우리은행’, ’하나은행’, ’미래에셋대우’ 에서 가입하실 수 있습니다.</p>
+						<p>※ JT저축은행 영업점에서는 가입이 불가능합니다.</p>
+						<span>2022년 2월 3일 기준 (단위:%, 연, 세전)</span>
+					</div>
+					<div class="table-St last-Bnon th-bg td-bt th-br td-br tc">
+						<table summary="기간(개월), 적용이율, 일반중도해지이율 로 구성되어 있는 ISA 정기예금 금리 안내표">
+							<caption>기간(개월), 적용이율, 일반중도해지이율 로 구성되어 있는 ISA 정기예금 금리 안내표</caption>
+							<colgroup>
+								<col width="16%">
+								<col width="12%">
+								<col width="*">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">기간(개월)</th>
+									<th scope="col">적용이율</th>
+									<th scope="col">일반중도해지이율</th>
+								</tr>
+
+							</thead>
+							<tbody>
+								<tr>
+									<td>1개월 이상 - 6개월 미만</td>
+									<td>1.30</td>
+									<td rowspan="5">
+										<ul>
+											<li class="hypn">1개월 미만: 0.5% (2021.08.10 이전 가입한 경우 0.10%)</li>
+											<li class="hypn">1개월 이상~6개월미만: 약정금리x50%</li>
+											<li class="hypn">6개월이상~12개월미만:약정금리x60%</li>
+											<li class="hypn">12개월이상:약정금리x70%</li>
+										</ul>
+										<p class="rfrnc">2019년 6월 30일 이전 가입고객 : 3개월미만-0.5%, 3개월이상-실 예치기간 적용금리 x 50%</p>
+									</td>
+								</tr>
+								<tr>
+									<td>6개월 이상 - 12개월 미만</td>
+									<td class="bor-r">1.50</td>
+								</tr>
+								<tr>
+									<td>12개월 이상 - 24개월 미만</td>
+									<td class="bor-r">2.35</td>
+								</tr>
+								<tr>
+									<td>24개월 이상 - 36개월 미만</td>
+									<td class="bor-r">2.35</td>
+								</tr>
+								<tr>
+									<td>36개월</td>
+									<td class="bor-r">2.35</td>
+								</tr>
+
+							</tbody>
+						</table>
+						<div class="txtBox">
+							<p class="rfrnc">만기 전 해지할 경우, 특별중도해지 사유에 해당하는 경우 가입기간별 특별중도해지이율이 적용되며, 특별중도해지 사유에 해당하지 않는 경우 일반중도해지이율이 적용됩니다.</p>
+						</div>
+					</div>
+
+
+					<div class="secTitBox">
+						<div>ISA 정기적금</div>
+						<p>본 상품은 당사 협약기관인 ‘우리은행’ 에서 가입하실 수 있습니다.</p>
+						<p>※ JT저축은행 영업점에서는 가입이 불가능합니다.</p>
+						<span>2021년 8월 11일 기준 (단위:%, 연, 세전)</span>
+					</div>
+					<div class="table-St last-Bnon th-bg td-bt th-br td-br tc">
+						<table summary="기간(개월), 적용이율, 일반중도해지이율 로 구성되어 있는 ISA 정기적금 금리 안내표">
+							<caption>기간(개월), 적용이율, 일반중도해지이율 로 구성되어 있는 ISA 정기적금 금리 안내표</caption>
+							<colgroup>
+								<col width="16%">
+								<col width="12%">
+								<col width="*">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">기간(개월)</th>
+									<th scope="col">적용이율</th>
+									<th scope="col">일반중도해지이율</th>
+								</tr>
+
+							</thead>
+							<tbody>
+								<tr>
+									<td>3개월</td>
+									<td>-</td>
+									<td rowspan="5">
+										<ul>
+											<li class="hypn">1개월 미만: 0.5% (2021.08.10 이전 가입한 경우 0.10%)</li>
+											<li class="hypn">1개월 이상~6개월미만: 약정금리x50%</li>
+											<li class="hypn">6개월이상~12개월미만:약정금리x60%</li>
+											<li class="hypn">12개월이상:약정금리x70%</li>
+										</ul>
+										<p class="rfrnc">2019년 6월 30일 이전 가입고객 : 3개월미만-0.5%, 3개월이상-실 예치기간 적용금리 x 50%</p>
+									</td>
+								</tr>
+								<tr>
+									<td>6개월</td>
+									<td class="bor-r">2.00</td>
+								</tr>
+								<tr>
+									<td>12개월</td>
+									<td class="bor-r">2.20</td>
+								</tr>
+								<tr>
+									<td>24개월</td>
+									<td class="bor-r">2.30</td>
+								</tr>
+								<tr>
+									<td>36개월</td>
+									<td class="bor-r">2.30</td>
+								</tr>
+
+							</tbody>
+						</table>
+						<div class="txtBox">
+							<p class="rfrnc">만기 전 해지할 경우, 특별중도해지 사유에 해당하는 경우 가입기간별 특별중도해지이율이 적용되며, 특별중도해지 사유에 해당하지 않는 경우 일반중도해지이율이 적용됩니다.</p>
+						</div>
+					</div>
+				</div>
+			</div><!--call-admin-->
+	
+		</article>
+
+	</section>
+</div>
+<!-- main // -->
+</body>
+</html>

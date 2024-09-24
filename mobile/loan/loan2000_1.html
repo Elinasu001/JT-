@@ -1,0 +1,100 @@
+<!--%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%-->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<!-- %@ include file="./public/inc/common.jsp" %-->
+	<title>JT 저축은행</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<link rel="stylesheet" type="text/css" href="../public/css/reset.css?v=002" />
+	<link rel="stylesheet" type="text/css" href="../public/css/common.css?v=002" />
+	<link rel="stylesheet" type="text/css" href="../public/css/slick.css" />
+	<script src="../public/js/jquery.min.js"></script>
+	<script src="../public/js/slick.js"></script>
+	<script src="../public/js/common.js"></script>
+	<script>
+	
+		/* 모달 */
+		function modalOn(modalID) { // 모달 On 모달 창 호출 후 해당 모달 컨텐츠 로드
+			$("." + modalID).addClass('on');
+			$("html").css("overflow","hidden");
+		};
+
+		function modalOff() { // 모달 Off
+			$('.Acuon-Modal').removeClass('on');
+			$("html").css("overflow","auto").css("height","100%");
+		};
+
+	</script>
+</head>
+<body class="ft-fixLayout">
+
+<!-- // header -->
+<header>
+	<div>
+		<h1><a href="/"><img src="../public/img/logo.png" alt="JT저축은행" /></a></h1>
+
+		<a href="javascript:callgnb();" alt="전제메뉴 보기" >
+			<span></span>
+			<span></span>
+			<span></span>
+		</a>
+
+	</div>
+</header>
+<!-- header // -->
+
+<!-- // Aside -->
+<div class="Aside">
+	<script>
+		$(document).ready(function(){ 
+			$('.Aside').load('../public/inc/nav.html'); 
+		});
+	</script>
+</div>
+<!-- Aside // -->
+
+<div id="main">
+	<section>
+		
+		<article class="completeWrap">
+			<dl class="type01">
+				<dt><b><span>홍길동</span>님 대출신청이 완료되었습니다.</b></dt>
+				<dd>고객님의 대출 상담 신청이 정상적으로 접수되었습니다.<br/>빠른 시간 내에 담당자가 전화드리겠습니다.</dd>	
+			</dl>
+		</article>
+	</section>
+</div>
+<!-- main // -->
+
+<!-- 220429, 앱다운유도 팝업 //-->
+
+<div class="ft-fixBtnWrap">
+	<a href="#" class="btn-normal" onclick="modalOn('alert-appinfopopup');">확인</a>
+</div>
+
+
+<!--// 220429, 앱다운유도 팝업 -->
+<div class="Acuon-Modal alert-appinfopopup" rel="알림창">
+	<dl class="Modal-Fix"><!-- class="Modal-Fix" 하단버튼필요시 노출-->
+		<dt><p>알림</p></dt>
+		<dd class="min">
+			<div>
+				<b>JT저축은행 APP</b>설치 시 대출 진행안내를 보실 수 있습니다.
+				<br /><br /><b>JT저축은행 APP</b>설치를 진행합니다.
+			</div>
+		</dd>
+		<!-- 하단버튼 필요시 노출 -->
+		<dd class="modal-FtBtn">
+			<p>
+				<a href="#" onclick="modalOff();" class="btn-cancle">닫기</a>
+				<a href="#" class="btn-normal">APP 설치바로가기</a>
+			</p>
+		</dd>
+
+	</dl>
+</div>
+</body>
+</html>

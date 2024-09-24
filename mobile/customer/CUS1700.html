@@ -1,0 +1,141 @@
+<!--%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%-->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>JT 저축은행</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<link rel="stylesheet" type="text/css" href="../public/css/reset.css?v=002" />
+	<link rel="stylesheet" type="text/css" href="../public/css/common.css?v=002" />
+	<link rel="stylesheet" type="text/css" href="../public/css/slick.css" />
+	<script src="../public/js/jquery.min.js"></script>
+	<script src="../public/js/slick.js"></script>
+	<script src="../public/js/common.js"></script>
+	
+	<script src="../public/js/jquery.min.js"></script>
+	
+</head>
+<body>
+
+<!-- // header -->
+<header>
+	<div>
+		<h1><a href="/"><img src="../public/img/logo.png" alt="JT저축은행" /></a></h1>
+
+		<a href="javascript:callgnb();" alt="전제메뉴 보기" >
+			<span></span>
+			<span></span>
+			<span></span>
+		</a>
+
+	</div>
+</header>
+<!-- header // -->
+
+<!-- // Aside -->
+<div class="Aside">
+	<script>
+		$(document).ready(function(){ 
+			$('.Aside').load('../public/inc/nav.html'); 
+		});
+	</script>
+</div>
+<!-- Aside // -->
+
+<div id="main">
+	<section>
+		<article class="ContentWrap">
+
+			<div class="subPage-Tit">
+				<h2>기한의 이익 상실일 / 채권양도 예정일 조회</h2>
+				<p>JT저축은행에서 확인할 수 있는 기한의 이익 상실일 및 채권양도 예정일 조회 입니다.</p>
+			</div>
+			<div class="call-admin">
+				<div>
+                    <!--  s : 기한의 이익 상실일 / 채권양도 예정일 -->
+                    <div class="secTitBox ">
+						<div>기본정보 입력</div>
+					</div>
+					<div class="inpWrap">
+						<label for="ipt01_01">고객명</label>
+						<p class="won">
+                            <input type="text" id="ipt01_01" name="ipt01_01" title="고객명 입력">
+						</p>
+					</div>
+                    <div class="inpWrap">
+						<label for="ipt01_02">생년월일</label>
+						<p class="won">
+                            <input type="text" id="ipt01_02" name="ipt01_02" placeholder="예시&#41;750123" title="생년월일 입력">
+						</p>
+					</div>
+                    <div class="subBtnWrap mgB30 pdT0">
+						<a href="#" class="btn-ok">조회하기</a>
+					</div>
+					
+					<div class="secTitBox ">
+						<div>계산결과</div>
+					</div>
+                    <div class="tableWrap table-scroll pdT0">
+						<div class="scrollWrap table-St last-Bnon th-bg td-bt th-br td-br tc">
+							<table style="width:900px">
+                                <caption>고객명, 생년월일, 대출계좌번호, 대출잔액, 홈페이지 게시일, 기한의 이익 상실일 / 채권양도 예정일, 상세보기 기한의 이익 상실일 / 채권양도 예정일에 대한 조회결과</caption>
+                                <colgroup>
+                                    <col width="130px">
+                                    <col width="130px">
+                                    <col width="140px">
+                                    <col width="140px">
+                                    <col width="140px">
+                                    <col width="140px">
+                                    <col width="*">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">고객명</th>
+                                        <th scope="col">생년월일</th>
+                                        <th scope="col">대출계좌번호</th>
+                                        <th scope="col">대출잔액</th>
+                                        <th scope="col">홈페이지 게시일</th>
+                                        <th scope="col">기한의 이익 상실일 /<br>채권양도 예정일</th>
+                                        <th scope="col">상세보기</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="calcList">
+                                    <tr>
+                                        <td colspan="7">고객님의 성함과 생년월일을 입력하시고 조회하기 버튼을 눌러주세요.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>박*수</td>
+                                        <td>660***</td>
+                                        <td>332-61-76-1234****</td>
+                                        <td>1,234,567</td>
+                                        <td>2024.08.01</td>
+                                        <td>2024.08.01</td>
+                                        <td>
+                                            <button class="btnWh01 btnCertification">본인인증</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>박*수</td>
+                                        <td>660***</td>
+                                        <td>332-61-76-1234****</td>
+                                        <td>1,234,567</td>
+                                        <td>2024.08.01</td>
+                                        <td>2024.08.01</td>
+                                        <td>열람일시 : 2024.09.10 14:00:00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+						</div>
+					</div>
+                    <!--  e : 기한의 이익 상실일 / 채권양도 예정일 -->
+				</div>
+			</div><!--call-admin-->
+		</article><!--ContentWrap-->
+	</section>
+</div>
+<!-- main // -->
+
+</body>
+</html>z

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>JT 저축은행</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" type="text/css" href="../public/css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/common.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/common01.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/common02.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/footer.css" />
+	
+	<script src="../public/js/jquery.min.js"></script>
+	<script src="../public/js/common.js"></script>
+
+	<script>
+	$(document).ready(function(){
+		
+		// 상담신청 버튼 클릭 시
+	
+
+	});
+	</script>
+</head>
+
+<body>
+<!-- // header -->
+<header>
+	<div id="gnb">
+		<h1><a href="./index.jsp"></a></h1>
+		<nav>
+			<script>
+				$(document).ready(function(){ 
+					$('nav').load('../public/inc/nav.html'); 
+				});
+			</script>
+		</nav>
+	</div>
+</header>
+<!-- header // -->
+
+<!-- // section -->
+<section class="SubPage-bg01">
+ 
+	<article class="Path PathBg">
+		<div>
+			<a href="/">Home</a><span class="bullet_right">→</span><a href="/">대출신청</a><span class="bullet_right">→</span><a href="/">담보대출신청</a>
+		</div>
+	</article>
+
+	<article class="ContentWrap">
+
+		<div class="Sub-Title subTitBg">
+			<h2>담보대출신청<br /><span>JT저축은행이 제공하는 대출서비스입니다.</span></h2>
+		</div>
+
+		<div class="call-admin">
+			<div>
+
+			<ul class="loanService full"><!-- 묶인 이미지 일 때 클래스 full 추가 -->
+				<li><img src="../public/img/loan_list_02_1.png" alt="기본정보 상세정보 신청완료 세개의 단계중에서 첫번째인 신용대출신청 기본정보 단계 이미지" /></li>
+				<li style="display:none"><img src="../public/img/loan_list_02_2.png" alt="기본정보 상세정보 신청완료 세개의 단계중에서 두번째인 신용대출신청 상세정보 단계 이미지" /></li>
+				<li>
+					<ul>
+						<li>정보입력</li>
+						<li>신청완료</li>
+					</ul>
+				</li>
+			</ul>
+
+			<div class="tableWrap">
+				<div class="secTitBox02">
+					<div>기본 정보 입력</div>
+					<span class="txtR">모든 항목은 필수입력 사항입니다.</span>
+				</div>
+				<div class="table-St th-bg th-br th-bb td-bb th-pdl40 td-pdl40">
+					<table summary="성명, 핸드폰번호, 주소, 상품선택에 대한 개인정보 입력표">
+						<caption>성명, 핸드폰번호, 주소, 상품선택에 대한 개인정보 입력표</caption>
+						<colgroup>
+							<col width="15%">
+							<col width="*">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="col"><label for="table01_name01">성명</label></th>
+								<td class="inpBox03">
+									<input type="text" id="table01_name01" name="table01_name01" placeholder="입력해주세요." />
+								</td>
+							</tr>
+							<tr>
+								<th scope="col"><label for="table01_tel01_1">핸드폰번호</label></th>
+								<td class="inpBox03 inpTel li3">
+									<ul>
+										<li>
+											<select id="table01_tel01_1" title="핸드폰번호 앞 3자리">
+												<option value="">선택</option>
+												<option value="1">010</option>
+												<!--<option value="2">011</option>
+												<option value="3">016</option>
+												<option value="4">017</option>
+												<option value="5">018</option>
+												<option value="6">019</option>
+												<option value="7">KT-파워텔</option>-->
+											</select>
+										</li>
+										<li>
+											<b>-</b>
+											<input type="tel" id="table01_tel01_2" name="table01_tel01" title="주민번호 중간 4자리" placeholder="입력해주세요." maxlength="4" />
+										</li>
+										<li>
+											<b>-</b>
+											<input type="tel" id="table01_tel01_3" name="table01_tel01" title="주민번호 뒤 4자리" placeholder="입력해주세요." maxlength="4" />
+										</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<th scope="col"><label for="table01_add01">주소</label></th>
+								<td class="inpBox03 inpAdd">
+									<input type="text" id="table01_add01" name="table01_add01" placeholder="입력해주세요." />
+								</td>
+							</tr>
+							<tr>
+								<th scope="col"><label for="table01_radio01">상품선택</label></th>
+								<td class="inpBox03">
+									<ul class="inpRadio" id="table01_radio01">
+										<li>
+											<input type="radio" id="table01_radio01_1" name="table01_radio01" title="상품선택 직장인" />
+											<label for="table01_radio01_1">직장인</label>
+										</li>
+										<li>
+											<input type="radio" id="table01_radio01_2" name="table01_radio01" title="상품선택 개인사업자" />
+											<label for="table01_radio01_2">개인사업자</label>
+										</li>
+										<li>
+											<input type="radio" id="table01_radio01_3" name="table01_radio01" title="상품선택 법인사업자" />
+											<label for="table01_radio01_3">법인사업자</label>
+										</li>
+										<li>
+											<input type="radio" id="table01_radio01_4" name="table01_radio01" title="상품선택 기타" />
+											<label for="table01_radio01_4">기타</label>
+										</li>
+									</ul>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div><!-- tableWrap -->
+
+			<div class="tableWrap">
+				<div class="secTitBox02">
+					<div>개인(신용)정보 관련 동의</div>
+				</div>
+				<ul class="agreeList">
+					<li class="agreeHead">
+						<div>[필수] 개인(신용)정보 수집,이용 동의서</div>
+						<button type="button" title="선택 개인(신용)정보 수집,이용 동의서 자세히보기" class="btnWh01">자세히보기</button>
+					</li>
+					<li class="agreeBody">
+						<div>- 개인(신용)정보 수집·이용 동의</div>
+						<ul class="inpRadio">
+							<li>
+								<input type="radio" id="chk01-1" name="check01_1">
+								<label for="chk01-1">동의하지않음</label>
+							</li>
+							<li class="chk">
+								<input type="radio" id="chk01-2" name="check01_1">
+								<label for="chk01-2">동의함</label>
+							</li>
+						</ul>
+					</li>
+				</ul>
+
+			</div><!-- tableWrap -->
+
+			<div class="subBtnWrap">
+				<button type="submit" title="담보대출신청 상담신청하기" class="lone_ok next01">상담신청</button>
+			</div>
+
+			</div>
+		</div><!-- call-admin -->
+
+	</article>
+
+</section>
+<!-- // section -->
+
+<!-- // footer -->
+<footer>
+	<script>
+	$(document).ready(function(){ 
+		$('footer').load('../public/inc/footer.html'); 
+	});
+	</script>
+</footer>
+<!-- footer // -->
+</body>
+</html>

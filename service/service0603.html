@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>JT 저축은행</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" type="text/css" href="../public/css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/common.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/common01.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/common02.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/footer.css" />
+	
+	<script src="../public/js/jquery.min.js"></script>
+	<script src="../public/js/common.js"></script>
+	<script>
+	
+		/* 모달 */
+		function modalOn(modalID) { // 모달 On 모달 창 호출 후 해당 모달 컨텐츠 로드
+			$("." + modalID).addClass('on');
+			$("html").css("overflow","hidden");
+		};
+
+		function modalOff() { // 모달 Off
+			$('.Acuon-Modal').removeClass('on');
+			$("html").css("overflow","auto").css("height","100%");
+		};
+	</script>
+</head>
+
+<body>
+<!-- // header -->
+<header>
+	<div>
+		<h1><a href="./index.jsp"></a></h1>
+		<nav>
+			<script>
+				$(document).ready(function(){ 
+					$('nav').load('../public/inc/nav.html'); 
+				});
+			</script>
+		</nav>
+	</div>
+</header>
+<!-- header // -->
+
+<!-- // section -->
+<section class="SubPage-bg04">
+
+	<article class="Path PathBg">
+		<div>
+			<a href="/">Home</a><span class="bullet_right">→</span><a href="/">고객센터</a><span class="bullet_right">→</span><a href="/">고객의 소리</a><span class="bullet_right">→</span><a href="/">금융소비자권리신청</a>
+		</div>
+	</article>
+
+	<article class="ContentWrap">
+
+		<div class="Sub-Title subTitBg">
+			<h2>고객의 소리<br /><span>고객님의 금융소비자권리신청에 귀 기울이는 JT저축은행이 되겠습니다.</span></h2>
+		</div>
+
+		<ul class="tabWrap li2"><!--li2, li3, li4, li5 로 갯수 조절-->
+			<li><a>칭찬/제안</a></li> 
+			<li class="on"><a>금융소비자권리신청</a></li>
+		</ul>
+		<div class="call-admin">
+			<div class="txtBox03">
+				<p>청약철회권, 금리인하요구권, 위법계약해지권, 자료열람권 신청 등 금융소비자권리를 행사하실 수 있으며, 내용확인을 위해 아래의 동의가 필요합니다.</p>
+			</div>
+			<div>
+				<dl class="CUS0201">
+				<dd>
+					<div>
+						<ol>
+							<li>
+								<p>■ 개인정보 수집·이용 동의 항목</p>
+							<li>
+								<p>1. 개인정보의 수집 및 이용목적</p>
+								고객님의 개인정보는 상품아이디어제안의 회신과 금융소비자보호업무의 수행을 위한 목적으로 수집·이용됩니다.</li>
+							<li>
+								<p>2. 수집하는 개인정보의 항목</p>
+								이름, 연락처, 이메일, 생년월일, 의견내용
+							</li>
+							<li>
+								<p>3. 개인정보의 보유 및 이용기간</p>
+								고객님의 개인정보는 소비자참여 업무수행만을 위해 보유·이용되며, 업무수행 종료 후에는 법령상 의무이행 및 당행의 소비자참여 의견 수립을 위하여 보유·이용 됩니다.
+							</li>
+							<li>
+								<p>4. 동의를 거부할 권리 및 동의를 거부할 경우의 불이익</p>
+								고객님은 동의를 거부하실 수 있으나 거부 시에는 본 서비스의 이용이 제한됩니다.
+							</li>
+						</ol>					
+					</div>
+				</dd>
+				</dl>
+
+				<ul class="agreeList reqChk mgT20">
+					<li class="agreeHead">
+						<div>[필수] 위와 같이 고객님의 개인정보를 수집·이용하는 것에 동의 하십니까?</div>
+						<ul class="inpRadio">
+							<li>
+								<input type="radio" id="chk07-1" name="chk07">
+								<label for="chk07-1">동의하지않음</label>
+							</li>
+							<li class="chk">
+								<input type="radio" id="chk07-2" name="chk07">
+								<label for="chk07-2">동의함</label>
+							</li>
+						</ul>
+					</li>
+				</ul>
+
+				<div class="subBtnWrap">
+					<button type="button" title="확인" class="lone_ok">확인</button>
+				</div>
+			</div>
+		</div>
+
+	</article>
+
+</section>
+<!-- // section -->
+
+<!-- // footer -->
+<footer>
+	<script>
+	$(document).ready(function(){ 
+		$('footer').load('../public/inc/footer.html'); 
+	});
+	</script>
+</footer>
+<!-- footer // -->
+</body>
+</html> 

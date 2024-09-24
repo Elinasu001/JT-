@@ -1,0 +1,162 @@
+<!--%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%-->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<!-- %@ include file="./public/inc/common.jsp" %-->
+	<title>JT 저축은행</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<link rel="stylesheet" type="text/css" href="../public/css/reset.css?v=002" />
+	<link rel="stylesheet" type="text/css" href="../public/css/common.css?v=002" />
+	<link rel="stylesheet" type="text/css" href="../public/css/slick.css" />
+	<script src="../public/js/jquery.min.js"></script>
+	<script src="../public/js/slick.js"></script>
+	<script src="../public/js/common.js"></script>
+	<script>
+		$(document).ready(function(){
+
+			//tab 제어
+			$(".tab-menu>li").on("click",function(){
+				$(this).parents("ul").find("li").removeClass("active");
+				$(this).addClass("active");
+			});
+			
+		});
+	</script>
+</head>
+<body class="ft-fixLayout">
+
+<!-- // header -->
+<header>
+	<div>
+		<h1><a href="/"><img src="../public/img/logo.png" alt="JT저축은행" /></a></h1>
+
+		<a href="javascript:callgnb();" alt="전제메뉴 보기" >
+			<span></span>
+			<span></span>
+			<span></span>
+		</a>
+
+	</div>
+</header>
+<!-- header // -->
+
+<!-- // Aside -->
+<div class="Aside">
+	<script>
+		$(document).ready(function(){ 
+			$('.Aside').load('../public/inc/nav.html'); 
+		});
+	</script>
+</div>
+<!-- Aside // -->
+
+<div id="main">
+	<section>
+		
+		<article class="ContentWrap">
+
+			<div class="subPage-Tit">
+				<h2>발급서비스</h2>
+				<p>JT저축은행이 제공하는 금융서비스입니다.</p>
+			</div>
+			
+			<div class="call-admin">
+				<div>
+					<h2 class="sub-Tit">정보 동의</h2>
+					<div class="inpWrap">
+						<label for="ipt01_01">성명</label>
+						<p>
+							<input type="text" name="ipt01_01" placeholder="한글만 입력해주세요." title="성명">
+						</p>
+					</div>	
+
+					<div class="inpWrap" data-role="tab">
+						<span>본인인증</span>
+						<ul class="tab-menu x3" role="tablist">
+							<li class="active">
+								<button role="tab" value="01">휴대폰인증</button>
+							</li>
+							<li>
+								<button role="tab" value="02">카드인증</button>
+							</li>
+							<li>
+								<button role="tab" value="03">공동인증</button>
+							</li>
+						</ul>
+					</div>
+
+					<div class="inpWrap">
+						<label for="ipt02_01">생년월일</label>
+						<p>
+							<input type="tel" name="ipt02_01" placeholder="(예:750101)" title="생년월일">
+						</p>
+					</div>	
+
+					<div class="inpWrap" data-role="tab">
+						<span>성별</span>
+						<ul class="tab-menu" role="tablist">
+							<li class="active">
+								<button role="tab" value="01">남성</button>
+							</li>
+							<li>
+								<button role="tab" value="02">여성</button>
+							</li>
+						</ul>
+					</div>
+
+					<div class="inpWrap telcom-Sel" data-role="tab">
+						<span>핸드폰번호</span>
+						<ul class="tab-menu x3" role="tablist">
+							<li class="active">
+								<button role="tab" value="01">SKT</button>
+							</li>
+							<li>
+								<button role="tab" value="02">KT</button>
+							</li>
+							<li>
+								<button role="tab" value="03">LGU+</button>
+							</li>
+							<li>
+								<button role="tab" value="04">SKT알뜰폰</button>
+							</li>
+							<li>
+								<button role="tab" value="05">KT알뜰폰</button>
+							</li>
+							<li>
+								<button role="tab" value="06">LGU+알뜰폰</button>
+							</li>
+						</ul>
+						<p>
+							<input type="tel" name="ipt02_01" placeholder="'-'없이 입력해주세요." title="휴대전화번호">
+						</p>
+					</div>
+				</div>
+			</div>
+	
+		</article>
+
+		<article class="completeWrap">
+			<dl class="type02">
+				<dt><b>본 서비스는 대출완료 고객전용 서비스 입니다.</b></dt>
+				<dd>대출신청하시겠습니까?</dd>	
+			</dl>
+		</article>
+	
+	</section>
+</div>
+<!-- main // -->
+
+<div class="ft-fixBtnWrap">
+	<a href="#" class="btn-normal">실명인증</a>
+
+	<p>
+		<a href="#" class="btn-cancle">취소</a>
+		<a href="#" class="btn-normal">대출신청</a>
+	</p>
+</div>
+
+</body>
+</html>

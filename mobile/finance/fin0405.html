@@ -1,0 +1,263 @@
+<!--%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%-->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<!-- %@ include file="./public/inc/common.jsp" %-->
+	<title>JT 저축은행</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<link rel="stylesheet" type="text/css" href="../public/css/reset.css?v=002" />
+	<link rel="stylesheet" type="text/css" href="../public/css/common.css?v=002" />
+	<link rel="stylesheet" type="text/css" href="../public/css/slick.css" />
+	<script src="../public/js/jquery.min.js"></script>
+	<script src="../public/js/slick.js"></script>
+	<script src="../public/js/common.js"></script>
+	<script>
+
+	</script>
+</head>
+<body class="ft-fixLayout">
+
+<!-- // header -->
+<header>
+	<div>
+		<h1><a href="/"><img src="../public/img/logo.png" alt="JT저축은행" /></a></h1>
+
+		<a href="javascript:callgnb();" alt="전제메뉴 보기" >
+			<span></span>
+			<span></span>
+			<span></span>
+		</a>
+
+	</div>
+</header>
+<!-- header // -->
+
+<!-- // Aside -->
+<div class="Aside">
+	<script>
+		$(document).ready(function(){ 
+			$('.Aside').load('../public/inc/nav.html'); 
+		});
+	</script>
+</div>
+<!-- Aside // -->
+
+<div id="main">
+	<section>
+		
+		<article class="ContentWrap">
+
+			<div class="subPage-Tit">
+				<h2>CMS서비스</h2>
+				<p>JT저축은행이 제공하는 금융서비스입니다.</p>
+				<ul>
+					<li class="on"><a href="">CMS동의</a></li>
+					<li><a href="">CMS조회(신청 및 변경)</a></li>
+				</ul>
+			</div>
+			
+			<div class="call-admin">
+				<div>
+					<div class="secTitBox02">
+						<div>조회(신청 및 변경) 계좌선택</div>
+					</div>
+					<div class="tableWrap table-scroll pdT0">
+						<div class="scrollWrap table-St pdLR10 phLR10 last-Bnon th-bg td-bt th-br td-br tc">
+							<table class="table06">
+								<colgroup>
+									<col width="8%">
+									<col width="18%">
+									<col width="24%">
+									<col width="12%">
+									<col width="12%">
+									<col width="18%">
+									<col width="8%">
+								</colgroup>
+								<thead class="tc">
+									<tr>
+										<th scope="col">선택</th>
+										<th scope="col">계좌번호</th>
+										<th scope="col">과목명</th>
+										<th scope="col">신규일자</th>
+										<th scope="col">만기일자</th>
+										<th scope="col">대출잔액</th>
+										<th scope="col">CMS계좌</th>
+									</tr>
+								</thead>
+								<tbody class="radio_pdL10">
+									<tr>
+										<td>
+											<ul class="inpRadio">
+												<li>
+													<input type="radio" id="chk03-1" name="check03" title="조회 계좌선택">
+												</li>
+											</ul>
+										</td>
+										<td>332-61-13-0040637</td>
+										<td>보통예금</td>
+										<td>2022.01.01</td>
+										<td></td>
+										<td>123,456,780</td>
+										<td>N</td>
+									</tr>
+									<tr>
+										<td>
+											<ul class="inpRadio">
+												<li>
+													<input type="radio" id="chk03-1" name="check03" title="조회 계좌선택">
+												</li>
+											</ul>
+										</td>
+										<td>332-61-13-0040637</td>
+										<td>P론(점프론D)</td>
+										<td>2022.01.01</td>
+										<td>2023.12.31</td>
+										<td>123,456,780</td>
+										<td>N</td>
+									</tr>
+									<tr>
+										<td>
+											<ul class="inpRadio">
+												<li>
+													<input type="radio" id="chk03-1" name="check03" title="조회 계좌선택">
+												</li>
+											</ul>
+										</td>
+										<td>332-61-13-0040637</td>
+										<td>P론(점프론D)</td>
+										<td>2022.01.01</td>
+										<td>2023.12.31</td>
+										<td>123,456,780</td>
+										<td>Y</td>
+									</tr>
+									<tr>
+										<td>
+											<ul class="inpRadio">
+												<li>
+													<input type="radio" id="chk03-1" name="check03" title="조회 계좌선택">
+												</li>
+											</ul>
+										</td>
+										<td>332-61-13-0040637</td>
+										<td>P론(CK NEW)</td>
+										<td>2022.01.01</td>
+										<td>2023.12.31</td>
+										<td>123,456,780</td>
+										<td>Y</td>
+									</tr>
+									<tr>
+										<td>
+											<ul class="inpRadio">
+												<li>
+													<input type="radio" id="chk03-1" name="check03" title="조회 계좌선택">
+												</li>
+											</ul>
+										</td>
+										<td>332-61-13-0040637</td>
+										<td>일반자금대출-법인담보일시(2개월)</td>
+										<td>2022.01.01</td>
+										<td>2023.12.31</td>
+										<td>123,456,780</td>
+										<td>Y</td>
+									</tr>
+									<tr>
+										<td>
+											<ul class="inpRadio">
+												<li>
+													<input type="radio" id="chk03-1" name="check03" title="조회 계좌선택">
+												</li>
+											</ul>
+										</td>
+										<td>332-61-13-0040637</td>
+										<td>P론(채무통합론)</td>
+										<td>2022.01.01</td>
+										<td>2023.12.31</td>
+										<td>123,456,780</td>
+										<td>N</td>
+									</tr>
+									<tr>
+										<td>
+											<ul class="inpRadio">
+												<li>
+													<input type="radio" id="chk03-1" name="check03" title="조회 계좌선택">
+												</li>
+											</ul>
+										</td>
+										<td>332-61-13-0040637</td>
+										<td>P론(점프론D)</td>
+										<td>2022.01.01</td>
+										<td>2023.12.31</td>
+										<td>123,456,780</td>
+										<td>N</td>
+									</tr>
+									<tr>
+										<td>
+											<ul class="inpRadio">
+												<li>
+													<input type="radio" id="chk03-1" name="check03" title="조회 계좌선택">
+												</li>
+											</ul>
+										</td>
+										<td>332-61-13-0040637</td>
+										<td>P론(CK NEW)</td>
+										<td>2022.01.01</td>
+										<td>2023.12.31</td>
+										<td>123,456,780</td>
+										<td>Y</td>
+									</tr>
+									<tr>
+										<td>
+											<ul class="inpRadio">
+												<li>
+													<input type="radio" id="chk03-1" name="check03" title="조회 계좌선택">
+												</li>
+											</ul>
+										</td>
+										<td>332-61-13-0040637</td>
+										<td>P론(점프론D)</td>
+										<td>2022.01.01</td>
+										<td>2023.12.31</td>
+										<td>123,456,780</td>
+										<td>N</td>
+									</tr>
+									<tr>
+										<td>
+											<ul class="inpRadio">
+												<li>
+													<input type="radio" id="chk03-1" name="check03" title="조회 계좌선택">
+												</li>
+											</ul>
+										</td>
+										<td>332-61-13-0040637</td>
+										<td>P론(CK NEW)</td>
+										<td>2022.01.01</td>
+										<td>2023.12.31</td>
+										<td>123,456,780</td>
+										<td>N</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+	
+		</article>
+	
+	</section>
+</div>
+<!-- main // -->
+
+<div class="ft-fixBtnWrap">
+	<p class="btn3">
+		<a href="#" class="btn-normal">신청</a>
+		<a href="#" class="btn-ok">변경</a>
+		<a href="#" class="btn-cancel">조회</a>
+	</p>
+</div>
+
+</body>
+</html>

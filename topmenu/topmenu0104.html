@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>JT 저축은행</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="../public/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../public/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../public/css/common01.css" />
+    <link rel="stylesheet" type="text/css" href="../public/css/common02.css" />
+    <link rel="stylesheet" type="text/css" href="../public/css/footer.css" />
+
+    <script src="../public/js/jquery.min.js"></script>
+    <script src="../public/js/common.js"></script>
+</head>
+
+<body>
+    <!-- // header -->
+    <header>
+        <div>
+            <h1><a href="./index.jsp"></a></h1>
+            <nav>
+                <script>
+                    $(document).ready(function () {
+                        $('nav').load('../public/inc/nav.html');
+                    });
+                </script>
+            </nav>
+        </div>
+    </header>
+    <!-- header // -->
+
+    <!-- // section -->
+    <section class="SubPage-bg01">
+
+        <article class="Path PathBg">
+            <div>
+                <a href="/">Home</a><span class="bullet_right">→</span><a href="/">상품공시실</a>
+            </div>
+        </article>
+
+        <article class="ContentWrap">
+
+            <div class="Sub-Title subTitBg">
+                <h2>상품공시실<br /><span>금융상품을 이해하고 선택하는데 유용한 정보를 제공드립니다.</span></h2>
+            </div>
+
+            <ul class="tabWrap li4"><!--li2, li3, li4, li5 로 갯수 조절-->
+                <li><a href="">상품공시이용매뉴얼</a></li>
+                <li><a href="">예금상품</a></li>
+                <li><a href="">대출상품</a></li>
+                <li class="on"><a href="">부대비용</a></li>
+            </ul>
+
+            <div class="call-admin" id="loanRink">
+                <div>
+                    <div class="txtBox03">
+                        <p class="txtB">JT저축은행의 부대비용( 수수료 ) 정보입니다.</p>
+                    </div>
+
+
+                    <dl class="ifrs-Wrap wid100">
+                        <dt>전자금융수수료</dt>
+                        <dd>
+                            <ol>
+                                <li>
+                                    <p><b>인터넷 뱅킹 및 텔레뱅킹에 가입하시면 편리하게 이체 및 조회가 가능합니다.</b><button type="button" id="Btn01"
+                                            title="인터넷뱅킹 바로가기" class="btnNv01">인터넷뱅킹</button></p>
+                                </li>
+                                <li class="mgT20 mgB60">
+                                    <p>현재 당사에서는 인터넷 뱅킹을 통한 예금이나 적금 상품 가입이 불가하며, 예금계좌 조회 및 송금 업무만 가능합니다</p>
+                                </li>
+                                <li>
+                                    <div class="secTitBox">
+                                        <h3>인터넷뱅킹 및 텔레뱅킹 수수료</h3>
+                                    </div>
+                                    <div class="table-St last-Bnon th-bg td-bt th-br td-br tc">
+                                        <table summary="서비스종류 인터넷뱅킹, 텔레뱅킹으로 구분되는 당,타행 수수료 정보 표">
+                                            <caption>서비스종류 인터넷뱅킹, 텔레뱅킹으로 구분되는 당,타행 수수료 정보 표</caption>
+                                            <colgroup>
+                                                <col width="25%">
+                                                <col width="25%">
+                                                <col width="25%">
+                                                <col width="25%">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col" colspan="2">서비스종류</th>
+                                                    <th scope="col" colspan="2">수수료</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td rowspan="2">인터넷뱅킹</td>
+                                                    <td>당행이체</td>
+                                                    <td colspan="2">없음</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>타행이체</td>
+                                                    <td colspan="2">없음</td>
+                                                </tr>
+                                                <tr>
+                                                    <td rowspan="2">텔레뱅킹</td>
+                                                    <td>당행이체</td>
+                                                    <td colspan="2">없음</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>타행이체</td>
+                                                    <td colspan="2">건당 400원</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </li>
+                            </ol>
+                        </dd>
+                    </dl>
+
+                    <dl class="ifrs-Wrap wid100">
+                        <dt>자동화기기수수료</dt>
+                        <dd>
+                            <ol>
+                                <li class="mgB60">
+                                    <p><b>당행은 자동화기기를 보유하고 있지 않으나 현금IC카드를 발급받으시면 전국 자동화기기에서 입출금 및 조회서비스가 가능합니다.</b></p>
+                                </li>
+                                <li class="mgB30">
+                                    <div class="secTitBox">
+                                        <h3>현금출금시 수수료</h3>
+                                    </div>
+                                    <div class="table-St last-Bnon th-bg td-bt th-br td-br tc">
+                                        <table summary="영업시간, 영역시간외 로 구분되는 타행기기이용, 점외기기이용시 현금출금수수료 안내 표">
+                                            <caption>영업시간, 영역시간외 로 구분되는 타행기기이용, 점외기기이용시 현금출금수수료 안내 표</caption>
+                                            <colgroup>
+                                                <col width="20%">
+                                                <col width="40%">
+                                                <col width="40%">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">구분</th>
+                                                    <th scope="col">영업시간</th>
+                                                    <th scope="col">영업시간외</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>타행기기 이용</td>
+                                                    <td colspan="2">이용 금융기관의 수수료 체계에 따름</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>점외기기 이용</td>
+                                                    <td>건당 600원 ~ 1,000원</td>
+                                                    <td>건당 800원 ~ 1,200원</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="txtBox">
+                                        <p class="dot">영업시간 : 평일 오전 9시 ~ 오후 4시</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="secTitBox">
+                                        <h3>계좌이체시 수수료</h3>
+                                    </div>
+                                    <div class="table-St last-Bnon th-bg td-bt th-br td-br tc">
+                                        <table summary="영업시간, 영역시간외 로 구분되는 10만원이하, 10만원초과시 계좌이체수수료 안내 표">
+                                            <caption>영업시간, 영역시간외 로 구분되는 10만원이하, 10만원초과시 계좌이체수수료 안내 표</caption>
+                                            <colgroup>
+                                                <col width="20%">
+                                                <col width="40%">
+                                                <col width="40%">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">구분</th>
+                                                    <th scope="col">영업시간</th>
+                                                    <th scope="col">영업시간외</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>10만원이하</td>
+                                                    <td>
+                                                        <ul>
+                                                            <li class="dot">당행이체 : 면제</li>
+                                                            <li class="dot">타행이체 : 건당 1,000원</li>
+                                                        </ul>
+                                                    </td>
+                                                    <td>
+                                                        <ul>
+                                                            <li class="dot">당행이체 : 건당 500원</li>
+                                                            <li class="dot">타행이체 : 건당 1,500원</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>10만원초과</td>
+                                                    <td>
+                                                        <ul>
+                                                            <li class="dot">당행이체 : 면제</li>
+                                                            <li class="dot">타행이체 : 건당 1,300원</li>
+                                                        </ul>
+                                                    </td>
+                                                    <td>
+                                                        <ul>
+                                                            <li class="dot">당행이체 : 건당 800원</li>
+                                                            <li class="dot">타행이체 : 건당 1,800원</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="txtBox">
+                                        <p class="dot">영업시간 : 평일 오전 9시 ~ 오후 4시</p>
+                                    </div>
+                                </li>
+                            </ol>
+                        </dd>
+                    </dl>
+
+                    <dl class="ifrs-Wrap wid100">
+                        <dt>상품 및 창구수수료</dt>
+                        <dd>
+                            <ol>
+                                <li class="mgB60">
+                                    <p><b>창구 및 예금상품 및 대출상품 이용시 발생하는 수수료 안내입니다.</b></p>
+                                </li>
+                                <li class="mgB30">
+                                    <div class="secTitBox">
+                                        <h3>창구송금시 수수료</h3>
+                                    </div>
+                                    <div class="table-St last-Bnon th-bg td-bt th-br td-br tc">
+                                        <table
+                                            summary="100만원이하, 1000만원이하, 5000만원미안, 5000만원이상으로 구분되는 영업시간내, 영역시간외 창구송금시 수수료 안내 표">
+                                            <caption>100만원이하, 1000만원이하, 5000만원미안, 5000만원이상으로 구분되는 영업시간내, 영역시간외 창구송금시 수수료
+                                                안내 표</caption>
+                                            <colgroup>
+                                                <col width="20%">
+                                                <col width="40%">
+                                                <col width="40%">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">구분</th>
+                                                    <th scope="col">영업시간</th>
+                                                    <th scope="col">영업시간외</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>100만원이하</td>
+                                                    <td>건당 1,000원</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1,000만원이하</td>
+                                                    <td>건당 1,500원</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5,000만원미만</td>
+                                                    <td>건당 2,000원</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5,000만원이상</td>
+                                                    <td>건당 2,500원</td>
+                                                    <td>-</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </li>
+                                <li class="mgB30">
+                                    <div class="secTitBox">
+                                        <h3>예금관련 수수료</h3>
+                                    </div>
+                                    <div class="table-St last-Bnon th-bg td-bt th-br td-br tc">
+                                        <table
+                                            summary="제증명서 발급수수료, 제사고신고처리수수료, 현금카드재발급수수료, 보안카드재발급수수료로 구분되는 예금관련 수수료 안내표">
+                                            <caption>제증명서 발급수수료, 제사고신고처리수수료, 현금카드재발급수수료, 보안카드재발급수수료로 구분되는 예금관련 수수료 안내표
+                                            </caption>
+                                            <colgroup>
+                                                <col width="20%">
+                                                <col width="40%">
+                                                <col width="40%">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">구분</th>
+                                                    <th scope="col">대상항목</th>
+                                                    <th scope="col">징수금액(건당)</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>제증명서 발급수수료</td>
+                                                    <td>
+                                                        <ul>
+                                                            <li class="dot">예금잔액증명서</li>
+                                                            <li class="dot">기타증명서</li>
+                                                            <li class="dot">주식납입보관증</li>
+                                                            <li class="dot">확인서</li>
+                                                        </ul>
+                                                    </td>
+                                                    <td> 2,000원(추가 발급시 1,000원) </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>제사고신고 처리수수료</td>
+                                                    <td>제사고 변경 신고 및 재발행(현금, 보안카드 포함)</td>
+                                                    <td>2,000원</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>현금카드 재발급수수료</td>
+                                                    <td>재발급</td>
+                                                    <td>카드 1매당 1,000원</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>보안카드 재발급수수료</td>
+                                                    <td>재발급</td>
+                                                    <td>카드 1매당 1,000원</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </li>
+                                <li class="mgB30">
+                                    <div class="secTitBox">
+                                        <h3>대출관련 수수료</h3>
+                                    </div>
+                                    <div class="table-St last-Bnon th-bg td-bt th-br td-br tc">
+                                        <table summary="제증명서 발급수수료, 기타수수료로 구분되는 대출관련 수수료 안내표">
+                                            <caption>제증명서 발급수수료, 기타수수료로 구분되는 대출관련 수수료 안내표</caption>
+                                            <colgroup>
+                                                <col width="20%">
+                                                <col width="40%">
+                                                <col width="40%">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">구분</th>
+                                                    <th scope="col">대상항목</th>
+                                                    <th scope="col">징수금액(건당)</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td rowspan="3">제증명서 발급수수료</td>
+                                                    <td>금융거래확인서</td>
+                                                    <td>2,000원</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>부채잔액증명서(채권채무조회서 포함)</td>
+                                                    <td>5,000원</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>공인회계사 감사용 부채잔액 증명서</td>
+                                                    <td>10,000원</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>기타 수수료</td>
+                                                    <td>기타 수수료는 별도 상품별로 정함</td>
+                                                    <td>각 상품별 상품안내 페이지 참조</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </li>
+                                <li class="mgB30">
+                                    <div class="secTitBox">
+                                        <h3>인지세</h3>
+                                        <p>고객님과 저축은행이 각 50%씩 부담하며, 인지세법상 인지세 부과기준은 다음과 같습니다.</p>
+                                    </div>
+                                    <div class="table-St last-Bnon th-bg td-bt th-br td-br tc">
+                                        <table summary="대출금액에 따른 인지세 안내표">
+                                            <caption>대출금액에 따른 인지세 안내표</caption>
+                                            <colgroup>
+                                                <col width="50%">
+                                                <col width="50%">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">대출금액</th>
+                                                    <th scope="col">인지세</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>5천만원이하</td>
+                                                    <td>비과세</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5천만원초과 ~ 1억원이하</td>
+                                                    <td>7만원</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1억원초과 ~ 10억원이하</td>
+                                                    <td>15만원</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>10억원초과</td>
+                                                    <td>35만원</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </li>
+                                <li class="mgB30">
+                                    <div class="secTitBox">
+                                        <h3>근저당 관련 비용</h3>
+                                    </div>
+                                    <div class="txtBox">
+                                        <p class="dot">근저당권 관련 비용의 부담은 다음 각 호와 같으며, 발생비용은 설정금액에 따라 다릅니다. </p>
+                                        <ul>
+                                            <li><i>1. </i>국민주택채권매입비 : 고객</li>
+                                            <li><i>2. </i>등록세, 지방교육세, 등기신청수수료 및 법무사수수료 <ul>
+                                                    <li><i>가.</i>근저당권 설정등기를 하는 경우 : 저축은행</li>
+                                                    <li><i>나.</i>근저당권 말소등기를 하는 경우 : 고객</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="mgB30">
+                                    <div class="secTitBox">
+                                        <h3>기타 수수료</h3>
+                                    </div>
+                                    <div class="table-St last-Bnon th-bg td-bt th-br td-br tc">
+                                        <table summary="기타수수료로 구분되는 대출관련 수수료 안내표">
+                                            <caption>기타수수료로 구분되는 대출관련 수수료 안내표</caption>
+                                            <colgroup>
+                                                <col width="20%">
+                                                <col width="40%">
+                                                <col width="40%">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">구분</th>
+                                                    <th scope="col">대상항목</th>
+                                                    <th scope="col">징수금액(건당)</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>제증명서 발급수수료</td>
+                                                    <td>개인신용 정보 이용 및 제공 사실 발급</td>
+                                                    <td>우편 발송 1회 기준 3,000원(단, 창구 방문 발급 시 무료)</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="txtBox">
+                                        <p class="dot">기타 상품별 상세수수료는 각 상품안내페이지의 상품안내를 참조하여 주시기 바랍니다. </p> <button
+                                            type="button" id="Btn02" title="예금상품">예금상품</button> <button type="button"
+                                            id="Btn03" title="대출상품">대출상품</button>
+                                    </div>
+                                </li>
+                            </ol>
+                        </dd>
+                    </dl>
+
+                    <dl class="ifrs-Wrap wid100">
+                        <dt>대출모집인 수수료율 공시</dt>
+                        <dd>
+                            <ol>
+                                <li class="mgB30">
+                                    <div class="secTitBox">
+                                        <h3>대출모집 수수료율 공시</h3> <span>기준일: 2021년 08월 17일</span>
+                                    </div>
+                                    <div class="table-St last-Bnon th-bg td-bt th-br td-br tc pdLR10">
+                                        <table summary="신용대출, 햇살론으로 구분되는 대출모집 수수료율 공시 안내표">
+                                            <caption>신용대출, 햇살론으로 구분되는 대출모집 수수료율 공시 안내표</caption>
+                                            <colgroup>
+                                                <col width="10%">
+                                                <col width="10%">
+                                                <col width="*">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th colspan="2">상품구분</th>
+                                                    <th scope="col">구분</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td colspan="2">신용대출</td>
+                                                    <td>
+                                                        <div class="secTitBox">
+                                                            <p>대출모집법인 및 대출상담사</p>
+                                                        </div>
+                                                        <div class="table-St last-Bnon th-bg td-bt th-br td-br tc">
+                                                            <table summary="대출모집법인 및 대출상담사인 경우 대출금액에 따른 중개수수료 금액 안내표">
+                                                                <caption>대출모집법인 및 대출상담사인 경우 대출금액에 따른 중개수수료 금액 안내표
+                                                                </caption>
+                                                                <colgroup>
+                                                                    <col width="50%">
+                                                                    <col width="50%">
+                                                                </colgroup>
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th scope="col">지급기준</th>
+                                                                        <th scope="col">대출모집 수수료율(%)</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>5백만원 이하</td>
+                                                                        <td>대출금액의 3.0%</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>5백만원 초과</td>
+                                                                        <td>15만원 + 5백만원을 초과하는 대출금액의 2.25%</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <div class="secTitBox">
+                                                            <p>혁신금융사</p>
+                                                        </div>
+                                                        <div class="table-St last-Bnon th-bg td-bt th-br td-br tc">
+                                                            <!-- 20240802 오타 지움 -->
+                                                            <table summary="혁신금융사인 경우 대출금액에 따른 중개수수료 금액 안내표">
+                                                                <caption>혁신금융사인 경우 대출금액에 따른 중개수수료 금액 안내표</caption>
+                                                                <colgroup>
+                                                                    <col width="33.33%">
+                                                                    <col width="33.33%">
+                                                                    <col width="33.33%">
+                                                                </colgroup>
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th scope="col">지급기준</th>
+                                                                        <th scope="col">대출모집 수수료율(%)</th>
+                                                                        <th scope="col">비고</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>구분없음</td>
+                                                                        <td>대출금액의 최대 2.2% 이내</td>
+                                                                        <td></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td colspan="2">햇살론</td>
+                                                                        <td>
+                                                                            <div class="secTitBox">
+                                                                                <p>대출모집법인</p>
+                                                                            </div>
+                                                                            <div
+                                                                                class="table-St last-Bnon th-bg td-bt th-br td-br tc">
+                                                                                <table
+                                                                                    summary="대출모집법인인 경우 대출금액에 따른 중개수수료 금액 안내표">
+                                                                                    <caption>대출모집법인인 경우 대출금액에 따른 중개수수료
+                                                                                        금액 안내표</caption>
+                                                                                    <colgroup>
+                                                                                        <col width="33.33%">
+                                                                                        <col width="33.33%">
+                                                                                        <col width="33.33%">
+                                                                                    </colgroup>
+                                                                                    <thead>
+                                                                                        <tr>
+                                                                                            <th scope="col">지급기준</th>
+                                                                                            <th scope="col">대출모집 수수료율(%)
+                                                                                            </th>
+                                                                                            <th scope="col">비고</th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td>구분없음</td>
+                                                                                            <td>대출금액의 최대 2.0%</td>
+                                                                                            <td></td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </div>
+                                                                            <div class="secTitBox">
+                                                                                <p>대출상담사</p>
+                                                                            </div>
+                                                                            <div
+                                                                                class="table-St last-Bnon th-bg td-bt th-br td-br tc">
+                                                                                <table
+                                                                                    summary="대출상담사인 경우 대출금액에 따른 중개수수료 금액 안내표">
+                                                                                    <caption>대출상담사인 경우 대출금액에 따른 중개수수료 금액
+                                                                                        안내표</caption>
+                                                                                    <colgroup>
+                                                                                        <col width="50%">
+                                                                                        <col width="50%">
+                                                                                    </colgroup>
+                                                                                    <thead>
+                                                                                        <tr>
+                                                                                            <th scope="col">지급기준</th>
+                                                                                            <th scope="col">대출모집 수수료율(%)
+                                                                                            </th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td>대출실적 금액 10억 미만</td>
+                                                                                            <td>대출금액의 1.5%</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>대출실적 금액 10억 이상</td>
+                                                                                            <td>대출금액의 1.8%</td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <div class="txtBox">
+                                                            <p class="dot">당 저축은행에서 판매하는 대출의 금리는 경로에 따라 모집수수료가 포함되어
+                                                                있습니다. 따라서 고객이 별도로 부담하지 않습니다.</p>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </li>
+                            </ol>
+                        </dd>
+                    </dl>
+
+
+                </div>
+            </div>
+
+        </article>
+
+    </section>
+    <!-- // section -->
+
+    <!-- // footer -->
+    <footer>
+        <script>
+            $(document).ready(function () {
+                $('footer').load('../public/inc/footer.html');
+            });
+        </script>
+    </footer>
+    <!-- footer // -->
+</body>
+
+</html>

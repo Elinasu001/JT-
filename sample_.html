@@ -1,0 +1,2019 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>jt저축은행 퍼블 sample</title>
+  <script type="text/javascript" src="./public/js/jquery.min.js"></script>
+  <script type="text/javascript" src="./public/js/common.js"></script>
+  <script type="text/javascript" src="./public/js/agree.js"></script>
+  <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+  <link rel="stylesheet" type="text/css" href="./public/css/reset.css"/>
+  <link rel="stylesheet" type="text/css" href="./public/css/common.css"/>
+  <link rel="stylesheet" type="text/css" href="./public/css/common01.css"/>
+  <link rel="stylesheet" type="text/css" href="./public/css/common02.css"/>
+  <link rel="stylesheet" type="text/css" href="./public/css/footer.css"/>
+
+  <style>
+	.sampleWrap { width:100%; margin:0 auto; }
+	.sampleWrap input { box-sizing:border-box; }
+
+	.sampleWrap section { padding:50px 20px 0; }
+	.sampleWrap section:after { content:""; clear:both; display:block; }
+	.sampleWrap section>h2 { text-align:left; font-size:20px; padding:20px 0; }
+	.sampleWrap section>h3 { text-align:left; font-size:16px; padding:20px 0; }
+	.sampleWrap input:focus-visible { outline:none; }
+	.sampleWrap input:disabled { background-color:#f8f8f8; }
+  </style>
+    
+<script>
+$(document).ready(function(){
+
+	//tab menu 제어
+    $(".tabMenu03>li, .tabMenu>li").on("click",function(){
+        $(this).parents("ul").find("li").removeClass("on")
+        $(this).addClass("on")
+    });
+
+	//상단 tab 제어
+	$(".tabWrap>li").on("click",function(){
+		$(this).parents("ul").find("li").removeClass("on");
+		$(this).addClass("on");
+	});
+	
+});
+</script>
+
+</head>
+<body>
+<div class="sampleWrap">
+
+<div class="call-admin">
+<div>
+
+<section>
+	<h2>button</h2>
+	<button type="button" class="btnG02">본인확인송금</button>
+	<button type="button" class="btnG03">본인확인송금</button>
+	<button type="button" class="btnBc01">본인확인송금</button>
+	<button type="button" class="btnBc02">본인확인송금</button>
+	<br /><br />
+	<button type="button" title="문의하기 페이지 바로가기" class="txtBtnArr">문의하기</button>
+	<button type="button" title="대출신청 페이지 바로가기" class="btnB01">대출신청</button>
+	<button type="button" title="상담신청 페이지 바로가기" class="btnG01">상담신청</button>
+	<button type="button" title="온라인상담신청 페이지 바로가기" class="txtBtnArr02">온라인상담신청</button>
+	<button type="button" title="약관전체동의" class="btnNv01">약관전체동의</button>
+</section>
+
+<section>
+	<h2>a</h2>
+	<p class="rinkBtnWrap">
+		<a href="#">금융소비자보호 실태평가 저축은행중앙회 공시 바로가기</a>
+	</p>
+				
+</section>
+
+
+<section>
+	<h2>input - 02</h2>
+	<form method="post">
+		<div class="inpWrap">
+			<p><label for="">input 100%</label></p>
+			<p class="inpBox"><!-- 기본: inpBox / 버튼: inpBtn / 인증번호: inpTime / 우측글자: inpTxt-->
+				<input type="text" name="" placeholder="입력해주세요."/>
+			</p>
+			<input type="submit" class="btnG02" value="전송"/>
+		</div>
+	</form>
+
+	<div class="inpWrap">
+		<p><label for="">input 100% - button</label></p>
+		<p class="inpBtn"><!-- 기본: inpBox / 버튼: inpBtn / 인증번호: inpTime / 우측글자: inpTxt-->
+			<input type="text" name="" placeholder="입력해주세요."/>
+			<button type="button" class="btnG03">전송</button>
+		</p>
+	</div>
+
+	<div class="inpWrap">
+		<p><label for="">input 100% - 인증번호</label></p>
+		<p class="inpTime"><!-- 기본: inpBox / 버튼: inpBtn / 인증번호: inpTime / 우측글자: inpTxt-->
+			<input type="tel" name="" placeholder="입력해주세요." maxlength="6"/>
+			<span class="time">0:00</span>
+			<button type="button" class="btnG03">재요청</button>
+		</p>
+	</div>
+
+	<div class="inpWrap">
+		<p><label for="">input 100% - 원,개월</label></p>
+		<p class="inpTxt"><!-- 기본: inpBox / 버튼: inpBtn / 인증번호: inpTime / 우측글자: inpTxt-->
+			<input type="text" name="" placeholder="입력해주세요."/>
+			<span>원</span>
+		</p>
+	</div>
+
+	<div class="inpWrap">
+		<p><label for="">input 50% *2</label></p>
+		<p class="inp50"><!-- 기본: inp50 / 전화번호: inp50Num -->
+			<input type="text" name="" placeholder="입력해주세요."/>
+			<input type="text" name="" placeholder="입력해주세요."/>
+		</p>
+	</div>
+    <div class="inpWrap">
+        <p><label for="">input 50% *2 - 캘린더</label></p>
+        <p class="inp50"><!-- input type="date"로 변경, 기본: inp50 / 전화번호: inp50Num -->
+            <input type="date" name="" placeholder="입력해주세요."/>
+            <input type="date" name="" placeholder="입력해주세요."/>
+        </p>
+    </div>
+
+	<div class="inpWrap">
+		<p><label for="">input 50% *2 - 주민번호,전화번호</label></p>
+		<p class="inp50Num"><!-- 기본: inp50 / 전화번호: inp50Num -->
+			<input type="text" name="" placeholder="입력해주세요."/>
+			<b>&#45;</b>
+			<input type="text" name="" placeholder="입력해주세요."/>
+		</p>
+	</div>
+    
+    <div class="inpWrap">
+        <p><label for="">input 100% *n</label></p>
+		<!--클래스 inpWrap에 클래스 inpDoz 추가-->
+		<div class="inpDoz">
+			<p class="inpBtn">
+				<input type="text" name="" placeholder="" disabled=""/>
+				<button type="button" class="btnG03">전송</button>
+			</p>
+			<p class="inpBox">
+				<input type="text" name="" placeholder="" disabled=""/>
+			</p>
+			<p class="inpBox">
+				<input type="text" name="" placeholder="상세주소를 입력해주세요." />
+			</p>
+		</div>
+    </div>
+</section>
+
+<section>
+	<h2>tab - 02</h2>
+	<h3>tab *4</h3>
+	<ul class="tabMenu">
+		<!-- li 안에 select가 있는 경우 클래스 liSel 추가 -->
+		<li class="on">최근입금</li>
+		<li class="">자주쓰는</li>
+		<li class="">내계좌</li>
+		<li class="">입금지정</li>
+	</ul>
+
+	<h3>tab *4 - 통신사</h3>
+    <ul class="tabMenu">
+		<!-- li 안에 select가 있는 경우 클래스 liSel 추가 -->
+        <li value="1" class="on">SKT</li>
+        <li value="2">KT</li>
+        <li value="3">LGU+</li>
+        <li class="liSel">
+            <select>
+                <option value="">알뜰폰</option>
+                <option value="5">알뜰폰 SKT</option>
+                <option value="6">알뜰폰 KT</option>
+                <option value="7">알뜰폰 LGU+</option>
+            </select>
+        </li>
+    </ul>
+
+    <h3>tab *4 + input 100% *n</h3>
+	<div class="tabInpWrap">
+		<ul class="tabMenu">
+			<!-- li 안에 select가 있는 경우 클래스 liSel 추가 -->
+			<li class="on">최근입금</li>
+			<li class="">자주쓰는</li>
+			<li class="">내계좌</li>
+			<li class="">입금지정</li>
+		</ul>
+		<div class="inpWrap">
+			<!-- label,input이 함께일 때 inpLabBox로 변경, label 안에 select가 있는 경우 클래스 labSel 추가 -->
+			<p class="inpLabBox labSel">
+				<label for="">
+					<select>
+						<option val="">은행선택</option>
+						<option val="">국민은행</option>
+					</select>
+				</label>
+				<input type="text" name="" placeholder="입력해주세요.">
+			</p>
+			<p class="inpBox">
+				<input type="text" name="" placeholder="계좌번호를 입력해주세요.">
+			</p>
+		</div>
+	</div>
+    
+    <h3>tab *4 + input 100% - 통신사</h3>
+	<div class="tabInpWrap">
+		<ul class="tabMenu">
+			<!-- li 안에 select가 있는 경우 클래스 liSel 추가 -->
+			<li value="1" class="on">SKT</li>
+			<li value="2">KT</li>
+			<li value="3">LGU+</li>
+			<li class="liSel">
+				<select>
+					<option value="">알뜰폰</option>
+					<option value="5">알뜰폰 SKT</option>
+					<option value="6">알뜰폰 KT</option>
+					<option value="7">알뜰폰 LGU+</option>
+				</select>
+			</li>
+		</ul>
+		<div class="inpWrap">
+			<!-- label,input이 함께일 때 inpLabBox로 변경 -->
+			<p class="inpLabBox inpLabOnly"><!-- p태그가 하나이면서 label이 올때: inpLabOnly / label 없을 때: inpOnly -->
+				<label for="">휴대폰번호</label>
+				<input type="tel" name=""maxlength="11" placeholder="-제외, 숫자만 입력" title="휴대폰번호" value="">
+			</p>
+		</div>
+	</div>
+
+	<h3>tab radio *4 + input 100% - 금액</h3>
+	<div class="tabInpWrap">
+		<ul class="tabMenu02"><!-- tab radio가 4개: tabMenu02 / tab radio가 5개: tabMenu02_5 -->
+			<li>
+				<input type="radio" name=""/>
+				<label for="" class="">+100만</label>
+			</li>
+			<li>
+				<input type="radio" name=""/>
+				<label for="" class="">+10만</label>
+			</li>
+			<li>
+				<input type="radio" name=""/>
+				<label for="" class="">+5만</label>
+			</li>
+			<li>
+				<input type="radio" name=""/>
+				<label for="" class="">+1만</label>
+			</li>
+		</ul>
+		<div class="inpWrap">
+			<p class="inpTxt inpOnly">
+				<input type="tel" value="" name="" placeholder="이체금액을 입력해주세요." title="이체금액입력" maxlength="11" data-validate="required">
+				<span>원</span>
+			</p>
+		</div>
+	</div>
+
+	<h3>tab radio *5 + input 100% - 금액</h3>
+	<div class="tabInpWrap">
+		<ul class="tabMenu02_5"><!-- tab radio가 4개: tabMenu02 / tab radio가 5개: tabMenu02_5 -->
+			<li>
+				<input type="radio" name=""/>
+				<label for="" class="">+100만</label>
+			</li>
+			<li>
+				<input type="radio" name=""/>
+				<label for="" class="">+10만</label>
+			</li>
+			<li>
+				<input type="radio" name=""/>
+				<label for="" class="">+5만</label>
+			</li>
+			<li>
+				<input type="radio" name=""/>
+				<label for="" class="">+1만</label>
+			</li>
+			<li>
+				<input type="radio" name=""/>
+				<label for="" class="">전액</label>
+			</li>
+		</ul>
+		<div class="inpWrap">
+			<p class="inpTxt inpOnly"><!-- p태그가 하나이면서 label이 올때: inpLabOnly / label 없을 때: inpOnly -->
+				<input type="tel" value="" name="" placeholder="이체금액을 입력해주세요." title="이체금액입력" maxlength="11"/>
+				<span>원</span>
+			</p>
+		</div>
+	</div>
+</section>
+
+
+<section>
+	<h2>input - 03</h2>
+	<div class="inpWrap">
+		<p><label for="">input 100%, txt</label></p>
+		<p class="inpTxt02">
+			<input type="text" name="" placeholder="입력해주세요."/>
+			<span>원</span>
+		</p>
+		<p class="bulR">필수항목입니다.</p>
+	</div>
+
+	<div class="inpWrap">
+		<p><label for="">input 100%, disabled</label></p>
+		<p class="inpBox02">
+			<input type="text" name="" placeholder="입력해주세요." disabled="disabled"/>
+		</p> 
+	</div>
+
+	<div class="inpWrap">
+		<p><label for="">input 100, *2</label></p>
+		<p class="inpBox02">
+			<input type="text" name="" placeholder="입력해주세요."/>
+			<input type="text" name="" placeholder="입력해주세요."/>
+		</p>
+	</div>
+
+	<div class="inpWrap">
+		<p><label for="">input 50, *2</label></p>
+		<p class="inp5002">
+			<input type="text" name="" placeholder="입력해주세요."/>
+			<input type="text" name="" placeholder="입력해주세요."/>
+		</p>
+	</div>
+</section>
+
+<section>
+	<h2>약관동의</h2>
+	<h3>약관동의 - 필수</h3>
+	<ul class="chkWrap">
+		<li class="allChk">
+			<input type="checkbox" class="ie10" name="chk01_A"/>
+			<label class="" for="">전체 동의합니다.</label>
+		</li>
+		<li class="required">
+			<input type="checkbox" class="" name="chk01_1"/> 
+			<label class="" for=""><b>[필수]</b> 본인인증서비스이용 약관동의</label>
+		</li>
+		<li class="required">
+			<input type="checkbox" class="" name="chk01_2"/>
+			<label class="" for=""><b>[필수]</b> 고유식별정보처리 동의</label>
+		</li>
+		<li class="required">
+			<input type="checkbox" class="" name="chk01_3"/> 
+			<label class="" for=""><b>[필수]</b> 이동통신사이용 약관동의</label>
+		</li>
+		<li class="required">
+			<input type="checkbox" class="" name="chk01_4"/>
+			<label class="" for=""><b>[필수]</b> 개인정보이용 동의</label>
+		</li>
+		
+	</ul>
+
+	<h3>약관동의 - 필수, 선택</h3>
+	<ul class="chkWrap">
+		<li class="allChk">
+			<input type="checkbox" class="" name="chk02_A"/>
+			<label class="" for="chk02_A">전체 동의합니다.</label>
+		</li>
+		<li class="required">
+			<input type="checkbox" class="" name="chk02_1"/> 
+			<label class="" for="chk02_1"><b>[필수]</b> 본인인증서비스이용 약관동의</label>
+		</li>
+		<li class="required">
+			<input type="checkbox" class="" name="chk02_2"/>
+			<label class="" for="chk02_2"><b>[필수]</b> 고유식별정보처리 동의</label>
+		</li>
+		<li class="required">
+			<input type="checkbox" class="" name="chk02_3"/> 
+			<label class="" for="chk02_3"><b>[필수]</b> 이동통신사이용 약관동의</label>
+		</li>
+		<li class="required">
+			<input type="checkbox" class="" name="chk02_4"/>
+			<label class="" for="chk02_4"><b>[필수]</b> 개인정보이용 동의</label>
+		</li>
+
+		<li class="choice">
+			<div>
+				<input type="checkbox" class="" name="chk02_5"/>
+				<label class="" for="chk02_5">[선택] 개인(신용)정보수집제공동의</label>
+				
+				<ul class="radioBox">
+					<li>
+						<input type="radio" name="radio08" placeholder="입력해주세요.">
+						<label for="radio08_01">발송 거부</label>
+					</li>
+					<li>
+						<input type="radio" name="radio08" placeholder="입력해주세요.">
+						<label for="radio08_02">현 거주지로 수신</label>
+					</li>
+				</ul>
+			</div>
+
+			<div>
+				<p>상품서비스 안내수단</p>
+				<ul class="selChkBox">
+					<li>
+						<input type="checkbox"  class="argee" name="argee" checked="">
+						<label for="ch1">선택1</label>
+					</li>
+					<li>
+						<input type="checkbox" class="argee" name="argee">
+						<label for="ch2">선택2</label>
+					</li>
+					<li>
+						<input type="checkbox" class="argee" name="argee">
+						<label for="ch3">선택3</label>
+					</li>
+					<li>
+						<input type="checkbox" class="argee" name="argee">
+						<label for="ch4">선택4</label>
+					</li>
+				</ul>
+			</div>
+		</li>
+	</ul>
+</section>
+
+<section>
+
+<div class="tableWrap">
+	<div class="table-St th-bg th-bb th-br td-bb td-pdl40">
+		<table summary="번호, 제목, 게시일, 접수기간, 입사지원서에 대한 직원채용 게시판 표">
+			<caption>직원채용 게시판</caption>
+			<colgroup>
+				<col width="20%"/>
+				<col width="*"/>
+			</colgroup>
+			<tbody>
+				<tr>
+					<th class="tc">모집부문/지원자격</th>
+					<td>17,875</td>
+				</tr>
+				<tr>
+					<th class="tc">모집부문/지원자격</th>
+					<td>17,875</td>
+				</tr>
+				<tr>
+					<th class="tc">모집부문/지원자격</th>
+					<td>17,875</td>
+				</tr>
+				<tr>
+					<th class="tc">모집부문/지원자격</th>
+					<td>17,875</td>
+				</tr>
+				<tr>
+					<th class="tc">모집부문/지원자격</th>
+					<td>17,875</td>
+				</tr>
+				<tr>
+					<th class="tc">모집부문/지원자격</th>
+					<td>17,875</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+
+<div class="tableWrap">
+	<div class="secTitBox02">
+		<div>기본 정보 입력</div>
+		<span class="txtR">모든 항목은 필수입력 사항입니다.</span>
+	</div>
+	<div class="table-St th-bg th-bb td-bb th-br td-pdl40 th-pdl40">
+		<table summary="성명, 주민등록번호, 핸드폰번호, 상품선택, 입사일자, 대출신청금액, 직업종류, 직무구분, 연간소득금액, 본인인증으로 구성된 간편한도조회 기본정보 입력표">
+			<caption>성명, 주민등록번호, 핸드폰번호, 상품선택, 입사일자, 대출신청금액, 직업종류, 직무구분, 연간소득금액, 본인인증으로 구성된 간편한도조회 기본정보 입력표</caption>
+			<colgroup>
+				<col width="15%">
+				<col width="*">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th scope="col"><label for="01">성명</label></th>
+					<td class="inpBox03">
+						<input type="text" name="table_name" placeholder="입력해주세요." id="01">
+					</td>
+				</tr>
+				<tr>
+					<th scope="col"><label for="02-1">주민등록번호</label></th>
+					<td class="inpNum03">
+						<input type="tel" name="table_birth01" title="주민등록번호 앞자리" placeholder="입력해주세요." maxlength="6" id="02-1">
+						<b>-</b>
+						<input type="tel" name="table_birth01" title="주민등록번호 뒷자리" placeholder="입력해주세요." maxlength="7" id="02-2">
+					</td>
+				</tr>
+				<tr>
+					<th scope="col"><label for="03-1">핸드폰번호</label></th>
+					<td class="inpBox03 inpTel li4">
+						<ul>
+							<li>
+								<select id="03-1" title="핸드폰번호 통신사">
+									<option value="">통신사</option>
+									<option value="1">SKT</option>
+									<option value="2">KT</option>
+									<option value="3">LGU+</option>
+									<option value="4">알뜰폰 SKT</option>
+									<option value="5">알뜰폰 KT</option>
+									<option value="6">알뜰폰 LGU+</option>
+									<option value="7">기타</option>
+								</select>
+							</li>
+							<li>
+								<select id="03-2" title="핸드폰번호 앞 세자리">
+									<option value="">선택</option>
+									<option value="1">010</option>
+									<option value="2">011</option>
+									<option value="3">016</option>
+									<option value="4">017</option>
+									<option value="5">018</option>
+									<option value="6">019</option>
+									<option value="7">KT-파워텔</option>
+								</select>
+							</li>
+							<li>
+								<b>-</b>
+								<input type="tel" id="03-3" name="table_tel01" title="핸드폰번호 중간 네자리" placeholder="입력해주세요." maxlength="4">
+							</li>
+							<li>
+								<b>-</b>
+								<input type="tel" id="03-4" name="table_tel01" title="핸드폰번호 뒤 네자리" placeholder="입력해주세요." maxlength="4">
+							</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<th scope="col"><label for="05">상품선택</label></th>
+					<td class="inpBox03">
+						<ul class="inpRadio" id="05">
+							<li>
+								<input type="radio" id="05-1" name="table_radio01" title="상품선택 직장인" placeholder="입력해주세요.">
+								<label for="05-1">직장인</label>
+							</li>
+							<li>
+								<input type="radio" id="05-2" name="table_radio01" title="상품선택 프리랜서" placeholder="입력해주세요.">
+								<label for="05-2">프리랜서</label>
+							</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<th scope="col"><label for="06">입사일자</label></th>
+					<td class="inpBox03 inpDate">
+						<input type="date" id="06" name="table_date01" placeholder="입력해주세요.">
+					</td>
+				</tr>
+				<tr>
+					<th scope="col"><label for="07">대출신청금액</label></th>
+					<td class="inpBox03">
+						<input type="tel" id="07" name="table_input01" placeholder="입력해주세요.">
+						<span>만원</span>
+					</td>
+				</tr>
+				<tr>
+					<th scope="col" rowspan="2"><label for="08-1">직업종류</label></th>
+					<td class="inpBox03 inpJob">
+						<ul>
+							<li>
+								<select id="08-1" title="직업종류 선택">
+									<option value="">직업종류 선택</option>
+									<option value="1">공무원</option>
+									<option value="2">교육서비스</option>
+									<option value="3">공공기관</option>
+									<option value="4">병원</option>
+									<option value="5">금융기관</option>
+									<option value="6">기업</option>
+									<option value="7">기타법인</option>
+									<option value="8">기타</option>
+								</select>
+							</li>
+							<li>
+								<select id="08-2" title="직업종류 세부직업 선택">
+									<option value="">세부직업종류 선택</option>
+									<option value="1"></option>
+									<option value="2"></option>
+									<option value="3"></option>
+								</select>
+							</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td class="inpBox03 inpJob">
+						<ul>
+							<li>
+								<select id="08-3" title="직업종류 계약형태 선택">
+									<option value="">계약형태 선택</option>
+									<option value="1">정규직</option>
+									<option value="2">계약직</option>
+									<option value="3">프리랜서</option>
+									<option value="4">일용직</option>
+								</select>
+							</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<th scope="col"><label for="09">직무구분</label></th>
+					<td class="inpBox03 inpJob">
+						<ul>
+							<li>
+								<select id="09" title="직무구분 선택">
+									<option value="">직무 선택</option>
+									<option value="1">사무직</option>
+									<option value="2">전문직</option>
+									<option value="3">생산직</option>
+									<option value="4">영업직</option>
+									<option value="5">기타</option>
+								</select>
+							</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<th scope="col"><label for="10">연간소득금액</label></th>
+					<td class="inpBox03">
+						<input type="tel" id="10" name="table_input02" placeholder="입력해주세요.">
+						<span>만원</span>
+					</td>
+				</tr>
+				<tr>
+					<th scope="col"><label for="11">본인인증</label></th>
+					<td class="inpBox03">
+						<ul class="inpRadio" id="11">
+							<li>
+								<input type="radio" id="11-1" name="table_radio02" placeholder="입력해주세요.">
+								<label for="11-1">휴대폰 본인인증</label>
+							</li>
+						</ul>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+
+<h3>ul li 웹 약관</h3>
+<div class="tableWrap">
+	<div class="secTitBox02">
+		<div>개인(신용)정보 관련 동의</div>
+		<button type="button" title="약관전체동의" class="btnNv01">약관전체동의</button>
+	</div>
+
+	<ul class="agreeList reqChk"><!-- 필수약관 클래스 reqChk 로 체크 제어 -->
+		<li class="agreeHead">
+			<div>※ [필수] 적합성·적정성 원칙 확인서 (가계용) <span class="txtR">미확인</span><span class="txtBl">확인</span></div>
+			<button type="button" title="가계용 적합성·적정성 원칙 확인서 보기" class="btnWh01">확인서보기</button>
+		</li>
+	</ul>
+
+	<ul class="agreeList reqChk">
+		<li class="agreeHead">
+			<div>※ [필수] 전자금융거래기본약관</div>
+			<button type="button" title="전자금융거래기본약관 자세히보기" class="btnWh01">자세히보기</button>
+		</li>
+		<li class="agreeBody">
+			<div>- 전자금융거래기본약관 (필수적 정보)</div>
+			<ul class="inpRadio">
+				<li>
+					<input type="radio" id="chk02-1" name="check02_2">
+					<label for="chk02-1">동의하지않음</label>
+				</li>
+				<li class="chk">
+					<input type="radio" id="chk02-2" name="check02_2">
+					<label for="chk02-2">동의함</label>
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+	<ul class="agreeList reqChk">
+		<li class="agreeHead">
+			<div>[필수] 개인(신용)정보 수집·이용·제공 동의서(여신금융거래)</div>
+			<button type="button" title="개인(신용)정보 수집·이용·제공 동의서(여신금융거래) 자세히보기" class="btnWh01">자세히보기</button>
+		</li>
+		<li class="agreeBody">
+			<div>- 개인(신용)정보를 수집·이용 동의여부</div>
+			<ul class="inpRadio">
+				<li>
+					<input type="radio" id="chk03-1" name="check03_2">
+					<label for="chk03-1">동의하지않음</label>
+				</li>
+				<li class="chk">
+					<input type="radio" id="chk03-2" name="check03_2">
+					<label for="chk03-2">동의함</label>
+				</li>
+			</ul>
+		</li>
+		<li class="agreeBody">
+			<div>- 고유식별정보를 수집·이용 동의여부</div>
+			<ul class="inpRadio">
+				<li>
+					<input type="radio" id="chk04-1" name="check03_3">
+					<label for="chk04-1">동의하지않음</label>
+				</li>
+				<li class="chk">
+					<input type="radio" id="chk04-2" name="check03_3">
+					<label for="chk04-2">동의함</label>
+				</li>
+			</ul>
+		</li>
+		<li class="agreeBody">
+			<div>- 개인(신용)정보를 제공 동의여부</div>
+			<ul class="inpRadio">
+				<li>
+					<input type="radio" id="chk05-1" name="check03_4">
+					<label for="chk05-1">동의하지않음</label>
+				</li>
+				<li class="chk">
+					<input type="radio" id="chk05-2" name="check03_4">
+					<label for="chk05-2">동의함</label>
+				</li>
+			</ul>
+		</li>
+		<li class="agreeBody">
+			<div>- 고유식별정보를 제공 동의여부</div>
+			<ul class="inpRadio">
+				<li>
+					<input type="radio" id="chk06-1" name="check03_5">
+					<label for="chk06-1">동의하지않음</label>
+				</li>
+				<li>
+					<input type="radio" id="chk06-2" name="check03_5">
+					<label for="chk06-2">동의함</label>
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+	<ul class="agreeList reqChk">
+		<li class="agreeHead">
+			<div>[필수] 개인(신용)정보 제3자 제공 동의서</div>
+			<button type="button" title="개인(신용)정보 제3자 제공 동의서 보기" class="btnWh01">확인서보기</button>
+			<ul class="inpRadio">
+				<li>
+					<input type="radio" id="chk07-1" name="check04_1">
+					<label for="chk07-1">동의하지않음</label>
+				</li>
+				<li class="chk">
+					<input type="radio" id="chk07-2" name="check04_1">
+					<label for="chk07-2">동의함</label>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+
+<div class="tableWrap">
+	<div class="secTitBox02">
+		<div>개인(신용)정보 관련 동의</div>
+		<button type="button" title="약관전체동의" class="btnNv01">약관전체동의</button>
+	</div>
+
+	<ul class="agreeList reqChk"><!-- 필수약관 클래스 reqChk 로 체크 제어 -->
+		<li class="agreeHead">
+			<div>※ [필수] 적합성·적정성 원칙 확인서 (가계용) <span class="txtR">미확인</span><span class="txtBl">확인</span></div>
+			<button type="button" title="가계용 적합성·적정성 원칙 확인서 보기" class="btnWh01">확인서보기</button>
+		</li>
+		<li class="agreeHead">
+			<div>※ [필수] 전자금융거래기본약관</div>
+			<button type="button" title="전자금융거래기본약관 자세히보기" class="btnWh01">자세히보기</button>
+		</li>
+		<li class="agreeBody">
+			<div>- 전자금융거래기본약관 (필수적 정보)</div>
+			<ul class="inpRadio">
+				<li>
+					<input type="radio" id="chk02-1" name="check02_2">
+					<label for="chk02-1">동의하지않음</label>
+				</li>
+				<li class="chk">
+					<input type="radio" id="chk02-2" name="check02_2">
+					<label for="chk02-2">동의함</label>
+				</li>
+			</ul>
+		</li>
+		<li class="agreeHead">
+			<div>[필수] 개인(신용)정보 수집·이용·제공 동의서(여신금융거래)</div>
+			<button type="button" title="개인(신용)정보 수집·이용·제공 동의서(여신금융거래) 자세히보기" class="btnWh01">자세히보기</button>
+		</li>
+		<li class="agreeBody">
+			<div>- 개인(신용)정보를 수집·이용 동의여부</div>
+			<ul class="inpRadio">
+				<li>
+					<input type="radio" id="chk03-1" name="check03_2">
+					<label for="chk03-1">동의하지않음</label>
+				</li>
+				<li class="chk">
+					<input type="radio" id="chk03-2" name="check03_2">
+					<label for="chk03-2">동의함</label>
+				</li>
+			</ul>
+		</li>
+		<li class="agreeBody">
+			<div>- 고유식별정보를 수집·이용 동의여부</div>
+			<ul class="inpRadio">
+				<li>
+					<input type="radio" id="chk04-1" name="check03_3">
+					<label for="chk04-1">동의하지않음</label>
+				</li>
+				<li class="chk">
+					<input type="radio" id="chk04-2" name="check03_3">
+					<label for="chk04-2">동의함</label>
+				</li>
+			</ul>
+		</li>
+		<li class="agreeBody">
+			<div>- 개인(신용)정보를 제공 동의여부</div>
+			<ul class="inpRadio">
+				<li>
+					<input type="radio" id="chk05-1" name="check03_4">
+					<label for="chk05-1">동의하지않음</label>
+				</li>
+				<li class="chk">
+					<input type="radio" id="chk05-2" name="check03_4">
+					<label for="chk05-2">동의함</label>
+				</li>
+			</ul>
+		</li>
+		<li class="agreeBody">
+			<div>- 고유식별정보를 제공 동의여부</div>
+			<ul class="inpRadio">
+				<li>
+					<input type="radio" id="chk06-1" name="check03_5">
+					<label for="chk06-1">동의하지않음</label>
+				</li>
+				<li>
+					<input type="radio" id="chk06-2" name="check03_5">
+					<label for="chk06-2">동의함</label>
+				</li>
+			</ul>
+		</li>
+		<li class="agreeHead">
+			<div>[필수] 개인(신용)정보 제3자 제공 동의서</div>
+			<button type="button" title="개인(신용)정보 제3자 제공 동의서 보기" class="btnWh01">확인서보기</button>
+			<ul class="inpRadio">
+				<li>
+					<input type="radio" id="chk07-1" name="check04_1">
+					<label for="chk07-1">동의하지않음</label>
+				</li>
+				<li class="chk">
+					<input type="radio" id="chk07-2" name="check04_1">
+					<label for="chk07-2">동의함</label>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+
+<br /><br />
+
+<h3> table 웹 약관 </h3>
+<div class="table-St td-bb td-pdl40 td-pdr40">
+	<table class="table02" summary="[필수] 적합성·적정성 원칙 확인서(가계용), [필수] 전자금융거래기본약관, [필수] 개인(신용)정보 제3자 제공 동의서 에 대한 약관동의 표" >
+		<caption>약관동의 표</caption>
+		<colgroup>
+			<col width="*"/>
+		</colgroup>
+		<tbody>
+			<tr>
+				<td class="required_check">
+					<label>&#8251; [필수] 적합성·적정성 원칙 확인서(가계용)</label>
+					<button class="btnG03">자세히보기</button>
+				</td>
+			</tr>
+			<tr>
+				<td class="bgC_g">
+					<label>&#8251; [필수] 전자금융거래기본약관</label>
+					<button class="btnG03">자세히보기</button>
+				</td>
+			</tr>
+			<tr>
+				<td class="bgC_wh">
+					<label>&#45; 전자금융거래기본약관</label>
+					<ul class="inpRadio">
+						<li>
+							<input type="radio" name="radio03"/>
+							<label for="">동의하지않음</label>
+						</li>
+						<li>
+							<input type="radio" name="radio03"/>
+							<label for="">동의함</label>
+						</li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="bgC_wh">
+					<label>&#45; 개인(신용)정보 제공 동의여부</label>
+					<ul class="inpRadio">
+						<li>
+							<input type="radio" name="radio04"/>
+							<label for="">동의하지않음</label>
+						</li>
+						<li>
+							<input type="radio" name="radio04"/>
+							<label for="">동의함</label>
+						</li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="bgC_wh">
+					<label>&#45; 고유식별정보 제공 동의여부</label>
+					<ul class="inpRadio">
+						<li>
+							<input type="radio" name="radio05"/>
+							<label for="">동의하지않음</label>
+						</li>
+						<li>
+							<input type="radio" name="radio05"/>
+							<label for="">동의함</label>
+						</li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="bgC_g">
+					<label>&#8251; [필수] 개인(신용)정보 제3자 제공 동의서</label>
+					<button class="btnG03">자세히보기</button>
+					<ul class="inpRadio">
+						<li>
+							<input type="radio" name="radio06"/>
+							<label for="">동의하지않음</label>
+						</li>
+						<li>
+							<input type="radio" name="radio06"/>
+							<label for="">동의함</label>
+						</li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="bgC_wh">
+					<label>&#45; 고유식별정보 제공 동의여부</label>
+					<ul class="inpRadio">
+						<li>
+							<input type="radio" name="radio07"/>
+							<label for="">동의하지않음</label>
+						</li>
+						<li>
+							<input type="radio" name="radio07"/>
+							<label for="">동의함</label>
+						</li>
+					</ul>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<h2>h3 tab</h2>
+<ul class="tabWrap li4"><!--li2, li3, li4 로 갯수 조절-->
+	<li><a href="#">CEO인사말</a></li> 
+	<li class="on"><a href="#">사업영역</a></li>
+	<li><a href="#">은행연혁</a></li>
+	<li><a href="#">조직도</a></li>
+</ul>
+
+<ul class="tabWrap li3"><!--li2, li3, li4 로 갯수 조절-->
+	<li class="on"><a href="#">사업영역</a></li> 
+	<li><a href="#">CEO인사말</a></li>
+	<li><a href="#">조직도</a></li>
+</ul>
+
+<ul class="tabWrap li2"><!--li2, li3, li4 로 갯수 조절-->
+	<li class="on"><a href="#">민원공시</a></li> 
+	<li><a href="#">실태평가</a></li>
+</ul>
+
+</section>
+
+
+<section>
+<h2>게시판 - 입찰정보</h2>
+<div class="tableWrap">
+	<div class="table-St type01 th-bg td-bt tc">
+		<table summary="입찰공고명, 등록일, 입찰마감일로 구성되어 있는 입찰정보 게시판 표">
+			<caption>입찰공고명, 등록일, 입찰마감일로 구성되어 있는 입찰정보 게시판 표</caption>
+			<colgroup>
+				<col width="*" />
+				<col width="12.5%" />
+				<col width="12.5%" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">입찰공고명</th>
+					<th scope="col">등록일</th>
+					<th scope="col">입찰마감일</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="tit"><a href="#" title="JT저축은행 입찰정보 (2022.01.12~2022.02.12)">JT저축은행 입찰정보 (2022.01.12~2022.02.12)</a></td>
+					<td>2022.01.12</td>
+					<td>2022.01.12</td>
+				</tr>
+				<tr>
+					<td class="tit"><a href="#" title="JT저축은행 입찰정보 (2022.01.12~2022.02.12)">JT저축은행 입찰정보 (2022.01.12~2022.02.12)</a></td>
+					<td>2022.01.12</td>
+					<td>2022.01.12</td>
+				</tr>
+				<tr>
+					<td class="tit"><a href="#" title="JT저축은행 입찰정보 (2022.01.12~2022.02.12)">JT저축은행 입찰정보 (2022.01.12~2022.02.12)</a></td>
+					<td>2022.01.12</td>
+					<td>2022.01.12</td>
+				</tr>
+				<tr>
+					<td class="tit"><a href="#" title="JT저축은행 입찰정보 (2022.01.12~2022.02.12)">JT저축은행 입찰정보 (2022.01.12~2022.02.12)</a></td>
+					<td>2022.01.12</td>
+					<td>2022.01.12</td>
+				</tr>
+				<tr>
+					<td class="tit"><a href="#" title="JT저축은행 입찰정보 (2022.01.12~2022.02.12)">JT저축은행 입찰정보 (2022.01.12~2022.02.12)</a></td>
+					<td>2022.01.12</td>
+					<td>2022.01.12</td>
+				</tr>
+				<tr>
+					<td class="tit"><a href="#" title="JT저축은행 입찰정보 (2022.01.12~2022.02.12)">JT저축은행 입찰정보 (2022.01.12~2022.02.12)</a></td>
+					<td>2022.01.12</td>
+					<td>2022.01.12</td>
+				</tr>
+				<tr>
+					<td class="tit"><a href="#" title="JT저축은행 입찰정보 (2022.01.12~2022.02.12)">JT저축은행 입찰정보 (2022.01.12~2022.02.12)</a></td>
+					<td>2022.01.12</td>
+					<td>2022.01.12</td>
+				</tr>
+				<tr>
+					<td class="tit"><a href="#" title="JT저축은행 입찰정보 (2022.01.12~2022.02.12)">JT저축은행 입찰정보 (2022.01.12~2022.02.12)</a></td>
+					<td>2022.01.12</td>
+					<td>2022.01.12</td>
+				</tr>
+				<tr>
+					<td class="tit"><a href="#" title="JT저축은행 입찰정보 (2022.01.12~2022.02.12)">JT저축은행 입찰정보 (2022.01.12~2022.02.12)</a></td>
+					<td>2022.01.12</td>
+					<td>2022.01.12</td>
+				</tr>
+				<tr>
+					<td class="tit"><a href="#" title="JT저축은행 입찰정보 (2022.01.12~2022.02.12)">JT저축은행 입찰정보 (2022.01.12~2022.02.12)</a></td>
+					<td>2022.01.12</td>
+					<td>2022.01.12</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<ul class="boardPage">
+		<li><button type="button" title="이전페이지 이동 버튼"><img src="./public/img/page_arrow_icon.png" alt="이전페이지 이동 아이콘" /></button></li>
+		<li class="on"><span>1</span></li>
+		<li><span>2</span></li>
+		<li><span>3</span></li>
+		<li><button type="button" title="다음페이지 이동 버튼"><img src="./public/img/page_arrow_icon.png" alt="다음페이지 이동 아이콘" /></button></li>
+	</ul>
+</div>
+
+
+
+<h2>게시판 - 광고홍보</h2>
+<div class="tableWrap">
+	<div class="table-St type01 th-bg td-bt tc">
+		<table summary="제목, 등록일로 구성되어 있는 광고홍보 게시판 표">
+			<caption>번호, 제목, 등록일로 구성되어 있는 광고홍보 게시판 표</caption>
+			<colgroup>
+				<col width="*" />
+				<col width="12.5%" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">제목</th>
+					<th scope="col">등록일</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<!-- 클래스 titB, titGr, titYw 로 span 태그 색상 제어 -->
+					<td class="titYw"><a href="#" title="JT저축은행, 주니어 직원과 소통하며 동행한다"><span>광고홍보</span>JT저축은행, 주니어 직원과 소통하며 동행한다</a></td>
+					<td>2022.01.12</td>
+				</tr>
+				<tr>
+					<td class="titYw"><a href="#" title="JT저축은행, 주니어 직원과 소통하며 동행한다"><span>광고홍보</span>JT저축은행, 주니어 직원과 소통하며 동행한다</a></td>
+					<td>2022.01.12</td>
+				</tr>
+				<tr>
+					<td class="titYw"><a href="#" title="JT저축은행, 주니어 직원과 소통하며 동행한다"><span>광고홍보</span>JT저축은행, 주니어 직원과 소통하며 동행한다</a></td>
+					<td>2022.01.12</td>
+				</tr>
+				<tr>
+					<td class="titYw"><a href="#" title="JT저축은행, 주니어 직원과 소통하며 동행한다"><span>광고홍보</span>JT저축은행, 주니어 직원과 소통하며 동행한다</a></td>
+					<td>2022.01.12</td>
+				</tr>
+				<tr>
+					<td class="titYw"><a href="#" title="JT저축은행, 주니어 직원과 소통하며 동행한다"><span>광고홍보</span>JT저축은행, 주니어 직원과 소통하며 동행한다</a></td>
+					<td>2022.01.12</td>
+				</tr>
+				<tr>
+					<!-- 클래스 titB, titGr, titYw 로 span 태그 색상 제어 -->
+					<td class="titGr"><a href="#" title="JT저축은행, 주니어 직원과 소통하며 동행한다"><span>사회공헌</span>JT저축은행, 주니어 직원과 소통하며 동행한다</a></td>
+					<td>2022.01.12</td>
+				</tr>
+				<tr>
+					<td class="titGr"><a href="#" title="JT저축은행, 주니어 직원과 소통하며 동행한다"><span>사회공헌</span>JT저축은행, 주니어 직원과 소통하며 동행한다</a></td>
+					<td>2022.01.12</td>
+				</tr>
+				<tr>
+					<td class="titGr"><a href="#" title="JT저축은행, 주니어 직원과 소통하며 동행한다"><span>사회공헌</span>JT저축은행, 주니어 직원과 소통하며 동행한다</a></td>
+					<td>2022.01.12</td>
+				</tr>
+				<tr>
+					<td class="titGr"><a href="#" title="JT저축은행, 주니어 직원과 소통하며 동행한다"><span>사회공헌</span>JT저축은행, 주니어 직원과 소통하며 동행한다</a></td>
+					<td>2022.01.12</td>
+				</tr>
+				<tr>
+					<td class="titGr"><a href="#" title="JT저축은행, 주니어 직원과 소통하며 동행한다"><span>사회공헌</span>JT저축은행, 주니어 직원과 소통하며 동행한다</a></td>
+					<td>2022.01.12</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<ul class="boardPage">
+		<li><button type="button" title="이전페이지 이동 버튼"><img src="./public/img/page_arrow_icon.png" alt="이전페이지 이동 아이콘" /></button></li>
+		<li class="on"><span>1</span></li>
+		<li><span>2</span></li>
+		<li><span>3</span></li>
+		<li><button type="button" title="다음페이지 이동 버튼"><img src="./public/img/page_arrow_icon.png" alt="다음페이지 이동 아이콘" /></button></li>
+	</ul>
+</div>
+
+
+
+<div class="tableWrap">
+	<div class="table-St type01 th-bg td-bt tc">
+		<table summary="제목, 게시일, 기준일, 다운로드로 구성된 채용정보 게시판 표">
+			<caption>제목, 게시일, 기준일, 다운로드로 구성된 채용정보 게시판 표</caption>
+			<colgroup>
+				<col width="*" />
+				<col width="12.5%" />
+				<col width="12.5%" />
+				<col width="12.5%" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">제목</th>
+					<th scope="col">게시일</th>
+					<th scope="col">기준일</th>
+					<th scope="col">다운로드</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<!-- 클래스 titB, titGr, titYw 로 span 태그 색상 제어 -->
+					<td class="titB"><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시"><span>분기결산</span>2021년 3분기 민원발생 건수 공시</a></td>
+					<td>2021.10.26</td>
+					<td>2021.10.26</td>
+					<td class="down">
+						<ul>
+							<li><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시 pdf 다운로드 링크"><img src="./public/img/icon_download.png" alt="분기결산 2021년 3분기 민원발생 건수 공시 pdf 다운로드 링크 이미지" /></a></li>
+							<li><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시 hwp 다운로드 링크"><img src="./public/img/icon_download.png" alt="분기결산 2021년 3분기 민원발생 건수 공시 hwp 다운로드 링크 이미지" /></a></li>
+							<li><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시 word 다운로드 링크"><img src="./public/img/icon_download.png" alt="분기결산 2021년 3분기 민원발생 건수 공시 word 다운로드 링크 이미지" /></a></li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td class="titB"><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시"><span>분기결산</span>2021년 3분기 민원발생 건수 공시</a></td>
+					<td>2021.10.26</td>
+					<td>2021.10.26</td>
+					<td class="down">
+						<ul>
+							<li><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시 pdf 다운로드 링크"><img src="./public/img/icon_download.png" alt="분기결산 2021년 3분기 민원발생 건수 공시 pdf 다운로드 링크 이미지" /></a></li>
+							<li><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시 hwp 다운로드 링크"><img src="./public/img/icon_download.png" alt="분기결산 2021년 3분기 민원발생 건수 공시 hwp 다운로드 링크 이미지" /></a></li>
+							<li><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시 word 다운로드 링크"><img src="./public/img/icon_download.png" alt="분기결산 2021년 3분기 민원발생 건수 공시 word 다운로드 링크 이미지" /></a></li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td class="titB"><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시"><span>분기결산</span>2021년 3분기 민원발생 건수 공시</a></td>
+					<td>2021.10.26</td>
+					<td>2021.10.26</td>
+					<td class="down">
+						<ul>
+							<li><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시 pdf 다운로드 링크"><img src="./public/img/icon_download.png" alt="분기결산 2021년 3분기 민원발생 건수 공시 pdf 다운로드 링크 이미지" /></a></li>
+							<li><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시 hwp 다운로드 링크"><img src="./public/img/icon_download.png" alt="분기결산 2021년 3분기 민원발생 건수 공시 hwp 다운로드 링크 이미지" /></a></li>
+							<li><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시 word 다운로드 링크"><img src="./public/img/icon_download.png" alt="분기결산 2021년 3분기 민원발생 건수 공시 word 다운로드 링크 이미지" /></a></li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td class="titB"><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시"><span>분기결산</span>2021년 3분기 민원발생 건수 공시</a></td>
+					<td>2021.10.26</td>
+					<td>2021.10.26</td>
+					<td class="down">
+						<ul>
+							<li><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시 pdf 다운로드 링크"><img src="./public/img/icon_download.png" alt="분기결산 2021년 3분기 민원발생 건수 공시 pdf 다운로드 링크 이미지" /></a></li>
+							<li><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시 hwp 다운로드 링크"><img src="./public/img/icon_download.png" alt="분기결산 2021년 3분기 민원발생 건수 공시 hwp 다운로드 링크 이미지" /></a></li>
+							<li><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시 word 다운로드 링크"><img src="./public/img/icon_download.png" alt="분기결산 2021년 3분기 민원발생 건수 공시 word 다운로드 링크 이미지" /></a></li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td class="titB"><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시"><span>분기결산</span>2021년 3분기 민원발생 건수 공시</a></td>
+					<td>2021.10.26</td>
+					<td>2021.10.26</td>
+					<td class="down">
+						<ul>
+							<li><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시 pdf 다운로드 링크"><img src="./public/img/icon_download.png" alt="분기결산 2021년 3분기 민원발생 건수 공시 pdf 다운로드 링크 이미지" /></a></li>
+							<li><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시 hwp 다운로드 링크"><img src="./public/img/icon_download.png" alt="분기결산 2021년 3분기 민원발생 건수 공시 hwp 다운로드 링크 이미지" /></a></li>
+							<li><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시 word 다운로드 링크"><img src="./public/img/icon_download.png" alt="분기결산 2021년 3분기 민원발생 건수 공시 word 다운로드 링크 이미지" /></a></li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td class="titB"><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시"><span>분기결산</span>2021년 3분기 민원발생 건수 공시</a></td>
+					<td>2021.10.26</td>
+					<td>2021.10.26</td>
+					<td class="down">
+						<ul>
+							<li><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시 pdf 다운로드 링크"><img src="./public/img/icon_download.png" alt="분기결산 2021년 3분기 민원발생 건수 공시 pdf 다운로드 링크 이미지" /></a></li>
+							<li><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시 hwp 다운로드 링크"><img src="./public/img/icon_download.png" alt="분기결산 2021년 3분기 민원발생 건수 공시 hwp 다운로드 링크 이미지" /></a></li>
+							<li><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시 word 다운로드 링크"><img src="./public/img/icon_download.png" alt="분기결산 2021년 3분기 민원발생 건수 공시 word 다운로드 링크 이미지" /></a></li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td class="titGr"><a href="#" title="결산 2021년 3분기 민원발생 건수 공시"><span>결산</span>2021년 3분기 민원발생 건수 공시</a></td>
+					<td>2021.10.26</td>
+					<td>2021.10.26</td>
+					<td class="down">
+						<ul>
+							<li><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시 pdf 다운로드 링크"><img src="./public/img/icon_download.png" alt="분기결산 2021년 3분기 민원발생 건수 공시 pdf 다운로드 링크 이미지" /></a></li>
+							<li><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시 hwp 다운로드 링크"><img src="./public/img/icon_download.png" alt="분기결산 2021년 3분기 민원발생 건수 공시 hwp 다운로드 링크 이미지" /></a></li>
+							<li><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시 word 다운로드 링크"><img src="./public/img/icon_download.png" alt="분기결산 2021년 3분기 민원발생 건수 공시 word 다운로드 링크 이미지" /></a></li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td class="titGr"><a href="#" title="결산 2021년 3분기 민원발생 건수 공시"><span>결산</span>2021년 3분기 민원발생 건수 공시</a></td>
+					<td>2021.10.26</td>
+					<td>2021.10.26</td>
+					<td class="down">
+						<ul>
+							<li><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시 pdf 다운로드 링크"><img src="./public/img/icon_download.png" alt="분기결산 2021년 3분기 민원발생 건수 공시 pdf 다운로드 링크 이미지" /></a></li>
+							<li><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시 hwp 다운로드 링크"><img src="./public/img/icon_download.png" alt="분기결산 2021년 3분기 민원발생 건수 공시 hwp 다운로드 링크 이미지" /></a></li>
+							<li><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시 word 다운로드 링크"><img src="./public/img/icon_download.png" alt="분기결산 2021년 3분기 민원발생 건수 공시 word 다운로드 링크 이미지" /></a></li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td class="titGr"><a href="#" title="결산 2021년 3분기 민원발생 건수 공시"><span>결산</span>2021년 3분기 민원발생 건수 공시</a></td>
+					<td>2021.10.26</td>
+					<td>2021.10.26</td>
+					<td class="down">
+						<ul>
+							<li><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시 pdf 다운로드 링크"><img src="./public/img/icon_download.png" alt="분기결산 2021년 3분기 민원발생 건수 공시 pdf 다운로드 링크 이미지" /></a></li>
+							<li><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시 hwp 다운로드 링크"><img src="./public/img/icon_download.png" alt="분기결산 2021년 3분기 민원발생 건수 공시 hwp 다운로드 링크 이미지" /></a></li>
+							<li><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시 word 다운로드 링크"><img src="./public/img/icon_download.png" alt="분기결산 2021년 3분기 민원발생 건수 공시 word 다운로드 링크 이미지" /></a></li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td class="titGr"><a href="#" title="결산 2021년 3분기 민원발생 건수 공시"><span>결산</span>2021년 3분기 민원발생 건수 공시</a></td>
+					<td>2021.10.26</td>
+					<td>2021.10.26</td>
+					<td class="down">
+						<ul>
+							<li><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시 pdf 다운로드 링크"><img src="./public/img/icon_download.png" alt="분기결산 2021년 3분기 민원발생 건수 공시 pdf 다운로드 링크 이미지" /></a></li>
+							<li><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시 hwp 다운로드 링크"><img src="./public/img/icon_download.png" alt="분기결산 2021년 3분기 민원발생 건수 공시 hwp 다운로드 링크 이미지" /></a></li>
+							<li><a href="#" title="분기결산 2021년 3분기 민원발생 건수 공시 word 다운로드 링크"><img src="./public/img/icon_download.png" alt="분기결산 2021년 3분기 민원발생 건수 공시 word 다운로드 링크 이미지" /></a></li>
+						</ul>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<ul class="boardPage">
+		<li><button type="button" title="이전페이지 이동 버튼"><img src="./public/img/page_arrow_icon.png" alt="이전페이지 이동 아이콘" /></button></li>
+		<li class="on"><span>1</span></li>
+		<li><span>2</span></li>
+		<li><span>3</span></li>
+		<li><button type="button" title="다음페이지 이동 버튼"><img src="./public/img/page_arrow_icon.png" alt="다음페이지 이동 아이콘" /></button></li>
+	</ul>
+</div>
+</section>
+
+<section>
+<div class="secTitBox">
+	<div>1. 영업개황</div>
+	<p>회계기준:일반기업회계기준</p>
+	<span>16기3분기말(금분기): 2021년9월말<br /> 제15기3분기말(전년동기): 2020년9월말<br /> (단위: 억원, 개, 명)</span>
+</div>
+<div class="table-St last-Bnon th-bg td-bt th-br td-br tc">
+	<table summary="구분, 제16기 3분기말(금분기)(A), 제15기 3분기말(금분기)(A), 증강(A-B)로 구성되어 있는 영업개황 표">
+		<caption>구분, 제16기 3분기말(금분기)(A), 제15기 3분기말(금분기)(A), 증강(A-B)로 구성되어 있는 영업개황 표</caption>
+		<colgroup>
+			<col width="25%">
+			<col width="25%">
+			<col width="25%">
+			<col width="25%">
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col">구분</th>
+				<th scope="col">제16기 3분기말(금분기)(A)</th>
+				<th scope="col">제15기 3분기말(금분기)(A)</th>
+				<th scope="col">증강(A-B)</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>총자산</td>
+				<td>17,875</td>
+				<td>17,875</td>
+				<td>17,875</td>
+			</tr>
+			<tr>
+				<td>총자산</td>
+				<td>17,875</td>
+				<td>17,875</td>
+				<td>17,875</td>
+			</tr>
+			<tr>
+				<td>총자산</td>
+				<td>17,875</td>
+				<td>17,875</td>
+				<td>17,875</td>
+			</tr>
+			<tr>
+				<td>총자산</td>
+				<td>17,875</td>
+				<td>17,875</td>
+				<td>17,875</td>
+			</tr>
+			<tr>
+				<td>총자산</td>
+				<td>17,875</td>
+				<td>17,875</td>
+				<td>17,875</td>
+			</tr>
+			<tr>
+				<td>총자산</td>
+				<td>17,875</td>
+				<td>17,875</td>
+				<td>17,875</td>
+			</tr>
+			<tr>
+				<td>총자산</td>
+				<td>17,875</td>
+				<td>17,875</td>
+				<td>17,875</td>
+			</tr>
+			<tr>
+				<td>총자산</td>
+				<td>17,875</td>
+				<td>17,875</td>
+				<td>17,875</td>
+			</tr>
+			<tr>
+				<td>총자산</td>
+				<td>17,875</td>
+				<td>17,875</td>
+				<td>17,875</td>
+			</tr>
+			<tr>
+				<td>총자산</td>
+				<td>17,875</td>
+				<td>17,875</td>
+				<td>17,875</td>
+			</tr>
+			<tr>
+				<td>총자산</td>
+				<td>17,875</td>
+				<td>17,875</td>
+				<td>17,875</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<br/><br/>
+
+<div class="secTitBox02">
+	<div>타이틀 옆에 서브텍스트</div>
+	<span class="txtR">모든 항목은 필수입력 사항입니다.</span>
+</div>
+
+<div class="table-St last-Bnon th-bg td-bt th-br td-br">
+	<table summary="구분, 제16기 3분기말(금분기)(A), 제16기 3분기말(금분기)(A)의 구성비, 제15기 3분기말(금분기)(A), 제15기 3분기말(금분기)(A)의 구성비 증강(A-B)로 구성되어 있는 재무현황 표">
+		<caption>구분, 제16기 3분기말(금분기)(A), 제16기 3분기말(금분기)(A)의 구성비, 제15기 3분기말(금분기)(A), 제15기 3분기말(금분기)(A)의 구성비 증강(A-B)로 구성되어 있는 재무현황 표</caption>
+		<colgroup>
+			<col width="25%">
+			<col width="12.5%">
+			<col width="12.5%">
+			<col width="12.5%">
+			<col width="12.5%">
+			<col width="25%">
+		</colgroup>
+		<thead>
+			<tr class="tc">
+				<th rowspan="2">구분</th>
+				<th colspan="2">제16기 3분기말(금분기)(A)</th>
+				<th colspan="2">제15기 3분기말(금분기)(A)</th>
+				<th rowspan="2">증강(A-B)</th>
+			</tr>
+			<tr>
+				<th class="bdT0"></th><!--bdT0 : border-top:0px -->
+				<th class="bor-t tc">구성비</th>
+				<th class="bdT0"></th>
+				<th class="bor-t tc" style="border-right:solid 1px #ccc;">구성비</th><!--bdR0 : border-right:0px -->
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th colspan="6" class="bor-t tit02">1) 자산</th>
+			</tr>
+			<tr class="tc">
+				<td class="tit02">현금 및 예치금</td>
+				<td>17,875</td>
+				<td>17,875</td>
+				<td>17,875</td>
+				<td>17,875</td>
+				<td>17,875</td>
+			</tr>
+			<tr class="tc">
+				<td class="tit02">현금 및 예치금</td>
+				<td>17,875</td>
+				<td>17,875</td>
+				<td>17,875</td>
+				<td>17,875</td>
+				<td>17,875</td>
+			</tr>
+			<tr class="tc">
+				<td class="tit02">현금 및 예치금</td>
+				<td>17,875</td>
+				<td>17,875</td>
+				<td>17,875</td>
+				<td>17,875</td>
+				<td>17,875</td>
+			</tr>
+			<tr class="tc">
+				<td class="tit02">현금 및 예치금</td>
+				<td>17,875</td>
+				<td>17,875</td>
+				<td>17,875</td>
+				<td>17,875</td>
+				<td>17,875</td>
+			</tr>
+			<tr class="tc">
+				<td class="tit02">현금 및 예치금</td>
+				<td>17,875</td>
+				<td>17,875</td>
+				<td>17,875</td>
+				<td>17,875</td>
+				<td>17,875</td>
+			</tr>
+			<tr class="tc">
+				<td class="tit02">자산총계</td>
+				<td>17,875</td>
+				<td>17,875</td>
+				<td>17,875</td>
+				<td>17,875</td>
+				<td>17,875</td>
+			</tr>
+			<tr>
+				<th colspan="6" class="bor-t tit02">2) 부채</th>
+			</tr>
+			<tr class="tc">
+				<td class="tit02">현금 및 예치금</td>
+				<td>17,875</td>
+				<td>17,875</td>
+				<td>17,875</td>
+				<td>17,875</td>
+				<td>17,875</td>
+			</tr>
+			<tr class="tc">
+				<td class="tit02">현금 및 예치금</td>
+				<td>17,875</td>
+				<td>17,875</td>
+				<td>17,875</td>
+				<td>17,875</td>
+				<td>17,875</td>
+			</tr>
+			<tr class="tc">
+				<td class="tit02">현금 및 예치금</td>
+				<td>17,875</td>
+				<td>17,875</td>
+				<td>17,875</td>
+				<td>17,875</td>
+				<td>17,875</td>
+			</tr>
+			<tr class="tc">
+				<td class="tit02">부채총계</td>
+				<td>17,875</td>
+				<td>17,875</td>
+				<td>17,875</td>
+				<td>17,875</td>
+				<td>17,875</td>
+			</tr>
+			<tr>
+				<th colspan="6" class="bor-t tit02">3) 자본</th>
+			</tr>
+			<tr class="tc">
+				<td class="tit02">현금 및 예치금</td>
+				<td>17,875</td>
+				<td>17,875</td>
+				<td>17,875</td>
+				<td>17,875</td>
+				<td>17,875</td>
+			</tr>
+			<tr class="tc">
+				<td class="tit02">현금 및 예치금</td>
+				<td>17,875</td>
+				<td>17,875</td>
+				<td>17,875</td>
+				<td>17,875</td>
+				<td>17,875</td>
+			</tr>
+			<tr class="tc">
+				<td class="tit02">현금 및 예치금</td>
+				<td>17,875</td>
+				<td>17,875</td>
+				<td>17,875</td>
+				<td>17,875</td>
+				<td>17,875</td>
+			</tr>
+			<tr class="tc">
+				<td class="tit02">현금 및 예치금</td>
+				<td>17,875</td>
+				<td>17,875</td>
+				<td>17,875</td>
+				<td>17,875</td>
+				<td>17,875</td>
+			</tr>
+			<tr class="tc">
+				<td class="tit02">현금 및 예치금</td>
+				<td>17,875</td>
+				<td>17,875</td>
+				<td>17,875</td>
+				<td>17,875</td>
+				<td>17,875</td>
+			</tr>
+			<tr class="tc">
+				<td class="tit02">현금 및 예치금</td>
+				<td>17,875</td>
+				<td>17,875</td>
+				<td>17,875</td>
+				<td>17,875</td>
+				<td>17,875</td>
+			</tr>
+			<tr class="tbBgC tc"><!-- 배경색 제어 클래스 tbBgC-->
+				<td class="tit02">부채 및 자본총계</td>
+				<td>17,875</td>
+				<td>17,875</td>
+				<td>17,875</td>
+				<td>17,875</td>
+				<td>17,875</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</section>
+
+<section>
+<h2>text box<h2>
+<div class="txtBox">
+	<p>BIS기준 자기자본비율(위험가중자산 대비 자기자본비율) : BIS(국제결제은행) 바젤은행감독위원회의 <br/>‘자기자본 측정과 기준에 관한 국제적 합의’에 따른 개념으로, <br/>금융회사의 리스크 증대에 대처하기 위한 자기자본비율 규제에 관한 국제적 통일기준을 의미합니다. <br/>대체로 BIS기준 자기자본비율이 높을수록 재무건전성이 우량하다는 것을 의미합니다.</p>
+</div>
+<br/><br/>
+<div class="txtBox">
+	<div>BIS기준 자기자본비율(위험가중자산 대비 자기자본비율) : BIS(국제결제은행) 바젤은행감독위원회의 <br/>‘자기자본 측정과 기준에 관한 국제적 합의’에 따른 개념으로, <br/>금융회사의 리스크 증대에 대처하기 위한 자기자본비율 규제에 관한 국제적 통일기준을 의미합니다. <br/>대체로 BIS기준 자기자본비율이 높을수록 재무건전성이 우량하다는 것을 의미합니다.</div>
+</div>
+<br/><br/>
+<div class="txtBox">
+	<span>BIS기준 자기자본비율(위험가중자산 대비 자기자본비율) : BIS(국제결제은행) 바젤은행감독위원회의 <br/>‘자기자본 측정과 기준에 관한 국제적 합의’에 따른 개념으로, <br/>금융회사의 리스크 증대에 대처하기 위한 자기자본비율 규제에 관한 국제적 통일기준을 의미합니다. <br/>대체로 BIS기준 자기자본비율이 높을수록 재무건전성이 우량하다는 것을 의미합니다.</span>
+</div>
+<br/><br/>
+<div class="txtBox">
+	<p class="dot">BIS기준 자기자본비율(위험가중자산 대비 자기자본비율) : BIS(국제결제은행) 바젤은행감독위원회의 ‘자기자본 측정과 기준에 관한 국제적 합의’에 따른 개념으로, 금융회사의 리스크 증대에 대처하기 위한 자기자본비율 규제에 관한 국제적 통일기준을 의미합니다. 대체로 BIS기준 자기자본비율이 높을수록 재무건전성이 우량하다는 것을 의미합니다.</p>
+	<p class="dot">고정이하분류여신 : 상호저축은행의 총여신중 고정, 회수의문과 추정손실을 합한 것으로 총여신 대비 그 비율이 낮을수록 상호저축은행의 자산 건전성이 양호함을 나타냅니다.</p>
+</div>
+<br/><br/>
+<div class="txtBox">
+	<p class="hypn">BIS기준 자기자본비율(위험가중자산 대비 자기자본비율) : BIS(국제결제은행) 바젤은행감독위원회의 ‘자기자본 측정과 기준에 관한 국제적 합의’에 따른 개념으로, 금융회사의 리스크 증대에 대처하기 위한 자기자본비율 규제에 관한 국제적 통일기준을 의미합니다. 대체로 BIS기준 자기자본비율이 높을수록 재무건전성이 우량하다는 것을 의미합니다.</p>
+	<p class="hypn">고정이하분류여신 : 상호저축은행의 총여신중 고정, 회수의문과 추정손실을 합한 것으로 총여신 대비 그 비율이 낮을수록 상호저축은행의 자산 건전성이 양호함을 나타냅니다.</p>
+</div>
+<br/><br/>
+
+<h3>text box2 검색창</h3>
+<div class="txtBox02">
+	<div class="txtInp">
+		<label>
+			<select>
+				<option val="1">전체</option>
+				<option val="2">진행중</option>
+				<option val="3">종료</option>
+			</select>
+			<input type="text" name="" title="입찰정보 검색 입력창" placeholder="검색어를 입력해주세요.">
+			<button type="button" name="" title="입찰정보 검색 버튼"><img src="./public/img/icon_search.png" alt="입찰정보 검색 아이콘"></button>
+		</label>
+	</div>
+</div>
+
+<br/><br/>
+
+<div class="txtBox02">
+	<div class="txtInp">
+		<label>
+			<input type="text" name="txtBox01" title="입찰정보 검색 입력창" placeholder="검색어를 입력해주세요.">
+			<button type="button" name="txtBox01_2" title="입찰정보 검색 버튼"><img src="./public/img/icon_search.png" alt="입찰정보 검색 아이콘"></button>
+		</label>
+	</div>
+</div>
+
+<br/><br/>
+
+<div class="txtBox02 mgB30">
+	<div class="txtInp">
+		<label>
+			<select class="full">
+				<option val=""></option>
+				<option val=""></option>
+				<option val=""></option>
+				<option val=""></option>
+				<option val=""></option>`
+			</select>
+			
+		</label>
+	</div>
+</div>
+
+<br/><br/>
+
+<h3>text box2 </h3>
+<div class="txtBox03">
+	<p>상호저축은행업감독규정 제42조에 의거 ‘상호저축은행통일경영공시기준’에 따라 경영공시를 실시합니다.</p>
+	<p class="txtB"><b>정기공시 / 요약공시</b> : 결산공시는 결산일로부터 3개월 이내, 분기결산공시는 2개월 이내 / <b>수시공시</b> : 발생일로부터 7영업일 이내 <a href="#">바로가기<span class="bullet_right">→</span></a></p>
+</div>
+
+<br/><br/>
+
+<h3>text box2 검색창 + text</h3>
+<div class="txtBox03">
+	<div class="txtInp">
+		<label>
+			<select>
+				<option val="1">전체</option>
+				<option val="2">진행중</option>
+				<option val="3">종료</option>
+			</select>
+			<input type="text" name="" title="입찰정보 검색 입력창" placeholder="검색어를 입력해주세요.">
+			<button type="button" name="" title="입찰정보 검색 버튼"><img src="./public/img/icon_search.png" alt="입찰정보 검색 아이콘"></button>
+		</label>
+	</div>
+	<p>상호저축은행업감독규정 제42조에 의거 ‘상호저축은행통일경영공시기준’에 따라 경영공시를 실시합니다.</p>
+	<p class="txtB"><b>정기공시 / 요약공시</b> : 결산공시는 결산일로부터 3개월 이내, 분기결산공시는 2개월 이내 / <b>수시공시</b> : 발생일로부터 7영업일 이내</p>
+	<p>J트러스트 그룹 정보 및 주요 재무지표는 다음의 바로 가기를 클릭하여 주십시오. 바로가기</p>
+	<p>회계기준 : 일반기업회계기준</p>
+	<p>게시일 : 2021년 6월 30일</p>
+</div>
+<br/><br/>
+
+</section>
+
+
+<section>
+<dl class="agree-list">
+	<dt><input type="checkbox" id="all-check" name="all-check" /><label for="all-check">전체동의</label></dt>
+	<dd class="required_check"> <!-- class required_check : 필수약관 / choice_check : 선택약관 -->
+		<div>
+			<fieldset>
+				<div>01[필수]</div>
+				
+				<ol>
+					<li><input type="checkbox" id="ckb0101" name="ckb01" /><label for="ckb0101">123123123123</label></li>
+					<li><input type="checkbox" id="ckb0102" name="ckb01" /><label for="ckb0102">123123123123</label></li>
+					<li><input type="checkbox" id="ckb0103" name="ckb01" /><label for="ckb0103">123123123123</label></li>
+				</ol>
+
+				<ul class="inpRadio">
+					<li><input type="radio" name="rab01" id="rab01-n" checked="checked"><label for="rab01-n">아니요</label></li>
+					<li><input type="radio" name="rab01" id="rab01-y"><label for="rab01-y">예</label></li>
+				</ul>
+			</fieldset>	
+		</div>
+	</dd>
+	<dd class="choice_check">
+		<div>
+			<fieldset>
+				<div>02[선택]</div>
+				
+				<ol>
+					<li><input type="checkbox" id="ckb0201" name="ckb02" /><label for="ckb0201">123123123123</label></li>
+					<li><input type="checkbox" id="ckb0202" name="ckb02" /><label for="ckb0202">123123123123</label></li>
+					<li><input type="checkbox" id="ckb0203" name="ckb02" /><label for="ckb0203">123123123123</label></li>
+				</ol>
+
+				<ul class="inpRadio">
+					<li><input type="radio" name="rab02" id="rab02-n" checked="checked"><label for="rab02-n">아니요</label></li>
+					<li><input type="radio" name="rab02" id="rab02-y"><label for="rab02-y">예</label></li>
+				</ul>
+			</fieldset>	
+		</div>
+	</dd>
+	<dd class="required_check">
+		<div>
+			<fieldset>
+				<div>03[필수]</div>
+				
+				<ol>
+					<li><input type="checkbox" id="ckb0601" name="ckb06" /><label for="ckb0601">123123123123</label></li>
+					<li><input type="checkbox" id="ckb0602" name="ckb06" /><label for="ckb0602">123123123123</label></li>
+					<li><input type="checkbox" id="ckb0603" name="ckb06" /><label for="ckb0603">123123123123</label></li>
+				</ol>
+
+				<ul class="inpRadio">
+					<li><input type="radio" name="rab06" id="rab06-n" checked="checked"><label for="rab06-n">아니요</label></li>
+					<li><input type="radio" name="rab06" id="rab06-y"><label for="rab06-y">예</label></li>
+				</ul>
+			</fieldset>	
+		</div>
+	</dd>
+	<dd class="required_check">
+		<div>
+			<fieldset>
+				<div>04[필수]</div>
+				
+				<ol>
+					<li><input type="checkbox" id="ckb0301" name="ckb03" /><label for="ckb0301">123123123123</label></li>
+					<li><input type="checkbox" id="ckb0302" name="ckb03" /><label for="ckb0302">123123123123</label></li>
+					<li><input type="checkbox" id="ckb0303" name="ckb03" /><label for="ckb0303">123123123123</label></li>
+				</ol>
+
+				<ul class="inpRadio">
+					<li><input type="radio" name="rab03" id="rab03-n" checked="checked"><label for="rab03-n">아니요</label></li>
+					<li><input type="radio" name="rab03" id="rab03-y"><label for="rab03-y">예</label></li>
+				</ul>
+			</fieldset>	
+		</div>
+	</dd>
+	<dd class="choice_check">
+		<div>
+			<fieldset>
+				<div>05[선택]</div>
+				
+				<ol>
+					<li><input type="checkbox" id="ckb0401" name="ckb04" /><label for="ckb0401">123123123123</label></li>
+					<li><input type="checkbox" id="ckb0402" name="ckb04" /><label for="ckb0402">123123123123</label></li>
+					<li><input type="checkbox" id="ckb0403" name="ckb04" /><label for="ckb0403">123123123123</label></li>
+				</ol>
+
+				<ul class="inpRadio">
+					<li><input type="radio" name="rab04" id="rab04-n" checked="checked"><label for="rab04-n">아니요</label></li>
+					<li><input type="radio" name="rab04" id="rab04-y"><label for="rab04-y">예</label></li>
+				</ul>
+			</fieldset>	
+		</div>
+	</dd>
+	<dd class="choice_check">
+		<div>
+			<fieldset>
+				<div>06[선택]</div>
+				
+				<ol>
+					<li><input type="checkbox" id="ckb0501" name="ckb05" /><label for="ckb0501">123123123123</label></li>
+					<li><input type="checkbox" id="ckb0502" name="ckb05" /><label for="ckb0502">123123123123</label></li>
+					<li class="choseck-p"><input type="checkbox" id="ckb0503" name="ckb05" /><label for="ckb0503">상품서비스 안내 수단</label></li>
+				</ol>
+				
+				<p class="choseck-s">
+					<span><input type="checkbox" name="ckbdm1" id="ckdm-sms" /><label for="ckdm-sms">문자</label></span>
+					<span><input type="checkbox" name="ckbdm1" id="ckdm-mail" /><label for="ckdm-mail">이메일</label></span>
+					<span><input type="checkbox" name="ckbdm1" id="ckdm-tel" /><label for="ckdm-tel">전화</label></span>
+					<span><input type="checkbox" name="ckbdm1" id="ckdm-dm" /><label for="ckdm-dm">DM</label></span>
+				</p>
+
+				<ul class="inpRadio">
+					<li><input type="radio" name="rab05" id="rab05-n" checked="checked"><label for="rab05-n">아니요</label></li>
+					<li><input type="radio" name="rab05" id="rab05-y"><label for="rab05-y">예</label></li>
+				</ul>
+			</fieldset>	
+		</div>
+	</dd>
+</dl>
+
+</section>
+
+<section>
+	<div class="table-St th-bg td-bt td-br th-br tc">
+		<table class="style01" summary="점프론 일반 신용대출에 대한 인지비용 부담 비용 종류인 대출금액(증액대출 포함), 세액 안내표">
+			<caption>점프론 일반 신용대출에 대한 인지비용 부담 비용 종류인 대출금액(증액대출 포함), 세액 안내표</caption>
+			<colgroup>
+				<col width="50%">
+				<col width="25%">
+				<col width="25%">
+			</colgroup>
+			<thead>
+				<tr><th>대출금액(증액대출 포함)</th>
+				<th colspan="2" class="bor-Rnon">세액</th>
+			</tr></thead>
+			<tbody>
+				<tr>
+					<td>5천만원 이하</td>
+					<td>비과세</td>
+					<td rowspan="3" class="bdB0 bor-Rnon">저축은행과 고객이 각 50%씩 부담</td>
+				</tr>
+				<tr>
+					<td>5천만원 초과 ~ 1억원 이하</td>
+					<td>7만원</td>
+				</tr>
+				<tr>
+					<td>1억원 초과 ~ 10억원 이하</td>
+					<td>15만원</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<br><br>
+
+	<div class="table-St type03 th-bg th-br th-bt td-bt td-pdl40 th-pdl40 ">
+		<table class="style02" summary="점프론 일반 신용대출의 상환방식인 원금균등분할상환, 원리금균등분할상환에 대한 안내표">
+			<caption>점프론 일반 신용대출의 상환방식인 원금균등분할상환, 원리금균등분할상환에 대한 안내표</caption>
+			<colgroup>
+				<col width="20%">
+				<col width="30%">
+				<col width="20%">
+				<col width="30%">
+			</colgroup>
+			<thead>
+				<tr class="tc"><th colspan="2" class="bor-Tnon">원금균등분할상환</th>
+				<th colspan="2" class="bor-Rnon bor-Tnon">원리금균등분할상환</th>
+			</tr></thead>
+			<tbody>
+				<tr>
+					<th>대출금액</th>
+					<td>1,000만원</td>
+					<th>대출금액</th>
+					<td>1,000만원</td>
+				</tr>
+				<tr>
+					<th>대출기간</th>
+					<td>36개월</td>
+					<th>대출기간</th>
+					<td>36개월</td>
+				</tr>
+				<tr>
+					<th>적용금리</th>
+					<td>연 16.0%</td>
+					<th>적용금리</th>
+					<td>연 16.0%</td>
+				</tr>
+				<tr>
+					<th>월상환액<br>(원금+이자)</th>
+					<td>281,544원~413,668원<p class="star">시간경과 따라 낮아짐</p></td>
+					<th>월상환액<br>(원금+이자)</th>
+					<td>351,570원<p class="star">매월 동일</p></td>
+				</tr>
+				<tr>
+					<th>총이자상환액</th>
+					<td>2,468,976원</td>
+					<th>총이자상환액</th>
+					<td>2,654,963원</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<br><br>
+
+	<div class="table-St last-Bnon th-bg td-bt td-br th-br td-pdl40 th-pdl40 ">
+		<table class="" summary="햇살론(근로자)에 대한 이자납입일 지정(변경)시 유의사항의 회차별 대출일자 예시 표">
+			<caption>햇살론(근로자)에 대한 이자납입일 지정(변경)시 유의사항의 회차별 대출일자 예시 표</caption>
+			<colgroup>
+				<col width="16.6666%">
+				<col width="16.6666%">
+				<col width="16.6666%">
+				<col width="16.6666%">
+				<col width="16.6666%">
+				<col width="*">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th>1회</th>
+					<th>2회</th>
+					<th rowspan="2" class="bdB0">중략</th>
+					<th>11회</th>
+					<th>12회</th>
+					<th>13회</th>
+				</tr>
+				<tr>
+					<td>10월 25일</td>
+					<td>11월 25일</td>
+					<td>8월 25일</td>
+					<td>9월 25일</td>
+					<td>8월 27일</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<br><br>
+
+	<div class="table-St last-Bnon th-bg td-bt th-br td-br td-pdl40 ">
+		<table class="" summary="JT스탁론에 대한 담보평가 금액, 대출한도 안내표">
+			<caption>JT스탁론에 대한 담보평가 금액, 대출한도 안내표</caption>
+			<colgroup>
+				<col width="50%">
+				<col width="50%">
+			</colgroup>
+			<thead>
+				<tr class="tc">
+					<th>담보평가 금액</th>
+					<th>대출 한도</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>5천만원 이하</td>
+					<td>계좌평가금액의 300% 이내</td>
+				</tr>
+				<tr>
+					<td>5천만원 초과 ~ 1억원 이하</td>
+					<td>계좌평가금액의 250% 이내</td>
+				</tr>
+				<tr>
+					<td>1억원 초과</td>
+					<td>계좌평가금액의 200% 이내</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<br><br>
+
+	<div class="table-St last-Bnon th-bg th-br th-bt td-bt td-br td-pdl40">
+		<table class="table06" summary="개월, 적용이율 비대면, 적용이율 본점영업점(분당), 적용이율 광주, 적용이율 목포로 구성된 매월이자지급식이 단리식인 회전정기예금 금리안내 표">
+			<caption>개월, 적용이율 비대면, 적용이율 본점영업점(분당), 적용이율 광주, 적용이율 목포로 구성된 매월이자지급식이 단리식인 회전정기예금 금리안내 표</caption>
+			<colgroup>
+				<col width="20%">
+				<col width="20%">
+				<col width="20%">
+				<col width="20%">
+				<col width="20%">
+			</colgroup>
+			<thead>
+				<tr class="tc bor-tnon">
+					<th rowspan="2" class="bdL0">개월</th>
+					<th colspan="4">적용이율</th>
+				</tr>
+				<tr class="tc">
+					<th>비대면</th>
+					<th>본점영업점(분당)</th>
+					<th>광주</th>
+					<th>목포</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>12개월(회전기간)</td>
+					<td>2.35</td>
+					<td>2.35</td>
+					<td>2.35</td>
+					<td>2.35</td>
+				</tr>
+				<tr>
+					<td>만기후 이율</td>
+					<td colspan="4">
+						1개월이내 : 약정금리<br>1개월초과 : 연 0.1%
+						<p class="rfrnc">2019년 6월 30일 이전 가입고객 : 가입당시 보통예금 이율</p>
+					</td>
+				</tr>
+				<tr>
+					<td>중도해지이율</td>
+					<td colspan="4">
+						<ul>
+							<li class="hypn">1개월 미만: 연 0.5%(단, 2021.08.10 이전 가입한 경우 0.1% 적용)</li>
+							<li class="hypn">1개월 이상 ~ 6개월 미만 : 약정금리 X 50%</li>
+							<li class="hypn">6개월 이상 ~ 12개월 미만 : 약정금리 X 60%</li>
+						</ul>
+						<p class="rfrnc">2019년 6월 30일 이전 가입고객 : 3개월 미만 - 0.5%, 3개월 이상 - 실 예치기간 적용금리 X 50%</p>
+					</td>
+				</tr>
+				
+			</tbody>
+		</table>
+	</div>
+
+
+</section>
+
+</div>
+</div>
+
+<!--<style> 기존 과장님 css
+.agree-list { display:block; margin:0px 20px 20px; text-align:left; }
+.agree-list>dt { background:#F8F8F9; border-radius:10px 10px 0px 0px;  border:1px solid 
+#ccc; padding:20px; }
+.agree-list>dd { border-bottom:1px #ccc solid; border-right:1px #ccc solid; border-left:1px #ccc solid; padding:10px; }
+.agree-list>dd fieldset { border:0px; }
+.agree-list>dd fieldset div { border-bottom:1px #ccc solid; padding:10px; }
+.agree-list>dd fieldset ol li { border-bottom:1px #ccc dashed; padding:10px; }
+.agree-list>dd fieldset ul { padding:10px 0px 0px; }
+.agree-list>dd fieldset ul:after { clear:both; display:block; content:''; }
+.agree-list>dd fieldset ul li { text-align:right; padding:10px; float:right; }
+.agree-list>dd:last-child { border-radius:0px 0px 10px 10px;  border:1px solid 
+#ccc; border-top:0px; padding:20px; }
+.choseck-p { border-bottom:0px!important; }
+.choseck-s { background:#f8f8f9; margin:0px 10px 10px; padding:10px; border-radius:8px; }
+</style>-->
+</div><!-- sampleWrap -->
+
+</body>
+</html>
+

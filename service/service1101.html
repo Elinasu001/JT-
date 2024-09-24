@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>JT 저축은행</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" type="text/css" href="../public/css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/common.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/common01.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/common02.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/footer.css" />
+	
+	<script src="../public/js/jquery.min.js"></script>
+	<script src="../public/js/common.js"></script>
+	
+	<script>
+	
+		/* 모달 */
+		function modalOn(modalID) { // 모달 On 모달 창 호출 후 해당 모달 컨텐츠 로드
+			$("." + modalID).addClass('on');
+			$("html").css("overflow","hidden");
+		};
+
+		function modalOff() { // 모달 Off
+			$('.Acuon-Modal').removeClass('on');
+			$("html").css("overflow","auto").css("height","100%");
+		};
+	</script>
+</head>
+
+<body>
+<!-- // header -->
+<header>
+	<div>
+		<h1><a href="./index.jsp"></a></h1>
+		<nav>
+			<script>
+				$(document).ready(function(){ 
+					$('nav').load('../public/inc/nav.html'); 
+				});
+			</script>
+		</nav>
+	</div>
+</header>
+<!-- header // -->
+
+<!-- // section -->
+<section class="SubPage-bg04">
+
+	<article class="Path PathBg">
+		<div>
+			<a href="/">Home</a><span class="bullet_right">→</span><a href="/">고객센터</a><span class="bullet_right">→</span><a href="/">간편서류제출</a>
+		</div>
+	</article>
+
+	<article class="ContentWrap">
+
+		<div class="Sub-Title subTitBg">
+			<h2>간편서류제출<br /><span>JT저축은행의 간편서류제출 서비스입니다.</span></h2>
+		</div>
+	
+		<div class="call-admin">
+			<div>
+				<div class="tableWrap">
+					<div class="secTitBox02">
+						<div>간편서류제출(스크래핑) 동의여부</div>
+					</div>
+
+					<ul class="agreeList reqChk"><!-- 필수약관 클래스 reqChk 로 체크 제어 -->
+						<li class="agreeHead">
+							<div>[필수] 적합성·적정성 원칙 확인서 (가계용) <span class="txtR">미확인</span><span class="txtBl">확인</span></div>
+							<button type="button" title="가계용 적합성·적정성 원칙 확인서 보기" class="btnWh01">확인서보기</button>
+						</li>
+					</ul>
+
+					<ul class="agreeList scraping"><!-- 클래스 scraping으로 본인확인 정보입력 table 제어 -->
+						<li class="agreeHead">
+							<div>간편서류제출(스크래핑) 동의여부</div>
+							<button type="button" title="간편서류제출(스크래핑) 동의여부 자세히보기" class="btnWh01">자세히보기</button>
+							<ul class="inpRadio">
+								<li>
+									<input type="radio" id="chk01-1" name="check01_1">
+									<label for="chk01-1">동의하지않음</label>
+								</li>
+								<li class="chk">
+									<input type="radio" id="chk01-2" name="check01_1"> 
+									<label for="chk01-2">동의함</label>
+								</li>
+							</ul>
+						</li>
+					</ul>
+
+				</div>
+
+
+				<div class="tableWrap">	
+					<div class="secTitBox02">
+						<div>스크래핑 정보 입력 </div>
+						<span class="txtR">모든 항목은 필수입력 사항입니다.</span>
+					</div>
+					<div class="table-St th-bg th-br th-bb td-bb th-pdl40 td-pdl40 th-tl">
+						<table summary="성명, 주민등록번호, 건강보험공단 조회기간, 본인확인 에 대한 개인정보 입력표">
+							<caption>성명, 주민등록번호, 건강보험공단 조회기간, 본인확인 에 대한 개인정보 입력표</caption>
+							<colgroup>
+								<col width="15%">
+								<col width="*">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="col"><label for="table01_name01">성명</label></th>
+									<td class="inpBox03">
+										<input type="text" id="table01_name01" name="table01_name01" placeholder="입력해주세요.">
+									</td>
+								</tr>
+								<tr>
+									<th scope="col"><label for="table01_birth01_1">주민등록번호</label></th>
+									<td class="inpNum03">
+										<input type="tel" id="table01_birth01_1" name="table_birth01" title="주민번호 앞자리" placeholder="입력해주세요." maxlength="6">
+										<b>-</b>
+										<input type="tel" id="table01_birth01_2" name="table_birth01" title="주민번호 뒷자리" placeholder="입력해주세요." maxlength="7">
+									</td>
+								</tr>
+								<tr>
+									<th scope="col"><label for="ipt02_01">건강보험공단</label></th>
+									<td class="inpBox03">
+										<i>조회시작 년 월</i> 
+										<input type="tel" id="ipt02_01" name="ipt02_01" placeholder="예)202101" maxlength="6">
+										<i>조회종료 년 월</i>
+										<input type="tel" id="ipt02_02" name="ipt02_02" placeholder="예)202101" maxlength="6"> 
+									</td>
+								</tr>
+								<tr>
+									<th scope="col" rowspan="5" class="bdB0"><label>본인확인<br/>( 대출 신청 이후 동일한 신분증사본을 fax 등으로 발송해 주세요.)</label></th>
+									<td class="inpBox03">
+										<i>본인확인방법</i>
+										<ul class="inpRadio">
+											<li>
+												<input type="radio" id="ipt03_01" name="table_radio03" title="운전면허증">
+												<label for="ipt03_01">운전면허증</label>
+											</li>
+											<li>
+												<input type="radio" id="ipt03_02" name="table_radio03" title="주민등록증">
+												<label for="ipt03_02">주민등록증</label>
+											</li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<td class="inpBox03 inpDate">
+										<i>발급일자</i>
+										<input type="date" id="ipt04_01" name="ipt04_01" placeholder="입력해주세요.">
+									</td>
+								</tr>
+								<tr>
+									<td class="inpBox03 inpJob">
+										<i>초본</i>
+										<ul>
+											<li>
+												<select title="초본 포함여부 선택">
+													<option value="">포함여부 선택</option>
+													<option value="1">포함</option>
+													<option value="2">불포함</option>
+												</select>
+											</li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<td class="inpBox03 inpAdd">
+										<i>주소</i>
+										<button type="button" title="우편번호 검색" class="btnNv01" onclick="modalOn('test06');">우편번호 검색</button>
+										<input type="text" id="ipt05_01" name="ipt05_01" title="우편번호입력" placeholder="입력해주세요.">
+									</td>
+								</tr>
+								<tr>
+									<td class="inpBox03">
+										<i>보안문자</i>
+										<span>※ 보안문자 이미지의 경우 우편번호 검색 후 확인이 가능합니다.  또한, 스크래핑 모듈을 설치하시려면 위의 동의함을 클릭해주시기 바랍니다.	</span>
+									</td>
+								</tr> 
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+				
+				<div class="subBtnWrap">
+					<button type="submit" title="스크래핑 공동인증" class="lone_ok" >스크래핑 공동인증</button>
+				</div>
+
+			</div>
+		</div>
+
+	</article>
+
+</section>
+<!-- // section -->
+
+<!-- // footer -->
+<footer>
+	<script>
+	$(document).ready(function(){ 
+		$('footer').load('../public/inc/footer.html'); 
+	});
+	</script>
+</footer>
+<!-- footer // -->
+
+
+<!-- // alert -->
+<div class="Acuon-Modal test06 codeSearch" rel="우편번호검색">
+	<div class="modal-type01">
+		<dl>
+			<dt>우편번호검색</dt>
+			<dd>
+				<div>
+					<p class="bgG">· 스크래핑 주소검색의 경우 도로명 주소만 입력이 가능합니다.<br/>
+					· 도로명 검색: 도로명, 건물명을 입력하세요. [예: 황새울로324]<br/>
+					· 상세주소가 검색결과에 안나올 시에는 일치하는 시도, 시군구를 선택해주시기 바랍니다.</p>
+					
+					<div class="inp"><input type="text" title="우편번호입력" placeholder="도로명/건물명을 입력해주세요."/><button type="button" title="검 색" class="btnNv01">검 색</button></div>
+
+		
+					<div class="schVal">
+						<div class="table-St type03 th-bg th-bt td-bt tc">
+							<table class="style02" summary="우편번호, 주소 에 대한 우편번호검색 결과표">
+								<caption>우편번호, 주소 에 대한 우편번호검색 결과표</caption>
+				
+								<thead>
+									<tr>
+									<th class="bor-Tnon">우편번호</th>
+									<th class="bor-Rnon bor-Tnon">주소</th>
+								</tr></thead>
+								<tbody>
+									<tr>
+										<td>00000</td>
+										<td>경기도 성남시 분당구 황새울로 324</td>
+									</tr>
+									<tr>
+										<td>00000</td>
+										<td>경기도 성남시 분당구 황새울로 324</td>
+									</tr>
+									<tr>
+										<td>00000</td>
+										<td>경기도 성남시 분당구 황새울로 324</td>
+									</tr>
+									<tr>
+										<td>00000</td>
+										<td>경기도 성남시 분당구 황새울로 324</td>
+									</tr>
+									<tr>
+										<td>00000</td>
+										<td>경기도 성남시 분당구 황새울로 324</td>
+									</tr>
+									<tr>
+										<td>00000</td>
+										<td>경기도 성남시 분당구 황새울로 324</td>
+									</tr>
+									<tr>
+										<td>00000</td>
+										<td>경기도 성남시 분당구 황새울로 324</td>
+									</tr>
+							
+								</tbody>
+							</table>
+						</div>	
+					</div>
+				</div>
+
+			
+				<p class="subBtnWrap">
+					<button type="submit" title="확인" class="lone_ok">확인</button>
+					<button type="button" onclick="modalOff();" title="취소" class="lone_cancel">취소</button>
+				</p>
+			</dd>
+		</dl>
+	</div>
+</div>
+<!-- alert // -->
+</body>
+</html> 

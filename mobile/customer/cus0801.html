@@ -1,0 +1,152 @@
+<!--%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%-->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<!-- %@ include file="./public/inc/common.jsp" %-->
+	<title>JT 저축은행</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<link rel="stylesheet" type="text/css" href="../public/css/reset.css?v=002" />
+	<link rel="stylesheet" type="text/css" href="../public/css/common.css?v=002" />
+	<link rel="stylesheet" type="text/css" href="../public/css/slick.css" />
+	<script src="../public/js/jquery.min.js"></script>
+	<script src="../public/js/slick.js"></script>
+	<script src="../public/js/common.js"></script>
+	<script>
+		//페이지 숫자 버튼 클릭 시
+		$(document).ready(function(){
+			$(".boardPage > li > span").on("click",function(){
+				$(".boardPage > li").removeClass("on");
+				$(this).parent("li").addClass("on");
+			});
+		});
+	</script>
+</head>
+<body>
+
+<!-- // header -->
+<header>
+	<div>
+		<h1><a href="/"><img src="../public/img/logo.png" alt="JT저축은행" /></a></h1>
+
+		<a href="javascript:callgnb();" alt="전제메뉴 보기" >
+			<span></span>
+			<span></span>
+			<span></span>
+		</a>
+
+	</div>
+</header>
+<!-- header // -->
+
+<!-- // Aside -->
+<div class="Aside">
+	<script>
+		$(document).ready(function(){ 
+			$('.Aside').load('../public/inc/nav.html'); 
+		});
+	</script>
+</div>
+<!-- Aside // -->
+
+<div id="main">
+	<section>
+		
+		<article class="ContentWrap">
+
+			<div class="subPage-Tit">
+				<h2>금융소비자보호공시</h2>
+				<p>JT저축은행의 금융소비자보호공시입니다.</p>
+				<ul>
+					<li class="on"><a href="#">민원공시</a></li>
+					<li><a href="#">실태평가</a></li>
+				</ul>
+			</div>
+			
+			<div class="call-admin">
+				<div>
+					<div class="txtBox03">
+						<p>JT저축은행은 금융소비자의 알 권리를 위해 	&lt;상호저축은행 통일경영공시&gt;에 의거, 민원건수를 분기별로 공시하고 있습니다.</p>
+						<p>저축은행별 민원발생건수 열람<button type="button" onclick="location.href='https://www.fsb.or.kr/busconspeti_0100.act'" title="저축은행 중앙회 페이지 바로가기" class="txtBtnArr">저축은행 중앙회</button></p>
+					</div>
+
+					<ol class="tableWrap">
+						<li><a href="#">
+							<p><b><span class="titB_mb">민원처리</span>2021년 3분기 민원발생 건수 공시</b></p>
+							<ul>
+								<li>게시일 <span>0000.00.00</span></li>
+								<li>기준일 <span>0000.00.00</span></li>
+							</ul>
+						</a></li>
+						<li><a href="#">
+							<p><b><span class="titB_mb">민원처리</span>2021년 3분기 민원발생 건수 공시</b></p>
+							<ul>
+								<li>게시일 <span>0000.00.00</span></li>
+								<li>기준일 <span>0000.00.00</span></li>
+							</ul>
+						</a></li>
+						<li><a href="#">
+							<p><b><span class="titB_mb">민원처리</span>2021년 3분기 민원발생 건수 공시</b></p>
+							<ul>
+								<li>게시일 <span>0000.00.00</span></li>
+								<li>기준일 <span>0000.00.00</span></li>
+							</ul>
+						</a></li>
+						<li><a href="#">
+							<p><b><span class="titB_mb">민원처리</span>2021년 3분기 민원발생 건수 공시</b></p>
+							<ul>
+								<li>게시일 <span>0000.00.00</span></li>
+								<li>기준일 <span>0000.00.00</span></li>
+							</ul>
+						</a></li>
+						<li><a href="#">
+							<p><b><span class="titB_mb">민원처리</span>2021년 3분기 민원발생 건수 공시</b></p>
+							<ul>
+								<li>게시일 <span>0000.00.00</span></li>
+								<li>기준일 <span>0000.00.00</span></li>
+							</ul>
+						</a></li>
+						<li><a href="#">
+							<p><b><span class="titB_mb">민원처리</span>2021년 3분기 민원발생 건수 공시</b></p>
+							<ul>
+								<li>게시일 <span>0000.00.00</span></li>
+								<li>기준일 <span>0000.00.00</span></li>
+							</ul>
+						</a></li>
+						<li><a href="#">
+							<p><b><span class="titB_mb">민원처리</span>2021년 3분기 민원발생 건수 공시</b></p>
+							<ul>
+								<li>게시일 <span>0000.00.00</span></li>
+								<li>기준일 <span>0000.00.00</span></li>
+							</ul>
+						</a></li>
+						<li><a href="#">
+							<p><b><span class="titB_mb">민원처리</span>2021년 3분기 민원발생 건수 공시</b></p>
+							<ul>
+								<li>게시일 <span>0000.00.00</span></li>
+								<li>기준일 <span>0000.00.00</span></li>
+							</ul>
+						</a></li>
+					</ol>
+
+
+					<ul class="boardPage">
+						<li><button type="button" title="이전페이지 이동 버튼"><img src="../public/img/page_arrow_icon.png" alt="이전페이지 이동 아이콘"></button></li>
+						<li class="on"><span>1</span></li>
+						<li><span>2</span></li>
+						<li><span>3</span></li>
+						<li><button type="button" title="다음페이지 이동 버튼"><img src="../public/img/page_arrow_icon.png" alt="다음페이지 이동 아이콘"></button></li>
+					</ul>
+				</div>
+			</div>
+	
+		</article>
+	
+	</section>
+</div>
+<!-- main // -->
+
+</body>
+</html>

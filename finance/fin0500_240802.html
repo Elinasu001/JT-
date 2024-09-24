@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>JT 저축은행</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" type="text/css" href="../public/css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/common.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/common01.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/common02.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/footer.css" />
+	
+	<script src="../public/js/jquery.min.js"></script>
+	
+</head>
+
+<body>
+<!-- // header -->
+<header>
+	<div id="gnb">
+		<h1><a href="./index.jsp"></a></h1>
+		<nav>
+			<script>
+				$(document).ready(function(){ 
+					$('nav').load('../public/inc/nav.html'); 
+				});
+			</script>
+		</nav>
+	</div>
+</header>
+<!-- header // -->
+
+<!-- // section -->
+<section class="SubPage-bg03">
+
+	<article class="Path PathBg">
+		<div>
+			<a href="/">Home</a><span class="bullet_right">→</span><a href="/">금융</a><span class="bullet_right">→</span><a href="/">금융서비스</a><span class="bullet_right">→</span><a href="/">발급서비스</a>
+		</div>
+	</article>
+
+	<article class="ContentWrap">
+
+		<div class="Sub-Title subTitBg">
+			<h2>발급서비스<br />
+			<span>JT저축은행이 제공하는 금융서비스입니다.</span>
+			</h2>
+		</div>
+
+		<div class="call-admin">
+			<div>
+
+			<div class="tableWrap">
+				<div class="secTitBox02">
+					<div>정보 동의</div> 
+				</div>
+				<div class="table-St th-bg th-br th-bb td-bb th-pdl40 td-pdl40 th-tl">
+					<table summary="성명, 본인인증, 생년월일, 성별, 핸드폰번호 에 대한 정보동의 입력표">
+						<caption>성명, 본인인증, 생년월일, 성별, 핸드폰번호 에 대한 정보동의 입력표</caption>
+						<colgroup>
+							<col width="15%">
+							<col width="*">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="col"><label for="ipt01">성명</label></th>
+								<td class="inpBox03">
+									<input type="text" id="ipt01_01" name="ipt01" placeholder="입력해주세요." title="성명">
+								</td>
+							</tr>
+							<tr>
+								<th scope="col"><label for="table_radio01">본인인증</label></th>
+								<td class="inpBox03">
+									<ul class="inpRadio">
+										<li>
+											<input type="radio" id="ipt02-01" name="table_radio01" title="휴대폰인증">
+											<label for="ipt02-01">휴대폰인증</label>
+										</li>
+										<li>
+											<input type="radio" id="ipt02-02" name="table_radio01" title="카드인증">
+											<label for="ipt02-02">카드인증</label>
+										</li>
+										<li>
+											<input type="radio" id="ipt02-03" name="table_radio01" title="공동인증">
+											<label for="ipt02-03">공동인증</label>
+										</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<th scope="col"><label for="ipt02">생년월일</label></th>
+								<td class="inpBox03">
+									<input type="tel" id="ipt02" name="ipt02" title="생년월일" placeholder="입력해주세요." maxlength="6">
+									<span>예)750101</span>
+								</td>
+							</tr>
+							<tr>
+								<th scope="col"><label for="table_radio03">성별</label></th>
+								<td class="inpBox03">
+									<ul class="inpRadio">
+										<li>
+											<input type="radio" id="ipt03-01" name="table_radio03" title="휴대폰인증">
+											<label for="ipt03-01">남성</label>
+										</li>
+										<li>
+											<input type="radio" id="ipt03-02" name="table_radio03" title="카드인증">
+											<label for="ipt03-02">여성</label>
+										</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<th scope="col"><label for="ipt04-1">핸드폰번호</label></th>
+								<td class="inpBox03 inpTel li4">
+									<ul>
+										<li>
+											<select title="핸드폰 통신사">
+												<option value="">통신사</option>
+												<option value="1">SKT</option>
+												<option value="2">KT</option>
+												<option value="3">LGU+</option>
+												<option value="4">알뜰폰 SKT</option>
+												<option value="5">알뜰폰 KT</option>
+												<option value="6">알뜰폰 LGU+</option>
+												<option value="7">기타</option>
+											</select>
+										</li>
+										<li>
+											<select title="핸드폰번호 앞 3자리">
+												<option value="">선택</option>
+												<option value="1">010</option>
+												<!--<option value="2">011</option>
+												<option value="3">016</option>
+												<option value="4">017</option>
+												<option value="5">018</option>
+												<option value="6">019</option>
+												<option value="7">KT-파워텔</option>-->
+											</select>
+										</li>
+										<li>
+											<b>-</b>
+											<input type="tel" id="ipt04-1" name="ipt04-1" title="휴대전화 중간 4자리" placeholder="입력해주세요." maxlength="4">
+										</li>
+										<li>
+											<b>-</b>
+											<input type="tel" id="ipt04-2" name="ipt04-1" title="휴대전화 뒤 4자리" placeholder="입력해주세요." maxlength="4">
+										</li>
+									</ul>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+
+			<div class="subBtnWrap pdT0">
+				<button type="button" title="실명인증" class="lone_ok">실명인증</button>
+			</div>	
+
+			<div class="completeWrap">
+				<dl class="type02">
+					<dt><b>본 서비스는 대출완료 고객전용 서비스 입니다.</b></dt>
+					<dd>대출신청하시겠습니까?</dd>	
+					<dd><button type="button" title="대출신청" >대출신청</button></dd>
+				</dl>
+			</div>
+
+			</div>
+		</div>
+	</article>
+
+</section>
+<!-- // section -->
+
+<!-- // footer -->
+<footer>
+	<script>
+	$(document).ready(function(){ 
+		$('footer').load('../public/inc/footer.html'); 
+	});
+	</script>
+</footer>
+
+<script src="../public/js/common.js"></script>
+
+<!-- footer // -->
+</body>
+</html> 

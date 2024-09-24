@@ -1,0 +1,127 @@
+<!--%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%-->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<!-- %@ include file="./public/inc/common.jsp" %-->
+	<title>JT 저축은행</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<link rel="stylesheet" type="text/css" href="../public/css/reset.css?v=002" />
+	<link rel="stylesheet" type="text/css" href="../public/css/common.css?v=002" />
+	<link rel="stylesheet" type="text/css" href="../public/css/slick.css" />
+	<script src="../public/js/jquery.min.js"></script>
+	<script src="../public/js/slick.js"></script>
+	<script src="../public/js/common.js"></script>
+
+</head>
+<body>
+
+<!-- // header -->
+<header>
+	<div>
+		<h1><a href="/"><img src="../public/img/logo.png" alt="JT저축은행" /></a></h1>
+
+		<a href="javascript:callgnb();" alt="전제메뉴 보기" >
+			<span></span>
+			<span></span>
+			<span></span>
+		</a>
+
+	</div>
+</header>
+<!-- header // -->
+
+<!-- // Aside -->
+<div class="Aside">
+	<script>
+		$(document).ready(function(){ 
+			$('.Aside').load('../public/inc/nav.html'); 
+		});
+	</script>
+</div>
+<!-- Aside // -->
+
+<div id="main">
+	<section>
+		
+		<article class="ContentWrap">
+
+			<div class="subPage-Tit">
+				<h2>이벤트</h2>
+				<p>고객님께 알려드리는 공지사항입니다.</p>
+				<ul>
+					<li><a href="">진행중인 이벤트</a></li>
+					<li class="on"><a href="">종료된 이벤트</a></li>
+				</ul>
+			</div>
+			
+			<div class="call-admin">
+				<div>
+					<!--// * D : 이벤트리스트 없을 경우 노출 -->
+					<div class="list-None">
+						 <p>진행중인 이벤트가 없습니다.</p>
+					</div>
+					<!-- * D : 이벤트리스트 없을 경우 노출 // -->
+
+					<!--// * D : 이벤트리스트 있을 경우 노출 -->
+					<ul class="imgInfo">
+						<li><a href="#">
+							<p><img src="../public/img/banner0301.png" alt="STOP CHILD ABUSE"></p>
+							<dl>
+								<dt>블로그 이웃 초청 이벤트</dt>
+								<dd>2021.05.25 ~ 2021.06.07</dd>
+							</dl>
+						</a></li>
+						<li><a href="#">
+							<p><img src="../public/img/banner0301.png" alt="STOP CHILD ABUSE"></p>
+							<dl>
+								<dt>블로그 이웃 초청 이벤트</dt>
+								<dd>2021.05.25 ~ 2021.06.07</dd>
+							</dl>
+						</a></li>	
+						<li><a href="#">
+							<p><img src="../public/img/banner0301.png" alt="STOP CHILD ABUSE"></p>
+							<dl>
+								<dt>블로그 이웃 초청 이벤트</dt>
+								<dd>2021.05.25 ~ 2021.06.07</dd>
+							</dl>
+						</a></li>	
+						<li><a href="#">
+							<p><img src="../public/img/banner0301.png" alt="STOP CHILD ABUSE"></p>
+							<dl>
+								<dt>블로그 이웃 초청 이벤트</dt>
+								<dd>2021.05.25 ~ 2021.06.07</dd>
+							</dl>
+						</a></li>	
+						<li><a href="#">
+							<p><img src="../public/img/banner0301.png" alt="STOP CHILD ABUSE"></p>
+							<dl>
+								<dt>블로그 이웃 초청 이벤트</dt>
+								<dd>2021.05.25 ~ 2021.06.07</dd>
+							</dl>
+						</a></li>	
+					</ul>
+					<!-- * D : 이벤트리스트 있을 경우 노출 // -->
+					
+					<ul class="boardPage">
+						<li><button type="button" title="이전페이지 이동 버튼"><img src="../public/img/page_arrow_icon.png" alt="이전페이지 이동 아이콘"></button></li>
+						<li class="on"><span>1</span></li>
+						<li><span>2</span></li>
+						<li><span>3</span></li>
+						<li><button type="button" title="다음페이지 이동 버튼"><img src="../public/img/page_arrow_icon.png" alt="다음페이지 이동 아이콘"></button></li>
+					</ul>
+
+				</div>
+			</div>
+	
+		</article>
+	
+	</section>
+</div>
+<!-- main // -->
+
+
+</body>
+</html>

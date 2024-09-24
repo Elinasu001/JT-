@@ -1,0 +1,83 @@
+@charset "UTF-8"; 
+@font-face {
+			font-family: 'Pretendard';
+			src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+			font-weight: 400;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'Pretendard';
+			src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
+			font-weight: 500;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'Pretendard';
+			src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff') format('woff');
+			font-weight: 600;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'Pretendard';
+			src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff') format('woff');
+			font-weight: 700;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'Pretendard';
+			src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+			font-weight: 800;
+			font-style: normal;
+		}
+		
+
+		* { margin:0; padding:0; font-family:"Pretendard";  font-weight:500; box-sizing:border-box; }
+		html, 
+		body { margin:0; padding:0; width:100%; height:100%; line-height:1.5; letter-spacing:-1px; font-size:14px; font-family:"Pretendard", sans-serif; font-weight:400; color:#333; word-break:keep-all; word-wrap:break-word; -webkit-text-size-adjust: none; -moz-text-size-adjust: none; -ms-text-size-adjust: none; }
+		ul, ol { list-style:none; }
+		a { display:block; width:100%; height:100%; text-decoration:none; }
+		a:link, a:hover, a:active, a:visited { color:#333; }
+		button { overflow:hidden; border:0; cursor:pointer; background:transparent; }
+		em,i { font-style:normal; }
+		/*header::after, footer::after, div::after, ul::after, li::after { content:""; display:block; clear:both; }*/
+		textarea { padding:10px; font-size:1.125rem; resize:none;  outline-color:#002c69; }
+		html, body, div, ul, ol, dl, li, dt, dd, p, h1, h2, h3, h4, h5, h6, table, thead, tbody, tr, th, td, caption, address,
+		canvas, details, figure, figcaption, footer, header, menu, nav, section, article, aside,
+		form, fieldset, button, select, textarea, input, fieldset, legend, label, a, span, strong, em, address, dfn, small, i, b, ::before, ::after { position:relative; margin:0; padding:0; max-width:100%; border:0; list-style:none; word-break:break-all; word-wrap:inherit; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -o-box-sizing:border-box;   }
+		/* article, aside, footer, header, nav, section, div, ul, ol, dl, dt, dd, p, h1, h2, h3, h4, h5, h6 { display:inline-block; float:left; width:100%; } */
+		article, aside, canvas, details, figure, figcaption, footer, header, menu, nav, section { display:block; }
+		#tossbrdige-main{ width:100%; height:100%; padding:50px 0 0; display:grid; }
+		#tossbrdige-main > header { position:fixed; z-index:2; top:0; left:0; padding:15px 20px 0; width:100%; height:50px; background:#fff; }
+		#tossbrdige-main > header > h1 { display:flex; align-items:center; height:25px;  }
+		#tossbrdige-main > header > h1 > img{ height:25px; }
+		#tossbrdige-main > header > h1 > span { margin-left:10px; font-size:1.14rem; color:#999;  }
+		#tossbrdige-main > section { padding:0; }
+		#tossbrdige-main > section > article.bridgeCont { width:100%; height:100%; display:grid; align-content:space-between; }
+		#tossbrdige-main > section > article.bridgeCont > div { padding:0 25px 0; }
+		#tossbrdige-main > section > article.bridgeCont > div:first-of-type { padding-top:50px; }
+		#tossbrdige-main .bridgeCont h2 { display:block; text-align:left; font-size:1.43rem; font-weight:800; }
+		#tossbrdige-main .bridgeCont h2 > em { display:block; margin:0 auto 10px; width:100%; font-size:1.57rem; font-weight:800; color:#006FFF; letter-spacing:0.5px; }/*2024.05.24 letter-sapcing 추가*/
+		#tossbrdige-main .bridgeCont ul.step { margin:65px auto 80px; overflow:hidden; max-width:310px; }
+		#tossbrdige-main .bridgeCont ul.step li{ display:inline-block; float:left; width:calc(100% / 3 - 18px); margin-right:23px; }
+		#tossbrdige-main .bridgeCont ul.step li:last-child{ margin-right:0; }
+		/* #tossbrdige-main .bridgeCont ul.step li::after{ content: ""; display:block; width:16px; height:16px; position: absolute; right: -20px; top:40px; background:url("../img/kakao/arr.png") no-repeat center; background-size:100%; } 2024.05.24*/
+		#tossbrdige-main .bridgeCont ul.step li::after { content:""; position:absolute; right:-24px; top:28px; display:inline-block; width:24px; height:20px; background:url("../img/toss/arr-right.png")no-repeat center; background-size:100%; } /*2024.05.24 추가*/
+		#tossbrdige-main .bridgeCont ul.step li:last-child:after { display:none; }
+		#tossbrdige-main .bridgeCont ul.step p{ display:block; text-align:center; width:88px; font-size:1rem; font-weight:800; }
+		#tossbrdige-main .bridgeCont ul.step p:first-child{ padding-top:80px; font-size:0; background-size:70px !important; }
+		#tossbrdige-main .bridgeCont ul.step li:nth-of-type(1) p:first-child{ background:url("../img/toss/ico_step1.png") no-repeat center top;  }
+		#tossbrdige-main .bridgeCont ul.step li:nth-of-type(2) p:first-child{ background:url("../img/toss/ico_step2.png") no-repeat center top;  }
+		#tossbrdige-main .bridgeCont ul.step li:nth-of-type(3) p:first-child{ background:url("../img/toss/ico_step3.png") no-repeat center top;  }
+		#tossbrdige-main .bridgeCont ul.step p span{ display:block; font-size:0.857rem; font-weight:400; color:#999; }/*2024.05.24 font-size추가*/
+		#tossbrdige-main .bridgeCont h3 { display:block; padding:20px 0 10px; font-size:1.14rem; font-weight:800; }
+		/*#tossbrdige-main .bridgeCont .applicationCont { border-top:1px solid #E5E5E5; }*/
+		#tossbrdige-main .bridgeCont .applicationCont li { padding-left:23px; font-size:1rem; line-height:1.5; margin-bottom:8px; }
+		#tossbrdige-main .bridgeCont .applicationCont li:last-child { margin-bottom:0; }
+		#tossbrdige-main .bridgeCont .applicationCont li > span{ position:absolute; left:0; top:0; display:block; margin-right:5px; width:18px; height:18px; background:#006FFF; border-radius:50%; color:#fff; font-size:0.79rem; font-weight:500; line-height:19px; text-align:center;   }
+		#tossbrdige-main .bridgeCont .applicationCont li > em { font-weight:700; color:#F10000; } /*2024.05.24 font-weight 추가*/
+		#tossbrdige-main .bridgeCont .applicationCont button{ margin:20px auto 30px; width:100%; height:50px; background:#006FFF; border-radius:5px; color:#fff; font-size:1.14rem; font-weight:700; text-align:center; }
+		#tossbrdige-main .bottomInfo { padding:20px 25px 20px; background:#F2F2F2;   }
+		#tossbrdige-main .bottomInfo h3 { display:block; font-size:1rem; font-weight:600; margin-bottom:10px; padding-left:21px; }
+		#tossbrdige-main .bottomInfo h3::before { content:""; display:block; position:absolute; left:0; width:16px; height:16px; border-radius:50%; background:#333 url("../img/toss/ic-excmark.png") no-repeat center; background-size:auto 11px; }
+		#tossbrdige-main .bottomInfo ul li { color:#999; padding-left:7px; font-size:0.86rem; }
+		#tossbrdige-main .bottomInfo ul li::before{  content:""; display:block; position:absolute; left:0; top:7px; width:3px; height:3px; background:#999; border-radius:50%; }

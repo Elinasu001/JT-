@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>JT 저축은행</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" type="text/css" href="../public/css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/common.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/common01.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/common02.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/footer.css" />
+	
+	<script src="../public/js/jquery.min.js"></script>
+	<script src="../public/js/common.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".boardPage > li > span").on("click",function(){
+				$(".boardPage > li").removeClass("on");
+				$(this).parent("li").addClass("on");
+			});
+		});
+	</script>
+
+	<style>
+	.tableWrap .CUS0201 { margin-bottom:40px; }
+	</style>
+</head>
+
+<body>
+<!-- // header -->
+<header>
+	<div>
+		<h1><a href="./index.jsp"></a></h1>
+		<nav>
+			<script>
+				$(document).ready(function(){ 
+					$('nav').load('../public/inc/nav.html'); 
+				});
+			</script>
+		</nav>
+	</div>
+</header>
+<!-- header // -->
+
+<!-- // section -->
+<section class="SubPage-bg05">
+
+	<article class="Path PathBg">
+		<div>
+			<a href="/">Home</a><span class="bullet_right">→</span><a href="/">금융소비자보호</a><span class="bullet_right">→</span><a href="/">민원공시</a>
+		</div>
+	</article>
+
+	<article class="ContentWrap">
+
+		<div class="Sub-Title subTitBg">
+			<h2>금융소비자보호공시<br />
+			<span>JT저축은행의 금융소비자보호공시입니다.</span>
+			</h2>
+		</div>
+
+		<div class="call-admin">
+			<div>
+
+			<div class="tableWrap">
+				<div class="secTitBox">
+					<div>개인정보 수집·이용 동의 항목</div>
+					<p>0000년 00월 00일</p>
+				</div>
+				
+				<!-- // 사기 이용계좌 명의인에 대한 금융거래 제한기간 확대 관련 안내 -->	
+				<dl class="CUS0201">					
+					<dd>					
+						<div>						
+							<p>사기 이용계좌 명의인에 대한 금융거래 제한기간 확대 관련 안내</p>						
+							<ol>						
+								<li class="imgScroll"><img alt="" src="./testfull.jpg" style="height:1159px; width:820px"></li>	
+							</ol>													
+
+						</div>				
+					</dd>			
+				</dl>
+				<!-- 사기 이용계좌 명의인에 대한 금융거래 제한기간 확대 관련 안내 // -->
+
+
+				<ul class="noti-ListBtn">
+					<li>
+						<a href="#">
+						<dl>
+							<dt>이전글</dt>
+							<dd>JT저축은행, 주니어 직원과 소통하며 동행한다.</dd>
+						</dl>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+						<dl>
+							<dt>이전글</dt>
+							<dd>JT저축은행, 주니어 직원과 소통하며 동행한다.</dd>
+						</dl>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="subBtnWrap">
+				<button type="button" title="목록" class="lone_ok">목록</button>
+			</div>
+
+			</div>
+		</div>
+
+	</article>
+
+</section>
+<!-- // section -->
+
+<!-- // footer -->
+<footer>
+	<script>
+	$(document).ready(function(){ 
+		$('footer').load('../public/inc/footer.html'); 
+	});
+	</script>
+</footer>
+<!-- footer // -->
+</body>
+</html>

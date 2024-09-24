@@ -1,0 +1,187 @@
+@charset "UTF-8";
+/* 
+@font-face {
+ font-family: "NanumGothic";
+ font-weight: normal;
+ font-style: normal;
+ src: url('../font/NanumGothic.eot');
+ src:url('../font/NanumGothic.eot?#iefix') format('embedded-opentype'),
+	url('../font/NanumGothic.woff') format('woff'),
+	url('../font/NanumGothic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: "NanumGothic";
+	font-style: normal;
+	font-weight: bold;
+	src: url('../font/NanumGothicBold.eot');
+	src: url('../font/NanumGothicBold.eot?#iefix') format('embedded-opentype'),
+	     url('../font/NanumGothicBold.woff') format('woff'),
+		 url('../font/NanumGothicBold.ttf') format('truetype');
+}
+
+
+@font-face {
+ font-family: "NotoSansKR";
+ font-weight: 300;
+ font-style: normal;
+ src: url("../font/notokr-demilight.eot") format("embedded-opentype"), 
+	  url("../font/notokr-demilight.ttf") format("truetype"), 
+	  url("../font/notokr-demilight.woff") format("woff"), 
+	  url("../font/notokr-demilight.woff2") format("woff2"), 
+	  url("../font/notokr-demilight.svg") format("svg");
+}
+
+@font-face {
+ font-family: "NotoSansKR";
+ font-weight: 400;
+ font-style: normal;
+ src: url("../font/notokr-regular.eot") format("embedded-opentype"), 
+	  url("../font/notokr-regular.ttf") format("truetype"), 
+	  url("../font/notokr-regular.woff") format("woff"), 
+	  url("../font/notokr-regular.woff2") format("woff2"), 
+	  url("../font/notokr-regular.svg") format("svg");
+}
+
+@font-face {
+ font-family: "NotoSansKR";
+ font-weight: 500;
+ font-style: normal;
+ src: url("../font/notokr-medium.eot") format("embedded-opentype"), 
+	  url("../font/notokr-medium.ttf") format("truetype"), 
+	  url("../font/notokr-medium.woff") format("woff"), 
+	  url("../font/notokr-medium.woff2") format("woff2"), 
+	  url("../font/notokr-medium.svg") format("svg");
+}
+
+@font-face {
+ font-family: "NotoSansKR";
+ font-weight: 700;
+ font-style: normal;
+ src: url("../font/notokr-bold.eot") format("embedded-opentype"), 
+	  url("../font/notokr-bold.ttf") format("truetype"), 
+	  url("../font/notokr-bold.woff") format("woff"), 
+	  url("../font/notokr-bold.woff2") format("woff2"), 
+	  url("../font/notokr-bold.svg") format("svg");
+}
+
+@font-face {
+ font-family: "NotoSansKR";
+ font-weight: 900;
+ font-style: normal;
+ src: url("../font/notokr-black.eot") format("embedded-opentype"), 
+	  url("../font/notokr-black.ttf") format("truetype"), 
+	  url("../font/notokr-black.woff") format("woff"), 
+	  url("../font/notokr-black.woff2") format("woff2"), 
+	  url("../font/notokr-black.svg") format("svg");
+} */
+
+/*=== 22.05.13 폰트변경 ===*/
+
+@font-face {
+ font-family: "GmarketSans";
+ font-weight: 400;
+ font-style: lighter;
+ src: url("../font4/GmarketSansLight.otf") format("embedded-opentype"), 
+	  url("../font4/GmarketSansTTFLight.ttf") format("truetype"), 
+	  url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff") format("woff")
+}
+
+@font-face {
+ font-family: "GmarketSans";
+ font-weight: 500;
+ font-style: normal;
+ src: url("../font4/GmarketSansMedium.otf") format("embedded-opentype"), 
+	  url("../font4/GmarketSansTTFMedium.ttf") format("truetype"), 
+	  url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff")
+}
+
+@font-face {
+ font-family: "GmarketSans";
+ font-weight: 700;
+ font-style: bold;
+ src: url("../font4/GmarketSansTTFBold.otf") format("embedded-opentype"), 
+	  url("../font4/GmarketSansTTFBold.ttf") format("truetype"), 
+	  url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff") format("woff")
+}
+
+@charset "utf-8";
+
+html { font-size:10px; }
+body,
+div,
+p,
+span,
+ul, 
+ol,
+li,
+dl,
+dt,
+dd,
+table,
+th,
+td,
+form,
+fieldset,
+legend,
+input,
+select,
+textarea,
+a,
+button,
+i,
+em,
+address { 
+	box-sizing:border-box;
+	color:#333;
+	/*font-family:'NotoSansKR', 'Arial', sans-serif; 
+	font-weight:500;*/
+	font-family:'GmarketSans' !important;
+	font-weight:400;
+	font-style:normal;
+	font-size:14px;
+	letter-spacing:-0.5px;
+	line-height:100%;
+	list-style:none;
+	margin:0;
+	position:relative;
+	padding:0;
+	word-break:keep-all;
+    word-wrap:break-word;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: auto;
+}
+* { box-sizing:border-box; -webkit-overflow-scrolling:touch; /* font-family:'NotoSansKR' !important; */ color:#252525; }
+
+body,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section { 
+	display:block;
+	margin:0px;
+	padding:0px;
+}
+
+h1, h2, h3, h4, h5, h6 { padding:0; margin:0; font-weight:500; font-size:100%; }
+
+caption { position:absolute; visibility:hidden; font-size:0; top:-3000px; display:none; }
+
+a, 
+a:link,
+a:visited { text-decoration:none; color:#252525; font-weight:500; }
+a:hover { text-decoration:none; color:#04ADEE; }
+
+b { font-weight:600;  color:inherit; } 
+a, button { cursor:pointer; }
+button { border:none; background:none; font-weight:500;}
+body { position:relative; font-size:10px;}
+img { width:100%; height:100%; }
+textarea  { width:100%; resize:none; padding:10px; border:1px solid #DADCE1; }

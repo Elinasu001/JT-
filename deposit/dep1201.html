@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>JT 저축은행</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="../public/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../public/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../public/css/common01.css" />
+    <link rel="stylesheet" type="text/css" href="../public/css/common02.css" />
+    <link rel="stylesheet" type="text/css" href="../public/css/footer.css" />
+
+    <script src="../public/js/jquery.min.js"></script>
+    <script src="../public/js/common.js"></script>
+</head>
+
+<body>
+    <!-- // header -->
+    <header>
+        <div id="gnb">
+            <h1><a href="./index.jsp"></a></h1>
+            <nav>
+                <script>
+                    $(document).ready(function () {
+                        $('nav').load('../public/inc/nav.html');
+                    });
+                </script>
+            </nav>
+        </div>
+    </header>
+    <!-- header // -->
+
+    <!-- // section -->
+    <section class="SubPage-bg02">
+
+        <article class="Path PathBg">
+            <div>
+                <a href="/">Home</a><span class="bullet_right">→</span><a href="/">예금상품</a><span
+                    class="bullet_right">→</span><a href="/">예금금리</a>
+            </div>
+        </article>
+
+        <article class="ContentWrap">
+
+            <div class="Sub-Title subTitBg">
+                <h2>예금금리<br /><span>상품별, 영업점별, 예금 및 적금 금리정보입니다.</span></h2>
+            </div>
+
+            <ul class="tabWrap li4"><!--li2, li3, li4, li5 로 갯수 조절-->
+                <li class="on"><a>목돈굴리기 상품</a></li>
+                <li><a>목돈모으기 상품</a></li>
+                <li><a>입출금자유상품</a></li>
+                <li><a>ISA/퇴직연금예금상품</a></li>
+            </ul>
+
+            <div class="call-admin">
+                <div>
+
+
+
+
+                    <div class="secTitBox">
+                        <div style="display: none;">금리안내</div> 
+                        <h3>회전정기예금</h3>
+                        <p>[매월이자지급식 : 단리식]</p><br>
+                        <p><b>본 상품의 금리는 가입일 혹은 회전일 당시에 고시된 회전주기별 금리에 따라 변경 적용됩니다.</b></p> <span>2024년 6월 12일 기준 (단위%, 연,
+                            세전)</span>
+                    </div>
+                    <div class="table-St last-Bnon th-bg td-bt th-br td-br tc">
+                        <table>
+                            <caption>기간(개월), 지점별 적용이율, 만기후 이율, 중도해지이율로 구성되어 있는 회전식정기예금(매월이자지급식:단리식) 금리 안내표</caption>
+                            <colgroup>
+                                <col width="16%">
+                                <col width="12%">
+                                <col width="12%">
+                                <col width="12%">
+                                <col width="24%">
+                                <col width="24%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th rowspan="2" scope="col">기간(개월)</th>
+                                    <th colspan="3" scope="col">적용이율</th>
+                                    <th rowspan="2" scope="col">만기후 이율</th>
+                                    <th rowspan="2" scope="col">중도해지이율</th>
+                                </tr>
+                                <tr class="th-bt">
+                                    <th scope="col">비대면</th>
+                                    <th scope="col">본점영업점(분당)</th>
+                                    <th class="bor-r" scope="col">광주</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>12개월(회전기간)(변동금리상품)</td>
+                                    <td>3.80</td>
+                                    <td>3.80</td>
+                                    <td>3.80</td>
+                                    <td>
+                                        <ul>
+                                            <li class="hypn">1개월이내:예치시점 약정금리</li>
+                                            <li class="hypn">1개월초과:연0.1%</li>
+                                        </ul>
+                                        <p class="rfrnc">2019년 6월 30일 이전 가입고객 : 가입당시 보통예금 이율</p>
+                                    </td>
+                                    <td rowspan="5">
+                                        <ul>
+                                            <li class="hypn">1개월 미만: 0.5% (2021.08.10 이전 가입한 경우 0.10%) </li>
+                                            <li class="hypn">1개월 이상~6개월미만: 약정금리x50%</li>
+                                            <li class="hypn">6개월이상~12개월미만:약정금리x60%</li>
+                                        </ul>
+                                        <p class="rfrnc">2019년 6월 30일 이전 가입고객 : 3개월미만-0.5%, 3개월이상-실 예치기간 적용금리 x 50%</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="secTitBox pdT60">
+                        <p>[만기이자지급식 : 복리식]</p>
+                        <p><b>※ 본 상품의 금리는 가입일 혹은 회전일 당시에 고시된 회전주기별 금리에 따라 변경 적용됩니다.</b></p>
+                    </div>
+                    <div class="table-St last-Bnon th-bg td-bt th-br td-br tc">
+                        <table>
+                            <caption>기간(개월), 지점별 연복리 수익률, 만기후 이율, 중도해지이율로 구성되어 있는 회전식정기예금(만기이자지급식 : 복리식) 금리 안내표
+                            </caption>
+                            <colgroup>
+                                <col width="16%">
+                                <col width="12%">
+                                <col width="12%">
+                                <col width="12%">
+                                <col width="24%">
+                                <col width="24%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th rowspan="2" scope="col">기간(개월)</th>
+                                    <th colspan="3" scope="col">연복리 수익률</th>
+                                    <th rowspan="2" scope="col">만기후 이율</th>
+                                    <th rowspan="2" scope="col">중도해지이율</th>
+                                </tr>
+                                <tr class="th-bt">
+                                    <th scope="col">비대면</th>
+                                    <th scope="col">본점영업점(분당)</th>
+                                    <th class="bor-r" scope="col">광주</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>12개월(회전기간)(변동금리상품)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                    <td>3.86</td>
+                                    <td>3.86</td>
+                                    <td>3.86</td>
+                                    <td>
+                                        <ul>
+                                            <li class="hypn">1개월이내:예치시점 약정금리</li>
+                                            <li class="hypn">1개월초과:연0.1%</li>
+                                        </ul>
+                                        <p class="rfrnc">2019년 6월 30일 이전 가입고객 : 가입당시 보통예금 이율</p>
+                                    </td>
+                                    <td rowspan="5">
+                                        <ul>
+                                            <li class="hypn">1개월 미만: 0.5% (2021.08.10 이전 가입한 경우 0.10%) </li>
+                                            <li class="hypn">1개월 이상~6개월미만: 약정금리x50%</li>
+                                            <li class="hypn">6개월이상~12개월미만:약정금리x60%</li>
+                                        </ul>
+                                        <p class="rfrnc">2019년 6월 30일 이전 가입고객 : 3개월미만-0.5%, 3개월이상-실 예치기간 적용금리 x 50%</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+
+
+
+
+                    <div class="secTitBox">
+                        <div style="display: none;">금리안내</div> <h3 id="pdTop" style="padding-top: 60px;">정기예금</h3>
+                        <p>[매월이자지급식 : 단리식]</p> <span>2024년 2월 8일 기준 (단위%, 연, 세전)</span>
+                    </div>
+                    <div class="table-St last-Bnon th-bg td-bt th-br td-br tc">
+                        <table>
+                            <caption>기간(개월), 지점별 적용이율, 만기후 이율, 중도해지이율로 구성되어 있는 정기예금(매월이자지급식:단리식) 금리 안내표 </caption>
+                            <colgroup>
+                                <col width="16%">
+                                <col width="12%">
+                                <col width="12%">
+                                <col width="12%">
+                                <col width="24%">
+                                <col width="24%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col" rowspan="2">기간(개월)</th>
+                                    <th scope="col" colspan="3">적용이율</th>
+                                    <th scope="col" rowspan="2">만기후 이율</th>
+                                    <th scope="col" rowspan="2">중도해지이율</th>
+                                </tr>
+                                <tr class="th-bt">
+                                    <th scope="col">비대면</th>
+                                    <th scope="col">본점영업점(분당)</th>
+                                    <th class="bor-r" scope="col">광주</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1개월 이상 - 6개월 미만 </td>
+                                    <td>1.90</td>
+                                    <td>1.90</td>
+                                    <td>1.90</td>
+                                    <td rowspan="5">
+                                        <ul>
+                                            <li class="hypn">1개월이내:예치시점 약정금리</li>
+                                            <li class="hypn">1개월초과:연0.1%</li>
+                                        </ul>
+                                        <p class="rfrnc">2019년 6월 30일 이전 가입고객 : 가입당시 보통예금 이율</p>
+                                    </td>
+                                    <td rowspan="5">
+                                        <ul>
+                                            <li class="hypn">1개월 미만: 0.5% (2021.08.10 이전 가입한 경우 0.10%) </li>
+                                            <li class="hypn">1개월 이상~6개월미만: 약정금리x50%</li>
+                                            <li class="hypn">6개월이상~12개월미만:약정금리x60%</li>
+                                            <li class="hypn">12개월이상:약정금리x70%</li>
+                                        </ul>
+                                        <p class="rfrnc">2019년 6월 30일 이전 가입고객 : 3개월미만-0.5%, 3개월이상-실 예치기간 적용금리 x 50%</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>6개월 이상 - 12개월 미만</td>
+                                    <td>2.30</td>
+                                    <td>2.30</td>
+                                    <td class="bor-r">2.30</td>
+                                </tr>
+                                <tr>
+                                    <td>12개월 이상 - 18개월 미만</td>
+                                    <td>3.80</td>
+                                    <td>3.80</td>
+                                    <td class="bor-r">3.80</td>
+                                </tr>
+                                <tr>
+                                    <td>18개월 이상 - 24개월 미만</td>
+                                    <td>2.30</td>
+                                    <td>2.30</td>
+                                    <td class="bor-r">2.30</td>
+                                </tr>
+                                <tr>
+                                    <td>24개월 이상 - 36개월<!--td--> </td>
+                                    <td>2.30</td>
+                                    <td>2.30</td>
+                                    <td class="bor-r">2.30</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="secTitBox pdT60">
+                        <p>[ 만기이자지급식: 복리식 ]</p>
+                    </div>
+                    <div class="table-St last-Bnon th-bg td-bt th-br td-br tc">
+                        <table>
+                            <caption>기간(개월), 지점별 연복리수익율, 만기후 이율, 중도해지이율로 구성되어 있는 정기예금(만기이자지급식:복리식) 금리 안내표</caption>
+                            <colgroup>
+                                <col width="16%">
+                                <col width="12%">
+                                <col width="12%">
+                                <col width="12%">
+                                <col width="24%">
+                                <col width="24%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col" rowspan="2">기간(개월)</th>
+                                    <th scope="col" colspan="3">연복리 수익률</th>
+                                    <th scope="col" rowspan="2">만기후 이율</th>
+                                    <th scope="col" rowspan="2">중도해지이율</th>
+                                </tr>
+                                <tr class="th-bt">
+                                    <th scope="col">비대면</th>
+                                    <th scope="col">본점영업점(분당)</th>
+                                    <th class="bor-r" scope="col">광주</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1개월 이상 - 6개월 미만</td>
+                                    <td>1.90</td>
+                                    <td>1.90</td>
+                                    <td>1.90</td>
+                                    <td rowspan="5">
+                                        <ul>
+                                            <li class="hypn">1개월이내:예치시점 약정금리</li>
+                                            <li class="hypn">1개월초과:연0.1%</li>
+                                        </ul>
+                                        <p class="rfrnc">2019년 6월 30일 이전 가입고객 : 가입당시 보통예금 이율</p>
+                                    </td>
+                                    <td rowspan="5">
+                                        <ul>
+                                            <li class="hypn">1개월 미만: 0.5% (2021.08.10 이전 가입한 경우 0.10%) </li>
+                                            <li class="hypn">1개월 이상~6개월미만: 약정금리x50%</li>
+                                            <li class="hypn">6개월이상~12개월미만:약정금리x60%</li>
+                                            <li class="hypn">12개월이상:약정금리x70%</li>
+                                        </ul>
+                                        <p class="rfrnc">2019년 6월 30일 이전 가입고객 : 3개월미만-0.5%, 3개월이상-실 예치기간 적용금리 x 50%</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>6개월 이상 - 12개월 미만</td>
+                                    <td>2.31</td>
+                                    <td>2.31</td>
+                                    <td class="bor-r">2.31</td>
+                                </tr>
+                                <tr>
+                                    <td>12개월 이상 - 18개월 미만</td>
+                                    <td>3.86</td>
+                                    <td>3.86</td>
+                                    <td class="bor-r">3.86</td>
+                                </tr>
+                                <tr>
+                                    <td>18개월 이상 - 24개월 미만</td>
+                                    <td>2.33</td>
+                                    <td>2.33</td>
+                                    <td class="bor-r">2.33</td>
+                                </tr>
+                                <tr>
+                                    <td>24개월 이상 - 36개월<!--td--> </td>
+                                    <td>2.35</td>
+                                    <td>2.35</td>
+                                    <td class="bor-r">2.35</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <style>
+                        .tb_button {
+                            padding: 1px;
+                            cursor: pointer;
+                            border-right: 1px solid #8b8b8b;
+                            border-left: 1px solid #FFF;
+                            border-bottom: 1px solid #fff;
+                        }
+
+                        .tb_button.hover {
+                            border: 2px outset #def;
+                            background-color: #f8f8f8 !important;
+                        }
+
+                        .ws_toolbar {
+                            z-index: 100000
+                        }
+
+                        .ws_toolbar .ws_tb_btn {
+                            cursor: pointer;
+                            border: 1px solid #555;
+                            padding: 3px
+                        }
+
+                        .tb_highlight {
+                            background-color: yellow
+                        }
+
+                        .tb_hide {
+                            visibility: hidden
+                        }
+
+                        .ws_toolbar img {
+                            padding: 2px;
+                            margin: 0px
+                        }
+                    </style>
+
+
+
+
+
+
+                    <br>
+
+
+
+
+
+
+
+
+                </div>
+            </div><!-- call-admin -->
+
+        </article>
+
+    </section>
+    <!-- // section -->
+
+    <!-- // footer -->
+    <footer>
+        <script>
+            $(document).ready(function () {
+                $('footer').load('../public/inc/footer.html');
+            });
+        </script>
+    </footer>
+    <!-- footer // -->
+</body>
+
+</html>
